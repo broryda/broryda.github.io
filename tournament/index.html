@@ -3,12 +3,15 @@ layout: default
 title: "대회 게시판"
 ---
 
+<h1>🏁 바둑대회 게시판</h1>
+<p>최신 바둑 대회 안내를 한눈에 확인하세요.</p>
+
 <style>
-h1 { margin-bottom: 1.2rem; }
 .board-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 1.5rem;
 }
 .board-item {
   border: 1px solid #e5e7eb;
@@ -16,14 +19,12 @@ h1 { margin-bottom: 1.2rem; }
   padding: 1rem 1.25rem;
   transition: background .2s;
 }
-.board-item:hover {
-  background: #f9fafb;
-}
+.board-item:hover { background: #f9fafb; }
 .board-item a {
   font-size: 1.1rem;
   color: #1f2937;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
 }
 .board-item .meta {
   color: #6b7280;
@@ -31,17 +32,17 @@ h1 { margin-bottom: 1.2rem; }
 }
 </style>
 
-<h1>🏁 바둑대회 게시판</h1>
-
 <div class="board-list">
-  {% assign posts = site.posts | where_exp: "p", "p.categories contains '대회안내'" | sort: "date" | reverse %}
-  {% for post in posts %}
-    <div class="board-item">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <div class="meta">{{ post.date | date: "%Y년 %m월 %d일" }}</div>
-      {% if post.description %}
-        <div class="excerpt">{{ post.description }}</div>
-      {% endif %}
-    </div>
+  {% assign all_posts = site.posts | sort: "date" | reverse %}
+  {% for post in all_posts %}
+    {% if post.categories contains "대회안내" %}
+      <div class="board-item">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <div class="meta">{{ post.date | date: "%Y년 %m월 %d일" }}</div>
+        {% if post.description %}
+          <div>{{ post.description }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
