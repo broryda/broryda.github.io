@@ -4,133 +4,182 @@ title: "바둑대회 캘린더"
 ---
 
 <h1 style="text-align:center;">📆 바둑대회 일정 캘린더</h1>
-<p style="text-align:center;">_posts 폴더의 모든 글을 자동으로 읽어 캘린더에 표시합니다.</p>
 
-<div id="calendar"></div>
+<div class="cal-wrap">
+  <div class="cal-controls">
+    <button id="prevBtn" aria-label="이전 달">◀︎</button>
+    <div class="cal-title">
+      <select id="yearSelect"></select>
+      <select id="monthSelect"></select>
+    </div>
+    <button id="nextBtn" aria-label="다음 달">▶︎</button>
+    <button id="todayBtn" class="today">오늘</button>
+  </div>
+
+  <div id="calendar"></div>
+</div>
 
 <style>
-#calendar {
-  max-width: 750px;
-  margin: 2rem auto;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
-  text-align: center;
-  font-family: system-ui, sans-serif;
-}
-.day {
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  padding: 0.6rem 0.3rem;
-  min-height: 90px;
-  position: relative;
-  transition: background 0.2s;
-}
-.day:hover { background: #f3f4f6; }
-.day .date { font-weight: bold; color: #374151; }
-.event {
-  display: block;
-  margin-top: 4px;
-  font-size: 0.8rem;
-  color: #1d4ed8;
-  text-decoration: none;
-  line-height: 1.2;
-}
-.event:hover { text-decoration: underline; }
-.header {
-  grid-column: span 7;
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-.weekday {
-  font-weight: bold;
-  background: #f3f4f6;
-  padding: 0.5rem;
-}
+.cal-wrap{max-width:820px;margin:1.5rem auto;padding:0 8px;font-family:system-ui,sans-serif}
+.cal-controls{display:flex;gap:.5rem;align-items:center;justify-content:center;margin-bottom:.75rem;flex-wrap:wrap}
+.cal-controls button{border:1px solid #e5e7eb;background:#fff;border-radius:.5rem;padding:.45rem .7rem;cursor:pointer}
+.cal-controls .today{background:#1d4ed8;color:#fff;border-color:#1d4ed8}
+.cal-title{display:flex;gap:.5rem;align-items:center}
+.cal-title select{padding:.4rem .5rem;border:1px solid #e5e7eb;border-radius:.5rem}
+
+#calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.weekday{font-weight:600;background:#f3f4f6;padding:.5rem;border-radius:.5rem}
+.day{border:1px solid #e5e7eb;border-radius:.5rem;min-height:100px;padding:.5rem;position:relative}
+.day .date{font-weight:700;color:#374151}
+.day.muted{opacity:.45}
+.event{display:block;margin-top:.25rem;font-size:.8rem;color:#1d4ed8;text-decoration:none;line-height:1.25}
+.event:hover{text-decoration:underline}
+.legend{margin:.75rem 0 0;text-align:center;color:#6b7280;font-size:.9rem}
 </style>
 
 <script>
-// ✅ Liquid로 Jekyll의 모든 posts를 JS 객체로 전달
-const posts = [
+// 1) 모든 포스트를 Liquid로 주입
+const ALL_POSTS = [
   {% for post in site.posts %}
-  {
-    date: "{{ post.date | date: '%Y-%m-%d' }}",
+  { date: "{{ post.date | date: '%Y-%m-%d' }}",
     title: "{{ post.title | escape }}",
-    url: "{{ post.url | relative_url }}"
-  },
+    url: "{{ post.url | relative_url }}" },
   {% endfor %}
 ];
 
-// ✅ 디버깅: posts 배열을 콘솔에 출력 (표 형태)
-console.group("📋 site.posts 목록");
-console.table(posts);
-console.groupEnd();
-
-// 날짜별 이벤트 맵 생성
-const eventMap = {};
-posts.forEach(p => {
-  if (!eventMap[p.date]) eventMap[p.date] = [];
-  eventMap[p.date].push(p);
+// 2) 날짜별로 맵 구성
+const eventsByDate = {};
+ALL_POSTS.forEach(p => {
+  (eventsByDate[p.date] ||= []).push(p);
 });
 
-// 달력 생성 함수
-function buildCalendar(year, month) {
-  const calendar = document.getElementById("calendar");
-  calendar.innerHTML = "";
+// 3) 유틸
+const pad = n => String(n).padStart(2, "0");
+const qs = new URLSearchParams(location.search);
+const clamp = (min, v, max) => Math.min(Math.max(v, min), max);
 
-  // 제목 (년/월)
-  const header = document.createElement("div");
-  header.className = "header";
-  header.textContent = `${year}년 ${month + 1}월`;
-  calendar.appendChild(header);
+// 4) 렌더
+function renderCalendar(year, month){ // month: 0-11
+  const cal = document.getElementById("calendar");
+  cal.innerHTML = "";
 
   // 요일 헤더
-  const weekdays = ["일", "월", "화", "수", "목", "금", "토"];
-  weekdays.forEach(d => {
-    const div = document.createElement("div");
-    div.className = "weekday";
-    div.textContent = d;
-    calendar.appendChild(div);
+  const weekdays = ["일","월","화","수","목","금","토"];
+  weekdays.forEach(d=>{
+    const div=document.createElement('div');
+    div.className='weekday';
+    div.textContent=d;
+    cal.appendChild(div);
   });
 
-  const firstDay = new Date(year, month, 1);
-  const lastDay = new Date(year, month + 1, 0);
-  const startWeekday = firstDay.getDay();
+  const first = new Date(year, month, 1);
+  const last  = new Date(year, month+1, 0);
+  const prevLast = new Date(year, month, 0);
 
-  // 빈 칸
-  for (let i = 0; i < startWeekday; i++) {
-    const empty = document.createElement("div");
-    empty.className = "day";
-    calendar.appendChild(empty);
+  const startOffset = first.getDay();
+  const totalCells  = startOffset + last.getDate();
+  const rows = Math.ceil(totalCells/7);
+  const needed = rows*7;
+
+  // 이전달 말일 채우기(연한 표시)
+  for(let i=0;i<startOffset;i++){
+    const d = prevLast.getDate()-startOffset+i+1;
+    cal.appendChild(dayCell(year, month-1, d, true));
   }
-
-  // 날짜 출력
-  for (let d = 1; d <= lastDay.getDate(); d++) {
-    const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
-    const div = document.createElement("div");
-    div.className = "day";
-    const dateSpan = document.createElement("div");
-    dateSpan.className = "date";
-    dateSpan.textContent = d;
-    div.appendChild(dateSpan);
-
-    // 이벤트 삽입
-    if (eventMap[dateStr]) {
-      eventMap[dateStr].forEach(ev => {
-        const link = document.createElement("a");
-        link.href = ev.url;
-        link.textContent = ev.title;
-        link.className = "event";
-        div.appendChild(link);
-      });
-    }
-    calendar.appendChild(div);
+  // 이번달
+  for(let d=1; d<=last.getDate(); d++){
+    cal.appendChild(dayCell(year, month, d, false));
+  }
+  // 다음달 채우기(연한 표시)
+  const remain = needed - (startOffset + last.getDate());
+  for(let d=1; d<=remain; d++){
+    cal.appendChild(dayCell(year, month+1, d, true));
   }
 }
 
-// 현재 월 캘린더 생성
-const today = new Date();
-buildCalendar(today.getFullYear(), today.getMonth());
+function dayCell(y, m, d, muted){
+  const cell = document.createElement('div');
+  cell.className = 'day' + (muted ? ' muted' : '');
+  const dateStr = `${y}-${pad(m+1)}-${pad(d)}`;
+
+  const head = document.createElement('div');
+  head.className = 'date';
+  head.textContent = d;
+  cell.appendChild(head);
+
+  (eventsByDate[dateStr]||[]).forEach(ev=>{
+    const a=document.createElement('a');
+    a.href=ev.url; a.className='event'; a.textContent=ev.title;
+    cell.appendChild(a);
+  });
+  return cell;
+}
+
+// 5) 컨트롤(연/월 선택 + 이전/다음 + 오늘)
+function initControls(initialY, initialM){
+  const ySel = document.getElementById('yearSelect');
+  const mSel = document.getElementById('monthSelect');
+  const prev = document.getElementById('prevBtn');
+  const next = document.getElementById('nextBtn');
+  const todayBtn = document.getElementById('todayBtn');
+
+  // 연도 범위(포스트 있는 연±2년)
+  const years = ALL_POSTS.map(p=>+p.date.slice(0,4));
+  const minY = Math.min(...years, new Date().getFullYear()) - 2;
+  const maxY = Math.max(...years, new Date().getFullYear()) + 2;
+
+  for(let y=minY; y<=maxY; y++){
+    const o=document.createElement('option');
+    o.value=y; o.textContent=`${y}년`;
+    ySel.appendChild(o);
+  }
+  for(let m=0; m<12; m++){
+    const o=document.createElement('option');
+    o.value=m; o.textContent=`${m+1}월`;
+    mSel.appendChild(o);
+  }
+
+  function sync(y,m,updateURL=true){
+    ySel.value=y; mSel.value=m;
+    renderCalendar(y,m);
+    if(updateURL){
+      const u=new URL(location.href);
+      u.searchParams.set('y',y);
+      u.searchParams.set('m',m+1);
+      history.replaceState({},'',u);
+    }
+  }
+
+  ySel.addEventListener('change', ()=> sync(+ySel.value, +mSel.value));
+  mSel.addEventListener('change', ()=> sync(+ySel.value, +mSel.value));
+  prev.addEventListener('click', ()=>{
+    let y=+ySel.value, m=+mSel.value-1;
+    if(m<0){m=11;y--;} sync(y,m);
+  });
+  next.addEventListener('click', ()=>{
+    let y=+ySel.value, m=+mSel.value+1;
+    if(m>11){m=0;y++;} sync(y,m);
+  });
+  todayBtn.addEventListener('click', ()=>{
+    const t=new Date(); sync(t.getFullYear(), t.getMonth());
+  });
+
+  // 키보드 ← →
+  window.addEventListener('keydown', (e)=>{
+    if(e.key==='ArrowLeft') prev.click();
+    if(e.key==='ArrowRight') next.click();
+  });
+
+  sync(initialY, initialM, false);
+}
+
+// 초기 월: 쿼리스트링 ?y=YYYY&m=MM 지원
+(function(){
+  const t = new Date();
+  const y = +qs.get('y') || t.getFullYear();
+  const m = clamp(1, +qs.get('m') || (t.getMonth()+1), 12) - 1; // 0-11
+  initControls(y, m);
+})();
 </script>
+
+<p class="legend">달 좌우 화살표(← →)로 이동 · 상단 셀렉터로 연/월 변경 · “오늘”로 현재 달 이동</p>
