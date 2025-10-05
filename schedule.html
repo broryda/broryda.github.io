@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>일정 | 바둑 스터디</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="color-scheme" content="light dark" />
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="border-b bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="/" class="text-lg font-semibold">바둑 스터디</a>
+      <nav class="flex gap-4 text-sm">
+        <a class="hover:underline" href="/schedule.html" aria-current="page">일정</a>
+        <a class="hover:underline" href="/notes.html">노트</a>
+        <a class="hover:underline" href="/about.html">소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="mx-auto max-w-6xl px-4 py-8">
+    <h1 class="text-2xl font-bold mb-4">일정</h1>
+    <p class="text-sm text-gray-600 mb-6">
+      구글 캘린더를 임베드했습니다. 자신의 캘린더로 바꾸려면 아래 <code>src</code>의
+      <code>YOUR_CALENDAR_ID</code>를 본인 캘린더 ID로 교체하세요. (예: <code>yourname@gmail.com</code>)
+    </p>
+
+    <!-- Large Calendar -->
+    <section class="w-full">
+      <div class="rounded-xl overflow-hidden border bg-white">
+        <iframe
+          title="Google Calendar"
+          class="w-full"
+          style="height: 900px"
+          src="https://calendar.google.com/calendar/embed?height=900&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FSeoul&src=YOUR_CALENDAR_ID&color=%23039BE5&showPrint=0&showTabs=1&showCalendars=0&mode=MONTH"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-6 text-xs text-gray-500">
+      © <span id="y"></span> 바둑 스터디
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
