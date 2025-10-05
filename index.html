@@ -19,13 +19,7 @@
       }
     }
   </script>
-  <style>
-    :root { --card-bg: rgba(255,255,255,.7); --glass: blur(10px); }
-    @media (prefers-color-scheme: dark) {
-      :root { --card-bg: rgba(17,24,39,.6); }
-    }
-  .notes, #notes, [data-section="notes"], section:has(h2:contains('오늘의 메모')) { display: none !important; }
-</style>
+
 </head>
 <body class="min-h-screen bg-gradient-to-b from-brand-50 to-white dark:from-slate-900 dark:to-slate-950 text-slate-800 dark:text-slate-100">
   <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
@@ -40,10 +34,7 @@
         </div>
       </a>
       <nav class="hidden sm:flex gap-2" aria-label="주 메뉴">
-        <button data-tab="links" class="tab-btn px-3 py-1.5 rounded-lg text-sm font-medium bg-slate-900 text-white dark:bg-white dark:text-slate-900">링크</button>
-        <button data-tab="schedule" class="tab-btn px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-slate-200/60 dark:hover:bg-slate-800/60">일정</button>
-        <button data-tab="notes" class="tab-btn px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-slate-200/60 dark:hover:bg-slate-800/60">노트</button>
-        <button data-tab="about" class="tab-btn px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-slate-200/60 dark:hover:bg-slate-800/60">소개</button>
+
       </nav>
     </div>
   </header>
