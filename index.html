@@ -178,10 +178,40 @@
 
   <!-- Small UI helpers -->
   <style>
-    .row{ @apply p-2 rounded-lg border border-slate-200/60 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 hover:bg-white dark:hover:bg-slate-900 transition; }
-    .btn{ @apply px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-300/70 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 hover:bg-slate-100 dark:hover:bg-slate-800; }
-    .input{ @apply w-full rounded-lg border border-slate-300/70 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 p-2.5; }
-    .dark .grid > article { background-color:#0b1220 !important; } /* slate-950 정도 */
-  </style>
+  /* 리스트 아이템 (각 링크 행) */
+  .row {
+    @apply p-3 rounded-xl border border-slate-200/70 dark:border-slate-700 
+           bg-gradient-to-br from-slate-50 to-blue-50 
+           dark:from-slate-800 dark:to-slate-900 
+           shadow-sm hover:shadow-md hover:scale-[1.01] 
+           transition duration-200 ease-in-out;
+  }
+
+  /* 버튼 */
+  .btn {
+    @apply px-3 py-2 rounded-lg text-sm font-semibold 
+           border border-slate-300/70 dark:border-slate-700 
+           bg-gradient-to-r from-blue-500 to-blue-600 
+           hover:from-blue-600 hover:to-blue-700 
+           text-white shadow-sm hover:shadow-lg 
+           transition duration-200 ease-in-out;
+  }
+
+  /* 입력창 */
+  .input {
+    @apply w-full rounded-lg border border-slate-300/70 dark:border-slate-700 
+           bg-slate-50 dark:bg-slate-900/70 p-2.5 
+           focus:ring-2 focus:ring-blue-400 focus:border-blue-400 
+           outline-none transition duration-200;
+  }
+
+  /* 카드 영역 (각 섹션) */
+  article {
+    @apply bg-white/80 dark:bg-slate-900/70 
+           border border-slate-200/70 dark:border-slate-700 
+           rounded-2xl shadow-md hover:shadow-lg transition duration-300;
+  }
+</style>
+
 </body>
 </html>
