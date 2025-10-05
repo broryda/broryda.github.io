@@ -4,6 +4,7 @@ title: "바둑대회 캘린더"
 ---
 
 <h1 style="text-align:center;">📆 바둑대회 일정 캘린더</h1>
+<p style="text-align:center;">_posts 폴더의 모든 글을 자동으로 읽어 캘린더에 표시합니다.</p>
 
 <div id="calendar"></div>
 
@@ -25,13 +26,8 @@ title: "바둑대회 캘린더"
   position: relative;
   transition: background 0.2s;
 }
-.day:hover {
-  background: #f3f4f6;
-}
-.day .date {
-  font-weight: bold;
-  color: #374151;
-}
+.day:hover { background: #f3f4f6; }
+.day .date { font-weight: bold; color: #374151; }
 .event {
   display: block;
   margin-top: 4px;
@@ -40,9 +36,7 @@ title: "바둑대회 캘린더"
   text-decoration: none;
   line-height: 1.2;
 }
-.event:hover {
-  text-decoration: underline;
-}
+.event:hover { text-decoration: underline; }
 .header {
   grid-column: span 7;
   text-align: center;
@@ -58,18 +52,41 @@ title: "바둑대회 캘린더"
 </style>
 
 <script>
-// 날짜 계산용 헬퍼
-function buildCalendar(year, month, events) {
+// ✅ Liquid로 Jekyll의 모든 posts를 JS 객체로 전달
+const posts = [
+  {% for post in site.posts %}
+  {
+    date: "{{ post.date | date: '%Y-%m-%d' }}",
+    title: "{{ post.title | escape }}",
+    url: "{{ post.url | relative_url }}"
+  },
+  {% endfor %}
+];
+
+// ✅ 디버깅: posts 배열을 콘솔에 출력 (표 형태)
+console.group("📋 site.posts 목록");
+console.table(posts);
+console.groupEnd();
+
+// 날짜별 이벤트 맵 생성
+const eventMap = {};
+posts.forEach(p => {
+  if (!eventMap[p.date]) eventMap[p.date] = [];
+  eventMap[p.date].push(p);
+});
+
+// 달력 생성 함수
+function buildCalendar(year, month) {
   const calendar = document.getElementById("calendar");
   calendar.innerHTML = "";
 
-  // 헤더
+  // 제목 (년/월)
   const header = document.createElement("div");
   header.className = "header";
   header.textContent = `${year}년 ${month + 1}월`;
   calendar.appendChild(header);
 
-  // 요일 표시
+  // 요일 헤더
   const weekdays = ["일", "월", "화", "수", "목", "금", "토"];
   weekdays.forEach(d => {
     const div = document.createElement("div");
@@ -82,15 +99,16 @@ function buildCalendar(year, month, events) {
   const lastDay = new Date(year, month + 1, 0);
   const startWeekday = firstDay.getDay();
 
-  // 빈칸
+  // 빈 칸
   for (let i = 0; i < startWeekday; i++) {
     const empty = document.createElement("div");
     empty.className = "day";
     calendar.appendChild(empty);
   }
 
-  // 날짜 칸 생성
+  // 날짜 출력
   for (let d = 1; d <= lastDay.getDate(); d++) {
+    const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
     const div = document.createElement("div");
     div.className = "day";
     const dateSpan = document.createElement("div");
@@ -98,42 +116,21 @@ function buildCalendar(year, month, events) {
     dateSpan.textContent = d;
     div.appendChild(dateSpan);
 
-    // 이벤트 표시
-    const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
-    if (events[dateStr]) {
-      events[dateStr].forEach(ev => {
-        const a = document.createElement("a");
-        a.href = ev.url;
-        a.textContent = ev.title;
-        a.className = "event";
-        div.appendChild(a);
+    // 이벤트 삽입
+    if (eventMap[dateStr]) {
+      eventMap[dateStr].forEach(ev => {
+        const link = document.createElement("a");
+        link.href = ev.url;
+        link.textContent = ev.title;
+        link.className = "event";
+        div.appendChild(link);
       });
     }
-
     calendar.appendChild(div);
   }
 }
-</script>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const posts = [
-    {% for post in site.posts %}
-      {
-        date: "{{ post.date | date: '%Y-%m-%d' }}",
-        title: "{{ post.title | escape }}",
-        url: "{{ post.url | relative_url }}"
-      },
-    {% endfor %}
-  ];
-
-  const eventMap = {};
-  posts.forEach(p => {
-    if (!eventMap[p.date]) eventMap[p.date] = [];
-    eventMap[p.date].push(p);
-  });
-
-  const today = new Date();
-  buildCalendar(today.getFullYear(), today.getMonth(), eventMap);
-});
+// 현재 월 캘린더 생성
+const today = new Date();
+buildCalendar(today.getFullYear(), today.getMonth());
 </script>
