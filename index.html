@@ -107,85 +107,29 @@
         <article class="rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
           <header class="mb-3"><h2 class="font-semibold">바둑 강의 사이트</h2></header>
           <ul class="grid gap-2" id="channelsList">
-            <li><a class="row" href="https://www.youtube.com/@baduk_tv" target="_blank" rel="noopener"> 바둑티비 유튜브채널</a></li>
-            <li><a class="row" href="https://www.youtube.com/@kbaduktv" target="_blank" rel="noopener"> K바둑 유튜브채널</a></li>
+            <li><a class="row" href="https://ai-sensei.com/" target="_blank" rel="noopener"> AI-SENSEI</a></li>
+            <li><a class="row" href="https://katagui.baduk.club/" target="_blank" rel="noopener">KATAGUI</a></li>
             <li><a class="row" href="https://www.youtube.com/@leehyunwooktv" target="_blank" rel="noopener"> 이현욱프로 유튜브채널</a></li>
             <li><a class="row" href="https://www.youtube.com/@바둑사관학교" target="_blank" rel="noopener"> 바둑사관학교 유튜브채널</a></li>
 
           </ul>
         </article>
-
-      </div>
-    </section>
-
-    <!-- Schedule Tab -->
-    <section id="tab-schedule" class="tab-pane hidden">
-      <div class="grid lg:grid-cols-3 gap-6">
-        <article class="lg:col-span-2 rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
-          <header class="mb-3"><h2 class="font-semibold">바둑 일정 (Google Calendar 임베드)</h2></header>
-          <!-- Google Calendar: 아래 src 의 YOUR_CALENDAR_ID 를 본인 캘린더 ID 로 교체하세요 -->
-          <div class="aspect-[4/3] rounded-xl overflow-hidden border border-slate-200/60 dark:border-slate-800">
-            <iframe title="Google Calendar"
-              src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Asia%2FSeoul"
-              class="w-full h-full" loading="lazy"></iframe>
-          </div>
-          <p class="mt-3 text-xs text-slate-500">Google 캘린더에서 <b>설정 → 캘린더 통합 → 공개</b> 후 <b>캘린더 ID</b>를 사용하세요. 비공개로 두면 보이지 않습니다.</p>
-        </article>
+ <!-- AI 관련 사이트 -->
         <article class="rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
-          <header class="mb-3"><h2 class="font-semibold">개인 일정(수동)</h2></header>
-          <ul id="eventsList" class="grid gap-2"></ul>
-          <div class="mt-3 grid gap-2">
-            <input id="eventTitle" class="input" placeholder="예: 목 20:00 온라인 대국" />
-            <input id="eventDate" type="date" class="input" />
-            <button class="btn" onclick="addEvent()">일정 추가</button>
-          </div>
+          <header class="mb-3"><h2 class="font-semibold">AI 관련 사이트</h2></header>
+          <ul class="grid gap-2" id="channelsList">
+            <li><a class="row" href="https://www.youtube.com/@baduk_tv" target="_blank" rel="noopener"> 바둑티비 유튜브채널</a></li>
+            <li><a class="row" href="https://www.youtube.com/@kbaduktv" target="_blank" rel="noopener"> K바둑 유튜브채널</a></li>
+            <li><a class="row" href="https://blog.naver.com/wonsiksnz" target="_blank" rel="noopener"> 세븐틴 바둑 인공지능 설치 블로그 </a></li>
+          </ul>
         </article>
       </div>
     </section>
 
-    <!-- Notes Tab -->
-    <section id="tab-notes" class="tab-pane hidden">
-      <article class="rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
-        <header class="flex items-center justify-between mb-3">
-          <h2 class="font-semibold">학습 노트</h2>
-          <div class="flex gap-2">
-            <button class="btn" onclick="exportNotes()">노트 내보내기</button>
-            <label class="btn cursor-pointer"><input id="importNotesFile" type="file" accept="application/json" class="hidden"/>노트 불러오기</label>
-          </div>
-        </header>
-        <div class="grid md:grid-cols-2 gap-6">
-          <section>
-            <h3 class="font-medium mb-2">오늘 배운 점</h3>
-            <textarea id="noteToday" class="w-full h-40 input" placeholder="예: 귀 사활에서 1선 젖힘 후 끊기 수읽기..." ></textarea>
-          </section>
-          <section>
-            <h3 class="font-medium mb-2">다음에 볼 것</h3>
-            <textarea id="noteNext" class="w-full h-40 input" placeholder="예: 수상전 길게 끄는 형태, 치중 타이밍..." ></textarea>
-          </section>
-        </div>
-        <div class="mt-3 text-right"><button class="btn" onclick="saveNotes()">노트 저장</button></div>
-      </article>
-    </section>
+   
 
-    <!-- About Tab -->
-    <section id="tab-about" class="tab-pane hidden">
-      <article class="rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
-        <h2 class="font-semibold mb-3">사이트 소개</h2>
-        <p class="text-sm leading-7">이 페이지는 GitHub Pages 위에서 동작하는 <b>정적 웹사이트</b> 템플릿입니다. 바둑 공부 링크와 일정, 노트를 브라우저에 안전하게 저장하고, 필요할 때 <b>JSON 백업</b>으로 내보내거나 복원할 수 있습니다. 코드 한 파일만으로 관리되며, 서버 비용 없이 운용 가능합니다.</p>
-        <ul class="list-disc ms-5 mt-3 text-sm space-y-1">
-          <li>상단 <b>빠른 편집</b> 링크를 눌러 이 파일을 직접 수정하세요.</li>
-          <li>Google 캘린더 임베드 사용 시, 자신의 캘린더 ID로 교체하세요.</li>
-          <li>브라우저를 바꿀 때는 백업/복원을 사용하세요.</li>
-        </ul>
-      </article>
-    </section>
-    <section id="calendar-big" class="card">
-    <h2>캘린더</h2>
-    <div class="calendar-embed" style="width:100%;max-width:1200px;margin:0 auto">
-      <iframe src="https://calendar.google.com/calendar/embed?src=9e0ee167a1151d0ae8ea61fb496f02e2537d2136f82a465028e91d8630a8956e@group.calendar.google.com
-&ctz=Asia%2FSeoul" style="border:0;width:100%;height:800px" frameborder="0" scrolling="no"></iframe>
-    </div>
-  </section>
+    
+    
 </main>
 
   <footer class="mx-auto max-w-6xl px-4 pb-10 text-sm text-slate-500 dark:text-slate-400">
