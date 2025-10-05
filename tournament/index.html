@@ -1,0 +1,45 @@
+---
+layout: default
+title: "대회 게시판"
+---
+
+<style>
+h1 { margin-bottom: 1.2rem; }
+.board-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.board-item {
+  border: 1px solid #e5e7eb;
+  border-radius: .5rem;
+  padding: 1rem 1.25rem;
+  transition: background .2s;
+}
+.board-item:hover {
+  background: #f9fafb;
+}
+.board-item a {
+  font-size: 1.1rem;
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 600;
+}
+.board-item .meta {
+  color: #6b7280;
+  font-size: .85rem;
+}
+</style>
+
+<h1>🏁 바둑대회 게시판</h1>
+
+<div class="board-list">
+  {% assign posts = site.categories.대회안내 | sort: 'date' | reverse %}
+  {% for post in posts %}
+    <div class="board-item">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <div class="meta">{{ post.date | date: "%Y년 %m월 %d일" }}</div>
+      <div class="excerpt">{{ post.description }}</div>
+    </div>
+  {% endfor %}
+</div>
