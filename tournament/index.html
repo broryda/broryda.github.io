@@ -35,12 +35,12 @@ title: "대회 게시판"
 <div class="board-list">
   {% assign all_posts = site.posts | sort: "date" | reverse %}
   {% for post in all_posts %}
-      <div class="board-item">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <div class="meta">{{ post.date | date: "%Y년 %m월 %d일" }}</div>
-        {% if post.description %}
-          <div>{{ post.description }}</div>
-        {% endif %}
-      </div>
+    <div class="board-item">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <div class="meta">{{ post.date | date: "%Y년 %m월 %d일" }}</div>
+      {% if post.description %}
+        <div>{{ post.description }}</div>
+      {% endif %}
+    </div>
   {% endfor %}
 </div>
