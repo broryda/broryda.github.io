@@ -33,3 +33,7 @@ minima:
 show_excerpts: true
 paginate: 10
 paginate_path: "/page:num/"
+
+timezone: Asia/Seoul   # 권장: 서버/로컬 시간차 방지
+future: true           # 미래 날짜 글도 빌드에 포함
+
