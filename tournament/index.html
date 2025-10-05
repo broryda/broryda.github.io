@@ -35,7 +35,6 @@ title: "대회 게시판"
 <div class="board-list">
   {% assign all_posts = site.posts | sort: "date" | reverse %}
   {% for post in all_posts %}
-    {% if post.categories contains "대회안내" %}
       <div class="board-item">
         <a href="{{ post.url }}">{{ post.title }}</a>
         <div class="meta">{{ post.date | date: "%Y년 %m월 %d일" }}</div>
@@ -43,6 +42,5 @@ title: "대회 게시판"
           <div>{{ post.description }}</div>
         {% endif %}
       </div>
-    {% endif %}
   {% endfor %}
 </div>
