@@ -24,7 +24,8 @@
     @media (prefers-color-scheme: dark) {
       :root { --card-bg: rgba(17,24,39,.6); }
     }
-  </style>
+  .notes, #notes, [data-section="notes"], section:has(h2:contains('오늘의 메모')) { display: none !important; }
+</style>
 </head>
 <body class="min-h-screen bg-gradient-to-b from-brand-50 to-white dark:from-slate-900 dark:to-slate-950 text-slate-800 dark:text-slate-100">
   <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
@@ -163,7 +164,13 @@
         </ul>
       </article>
     </section>
-  </main>
+    <section id="calendar-big" class="card">
+    <h2>캘린더</h2>
+    <div class="calendar-embed" style="width:100%;max-width:1200px;margin:0 auto">
+      <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Asia%2FSeoul" style="border:0;width:100%;height:800px" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </section>
+</main>
 
   <footer class="mx-auto max-w-6xl px-4 pb-10 text-sm text-slate-500 dark:text-slate-400">
     <div class="pt-6 border-t border-slate-200/60 dark:border-slate-800">
