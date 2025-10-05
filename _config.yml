@@ -1,3 +1,13 @@
+title: "내 바둑 웹사이트"
+description: "바둑 대회 일정 및 공부 기록 저장용 사이트"
+theme: minima
+baseurl: "" # 예: "/my-site" (GitHub Pages repo 이름일 경우)
+url: "https://<your-github-username>.github.io"
+
+# Jekyll 빌드 설정
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
 collections:
   posts:
     output: true
