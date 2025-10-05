@@ -1,0 +1,139 @@
+---
+layout: default
+title: "바둑대회 캘린더"
+---
+
+<h1 style="text-align:center;">📆 바둑대회 일정 캘린더</h1>
+
+<div id="calendar"></div>
+
+<style>
+#calendar {
+  max-width: 750px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
+.day {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.6rem 0.3rem;
+  min-height: 90px;
+  position: relative;
+  transition: background 0.2s;
+}
+.day:hover {
+  background: #f3f4f6;
+}
+.day .date {
+  font-weight: bold;
+  color: #374151;
+}
+.event {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: #1d4ed8;
+  text-decoration: none;
+  line-height: 1.2;
+}
+.event:hover {
+  text-decoration: underline;
+}
+.header {
+  grid-column: span 7;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.weekday {
+  font-weight: bold;
+  background: #f3f4f6;
+  padding: 0.5rem;
+}
+</style>
+
+<script>
+// 날짜 계산용 헬퍼
+function buildCalendar(year, month, events) {
+  const calendar = document.getElementById("calendar");
+  calendar.innerHTML = "";
+
+  // 헤더
+  const header = document.createElement("div");
+  header.className = "header";
+  header.textContent = `${year}년 ${month + 1}월`;
+  calendar.appendChild(header);
+
+  // 요일 표시
+  const weekdays = ["일", "월", "화", "수", "목", "금", "토"];
+  weekdays.forEach(d => {
+    const div = document.createElement("div");
+    div.className = "weekday";
+    div.textContent = d;
+    calendar.appendChild(div);
+  });
+
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0);
+  const startWeekday = firstDay.getDay();
+
+  // 빈칸
+  for (let i = 0; i < startWeekday; i++) {
+    const empty = document.createElement("div");
+    empty.className = "day";
+    calendar.appendChild(empty);
+  }
+
+  // 날짜 칸 생성
+  for (let d = 1; d <= lastDay.getDate(); d++) {
+    const div = document.createElement("div");
+    div.className = "day";
+    const dateSpan = document.createElement("div");
+    dateSpan.className = "date";
+    dateSpan.textContent = d;
+    div.appendChild(dateSpan);
+
+    // 이벤트 표시
+    const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+    if (events[dateStr]) {
+      events[dateStr].forEach(ev => {
+        const a = document.createElement("a");
+        a.href = ev.url;
+        a.textContent = ev.title;
+        a.className = "event";
+        div.appendChild(a);
+      });
+    }
+
+    calendar.appendChild(div);
+  }
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const posts = [
+    {% for post in site.posts %}
+      {
+        date: "{{ post.date | date: '%Y-%m-%d' }}",
+        title: "{{ post.title | escape }}",
+        url: "{{ post.url | relative_url }}"
+      },
+    {% endfor %}
+  ];
+
+  const eventMap = {};
+  posts.forEach(p => {
+    if (!eventMap[p.date]) eventMap[p.date] = [];
+    eventMap[p.date].push(p);
+  });
+
+  const today = new Date();
+  buildCalendar(today.getFullYear(), today.getMonth(), eventMap);
+});
+</script>
