@@ -149,7 +149,8 @@
     <section id="calendar-big" class="card">
     <h2>캘린더</h2>
     <div class="calendar-embed" style="width:100%;max-width:1200px;margin:0 auto">
-      <iframe src="https://calendar.google.com/calendar/embed?src=9e0ee167a1151d0ae8ea61fb496f02e2537d2136f82a465028e91d8630a8956e&ctz=Asia%2FSeoul" style="border:0;width:100%;height:800px" frameborder="0" scrolling="no"></iframe>
+      <iframe src="https://calendar.google.com/calendar/embed?src=9e0ee167a1151d0ae8ea61fb496f02e2537d2136f82a465028e91d8630a8956e@group.calendar.google.com
+&ctz=Asia%2FSeoul" style="border:0;width:100%;height:800px" frameborder="0" scrolling="no"></iframe>
     </div>
   </section>
 </main>
@@ -187,175 +188,12 @@
     </li>
   </template>
 
-  <!-- Scripts -->
-  <script>
-    // ---------- Utilities ----------
-    const $ = (s, el=document) => el.querySelector(s);
-    const $$ = (s, el=document) => [...el.querySelectorAll(s)];
-    const store = {
-      get: (k, v) => JSON.parse(localStorage.getItem(k) || JSON.stringify(v)),
-      set: (k, v) => localStorage.setItem(k, JSON.stringify(v))
-    };
-
-    // ---------- Tabs ----------
-    function gotoTab(name){
-      $$('.tab-pane').forEach(p=>p.classList.toggle('hidden', p.id!==`tab-${name}`));
-      $$('.tab-btn').forEach(b=>{
-        const active = b.dataset.tab===name;
-        b.classList.toggle('bg-slate-900', active);
-        b.classList.toggle('text-white', active);
-        b.classList.toggle('dark:bg-white', active);
-        b.classList.toggle('dark:text-slate-900', active);
-      });
-      history.replaceState({}, '', `#${name}`);
-    }
-
-    // ---------- Links ----------
-    const linksKey = 'baduk.links.v1';
-    function renderLinks(){
-      const list = $('#linksList');
-      list.innerHTML='';
-      const links = store.get(linksKey, defaultLinks());
-      $('#linksCount').textContent = `${links.length}개`;
-      const tpl = $('#rowTemplate');
-      links.forEach((it, idx)=>{
-        const li = tpl.content.cloneNode(true);
-        const a = $('a', li); a.textContent = it.title; a.href = it.url;
-        const tag = $('.tag', li); tag.textContent = it.tag || '';
-        $('.remove', li).addEventListener('click', ()=>removeLink(idx));
-        list.appendChild(li);
-      });
-    }
-    function defaultLinks(){
-      return [
-        { title:'101围棋网', url:'https://www.101weiqi.com/', tag:'사활' },
-        { title:'Sensei\'s Library', url:'https://senseis.xmp.net/', tag:'사전' },
-        { title:'OGS (Online-Go)', url:'https://online-go.com/', tag:'대국' },
-        { title:'Baduk TV (YT 검색)', url:'https://www.youtube.com/results?search_query=%EB%B0%94%EB%91%91+%EA%B0%95%EC%9D%98', tag:'강의' }
-      ];
-    }
-    function addLink(title, url, tag){
-      const links = store.get(linksKey, defaultLinks());
-      links.push({title, url, tag});
-      store.set(linksKey, links); renderLinks();
-    }
-    function removeLink(idx){
-      const links = store.get(linksKey, defaultLinks());
-      links.splice(idx,1); store.set(linksKey, links); renderLinks();
-    }
-
-    // ---------- Events ----------
-    const eventsKey = 'baduk.events.v1';
-    function renderEvents(){
-      const list = $('#eventsList');
-      list.innerHTML='';
-      const evts = store.get(eventsKey, []);
-      if(!evts.length){
-        list.innerHTML = '<li class="text-sm text-slate-500">일정을 추가해 보세요.</li>';
-        return;
-      }
-      evts.sort((a,b)=>a.date.localeCompare(b.date));
-      evts.forEach((e,i)=>{
-        const li = document.createElement('li');
-        li.className='row flex items-center justify-between gap-3';
-        li.innerHTML = `<span class="truncate">${e.date} · ${escapeHtml(e.title)}</span><button class="text-xs text-red-500 hover:underline">삭제</button>`;
-        $('button', li).addEventListener('click', ()=>{ evts.splice(i,1); store.set(eventsKey, evts); renderEvents(); });
-        list.appendChild(li);
-      });
-    }
-    function addEvent(){
-      const title = $('#eventTitle').value.trim();
-      const date = $('#eventDate').value;
-      if(!title || !date) return alert('제목과 날짜를 입력하세요');
-      const evts = store.get(eventsKey, []); evts.push({title, date});
-      store.set(eventsKey, evts);
-      $('#eventTitle').value=''; $('#eventDate').value='';
-      renderEvents();
-    }
-
-    // ---------- Notes ----------
-    const notesKey = 'baduk.notes.v1';
-    function loadNotes(){
-      const n = store.get(notesKey, { today:'', next:'' });
-      $('#noteToday').value = n.today || '';
-      $('#noteNext').value = n.next || '';
-      $('#quickMemo').value = n.today || '';
-    }
-    function saveNotes(){
-      store.set(notesKey, { today: $('#noteToday').value, next: $('#noteNext').value });
-      alert('저장되었습니다');
-    }
-    function saveQuickMemo(){
-      const n = store.get(notesKey, { today:'', next:'' });
-      n.today = $('#quickMemo').value; store.set(notesKey, n); alert('저장되었습니다');
-    }
-
-    // ---------- Import / Export ----------
-    function exportData(){
-      const data = {
-        links: store.get(linksKey, defaultLinks()),
-        events: store.get(eventsKey, []),
-        notes: store.get(notesKey, {today:'', next:''})
-      };
-      downloadJson(data, 'baduk-study-backup.json');
-    }
-    function exportNotes(){
-      const data = store.get(notesKey, {today:'', next:''});
-      downloadJson(data, 'baduk-notes.json');
-    }
-    function downloadJson(obj, filename){
-      const blob = new Blob([JSON.stringify(obj, null, 2)], {type:'application/json'});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href=url; a.download=filename; a.click();
-      setTimeout(()=>URL.revokeObjectURL(url), 500);
-    }
-    $('#importFile').addEventListener('change', (e)=>{
-      const f = e.target.files[0]; if(!f) return;
-      const r = new FileReader(); r.onload = ()=>{
-        try{
-          const data = JSON.parse(r.result);
-          if(data.links) store.set(linksKey, data.links);
-          if(data.events) store.set(eventsKey, data.events);
-          if(data.notes) store.set(notesKey, data.notes);
-          renderLinks(); renderEvents(); loadNotes(); alert('복원이 완료되었습니다');
-        }catch(err){ alert('파일 형식이 올바르지 않습니다'); }
-      }; r.readAsText(f);
-    });
-    $('#importNotesFile').addEventListener('change', (e)=>{
-      const f = e.target.files[0]; if(!f) return;
-      const r = new FileReader(); r.onload = ()=>{
-        try{ store.set(notesKey, JSON.parse(r.result)); loadNotes(); alert('노트를 불러왔습니다'); }
-        catch{ alert('파일 형식이 올바르지 않습니다'); }
-      }; r.readAsText(f);
-    });
-
-    // ---------- Edit / Add Link ----------
-    $('#editBtn').addEventListener('click', (e)=>{
-      e.preventDefault();
-      alert('이 파일을 GitHub에서 직접 편집하세요:\n\n· 캘린더 src 의 YOUR_CALENDAR_ID 교체\n· 기본 링크 수정\n· 제목/설명 변경');
-    });
-    const addDialog = $('#addLinkModal');
-    $('#addLinkBtn').addEventListener('click', ()=> addDialog.showModal());
-    $('#confirmAddLink').addEventListener('click', (ev)=>{
-      ev.preventDefault();
-      const t = $('#newLinkTitle').value.trim();
-      const u = $('#newLinkUrl').value.trim();
-      const g = $('#newLinkTag').value.trim();
-      if(!t || !u) return alert('제목과 URL을 입력하세요');
-      addLink(t,u,g); addDialog.close(); $('#newLinkTitle').value=''; $('#newLinkUrl').value=''; $('#newLinkTag').value='';
-    });
+  
 
     // ---------- Helpers ----------
     function escapeHtml(s){ return s.replace(/[&<>"]+/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
 
-    // ---------- Init ----------
-    (function init(){
-      const hash = location.hash.replace('#','');
-      gotoTab(hash || 'links');
-      renderLinks(); renderEvents(); loadNotes();
-      $('#year').textContent = new Date().getFullYear();
-    })();
+    
   </script>
 
   <!-- Small UI helpers -->
