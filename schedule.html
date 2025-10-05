@@ -6,6 +6,11 @@
   <title>일정 | 바둑 스터디</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="color-scheme" content="light dark" />
+  <style>
+    .cell:hover{background:#f8fafc}
+    .cell-today{outline:2px solid #0ea5e9; outline-offset:-2px}
+    .dot{width:.5rem;height:.5rem;border-radius:9999px}
+  </style>
 </head>
 <body class="min-h-screen bg-gray-50 text-gray-900">
   <!-- Header -->
@@ -22,24 +27,63 @@
 
   <!-- Main -->
   <main class="mx-auto max-w-6xl px-4 py-8">
-    <h1 class="text-2xl font-bold mb-4">일정</h1>
-    <p class="text-sm text-gray-600 mb-6">
-      구글 캘린더를 임베드했습니다. 자신의 캘린더로 바꾸려면 아래 <code>src</code>의
-      <code>YOUR_CALENDAR_ID</code>를 본인 캘린더 ID로 교체하세요. (예: <code>yourname@gmail.com</code>)
-    </p>
-
-    <!-- Large Calendar -->
-    <section class="w-full">
-      <div class="rounded-xl overflow-hidden border bg-white">
-        <iframe
-          title="Google Calendar"
-          class="w-full"
-          style="height: 900px"
-          src="https://calendar.google.com/calendar/embed?height=900&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FSeoul&src=YOUR_CALENDAR_ID&color=%23039BE5&showPrint=0&showTabs=1&showCalendars=0&mode=MONTH"
-          frameborder="0"
-          scrolling="no">
-        </iframe>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-2xl font-bold">일정</h1>
+      <div class="flex gap-2">
+        <button id="btn-today" class="px-3 py-2 text-sm rounded-lg border bg-white hover:bg-gray-50">오늘</button>
+        <button id="btn-export" class="px-3 py-2 text-sm rounded-lg border bg-white hover:bg-gray-50">JSON 내보내기</button>
+        <label class="px-3 py-2 text-sm rounded-lg border bg-white hover:bg-gray-50 cursor-pointer">
+          JSON 가져오기
+          <input id="file-import" type="file" accept="application/json" class="hidden">
+        </label>
+        <button id="btn-new" class="px-3 py-2 text-sm rounded-lg bg-black text-white hover:opacity-90">새 일정</button>
       </div>
+    </div>
+
+    <!-- Calendar + Day pane -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <!-- Calendar -->
+      <div class="lg:col-span-8">
+        <div class="rounded-xl border bg-white">
+          <!-- Calendar header -->
+          <div class="flex items-center justify-between p-4 border-b">
+            <div class="flex items-center gap-2">
+              <button id="prev" class="px-2 py-1 rounded-lg border bg-white hover:bg-gray-50" aria-label="이전 달">‹</button>
+              <button id="next" class="px-2 py-1 rounded-lg border bg-white hover:bg-gray-50" aria-label="다음 달">›</button>
+              <div id="label" class="ml-2 font-semibold"></div>
+            </div>
+            <div class="text-xs text-gray-500">날짜를 클릭하면 오른쪽에 일정이 표시됩니다.</div>
+          </div>
+
+          <!-- Weekdays -->
+          <div class="grid grid-cols-7 text-center text-xs text-gray-500 px-2 pt-2">
+            <div class="py-2">월</div><div class="py-2">화</div><div class="py-2">수</div>
+            <div class="py-2">목</div><div class="py-2">금</div><div class="py-2">토</div><div class="py-2">일</div>
+          </div>
+
+          <!-- Cells -->
+          <div id="grid" class="grid grid-cols-7 gap-1 p-2 pb-4"></div>
+        </div>
+      </div>
+
+      <!-- Day panel -->
+      <aside class="lg:col-span-4">
+        <div class="rounded-xl border bg-white">
+          <div class="p-4 border-b flex items-center justify-between">
+            <div>
+              <div id="day-label" class="text-xl font-semibold"></div>
+              <div id="day-iso" class="text-xs text-gray-500"></div>
+            </div>
+            <button id="add-quick" class="px-3 py-1.5 text-sm rounded-lg border bg-white hover:bg-gray-50">+ 일정 추가</button>
+          </div>
+
+          <ul id="day-list" class="divide-y">
+            <!-- events render here -->
+          </ul>
+
+          <div id="empty-day" class="p-6 text-center text-gray-500">이 날짜에 일정이 없습니다.</div>
+        </div>
+      </aside>
     </section>
   </main>
 
@@ -50,7 +94,279 @@
     </div>
   </footer>
 
+  <!-- Dialog: create/edit -->
+  <dialog id="dlg" class="w-full max-w-lg rounded-xl p-0">
+    <form method="dialog" class="p-0">
+      <div class="flex items-center justify-between px-4 py-3 border-b bg-white rounded-t-xl">
+        <h2 id="dlg-title" class="font-semibold">일정</h2>
+        <div class="flex gap-2">
+          <button value="cancel" class="px-3 py-1.5 text-sm rounded-lg border bg-white">닫기</button>
+          <button id="save" value="default" class="px-3 py-1.5 text-sm rounded-lg bg-black text-white">저장</button>
+        </div>
+      </div>
+      <div class="p-4 space-y-4">
+        <div>
+          <label class="block text-sm mb-1">날짜</label>
+          <input id="f-date" type="date" class="w-full px-3 py-2 rounded-lg border bg-white">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-sm mb-1">시작</label>
+            <input id="f-from" type="time" class="w-full px-3 py-2 rounded-lg border bg-white">
+          </div>
+          <div>
+            <label class="block text-sm mb-1">종료</label>
+            <input id="f-to" type="time" class="w-full px-3 py-2 rounded-lg border bg-white">
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm mb-1">제목</label>
+          <input id="f-title" class="w-full px-3 py-2 rounded-lg border bg-white" placeholder="예: 사활 특훈 / 기보 복기">
+        </div>
+        <div>
+          <label class="block text-sm mb-1">메모</label>
+          <textarea id="f-note" class="w-full h-28 px-3 py-2 rounded-lg border bg-white" placeholder="장소, 링크, 준비물 등"></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <label class="inline-flex items-center gap-2 text-sm">
+            <input id="f-allDay" type="checkbox"> 종일
+          </label>
+          <button id="del" type="button" class="hidden text-sm px-3 py-1.5 rounded-lg border bg-white">삭제</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
   <script>
+    // -------- state & storage ----------
+    const KEY='baduk_events_v1';
+    const $ = s => document.querySelector(s);
+    const today = new Date();
+    let cur = new Date(today.getFullYear(), today.getMonth(), 1); // view month
+    let selectedISO = toISO(today);
+    let events = load(); // array of {id,date,title,from,to,allDay,note,createdAt,updatedAt}
+
+    function load(){
+      try { return JSON.parse(localStorage.getItem(KEY)) || []; }
+      catch { return []; }
+    }
+    function persist(){ localStorage.setItem(KEY, JSON.stringify(events)); }
+
+    // -------- utilities ----------
+    function z(n){return String(n).padStart(2,'0')}
+    function toISO(d){
+      const dt = (d instanceof Date) ? d : new Date(d);
+      return `${dt.getFullYear()}-${z(dt.getMonth()+1)}-${z(dt.getDate())}`;
+    }
+    function fmtHM(t){ return t ? t.slice(0,5) : '' }
+    function isSameDate(a,b){ return toISO(a)===toISO(b) }
+
+    // -------- calendar render ----------
+    const label = $('#label'), grid = $('#grid');
+    function renderMonth(){
+      const y = cur.getFullYear(), m = cur.getMonth();
+      label.textContent = `${y}년 ${m+1}월`;
+
+      grid.innerHTML = ''; // clear
+      const first = new Date(y,m,1);
+      const startOffset = (first.getDay()+6)%7; // Monday=0
+      const start = new Date(y,m,1-startOffset);
+      const days = 42; // 6 weeks grid
+
+      for(let i=0;i<days;i++){
+        const d = new Date(start); d.setDate(start.getDate()+i);
+        const iso = toISO(d);
+        const inMonth = d.getMonth()===m;
+        const isToday = isSameDate(d,today);
+        const has = events.some(e=>e.date===iso);
+
+        const cell = document.createElement('button');
+        cell.className = "cell h-28 md:h-32 lg:h-36 border rounded-lg text-left p-2 bg-white w-full";
+        if(!inMonth) cell.classList.add('opacity-40','bg-gray-50');
+        if(isToday) cell.classList.add('cell-today');
+        cell.dataset.iso = iso;
+        cell.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-medium">${d.getDate()}</span>
+            ${has?'<span class="dot bg-sky-500 inline-block"></span>':''}
+          </div>
+          <div class="mt-2 space-y-1 overflow-hidden">
+            ${
+              events.filter(e=>e.date===iso).slice(0,3).map(e=>`
+                <div class="text-[11px] px-1 py-0.5 rounded bg-sky-50 border text-sky-900 truncate">
+                  ${e.allDay? '종일' : `${fmtHM(e.from)}-${fmtHM(e.to)}`} · ${e.title}
+                </div>
+              `).join('')
+            }
+          </div>
+        `;
+        cell.addEventListener('click', ()=>{
+          selectedISO = iso;
+          renderDay();
+          // 강조 효과
+          [...grid.querySelectorAll('.selected')].forEach(n=>n.classList.remove('ring','ring-sky-300','selected'));
+          cell.classList.add('ring','ring-sky-300','selected');
+        });
+        grid.appendChild(cell);
+      }
+
+      // 선택 유지/초기 선택
+      const sel = [...grid.children].find(c=>c.dataset.iso===selectedISO) || grid.children[0];
+      sel.click();
+    }
+
+    // -------- day panel ----------
+    const dayLabel = $('#day-label'), dayIso = $('#day-iso'), ul = $('#day-list'), emptyDay = $('#empty-day');
+    function renderDay(){
+      const d = new Date(selectedISO);
+      dayLabel.textContent = `${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일`;
+      dayIso.textContent = selectedISO;
+
+      const list = events
+        .filter(e=>e.date===selectedISO)
+        .sort((a,b)=>{
+          if(a.allDay && !b.allDay) return -1;
+          if(!a.allDay && b.allDay) return 1;
+          return (a.from||'').localeCompare(b.from||'');
+        });
+
+      ul.innerHTML = list.map(e=>`
+        <li class="p-4">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <div class="font-medium">
+                ${e.title || '(제목 없음)'}
+              </div>
+              <div class="text-sm text-gray-600">
+                ${e.allDay ? '종일' : `${fmtHM(e.from)} ~ ${fmtHM(e.to)}`}
+              </div>
+              ${e.note ? `<p class="text-sm text-gray-700 mt-1 whitespace-pre-line">${e.note}</p>` : ''}
+            </div>
+            <div class="shrink-0 flex gap-2">
+              <button data-edit="${e.id}" class="px-2 py-1 text-xs rounded-lg border bg-white hover:bg-gray-50">편집</button>
+              <button data-del="${e.id}" class="px-2 py-1 text-xs rounded-lg border bg-white hover:bg-gray-50">삭제</button>
+            </div>
+          </div>
+        </li>
+      `).join('');
+
+      emptyDay.classList.toggle('hidden', list.length>0);
+    }
+
+    // -------- dialog ----------
+    const dlg = $('#dlg'), fDate=$('#f-date'), fFrom=$('#f-from'), fTo=$('#f-to'),
+          fTitle=$('#f-title'), fNote=$('#f-note'), fAllDay=$('#f-allDay'),
+          btnDel=$('#del'), dlgTitle=$('#dlg-title');
+
+    let editingId=null;
+
+    function openEditor(dateISO=selectedISO, ev=null){
+      editingId = ev?.id || null;
+      dlgTitle.textContent = editingId ? '일정 편집' : '새 일정';
+      fDate.value = dateISO;
+      fFrom.value = ev?.from || '';
+      fTo.value   = ev?.to || '';
+      fTitle.value= ev?.title || '';
+      fNote.value = ev?.note || '';
+      fAllDay.checked = !!ev?.allDay;
+      btnDel.classList.toggle('hidden', !editingId);
+      dlg.showModal();
+    }
+    function saveEditor(){
+      const obj = {
+        id: editingId || crypto.randomUUID(),
+        date: fDate.value,
+        from: fAllDay.checked ? '' : fFrom.value,
+        to:   fAllDay.checked ? '' : fTo.value,
+        allDay: !!fAllDay.checked,
+        title: fTitle.value.trim(),
+        note: fNote.value,
+        updatedAt: Date.now()
+      };
+      if(editingId){
+        const i = events.findIndex(e=>e.id===editingId);
+        events[i] = {...events[i], ...obj};
+      } else {
+        obj.createdAt = Date.now();
+        events.push(obj);
+      }
+      persist();
+      // 뷰 갱신
+      selectedISO = obj.date;
+      renderMonth();
+      renderDay();
+    }
+
+    $('#save').addEventListener('click', (e)=>{ e.preventDefault(); saveEditor(); dlg.close(); });
+
+    // -------- top actions ----------
+    $('#prev').addEventListener('click', ()=>{ cur.setMonth(cur.getMonth()-1); renderMonth(); });
+    $('#next').addEventListener('click', ()=>{ cur.setMonth(cur.getMonth()+1); renderMonth(); });
+    $('#btn-today').addEventListener('click', ()=>{
+      cur = new Date(today.getFullYear(), today.getMonth(), 1);
+      selectedISO = toISO(today);
+      renderMonth();
+    });
+    $('#btn-new').addEventListener('click', ()=> openEditor(selectedISO));
+    $('#add-quick').addEventListener('click', ()=> openEditor(selectedISO));
+
+    // day list buttons
+    ul.addEventListener('click', (e)=>{
+      const id = e.target.dataset.edit || e.target.dataset.del;
+      if(!id) return;
+      const ev = events.find(x=>x.id===id);
+      if(e.target.dataset.edit){
+        openEditor(ev.date, ev);
+      } else if(e.target.dataset.del){
+        if(confirm('삭제할까요?')){
+          events = events.filter(x=>x.id!==id);
+          persist();
+          renderMonth(); renderDay();
+        }
+      }
+    });
+
+    // allDay toggle: 시간 입력 비활성화 도움(UX)
+    fAllDay.addEventListener('change', ()=>{
+      const dis = fAllDay.checked;
+      fFrom.disabled = dis; fTo.disabled = dis;
+      fFrom.classList.toggle('opacity-50', dis);
+      fTo.classList.toggle('opacity-50', dis);
+    });
+
+    // -------- import/export ----------
+    $('#btn-export').addEventListener('click', ()=>{
+      const blob = new Blob([JSON.stringify(events, null, 2)], {type:'application/json'});
+      const a=document.createElement('a');
+      a.href=URL.createObjectURL(blob);
+      a.download='events.json';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    $('#file-import').addEventListener('change', async (e)=>{
+      const f = e.target.files?.[0]; if(!f) return;
+      try{
+        const text = await f.text();
+        const arr = JSON.parse(text);
+        if(!Array.isArray(arr)) throw new Error('Array expected');
+        // 간단 병합(같은 id는 덮어쓰기, 없으면 추가)
+        const map = new Map(events.map(ev=>[ev.id, ev]));
+        for(const ev of arr){
+          if(!ev.id) ev.id = crypto.randomUUID();
+          map.set(ev.id, {...map.get(ev.id), ...ev});
+        }
+        events = [...map.values()];
+        persist(); renderMonth(); renderDay();
+        alert('가져오기가 완료되었습니다.');
+      }catch(err){
+        alert('JSON 형식이 올바르지 않습니다.');
+      } finally {
+        e.target.value='';
+      }
+    });
+
+    // -------- init ----------
+    renderMonth();
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
