@@ -1,13 +1,35 @@
-title: "내 바둑 웹사이트"
-description: "바둑 대회 일정 및 공부 기록 저장용 사이트"
+# 사이트 기본 설정
+title: "Bro Ryda의 바둑 기록실"
+description: "바둑 공부 링크, 일정, 대회 정보 모음"
 theme: minima
-baseurl: "" # 예: "/my-site" (GitHub Pages repo 이름일 경우)
-url: "https://<your-github-username>.github.io"
+url: "https://broryda.github.io"
+baseurl: ""   # 그대로 두세요
 
-# Jekyll 빌드 설정
+# 빌드 관련
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
 
+# 포스트 출력 허용
 collections:
   posts:
     output: true
+
+# 카테고리별 정렬 옵션
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+# 네비게이션 메뉴 (선택사항)
+minima:
+  skin: classic
+  social_links:
+    github: broryda
+    email: your@email.com
+
+# 블로그 설정
+show_excerpts: true
+paginate: 10
+paginate_path: "/page:num/"
