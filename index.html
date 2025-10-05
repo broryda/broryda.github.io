@@ -41,11 +41,38 @@
 <h2 style="text-align:center;">📅 대회 게시판 바로가기</h2>
 <p style="text-align:center;">전국 및 지역 바둑대회 정보를 한눈에 확인하세요.</p>
 
-<div style="text-align:center; margin-top:1rem;">
-  <a href="/tournament/" class="button-link">
-    👉 대회 게시판으로 이동
+<div class="cta-wrapper">
+  <a href="/tournaments/" class="cta-button">
+    🏁 대회 게시판으로 이동
   </a>
 </div>
+
+<style>
+.cta-wrapper {
+  display: flex;
+  justify-content: center;   /* 가로 중앙 */
+  align-items: center;       /* 세로 중앙 (필요 시) */
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.9rem 1.8rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.cta-button:hover {
+  background: linear-gradient(90deg, #1d4ed8, #1e3a8a);
+  transform: scale(1.05);
+}
+</style>
+
   <main class="mx-auto max-w-6xl px-4 py-8">
     <!-- Links Tab -->
     <section id="tab-links" class="tab-pane grid gap-6">
