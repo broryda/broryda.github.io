@@ -52,51 +52,36 @@
     <!-- Links Tab -->
     <section id="tab-links" class="tab-pane grid gap-6">
       <div class="grid md:grid-cols-3 gap-6">
-        <!-- Card: Study Links -->
-        <article class="rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
-          <header class="flex items-center justify-between mb-3">
-            <h2 class="font-semibold">공부 링크</h2>
-            <span class="text-xs text-slate-500" id="linksCount">0개</span>
-          </header>
-          <ul id="linksList" class="grid gap-2">
-            <!-- JS 렌더링 -->
+        <!-- 온라인 대국사이트 -->
+         <article class="rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
+          <header class="mb-3"><h2 class="font-semibold">대국사이트</h2></header>
+          <ul class="grid gap-2" id="channelsList">
+            <li><a class="row" href="https://online-go.com/" target="_blank" rel="noopener">OGS (Online-Go)</a></li>
+            <li><a class="row" href="https://badukpop.com/" target="_blank" rel="noopener">BadukPop</a></li>
+            <li><a class="row" href="https://tygem.com/" target="_blank" rel="noopener">타이젬</a></li>
           </ul>
-          <p class="mt-3 text-xs text-slate-500">Tip: 상단의 <b>링크 추가</b> 버튼으로 항목을 언제든지 추가할 수 있습니다. (브라우저에 로컬 저장)</p>
         </article>
 
-        <!-- Card: Channels -->
+        <!-- 사활, 정석 사이트 -->
         <article class="rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
           <header class="mb-3"><h2 class="font-semibold">자주 쓰는 채널</h2></header>
           <ul class="grid gap-2" id="channelsList">
-            <li><a class="row" href="https://online-go.com/" target="_blank" rel="noopener">OGS (Online-Go)</a></li>
             <li><a class="row" href="https://www.101weiqi.com/" target="_blank" rel="noopener">101围棋网</a></li>
-            <li><a class="row" href="https://badukpop.com/" target="_blank" rel="noopener">BadukPop</a></li>
             <li><a class="row" href="https://senseis.xmp.net/" target="_blank" rel="noopener">Sensei's Library</a></li>
-            <li><a class="row" href="https://www.youtube.com/results?search_query=%EB%B0%94%EB%91%91+%EA%B0%95%EC%9D%98" target="_blank" rel="noopener">YouTube 바둑 강의</a></li>
           </ul>
         </article>
 
-        <!-- Card: Quick Tasks -->
+         <!-- 유튜브 강의 사이트 -->
         <article class="rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
-          <header class="mb-3"><h2 class="font-semibold">퀵 액션</h2></header>
-          <div class="grid gap-2">
-            <button class="btn" onclick="exportData()">백업 내보내기 (.json)</button>
-            <label class="btn cursor-pointer">
-              <input id="importFile" type="file" accept="application/json" class="hidden" />
-              백업 불러오기 (.json)
-            </label>
-            <button class="btn" onclick="resetData()">모든 데이터 초기화</button>
-          </div>
-          <p class="mt-3 text-xs text-slate-500">링크/노트는 브라우저 <b>로컬스토리지</b>에 저장됩니다. 다른 기기에서 쓰려면 백업/복원을 사용하세요.</p>
-        </article>
-      </div>
+          <header class="mb-3"><h2 class="font-semibold">자주 쓰는 채널</h2></header>
+          <ul class="grid gap-2" id="channelsList">
+            <li><a class="row" href="https://www.youtube.com/@baduk_tv" target="_blank" rel="noopener"> 바둑티비 (Online-Go)</a></li>
+            <li><a class="row" href="https://www.youtube.com/@kbaduktv" target="_blank" rel="noopener"> K바둑 (Online-Go)</a></li>
 
-      <!-- Notes mini -->
-      <article class="rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 bg-[var(--card-bg)] backdrop-blur-md p-5">
-        <header class="flex items-center justify-between mb-3"><h2 class="font-semibold">오늘의 메모</h2><button class="text-xs underline" onclick="gotoTab('notes')">전체 메모로 이동</button></header>
-        <textarea id="quickMemo" class="w-full h-28 rounded-lg border border-slate-300/70 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 p-3" placeholder="간단한 학습 기록을 남겨보세요"></textarea>
-        <div class="mt-2 text-right"><button class="btn" onclick="saveQuickMemo()">저장</button></div>
-      </article>
+          </ul>
+        </article>
+
+      </div>
     </section>
 
     <!-- Schedule Tab -->
