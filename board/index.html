@@ -1,0 +1,43 @@
+---
+layout: default
+title: "Board 게시판"
+permalink: /board/
+---
+
+<style>
+.board-wrap{max-width:960px;margin:2rem auto;padding:0 1rem}
+.board-header{display:flex;justify-content:space-between;align-items:end;margin-bottom:1rem}
+.board-list{display:grid;gap:12px}
+.board-item{border:1px solid #e5e7eb;border-radius:12px;padding:14px;background:#fafcff}
+.board-item h3{margin:0 0 .25rem;font-size:1.05rem}
+.board-item .meta{font-size:.85rem;color:#64748b}
+.board-item .desc{color:#334155;margin-top:.4rem}
+</style>
+
+<div class="board-wrap">
+  <div class="board-header">
+    <h1>📋 Board 게시판</h1>
+    <a href="{{ '/' | relative_url }}" style="font-size:.9rem;color:#2563eb">← 홈으로</a>
+  </div>
+
+  <div class="board-list">
+    {%- assign items = site.board | sort: "date" | reverse -%}
+    {%- for post in items -%}
+      <article class="board-item">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="meta">
+          {{ post.date | date: "%Y.%m.%d" }}
+          {%- if post.author -%} · {{ post.author }}{%- endif -%}
+          {%- if post.tags and post.tags.size > 0 -%}
+            · 태그: {{ post.tags | join: ", " }}
+          {%- endif -%}
+        </div>
+        {%- if post.description -%}
+          <p class="desc">{{ post.description }}</p>
+        {%- else -%}
+          <p class="desc">{{ post.excerpt | strip_html | truncate: 110 }}</p>
+        {%- endif -%}
+      </article>
+    {%- endfor -%}
+  </div>
+</div>

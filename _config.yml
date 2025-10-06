@@ -37,3 +37,16 @@ paginate_path: "/page:num/"
 timezone: Asia/Seoul   # 권장: 서버/로컬 시간차 방지
 future: true           # 미래 날짜 글도 빌드에 포함
 
+# ... 기존 설정 위/아래 어느 곳이든 들어가면 됨
+collections:
+  board:
+    output: true
+    permalink: /board/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: board
+    values:
+      layout: post   # 혹은 'page'로 바꿔도 됨(아래 레이아웃 설명 참고)
+      category: board
