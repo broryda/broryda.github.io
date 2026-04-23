@@ -1,0 +1,16 @@
+(;GM[1]FF[4]SZ[19]
+AB[od][rc][pd][rf][qc][pf][ra]
+AW[nb][qd][rd][pb][nc][pc]
+(
+C[RIGHT]
+;W[qb];B[rb];W[qa];B[qe]
+)
+(
+C[FAIL]
+;W[rb];B[qb];W[sb];B[sc];W[pa];B[sd]
+)
+(
+C[FAIL]
+;W[rb];B[qb];W[sb];B[sc];W[sd];B[sa];W[pa];B[qe];W[qa];B[re];W[rb];B[se];W[sb];B[ra]
+)
+)

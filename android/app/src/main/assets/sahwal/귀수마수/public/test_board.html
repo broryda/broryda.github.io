@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WGo.js Debug</title>
+    <script src="/lib/wgo.js"></script>
+    <link rel="stylesheet" href="/lib/wgo.css" />
+    <style>
+        body { font-family: sans-serif; }
+        #board { width: 400px; height: 400px; border: 1px solid #333; }
+    </style>
+</head>
+<body>
+    <h2>WGo.js Rendering Test</h2>
+    <div id="board"></div>
+    <div id="logs" style="background:#eee; padding:10px; margin-top:20px; white-space:pre-wrap;"></div>
+
+    <script>
+        function log(m) {
+            console.log(m);
+            document.getElementById('logs').innerHTML += m + '<br>';
+        }
+
+        window.onload = function() {
+            try {
+                log('Checking WGo...');
+                if(typeof WGo === 'undefined') {
+                    log('FAIL: WGo is undefined');
+                    return;
+                }
+                log('WGo version keys: ' + Object.keys(WGo).length);
+
+                const elem = document.getElementById('board');
+                const config = {
+                    width: 400,
+                    height: 400,
+                    size: 19,
+                    theme: {
+                        backgroundColor: '#DCB35C'
+                    }
+                };
+
+                log('Initializing SVGBoard...');
+                const board = new WGo.SVGBoard(elem, config);
+                board.setDimensions(400, 400);
+                board.setSize(19);
+                
+                // Force calculate fieldWidth if missing
+                if (!board.fieldWidth) {
+                     board.fieldWidth = board.width / board.size;
+                     board.fieldHeight = board.height / board.size;
+                     log('Manually calculated fieldWidth: ' + board.fieldWidth);
+                }
+                
+                // Hack: Inject into config if handlers use it
+                if (!board.config.fieldWidth) {
+                    board.config.fieldWidth = board.fieldWidth;
+                    board.config.fieldHeight = board.fieldHeight;
+                    log('Injected fieldWidth into config');
+                }
+                
+                log('SVGBoard initialized.');
+
+                log('Adding Black Stone (type="B")...');
+                board.addObject({x: 3, y: 3, type: "B"});
+                
+                log('Adding White Stone (type="W")...');
+                board.addObject({x: 15, y: 15, type: "W"});
+
+                log('DONE. Check if board has grid and 2 stones.');
+
+            } catch(e) {
+                log('ERROR: ' + e.message);
+                log(e.stack);
+            }
+        };
+    </script>
+</body>
+</html>
