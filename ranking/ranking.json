@@ -1,17 +1,24 @@
 {
-  "updatedAt": "2026-04-26T12:14:35.941Z",
+  "updatedAt": "2026-04-26T12:24:11.419Z",
   "entries": [
     {
       "nickname": "Broryda",
-      "deviceId": "dev_mof9hb2m_sdn7dwu0",
       "solvedCount": 311,
-      "elo": 1636
+      "elo": 1636,
+      "deviceId": "dev_mof9hb2m_sdn7dwu0"
+    },
+    {
+      "nickname": "공구소년",
+      "solvedCount": 223,
+      "elo": 1952,
+      "deviceId": "dev_mofd4dv2_i10vi80l",
+      "lastSubmittedAt": "2026-04-26T12:24:10.271Z"
     },
     {
       "nickname": "강서구아귀",
-      "deviceId": "dev_mofd1oai_igfyi63x",
       "solvedCount": 54,
-      "elo": 1377
+      "elo": 1377,
+      "deviceId": "dev_mofd1oai_igfyi63x"
     }
   ]
 }
