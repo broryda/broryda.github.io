@@ -1,0 +1,47 @@
+name: ranking-refresh
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure ranking file exists
+        run: |
+          mkdir -p ranking
+          if [ ! -f ranking/ranking.json ]; then
+            cat > ranking/ranking.json <<'JSON'
+          {
+            "updatedAt": "",
+            "entries": []
+          }
+          JSON
+          fi
+
+      - name: Refresh updatedAt only
+        run: |
+          python - <<'PY'
+          import json, pathlib, datetime
+          p = pathlib.Path("ranking/ranking.json")
+          d = json.loads(p.read_text(encoding="utf-8"))
+          d["updatedAt"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+          p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          PY
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ranking/ranking.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh ranking timestamp"
+          git push
