@@ -69,13 +69,21 @@ async function githubGetFile(env, path) {
     throw new Error(`github_get_failed:${res.status}`);
   }
   const data = await res.json();
-  const content = atob(String(data.content || "").replace(/\n/g, ""));
+  const rawBase64 = String(data.content || "").replace(/\n/g, "");
+  const binary = atob(rawBase64);
+  const bytes = Uint8Array.from(binary, (ch) => ch.charCodeAt(0));
+  const content = new TextDecoder("utf-8").decode(bytes);
   return { sha: data.sha, text: content };
 }
 
 async function githubPutFile(env, path, contentText, sha, message) {
   const url = `https://api.github.com/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/contents/${path}`;
-  const encoded = btoa(unescape(encodeURIComponent(contentText)));
+  const bytes = new TextEncoder().encode(contentText);
+  let binary = "";
+  for (let i = 0; i < bytes.length; i += 1) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  const encoded = btoa(binary);
   const body = {
     message,
     content: encoded,
@@ -200,4 +208,3 @@ export default {
     return ok({ ok: false, error: "not_found" }, 404);
   },
 };
-
