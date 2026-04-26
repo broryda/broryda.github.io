@@ -27,21 +27,66 @@ jobs:
           JSON
           fi
 
-      - name: Refresh updatedAt only
+      - name: Normalize ranking and build public file
         run: |
           python - <<'PY'
           import json, pathlib, datetime
           p = pathlib.Path("ranking/ranking.json")
           d = json.loads(p.read_text(encoding="utf-8"))
+          entries = d.get("entries", [])
+          by_device = {}
+          no_device = []
+          for e in entries:
+            if not isinstance(e, dict):
+              continue
+            nick = str(e.get("nickname", "")).strip()
+            if not nick:
+              continue
+            solved = int(e.get("solvedCount", 0) or 0)
+            elo = int(e.get("elo", 0) or 0)
+            dev = str(e.get("deviceId", "")).strip()
+            row = {
+              "nickname": nick,
+              "solvedCount": max(0, solved),
+              "elo": max(0, elo),
+            }
+            if dev:
+              row["deviceId"] = dev
+              prev = by_device.get(dev)
+              if prev is None or row["solvedCount"] > prev["solvedCount"] or (
+                row["solvedCount"] == prev["solvedCount"] and row["elo"] > prev["elo"]
+              ):
+                by_device[dev] = row
+            else:
+              no_device.append(row)
+          deduped = list(by_device.values()) + no_device
+          deduped.sort(key=lambda x: (x["solvedCount"], x["elo"]), reverse=True)
+          d["entries"] = deduped
           d["updatedAt"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
           p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          public = {
+            "updatedAt": d["updatedAt"],
+            "entries": [
+              {
+                "nickname": e.get("nickname", ""),
+                "solvedCount": int(e.get("solvedCount", 0) or 0),
+                "elo": int(e.get("elo", 0) or 0),
+              }
+              for e in d.get("entries", [])
+            ],
+          }
+          pathlib.Path("ranking/ranking_public.json").write_text(
+            json.dumps(public, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+          )
           PY
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add ranking/ranking.json
+          git add ranking/ranking.json ranking/ranking_public.json
           git diff --cached --quiet && exit 0
-          git commit -m "chore: refresh ranking timestamp"
+          git commit -m "chore: normalize ranking and refresh public feed"
           git push

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>사활문제집 랭킹 API</title>
+    <title>사활문제집 랭킹</title>
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
@@ -12,7 +12,7 @@
         color: #1d2a33;
       }
       .wrap {
-        max-width: 860px;
+        max-width: 920px;
         margin: 0 auto;
         padding: 28px 20px 40px;
       }
@@ -23,38 +23,82 @@
         padding: 16px;
         margin-bottom: 14px;
       }
+      .muted { color: #607480; }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 10px 8px;
+        border-bottom: 1px solid #e6f1f5;
+        text-align: left;
+      }
+      th { color: #3f5661; font-size: 14px; }
+      .rank { width: 72px; }
+      .num { text-align: right; }
+      a { color: #0b8f93; }
       code {
         background: #eef8fb;
         border-radius: 8px;
         padding: 2px 6px;
       }
-      a { color: #0b8f93; }
-      pre {
-        overflow: auto;
-        background: #f7fbfd;
-        border: 1px solid #d7eaf1;
-        border-radius: 12px;
-        padding: 12px;
-      }
     </style>
   </head>
   <body>
     <div class="wrap">
-      <h1>사활문제집 랭킹 API</h1>
+      <h1>사활문제집 랭킹</h1>
       <div class="card">
-        <p>앱에서 아래 JSON을 1시간 주기로 읽습니다.</p>
-        <p><a href="./ranking.json">ranking.json 열기</a></p>
-        <p>URL: <code>https://broryda.github.io/ranking/ranking.json</code></p>
+        <p class="muted">
+          공개 페이지는 <b>닉네임 / 풀이수 / ELO</b>만 표시하며, 기기 식별값(deviceId)은 표시하지 않습니다.
+        </p>
+        <p class="muted">공개 JSON: <a href="./ranking_public.json">ranking_public.json</a></p>
+        <p class="muted">원본 JSON: <a href="./ranking.json">ranking.json</a></p>
       </div>
       <div class="card">
-        <h2>JSON 형식</h2>
-        <pre>{
-  "updatedAt": "2026-04-26T12:30:00+09:00",
-  "entries": [
-    { "nickname": "닉네임", "solvedCount": 100, "elo": 1200 }
-  ]
-}</pre>
+        <p id="updatedAt" class="muted">업데이트 시각: -</p>
+        <table>
+          <thead>
+            <tr>
+              <th class="rank">순위</th>
+              <th>닉네임</th>
+              <th class="num">풀이수</th>
+              <th class="num">ELO</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <div class="card">
+        <p class="muted">앱 연동 URL: <code>https://broryda.github.io/ranking/ranking.json</code></p>
       </div>
     </div>
+    <script>
+      async function load() {
+        try {
+          const res = await fetch("./ranking_public.json", { cache: "no-store" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          const data = await res.json();
+          document.getElementById("updatedAt").textContent =
+            "업데이트 시각: " + (data.updatedAt || "-");
+          const rows = Array.isArray(data.entries) ? data.entries : [];
+          const tbody = document.getElementById("rows");
+          tbody.innerHTML = "";
+          rows.forEach((r, i) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td>${i + 1}</td>
+              <td>${String(r.nickname || "")}</td>
+              <td class="num">${Number(r.solvedCount || 0)}</td>
+              <td class="num">${Number(r.elo || 0)}</td>
+            `;
+            tbody.appendChild(tr);
+          });
+        } catch (e) {
+          document.getElementById("updatedAt").textContent =
+            "업데이트 시각: 로딩 실패";
+        }
+      }
+      load();
+    </script>
   </body>
 </html>
