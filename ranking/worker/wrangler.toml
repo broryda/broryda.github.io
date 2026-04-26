@@ -1,0 +1,11 @@
+name = "ranking-submit"
+main = "src/index.js"
+compatibility_date = "2026-04-26"
+
+[vars]
+GITHUB_OWNER = "broryda"
+GITHUB_REPO = "broryda.github.io"
+GITHUB_BRANCH = "main"
+RANKING_JSON_PATH = "ranking/ranking.json"
+RANKING_PUBLIC_JSON_PATH = "ranking/ranking_public.json"
+
