@@ -21,26 +21,47 @@ function normalizeEntry(raw) {
   const deviceId = String(raw.deviceId ?? "").trim();
   const solvedCount = Math.max(0, toInt(raw.solvedCount, 0));
   const elo = Math.max(0, toInt(raw.elo, 0));
-  if (!nickname || !deviceId) return null;
-  return { nickname, deviceId, solvedCount, elo };
+  const lastSubmittedAt = String(raw.lastSubmittedAt ?? raw.sentAt ?? "").trim();
+  if (!nickname) return null;
+  return {
+    nickname,
+    solvedCount,
+    elo,
+    ...(deviceId ? { deviceId } : {}),
+    ...(lastSubmittedAt ? { lastSubmittedAt } : {}),
+  };
 }
 
 function dedupeAndSort(entries) {
   const byDevice = new Map();
+  const noDevice = [];
+  const ts = (row) => {
+    const t = Date.parse(String(row?.lastSubmittedAt || ""));
+    return Number.isFinite(t) ? t : 0;
+  };
   for (const row of entries) {
-    const prev = byDevice.get(row.deviceId);
-    if (!prev) {
-      byDevice.set(row.deviceId, row);
+    const deviceId = String(row.deviceId || "").trim();
+    if (!deviceId) {
+      noDevice.push(row);
       continue;
     }
+    const prev = byDevice.get(deviceId);
+    if (!prev) {
+      byDevice.set(deviceId, row);
+      continue;
+    }
+    const curTs = ts(row);
+    const prevTs = ts(prev);
     const takeCurrent =
-      row.solvedCount > prev.solvedCount ||
-      (row.solvedCount === prev.solvedCount && row.elo > prev.elo);
+      curTs > prevTs ||
+      (curTs === prevTs &&
+        (row.solvedCount > prev.solvedCount ||
+          (row.solvedCount === prev.solvedCount && row.elo > prev.elo)));
     if (takeCurrent) {
-      byDevice.set(row.deviceId, row);
+      byDevice.set(deviceId, row);
     }
   }
-  const out = Array.from(byDevice.values());
+  const out = [...Array.from(byDevice.values()), ...noDevice];
   out.sort((a, b) => b.solvedCount - a.solvedCount || b.elo - a.elo);
   return out;
 }
@@ -193,8 +214,11 @@ export default {
       }
 
       const incoming = normalizeEntry(body);
-      if (!incoming) {
+      if (!incoming || !incoming.deviceId) {
         return ok({ ok: false, error: "invalid_payload" }, 400);
+      }
+      if (!incoming.lastSubmittedAt) {
+        incoming.lastSubmittedAt = new Date().toISOString();
       }
 
       try {

@@ -36,6 +36,14 @@ jobs:
           entries = d.get("entries", [])
           by_device = {}
           no_device = []
+          def parse_ts(value):
+            try:
+              if not value:
+                return datetime.datetime.fromtimestamp(0, tz=datetime.timezone.utc)
+              return datetime.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+            except Exception:
+              return datetime.datetime.fromtimestamp(0, tz=datetime.timezone.utc)
+
           for e in entries:
             if not isinstance(e, dict):
               continue
@@ -45,18 +53,30 @@ jobs:
             solved = int(e.get("solvedCount", 0) or 0)
             elo = int(e.get("elo", 0) or 0)
             dev = str(e.get("deviceId", "")).strip()
+            submitted_at = str(e.get("lastSubmittedAt", e.get("sentAt", "")) or "").strip()
             row = {
               "nickname": nick,
               "solvedCount": max(0, solved),
               "elo": max(0, elo),
             }
+            if submitted_at:
+              row["lastSubmittedAt"] = submitted_at
             if dev:
               row["deviceId"] = dev
               prev = by_device.get(dev)
-              if prev is None or row["solvedCount"] > prev["solvedCount"] or (
-                row["solvedCount"] == prev["solvedCount"] and row["elo"] > prev["elo"]
-              ):
+              if prev is None:
                 by_device[dev] = row
+              else:
+                cur_ts = parse_ts(row.get("lastSubmittedAt"))
+                prev_ts = parse_ts(prev.get("lastSubmittedAt"))
+                if cur_ts > prev_ts or (
+                  cur_ts == prev_ts and (
+                    row["solvedCount"] > prev["solvedCount"] or (
+                      row["solvedCount"] == prev["solvedCount"] and row["elo"] > prev["elo"]
+                    )
+                  )
+                ):
+                  by_device[dev] = row
             else:
               no_device.append(row)
           deduped = list(by_device.values()) + no_device
