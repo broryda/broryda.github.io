@@ -1,11 +1,6 @@
 {
-  "updatedAt": "2026-04-27T00:06:33.389Z",
+  "updatedAt": "2026-04-27T00:10:40.802Z",
   "entries": [
-    {
-      "nickname": "Broryda",
-      "solvedCount": 323,
-      "elo": 1660
-    },
     {
       "nickname": "공구소년",
       "solvedCount": 285,
@@ -34,6 +29,11 @@
     {
       "nickname": "사용자",
       "solvedCount": 16,
+      "elo": 1000
+    },
+    {
+      "nickname": "Broryda",
+      "solvedCount": 0,
       "elo": 1000
     }
   ]
