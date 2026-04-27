@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T23:30:34.539Z",
+  "updatedAt": "2026-04-27T23:30:35.949Z",
   "entries": [
     {
       "nickname": "공구소년",
@@ -71,6 +71,13 @@
       "streakCurrent": 0
     },
     {
+      "nickname": "임제자",
+      "solvedCount": 8,
+      "elo": 1012,
+      "streakCurrent": 2,
+      "createdAt": "2026-04-27T23:30:35.908Z"
+    },
+    {
       "nickname": "사용자",
       "solvedCount": 16,
       "elo": 1000,
@@ -130,13 +137,6 @@
       "elo": 1000,
       "streakCurrent": 0,
       "createdAt": "2026-04-27T10:40:50.998Z"
-    },
-    {
-      "nickname": "임제자",
-      "solvedCount": 8,
-      "elo": 995,
-      "streakCurrent": 2,
-      "createdAt": "2026-04-27T23:30:34.500Z"
     },
     {
       "nickname": "사용자",
