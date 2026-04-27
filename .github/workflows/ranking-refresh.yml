@@ -43,6 +43,13 @@ jobs:
               return datetime.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
             except Exception:
               return datetime.datetime.fromtimestamp(0, tz=datetime.timezone.utc)
+          def parse_created_ts(value):
+            try:
+              if not value:
+                return datetime.datetime.max.replace(tzinfo=datetime.timezone.utc)
+              return datetime.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+            except Exception:
+              return datetime.datetime.max.replace(tzinfo=datetime.timezone.utc)
 
           for e in entries:
             if not isinstance(e, dict):
@@ -52,15 +59,22 @@ jobs:
               continue
             solved = int(e.get("solvedCount", 0) or 0)
             elo = int(e.get("elo", 0) or 0)
+            streak = int(e.get("streakCurrent", 0) or 0)
             dev = str(e.get("deviceId", "")).strip()
             submitted_at = str(e.get("lastSubmittedAt", e.get("sentAt", "")) or "").strip()
+            created_at = str(e.get("createdAt", "") or "").strip()
+            if not created_at:
+              created_at = submitted_at
             row = {
               "nickname": nick,
               "solvedCount": max(0, solved),
               "elo": max(0, elo),
+              "streakCurrent": max(0, streak),
             }
             if submitted_at:
               row["lastSubmittedAt"] = submitted_at
+            if created_at:
+              row["createdAt"] = created_at
             if dev:
               row["deviceId"] = dev
               prev = by_device.get(dev)
@@ -69,18 +83,32 @@ jobs:
               else:
                 cur_ts = parse_ts(row.get("lastSubmittedAt"))
                 prev_ts = parse_ts(prev.get("lastSubmittedAt"))
-                if cur_ts > prev_ts or (
-                  cur_ts == prev_ts and (
-                    row["solvedCount"] > prev["solvedCount"] or (
-                      row["solvedCount"] == prev["solvedCount"] and row["elo"] > prev["elo"]
+                  if cur_ts > prev_ts or (
+                    cur_ts == prev_ts and (
+                    row["elo"] > prev["elo"] or (
+                      row["elo"] == prev["elo"] and (
+                        row["solvedCount"] > prev["solvedCount"] or (
+                          row["solvedCount"] == prev["solvedCount"] and row["streakCurrent"] > prev.get("streakCurrent", 0)
+                        )
+                      )
                     )
                   )
                 ):
+                  if prev.get("createdAt") and not row.get("createdAt"):
+                    row["createdAt"] = prev.get("createdAt")
                   by_device[dev] = row
+                elif not prev.get("createdAt") and row.get("createdAt"):
+                  prev["createdAt"] = row["createdAt"]
+                  by_device[dev] = prev
             else:
               no_device.append(row)
           deduped = list(by_device.values()) + no_device
-          deduped.sort(key=lambda x: (x["solvedCount"], x["elo"]), reverse=True)
+          deduped.sort(
+            key=lambda x: (
+              -int(x.get("elo", 0)),
+              parse_created_ts(x.get("createdAt")),
+            )
+          )
           d["entries"] = deduped
           d["updatedAt"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
           p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -92,6 +120,8 @@ jobs:
                 "nickname": e.get("nickname", ""),
                 "solvedCount": int(e.get("solvedCount", 0) or 0),
                 "elo": int(e.get("elo", 0) or 0),
+                "streakCurrent": int(e.get("streakCurrent", 0) or 0),
+                "createdAt": e.get("createdAt", ""),
               }
               for e in d.get("entries", [])
             ],

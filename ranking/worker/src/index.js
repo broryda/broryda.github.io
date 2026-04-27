@@ -21,12 +21,16 @@ function normalizeEntry(raw) {
   const deviceId = String(raw.deviceId ?? "").trim();
   const solvedCount = Math.max(0, toInt(raw.solvedCount, 0));
   const elo = Math.max(0, toInt(raw.elo, 0));
+  const streakCurrent = Math.max(0, toInt(raw.streakCurrent, 0));
+  const createdAt = String(raw.createdAt ?? "").trim();
   const lastSubmittedAt = String(raw.lastSubmittedAt ?? raw.sentAt ?? "").trim();
   if (!nickname) return null;
   return {
     nickname,
     solvedCount,
     elo,
+    streakCurrent,
+    ...(createdAt ? { createdAt } : {}),
     ...(deviceId ? { deviceId } : {}),
     ...(lastSubmittedAt ? { lastSubmittedAt } : {}),
   };
@@ -38,6 +42,10 @@ function dedupeAndSort(entries) {
   const ts = (row) => {
     const t = Date.parse(String(row?.lastSubmittedAt || ""));
     return Number.isFinite(t) ? t : 0;
+  };
+  const createdTs = (row) => {
+    const t = Date.parse(String(row?.createdAt || ""));
+    return Number.isFinite(t) ? t : Number.MAX_SAFE_INTEGER;
   };
   for (const row of entries) {
     const deviceId = String(row.deviceId || "").trim();
@@ -56,13 +64,26 @@ function dedupeAndSort(entries) {
       curTs > prevTs ||
       (curTs === prevTs &&
         (row.solvedCount > prev.solvedCount ||
-          (row.solvedCount === prev.solvedCount && row.elo > prev.elo)));
+          (row.solvedCount === prev.solvedCount &&
+            (row.elo > prev.elo ||
+              (row.elo === prev.elo && row.streakCurrent > prev.streakCurrent)))));
     if (takeCurrent) {
+      if (prev.createdAt && !row.createdAt) {
+        row.createdAt = prev.createdAt;
+      }
       byDevice.set(deviceId, row);
+    } else if (!prev.createdAt && row.createdAt) {
+      byDevice.set(deviceId, { ...prev, createdAt: row.createdAt });
     }
   }
   const out = [...Array.from(byDevice.values()), ...noDevice];
-  out.sort((a, b) => b.solvedCount - a.solvedCount || b.elo - a.elo);
+  out.sort(
+    (a, b) =>
+      b.elo - a.elo ||
+      b.solvedCount - a.solvedCount ||
+      b.streakCurrent - a.streakCurrent ||
+      createdTs(a) - createdTs(b),
+  );
   return out;
 }
 
@@ -73,6 +94,8 @@ function buildPublicPayload(payload) {
       nickname: e.nickname,
       solvedCount: e.solvedCount,
       elo: e.elo,
+      streakCurrent: e.streakCurrent,
+      ...(e.createdAt ? { createdAt: e.createdAt } : {}),
     })),
   };
 }
@@ -219,6 +242,9 @@ export default {
       }
       if (!incoming.lastSubmittedAt) {
         incoming.lastSubmittedAt = new Date().toISOString();
+      }
+      if (!incoming.createdAt) {
+        incoming.createdAt = incoming.lastSubmittedAt;
       }
 
       try {
