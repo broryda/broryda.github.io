@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T05:09:19.778Z",
+  "updatedAt": "2026-04-27T05:16:21.785Z",
   "entries": [
     {
       "nickname": "공구소년",
@@ -79,6 +79,13 @@
       "solvedCount": 7,
       "elo": 1000,
       "streakCurrent": 0
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 1000,
+      "streakCurrent": 0,
+      "createdAt": "2026-04-27T05:16:19.137Z"
     }
   ]
 }
