@@ -1,65 +1,78 @@
 {
-  "updatedAt": "2026-04-27T03:52:33.112Z",
+  "updatedAt": "2026-04-27T03:53:51.263Z",
   "entries": [
     {
-      "nickname": "그대란우주",
-      "solvedCount": 371,
-      "elo": 1333
+      "nickname": "공구소년",
+      "solvedCount": 285,
+      "elo": 2102,
+      "streakCurrent": 0
     },
     {
       "nickname": "Broryda",
       "solvedCount": 345,
-      "elo": 1667
-    },
-    {
-      "nickname": "공구소년",
-      "solvedCount": 285,
-      "elo": 2102
-    },
-    {
-      "nickname": "임제자",
-      "solvedCount": 149,
-      "elo": 1000
-    },
-    {
-      "nickname": "엄태승",
-      "solvedCount": 148,
-      "elo": 1146
+      "elo": 1667,
+      "streakCurrent": 0
     },
     {
       "nickname": "찰올",
       "solvedCount": 81,
-      "elo": 1604
+      "elo": 1604,
+      "streakCurrent": 0
     },
     {
       "nickname": "강서구아귀",
       "solvedCount": 61,
-      "elo": 1355
+      "elo": 1355,
+      "streakCurrent": 0
     },
     {
-      "nickname": "Moonadong",
-      "solvedCount": 31,
-      "elo": 1053
+      "nickname": "그대란우주",
+      "solvedCount": 371,
+      "elo": 1333,
+      "streakCurrent": 0
     },
     {
       "nickname": "사용자",
       "solvedCount": 30,
-      "elo": 1307
+      "elo": 1307,
+      "streakCurrent": 0
+    },
+    {
+      "nickname": "엄태승",
+      "solvedCount": 149,
+      "elo": 1158,
+      "streakCurrent": 0,
+      "createdAt": "2026-04-27T03:53:50.903Z"
     },
     {
       "nickname": "TEST",
       "solvedCount": 17,
-      "elo": 1106
+      "elo": 1106,
+      "streakCurrent": 0
+    },
+    {
+      "nickname": "Moonadong",
+      "solvedCount": 31,
+      "elo": 1053,
+      "streakCurrent": 0
+    },
+    {
+      "nickname": "임제자",
+      "solvedCount": 149,
+      "elo": 1000,
+      "streakCurrent": 0
     },
     {
       "nickname": "사용자",
       "solvedCount": 16,
-      "elo": 1000
+      "elo": 1000,
+      "streakCurrent": 0
     },
     {
       "nickname": "사용자",
       "solvedCount": 7,
-      "elo": 1000
+      "elo": 1000,
+      "streakCurrent": 0
     }
   ]
 }
