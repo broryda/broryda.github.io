@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T04:04:10.477Z",
+  "updatedAt": "2026-04-27T04:04:11.649Z",
   "entries": [
     {
       "nickname": "공구소년",
@@ -45,12 +45,12 @@
     },
     {
       "nickname": "엄태승",
-      "solvedCount": 230,
+      "solvedCount": 231,
       "elo": 1121,
       "streakCurrent": 0,
-      "createdAt": "2026-04-27T04:04:09.399Z",
       "deviceId": "dev_mofd9phu_r9duemsw",
-      "lastSubmittedAt": "2026-04-27T04:04:09.399Z"
+      "lastSubmittedAt": "2026-04-27T04:04:11.525Z",
+      "createdAt": "2026-04-27T04:04:11.525Z"
     },
     {
       "nickname": "TEST",
@@ -98,9 +98,9 @@
       "solvedCount": 0,
       "elo": 1000,
       "streakCurrent": 0,
+      "createdAt": "2026-04-27T04:04:07.242Z",
       "deviceId": "dev_mofd1oai_igfyi63x",
-      "lastSubmittedAt": "2026-04-27T04:04:07.242Z",
-      "createdAt": "2026-04-27T04:04:07.242Z"
+      "lastSubmittedAt": "2026-04-27T04:04:07.242Z"
     }
   ]
 }
