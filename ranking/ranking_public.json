@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T01:37:46.601Z",
+  "updatedAt": "2026-04-27T01:37:55.242Z",
   "entries": [
     {
       "nickname": "그대란우주",
@@ -43,6 +43,11 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 7,
+      "elo": 1000
+    },
+    {
+      "nickname": "TEST",
       "solvedCount": 7,
       "elo": 1000
     }
