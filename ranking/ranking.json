@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T01:37:55.242Z",
+  "updatedAt": "2026-04-27T01:37:58.026Z",
   "entries": [
     {
       "nickname": "그대란우주",
@@ -58,18 +58,18 @@
       "lastSubmittedAt": "2026-04-26T22:22:20.868Z"
     },
     {
+      "nickname": "TEST",
+      "solvedCount": 8,
+      "elo": 1013,
+      "deviceId": "dev_mogj2aoo_6pvi0fia",
+      "lastSubmittedAt": "2026-04-27T01:37:57.751Z"
+    },
+    {
       "nickname": "사용자",
       "solvedCount": 7,
       "elo": 1000,
       "deviceId": "dev_mogj2aor_z7jdziu0",
       "lastSubmittedAt": "2026-04-27T01:37:44.868Z"
-    },
-    {
-      "nickname": "TEST",
-      "solvedCount": 7,
-      "elo": 1000,
-      "deviceId": "dev_mogj2aoo_6pvi0fia",
-      "lastSubmittedAt": "2026-04-27T01:37:54.969Z"
     }
   ]
 }
