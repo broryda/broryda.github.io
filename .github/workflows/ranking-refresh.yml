@@ -1,4 +1,4 @@
-name: ranking-refresh
+﻿name: ranking-refresh
 
 on:
   schedule:
@@ -30,41 +30,58 @@ jobs:
       - name: Normalize ranking and build public file
         run: |
           python - <<'PY'
-          import json, pathlib, datetime
+          import json
+          import pathlib
+          import datetime
+
           p = pathlib.Path("ranking/ranking.json")
           d = json.loads(p.read_text(encoding="utf-8"))
           entries = d.get("entries", [])
-          by_device = {}
-          no_device = []
+
+          now = datetime.datetime.now(datetime.timezone.utc)
+          cutoff = now - datetime.timedelta(days=30)
+
           def parse_ts(value):
             try:
               if not value:
-                return datetime.datetime.fromtimestamp(0, tz=datetime.timezone.utc)
+                return None
               return datetime.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
             except Exception:
-              return datetime.datetime.fromtimestamp(0, tz=datetime.timezone.utc)
+              return None
+
           def parse_created_ts(value):
-            try:
-              if not value:
-                return datetime.datetime.max.replace(tzinfo=datetime.timezone.utc)
-              return datetime.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
-            except Exception:
+            t = parse_ts(value)
+            if t is None:
               return datetime.datetime.max.replace(tzinfo=datetime.timezone.utc)
+            return t
+
+          by_device = {}
+          no_device = []
 
           for e in entries:
             if not isinstance(e, dict):
               continue
+
             nick = str(e.get("nickname", "")).strip()
             if not nick:
               continue
+
             solved = int(e.get("solvedCount", 0) or 0)
             elo = int(e.get("elo", 0) or 0)
             streak = int(e.get("streakCurrent", 0) or 0)
+            if elo > 3000:
+              continue
+
             dev = str(e.get("deviceId", "")).strip()
             submitted_at = str(e.get("lastSubmittedAt", e.get("sentAt", "")) or "").strip()
             created_at = str(e.get("createdAt", "") or "").strip()
             if not created_at:
               created_at = submitted_at
+
+            last_ts = parse_ts(submitted_at) or parse_ts(created_at)
+            if last_ts is None or last_ts < cutoff:
+              continue
+
             row = {
               "nickname": nick,
               "solvedCount": max(0, solved),
@@ -75,42 +92,43 @@ jobs:
               row["lastSubmittedAt"] = submitted_at
             if created_at:
               row["createdAt"] = created_at
+
             if dev:
               row["deviceId"] = dev
               prev = by_device.get(dev)
               if prev is None:
                 by_device[dev] = row
               else:
-                cur_ts = parse_ts(row.get("lastSubmittedAt"))
-                prev_ts = parse_ts(prev.get("lastSubmittedAt"))
-                  if cur_ts > prev_ts or (
-                    cur_ts == prev_ts and (
-                    row["elo"] > prev["elo"] or (
-                      row["elo"] == prev["elo"] and (
-                        row["solvedCount"] > prev["solvedCount"] or (
-                          row["solvedCount"] == prev["solvedCount"] and row["streakCurrent"] > prev.get("streakCurrent", 0)
-                        )
-                      )
-                    )
-                  )
-                ):
+                cur_ts = parse_ts(row.get("lastSubmittedAt")) or datetime.datetime.fromtimestamp(0, tz=datetime.timezone.utc)
+                prev_ts = parse_ts(prev.get("lastSubmittedAt")) or datetime.datetime.fromtimestamp(0, tz=datetime.timezone.utc)
+                if cur_ts > prev_ts:
                   if prev.get("createdAt") and not row.get("createdAt"):
                     row["createdAt"] = prev.get("createdAt")
                   by_device[dev] = row
-                elif not prev.get("createdAt") and row.get("createdAt"):
-                  prev["createdAt"] = row["createdAt"]
-                  by_device[dev] = prev
+                elif cur_ts == prev_ts:
+                  if row.get("elo", 0) > prev.get("elo", 0):
+                    if prev.get("createdAt") and not row.get("createdAt"):
+                      row["createdAt"] = prev.get("createdAt")
+                    by_device[dev] = row
+                  elif row.get("elo", 0) == prev.get("elo", 0) and row.get("solvedCount", 0) > prev.get("solvedCount", 0):
+                    if prev.get("createdAt") and not row.get("createdAt"):
+                      row["createdAt"] = prev.get("createdAt")
+                    by_device[dev] = row
+                  elif row.get("elo", 0) == prev.get("elo", 0) and row.get("solvedCount", 0) == prev.get("solvedCount", 0) and row.get("streakCurrent", 0) > prev.get("streakCurrent", 0):
+                    if prev.get("createdAt") and not row.get("createdAt"):
+                      row["createdAt"] = prev.get("createdAt")
+                    by_device[dev] = row
+                  elif not prev.get("createdAt") and row.get("createdAt"):
+                    prev["createdAt"] = row["createdAt"]
+                    by_device[dev] = prev
             else:
               no_device.append(row)
+
           deduped = list(by_device.values()) + no_device
-          deduped.sort(
-            key=lambda x: (
-              -int(x.get("elo", 0)),
-              parse_created_ts(x.get("createdAt")),
-            )
-          )
+          deduped.sort(key=lambda x: (-int(x.get("elo", 0)), parse_created_ts(x.get("createdAt"))))
+
           d["entries"] = deduped
-          d["updatedAt"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+          d["updatedAt"] = now.isoformat()
           p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
           public = {

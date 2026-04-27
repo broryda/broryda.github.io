@@ -21,6 +21,7 @@ function normalizeEntry(raw) {
   const deviceId = String(raw.deviceId ?? "").trim();
   const solvedCount = Math.max(0, toInt(raw.solvedCount, 0));
   const elo = Math.max(0, toInt(raw.elo, 0));
+  if (elo > 3000) return null;
   const streakCurrent = Math.max(0, toInt(raw.streakCurrent, 0));
   const createdAt = String(raw.createdAt ?? "").trim();
   const lastSubmittedAt = String(raw.lastSubmittedAt ?? raw.sentAt ?? "").trim();
