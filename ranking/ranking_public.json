@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-29T14:29:57.477Z",
+  "updatedAt": "2026-04-29T14:29:57.475Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -28,6 +28,13 @@
       "elo": 1883,
       "streakCurrent": 1,
       "createdAt": "2026-04-29T09:13:57.003Z"
+    },
+    {
+      "nickname": "Broryda",
+      "solvedCount": 576,
+      "elo": 1754,
+      "streakCurrent": 6,
+      "createdAt": "2026-04-29T14:29:57.001Z"
     },
     {
       "nickname": "찰올",
@@ -182,13 +189,6 @@
       "elo": 702,
       "streakCurrent": 1,
       "createdAt": "2026-04-27T06:39:58.880Z"
-    },
-    {
-      "nickname": "Broryda",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-04-29T14:29:56.793Z"
     }
   ]
 }
