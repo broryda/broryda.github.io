@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-29T08:10:11.014Z",
+  "updatedAt": "2026-04-29T08:10:15.763Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -141,9 +141,9 @@
       "solvedCount": 1040,
       "elo": 1060,
       "streakCurrent": 4,
+      "createdAt": "2026-04-29T08:10:10.757Z",
       "deviceId": "dev_mofd9phu_r9duemsw",
-      "lastSubmittedAt": "2026-04-29T08:10:10.757Z",
-      "createdAt": "2026-04-29T08:10:10.757Z"
+      "lastSubmittedAt": "2026-04-29T08:10:10.757Z"
     },
     {
       "nickname": "사용자",
@@ -315,6 +315,15 @@
       "createdAt": "2026-04-27T06:39:58.880Z",
       "deviceId": "dev_moggpsut_hzg47m9q",
       "lastSubmittedAt": "2026-04-27T06:39:58.880Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mojryqwl_s1wkkcal",
+      "lastSubmittedAt": "2026-04-29T08:10:14.336Z",
+      "createdAt": "2026-04-29T08:10:14.336Z"
     }
   ]
 }
