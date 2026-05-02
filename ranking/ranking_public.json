@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-02T02:44:46.428494+00:00",
+  "updatedAt": "2026-05-02T03:10:02.919Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -129,6 +129,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 8,
+      "elo": 1000,
+      "streakCurrent": 0,
+      "createdAt": "2026-04-27T19:54:34.929Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 7,
       "elo": 1000,
       "streakCurrent": 0,
@@ -140,13 +147,6 @@
       "elo": 1000,
       "streakCurrent": 0,
       "createdAt": "2026-04-27T05:44:13.388Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 8,
-      "elo": 1000,
-      "streakCurrent": 0,
-      "createdAt": "2026-04-27T19:54:34.929Z"
     },
     {
       "nickname": "사용자",
@@ -168,13 +168,6 @@
       "elo": 993,
       "streakCurrent": 1,
       "createdAt": "2026-04-27T05:16:38.603Z"
-    },
-    {
-      "nickname": "뚱보아키",
-      "solvedCount": 761,
-      "elo": 984,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-02T02:02:08.983Z"
     },
     {
       "nickname": "구문룡권신",
@@ -203,6 +196,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-04-30T04:22:03.901Z"
+    },
+    {
+      "nickname": "뚱보아키",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-02T03:10:02.160Z"
     },
     {
       "nickname": "사용자",
