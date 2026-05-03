@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-03T10:05:05.141842+00:00",
+  "updatedAt": "2026-05-03T10:22:23.064Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -28,13 +28,6 @@
       "elo": 1872,
       "streakCurrent": 2,
       "createdAt": "2026-04-30T05:24:05.743Z"
-    },
-    {
-      "nickname": "Broryda",
-      "solvedCount": 616,
-      "elo": 1794,
-      "streakCurrent": 8,
-      "createdAt": "2026-05-03T03:17:36.327Z"
     },
     {
       "nickname": "바두기멍멍",
@@ -129,6 +122,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 8,
+      "elo": 1000,
+      "streakCurrent": 0,
+      "createdAt": "2026-04-27T19:54:34.929Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 7,
       "elo": 1000,
       "streakCurrent": 0,
@@ -140,13 +140,6 @@
       "elo": 1000,
       "streakCurrent": 0,
       "createdAt": "2026-04-27T05:44:13.388Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 8,
-      "elo": 1000,
-      "streakCurrent": 0,
-      "createdAt": "2026-04-27T19:54:34.929Z"
     },
     {
       "nickname": "사용자",
@@ -185,6 +178,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 1,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-03T05:31:39.547Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 0,
       "elo": 300,
       "streakCurrent": 0,
@@ -198,11 +198,11 @@
       "createdAt": "2026-04-30T04:22:03.901Z"
     },
     {
-      "nickname": "사용자",
-      "solvedCount": 1,
+      "nickname": "Broryda",
+      "solvedCount": 0,
       "elo": 300,
       "streakCurrent": 0,
-      "createdAt": "2026-05-03T05:31:39.547Z"
+      "createdAt": "2026-05-03T10:22:22.409Z"
     },
     {
       "nickname": "사용자",
