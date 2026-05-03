@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-03T06:58:31.314Z",
+  "updatedAt": "2026-05-03T07:02:21.745Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -110,15 +110,6 @@
       "lastSubmittedAt": "2026-04-29T22:58:06.297Z"
     },
     {
-      "nickname": "그대란우주",
-      "solvedCount": 3946,
-      "elo": 1326,
-      "streakCurrent": 7,
-      "createdAt": "2026-05-03T06:06:50.941Z",
-      "deviceId": "dev_mogc30dq_pqthw4ut",
-      "lastSubmittedAt": "2026-05-03T06:06:50.941Z"
-    },
-    {
       "nickname": "임제자",
       "solvedCount": 1184,
       "elo": 1306,
@@ -141,9 +132,9 @@
       "solvedCount": 232,
       "elo": 1190,
       "streakCurrent": 8,
+      "createdAt": "2026-05-03T06:58:31.356Z",
       "deviceId": "dev_mofulsf9_49qn1jj0",
-      "lastSubmittedAt": "2026-05-03T06:58:31.356Z",
-      "createdAt": "2026-05-03T06:58:31.356Z"
+      "lastSubmittedAt": "2026-05-03T06:58:31.356Z"
     },
     {
       "nickname": "TEST",
@@ -198,6 +189,15 @@
       "createdAt": "2026-04-28T03:36:41.886Z",
       "deviceId": "dev_moi2r49s_u6xblu5f",
       "lastSubmittedAt": "2026-04-28T03:36:41.886Z"
+    },
+    {
+      "nickname": "그대란우주",
+      "solvedCount": 0,
+      "elo": 1000,
+      "streakCurrent": 0,
+      "deviceId": "dev_mogc30dq_pqthw4ut",
+      "lastSubmittedAt": "2026-05-03T07:02:20.016Z",
+      "createdAt": "2026-05-03T07:02:20.016Z"
     },
     {
       "nickname": "사용자",
