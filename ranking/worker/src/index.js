@@ -2,7 +2,7 @@ const jsonHeaders = {
   "content-type": "application/json; charset=utf-8",
   "access-control-allow-origin": "*",
   "access-control-allow-methods": "GET,POST,OPTIONS",
-  "access-control-allow-headers": "content-type,x-submit-key",
+  "access-control-allow-headers": "content-type,x-submit-key,x-sotional-key",
 };
 
 function ok(body, status = 200) {
@@ -99,6 +99,12 @@ function buildPublicPayload(payload) {
       ...(e.createdAt ? { createdAt: e.createdAt } : {}),
     })),
   };
+}
+
+function calculateRatingDelta(winnerRating, loserRating, kFactor = 32) {
+  const expectedWinner = 1 / (1 + 10 ** ((loserRating - winnerRating) / 400));
+  const winnerDelta = Math.max(1, Math.round(kFactor * (1 - expectedWinner)));
+  return winnerDelta;
 }
 
 async function githubGetFile(env, path) {
@@ -205,6 +211,107 @@ async function updateRanking(env, incoming) {
   throw new Error("update_retry_exhausted");
 }
 
+async function updateSotionalRating(env, payload) {
+  const usersPath = env.SOTIONAL_USERS_JSON_PATH || "sotional/data/users.json";
+  const matchesPath = env.SOTIONAL_RATING_MATCHES_JSON_PATH || "sotional/data/rating_matches.json";
+  const kFactor = Math.max(1, toInt(env.SOTIONAL_RATING_K_FACTOR ?? 32, 32));
+  const nowIso = new Date().toISOString();
+
+  const winnerId = toInt(payload?.winner_id, 0);
+  const loserId = toInt(payload?.loser_id, 0);
+  const memo = String(payload?.memo ?? "").trim().slice(0, 255);
+  const recordedBy = toInt(payload?.recorded_by, 0) || winnerId;
+
+  if (!winnerId || !loserId || winnerId === loserId) {
+    return { ok: false, status: 400, error: "invalid_players" };
+  }
+
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const usersFile = await githubGetFile(env, usersPath);
+    const matchesFile = await githubGetFile(env, matchesPath);
+
+    let users = [];
+    let matches = [];
+    try {
+      const parsed = JSON.parse(usersFile.text);
+      users = Array.isArray(parsed) ? parsed : [];
+    } catch {
+      users = [];
+    }
+    try {
+      const parsed = JSON.parse(matchesFile.text);
+      matches = Array.isArray(parsed) ? parsed : [];
+    } catch {
+      matches = [];
+    }
+
+    const winner = users.find((u) => toInt(u?.id, 0) === winnerId);
+    const loser = users.find((u) => toInt(u?.id, 0) === loserId);
+    if (!winner || !loser) {
+      return { ok: false, status: 404, error: "user_not_found" };
+    }
+
+    const winnerBefore = Math.max(0, toInt(winner.rating, 1000));
+    const loserBefore = Math.max(0, toInt(loser.rating, 1000));
+    const winnerDelta = calculateRatingDelta(winnerBefore, loserBefore, kFactor);
+    const loserDelta = -winnerDelta;
+    const winnerAfter = winnerBefore + winnerDelta;
+    const loserAfter = Math.max(0, loserBefore + loserDelta);
+
+    winner.rating = winnerAfter;
+    loser.rating = loserAfter;
+
+    const nextMatchId = matches.reduce((maxId, row) => Math.max(maxId, toInt(row?.id, 0)), 0) + 1;
+    const nextMatch = {
+      id: nextMatchId,
+      winner_id: winnerId,
+      loser_id: loserId,
+      winner_before: winnerBefore,
+      loser_before: loserBefore,
+      winner_after: winnerAfter,
+      loser_after: loserAfter,
+      winner_delta: winnerDelta,
+      loser_delta: loserDelta,
+      memo,
+      played_at: nowIso,
+      recorded_by: recordedBy,
+    };
+    const nextMatches = [nextMatch, ...matches];
+    const nextUsers = [...users].sort(
+      (a, b) =>
+        toInt(b?.rating, 0) - toInt(a?.rating, 0) ||
+        String(a?.username || "").localeCompare(String(b?.username || "")),
+    );
+
+    const usersText = `${JSON.stringify(nextUsers, null, 2)}\n`;
+    const matchesText = `${JSON.stringify(nextMatches, null, 2)}\n`;
+
+    try {
+      await githubPutFile(
+        env,
+        usersPath,
+        usersText,
+        usersFile.sha,
+        `chore: sotional rating users update (${winnerId} vs ${loserId})`,
+      );
+      await githubPutFile(
+        env,
+        matchesPath,
+        matchesText,
+        matchesFile.sha,
+        `chore: sotional rating match added (${winnerId} vs ${loserId})`,
+      );
+      return { ok: true, status: 200, users: nextUsers, matches: nextMatches, updatedAt: nowIso };
+    } catch (e) {
+      const msg = String(e?.message || e || "");
+      if (!msg.includes("409") || attempt === 2) {
+        throw e;
+      }
+    }
+  }
+  throw new Error("sotional_update_retry_exhausted");
+}
+
 export default {
   async fetch(request, env) {
     if (request.method === "OPTIONS") {
@@ -216,6 +323,10 @@ export default {
 
     if (request.method === "GET" && (path === "/" || path === "/health")) {
       return ok({ ok: true, service: "ranking-submit-worker" });
+    }
+
+    if (request.method === "GET" && path === "/api/sotional/health") {
+      return ok({ ok: true, service: "sotional-rating-api" });
     }
 
     if (request.method === "POST" && path === "/submit") {
@@ -250,6 +361,36 @@ export default {
 
       try {
         const result = await updateRanking(env, incoming);
+        return ok(result, 200);
+      } catch (e) {
+        return ok({ ok: false, error: "update_failed", detail: String(e?.message || e) }, 500);
+      }
+    }
+
+    if (request.method === "POST" && path === "/api/sotional/rating") {
+      if (!env.GITHUB_TOKEN) {
+        return ok({ ok: false, error: "missing_github_token" }, 500);
+      }
+
+      if (env.SOTIONAL_SUBMIT_SHARED_KEY) {
+        const key = request.headers.get("x-sotional-key") || "";
+        if (key !== env.SOTIONAL_SUBMIT_SHARED_KEY) {
+          return ok({ ok: false, error: "unauthorized" }, 401);
+        }
+      }
+
+      let body;
+      try {
+        body = await request.json();
+      } catch {
+        return ok({ ok: false, error: "invalid_json" }, 400);
+      }
+
+      try {
+        const result = await updateSotionalRating(env, body);
+        if (!result.ok) {
+          return ok(result, result.status || 400);
+        }
         return ok(result, 200);
       } catch (e) {
         return ok({ ok: false, error: "update_failed", detail: String(e?.message || e) }, 500);

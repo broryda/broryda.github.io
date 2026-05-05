@@ -10,6 +10,17 @@ async function loadJson(path) {
 }
 function qs(name) { return new URLSearchParams(location.search).get(name); }
 
+async function getSotionalApiBase() {
+  try {
+    const config = await loadJson('../ranking/ranking_config.json');
+    const submitUrl = String(config?.submitUrl || "").trim();
+    if (submitUrl.includes("/submit")) {
+      return submitUrl.replace(/\/submit\/?$/, "");
+    }
+  } catch {}
+  return "https://ranking-submit.broryda.workers.dev";
+}
+
 async function initDashboard() {
   const schedules = await loadJson('./data/schedules.json');
   const users = await loadJson('./data/users.json');
@@ -94,15 +105,60 @@ async function initSchedule() {
 async function initRating() {
   const userT = document.getElementById('rating-users');
   if (!userT) return;
-  const users = await loadJson('./data/users.json');
-  const matches = await loadJson('./data/rating_matches.json');
-  users.sort((a,b)=> b.rating-a.rating || a.username.localeCompare(b.username));
-  userT.innerHTML = users.map((u,i)=>`<tr><td>${i+1}</td><td>${u.username}</td><td>${u.role}</td><td><strong>${u.rating}</strong></td></tr>`).join('');
+  let users = await loadJson('./data/users.json');
+  let matches = await loadJson('./data/rating_matches.json');
 
-  const map = new Map(users.map(u=>[u.id,u.username]));
-  const mt = document.getElementById('rating-matches');
-  matches.sort((a,b)=> String(b.played_at).localeCompare(String(a.played_at)));
-  mt.innerHTML = matches.map(m=>`<tr><td>${m.played_at}</td><td>${map.get(m.winner_id)||m.winner_id} ${m.winner_delta>0?`+${m.winner_delta}`:m.winner_delta}</td><td>${map.get(m.loser_id)||m.loser_id} ${m.loser_delta>0?`+${m.loser_delta}`:m.loser_delta}</td><td>${m.winner_before} -> ${m.winner_after}</td></tr>`).join('') || '<tr><td colspan="4">기록 없음</td></tr>';
+  const draw = () => {
+    users.sort((a,b)=> b.rating-a.rating || a.username.localeCompare(b.username));
+    userT.innerHTML = users.map((u,i)=>`<tr><td>${i+1}</td><td>${u.username}</td><td>${u.role}</td><td><strong>${u.rating}</strong></td></tr>`).join('');
+    const map = new Map(users.map(u=>[u.id,u.username]));
+    const mt = document.getElementById('rating-matches');
+    matches.sort((a,b)=> String(b.played_at).localeCompare(String(a.played_at)));
+    mt.innerHTML = matches.map(m=>`<tr><td>${m.played_at}</td><td>${map.get(m.winner_id)||m.winner_id} ${m.winner_delta>0?`+${m.winner_delta}`:m.winner_delta}</td><td>${map.get(m.loser_id)||m.loser_id} ${m.loser_delta>0?`+${m.loser_delta}`:m.loser_delta}</td><td>${m.winner_before} -> ${m.winner_after}</td></tr>`).join('') || '<tr><td colspan="4">기록 없음</td></tr>';
+    const winnerSel = document.getElementById('winner-id');
+    const loserSel = document.getElementById('loser-id');
+    if (winnerSel && loserSel) {
+      const opts = `<option value=\"\">선택</option>${users.map(u=>`<option value=\"${u.id}\">${u.username} · ${u.rating}</option>`).join('')}`;
+      winnerSel.innerHTML = opts;
+      loserSel.innerHTML = opts;
+    }
+  };
+
+  draw();
+
+  const form = document.getElementById('rating-form');
+  if (!form) return;
+  const msg = document.getElementById('rating-message');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const winnerId = Number(document.getElementById('winner-id').value || 0);
+    const loserId = Number(document.getElementById('loser-id').value || 0);
+    const memo = document.getElementById('rating-memo').value.trim();
+    if (!winnerId || !loserId || winnerId === loserId) {
+      if (msg) msg.textContent = '승자/패자를 올바르게 선택해 주세요.';
+      return;
+    }
+    if (msg) msg.textContent = '저장 중...';
+    try {
+      const base = await getSotionalApiBase();
+      const res = await fetch(`${base}/api/sotional/rating`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ winner_id: winnerId, loser_id: loserId, memo })
+      });
+      const data = await res.json();
+      if (!res.ok || !data?.ok) {
+        throw new Error(data?.error || `http_${res.status}`);
+      }
+      users = Array.isArray(data.users) ? data.users : users;
+      matches = Array.isArray(data.matches) ? data.matches : matches;
+      draw();
+      form.reset();
+      if (msg) msg.textContent = '레이팅이 반영되었습니다.';
+    } catch (err) {
+      if (msg) msg.textContent = `저장 실패: ${String(err.message || err)}`;
+    }
+  });
 }
 
 initDashboard();

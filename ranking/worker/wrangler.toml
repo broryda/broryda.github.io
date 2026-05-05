@@ -8,4 +8,6 @@ GITHUB_REPO = "broryda.github.io"
 GITHUB_BRANCH = "main"
 RANKING_JSON_PATH = "ranking/ranking.json"
 RANKING_PUBLIC_JSON_PATH = "ranking/ranking_public.json"
-
+SOTIONAL_USERS_JSON_PATH = "sotional/data/users.json"
+SOTIONAL_RATING_MATCHES_JSON_PATH = "sotional/data/rating_matches.json"
+SOTIONAL_RATING_K_FACTOR = "32"
