@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sotional 1.0.3 구조 문서</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="./logo.png" alt="Sotional 로고" class="logo" />
+      <div>
+        <p class="eyebrow">Docker Analysis</p>
+        <h1>Sotional 1.0.3 웹 구조 정리</h1>
+        <p>Flask + MariaDB 기반 동호회 웹앱의 실행 구조, 라우팅, 데이터 모델을 한 페이지로 요약했습니다.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>1) Docker 구성</h2>
+      <ul>
+        <li><strong>web</strong>: Python 3.12 + Flask 앱 (`web/Dockerfile`)</li>
+        <li><strong>db</strong>: MariaDB 11.4 (`db/Dockerfile`)</li>
+        <li><strong>네트워크</strong>: `sotional-network` 브릿지 네트워크</li>
+        <li><strong>의존관계</strong>: `web`은 `db` healthcheck 통과 후 실행</li>
+        <li><strong>주요 포트</strong>: `WEB_PORT:5000`, `3306:3306`</li>
+      </ul>
+      <pre><code>docker compose up -d --build</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>2) 웹 앱 화면/기능 구조</h2>
+      <div class="grid">
+        <article>
+          <h3>공통</h3>
+          <p>`base.html` 기반 사이드바 + 메인 컨텐츠 레이아웃</p>
+        </article>
+        <article>
+          <h3>대시보드</h3>
+          <p>다가오는 일정 5개 + 레이팅 TOP 5</p>
+        </article>
+        <article>
+          <h3>게시판</h3>
+          <p>공지 / 자유 / 리그(정기·반기·토너먼트) / 뉴스 / 건의</p>
+        </article>
+        <article>
+          <h3>일정</h3>
+          <p>월간 캘린더, 관리자 일정 등록/수정/삭제</p>
+        </article>
+        <article>
+          <h3>레이팅</h3>
+          <p>Elo 기반 점수 계산, 경기 결과 기록</p>
+        </article>
+        <article>
+          <h3>계정</h3>
+          <p>관리자 전용 사용자 생성/권한 관리</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3) Flask 라우트 맵</h2>
+      <ul class="mono">
+        <li>`/` -> 로그인 여부에 따라 `/login` 또는 `/dashboard`</li>
+        <li>`/login`, `/logout`</li>
+        <li>`/dashboard`</li>
+        <li>`/admin/users` (관리자)</li>
+        <li>`/board/&lt;board&gt;`, `/board/&lt;board&gt;/new`</li>
+        <li>`/post/&lt;id&gt;`, `/post/&lt;id&gt;/edit`, `/post/&lt;id&gt;/delete`</li>
+        <li>`/schedule`, `/schedule/new`, `/schedule/&lt;id&gt;/edit`, `/schedule/&lt;id&gt;/delete`</li>
+        <li>`/rating`</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4) DB 스키마 요약</h2>
+      <ul>
+        <li><strong>users</strong>: 계정, 권한(admin/user), rating</li>
+        <li><strong>posts</strong>: 게시판 글(보드/리그유형/이미지/작성자)</li>
+        <li><strong>schedules</strong>: 일정(날짜/시간/장소/작성자)</li>
+        <li><strong>rating_matches</strong>: 대국 결과 로그(승자/패자/점수변동)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5) GitHub Pages 배포 경로</h2>
+      <p>이 페이지는 <code>broryda.github.io/sotional</code> 경로에 배치되도록 구성했습니다.</p>
+      <p><a href="https://broryda.github.io/sotional/" target="_blank" rel="noreferrer">배포 URL 열기</a></p>
+    </section>
+  </main>
+</body>
+</html>
