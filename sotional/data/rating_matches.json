@@ -1,0 +1,4 @@
+﻿[
+  {"id": 1, "winner_id": 1, "loser_id": 2, "winner_before": 1032, "loser_before": 1032, "winner_after": 1048, "loser_after": 1016, "winner_delta": 16, "loser_delta": -16, "memo": "정기리그 1R", "played_at": "2026-05-05 11:00:00", "recorded_by": 1},
+  {"id": 2, "winner_id": 2, "loser_id": 3, "winner_before": 1000, "loser_before": 1014, "winner_after": 1016, "loser_after": 998, "winner_delta": 16, "loser_delta": -16, "memo": "연습대국", "played_at": "2026-05-05 11:30:00", "recorded_by": 1}
+]

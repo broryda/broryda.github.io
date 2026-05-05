@@ -1,0 +1,7 @@
+﻿[
+  {"id": 1, "board": "notice", "league_type": null, "title": "Sotional 정적 웹 오픈", "content": "Flask 동적 앱을 JSON 기반 조회 사이트로 변환했습니다.", "image_path": null, "author_id": 1, "username": "admin", "created_at": "2026-05-05 12:35:00"},
+  {"id": 2, "board": "free", "league_type": null, "title": "첫 자유글", "content": "자유게시판 샘플 글입니다.", "image_path": null, "author_id": 2, "username": "lee", "created_at": "2026-05-05 12:36:00"},
+  {"id": 3, "board": "league", "league_type": "regular", "title": "정기리그 1R", "content": "이번 주 정기리그 매치업 공지입니다.", "image_path": null, "author_id": 1, "username": "admin", "created_at": "2026-05-05 12:37:00"},
+  {"id": 4, "board": "news", "league_type": null, "title": "클럽 뉴스", "content": "주간 뉴스 업데이트.", "image_path": null, "author_id": 1, "username": "admin", "created_at": "2026-05-05 12:38:00"},
+  {"id": 5, "board": "suggestion", "league_type": null, "title": "건의사항 샘플", "content": "건의 게시판 예시 글입니다.", "image_path": null, "author_id": 3, "username": "kim", "created_at": "2026-05-05 12:39:00"}
+]

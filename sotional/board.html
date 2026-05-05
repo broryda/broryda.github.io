@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>게시판 - Sotional</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="brand"><img class="brand-logo" src="./assets/img/logo.png" alt="logo"><div><strong>Sotional</strong><small>정적 웹 버전</small></div></div><nav class="nav"><a href="./index.html">대시보드</a><a href="./board.html?board=notice">공지사항</a><a href="./board.html?board=free">자유게시판</a><a href="./board.html?board=league&league_type=regular">리그</a><a href="./board.html?board=news">뉴스</a><a href="./board.html?board=suggestion">건의</a><a href="./schedule.html">일정</a><a href="./rating.html">레이팅</a></nav></aside>
+    <main class="content">
+      <header class="topbar"><div><h1 id="board-title">게시판</h1><p id="board-subtitle">조회 전용</p></div></header>
+      <section class="toolbar"><div class="toolbar-left"><div id="league-tabs" class="tabs"></div><form class="search-form" id="search-form"><input id="q" placeholder="검색"><button class="button ghost" type="submit">검색</button></form></div></section>
+      <section id="post-list" class="post-list"></section>
+    </main>
+  </div>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
