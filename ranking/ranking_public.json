@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-08T00:44:25.092Z",
+  "updatedAt": "2026-05-08T00:44:26.585Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -233,6 +233,13 @@
       "createdAt": "2026-05-08T00:25:34.651Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 11,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-08T00:44:26.428Z"
+    },
+    {
       "nickname": "Hoban",
       "solvedCount": 10,
       "elo": 300,
@@ -245,13 +252,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-07T23:02:18.694Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 10,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-08T00:44:13.928Z"
     },
     {
       "nickname": "사용자",
