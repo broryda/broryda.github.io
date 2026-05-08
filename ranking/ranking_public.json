@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-08T03:47:34.759Z",
+  "updatedAt": "2026-05-08T03:47:37.233Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -142,6 +142,13 @@
       "createdAt": "2026-05-08T03:23:45.505Z"
     },
     {
+      "nickname": "자정",
+      "solvedCount": 133,
+      "elo": 1163,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-08T03:47:37.121Z"
+    },
+    {
       "nickname": "임제자팬",
       "solvedCount": 329,
       "elo": 1161,
@@ -149,18 +156,18 @@
       "createdAt": "2026-05-08T02:43:35.385Z"
     },
     {
-      "nickname": "자정",
-      "solvedCount": 132,
-      "elo": 1145,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-08T03:46:51.297Z"
-    },
-    {
       "nickname": "TEST",
       "solvedCount": 23,
       "elo": 1114,
       "streakCurrent": 0,
       "createdAt": "2026-05-01T02:36:19.590Z"
+    },
+    {
+      "nickname": "미캉",
+      "solvedCount": 205,
+      "elo": 1113,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-08T03:47:33.715Z"
     },
     {
       "nickname": "사용자",
@@ -434,13 +441,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-08T01:09:41.142Z"
-    },
-    {
-      "nickname": "미캉",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-05-08T03:47:33.534Z"
     },
     {
       "nickname": "사용자",
