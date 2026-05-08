@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-08T00:47:07.557Z",
+  "updatedAt": "2026-05-08T00:47:19.952Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -303,9 +303,9 @@
       "solvedCount": 26,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-08T00:47:07.306Z",
       "deviceId": "dev_mow6woft_nhmxpib4",
-      "lastSubmittedAt": "2026-05-08T00:47:07.306Z",
-      "createdAt": "2026-05-08T00:47:07.306Z"
+      "lastSubmittedAt": "2026-05-08T00:47:07.306Z"
     },
     {
       "nickname": "Hoban",
@@ -369,15 +369,6 @@
       "createdAt": "2026-05-07T21:39:50.234Z",
       "deviceId": "dev_mow08rnc_ktue6ci1",
       "lastSubmittedAt": "2026-05-07T21:39:50.234Z"
-    },
-    {
-      "nickname": "한돌공이",
-      "solvedCount": 1,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-07T21:50:56.384Z",
-      "deviceId": "dev_mow0q9ro_h6c5tq2v",
-      "lastSubmittedAt": "2026-05-07T21:50:56.384Z"
     },
     {
       "nickname": "사용자 박덕수",
@@ -477,6 +468,15 @@
       "createdAt": "2026-05-08T00:42:10.893Z",
       "deviceId": "dev_moh2gqb6_zo5kbnl0",
       "lastSubmittedAt": "2026-05-08T00:42:10.893Z"
+    },
+    {
+      "nickname": "한돌공이",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mow0q9ro_h6c5tq2v",
+      "lastSubmittedAt": "2026-05-08T00:47:19.122Z",
+      "createdAt": "2026-05-08T00:47:19.122Z"
     },
     {
       "nickname": "사용자",
