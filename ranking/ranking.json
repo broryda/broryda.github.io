@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-11T04:00:06.565Z",
+  "updatedAt": "2026-05-11T04:00:12.557Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -182,15 +182,6 @@
       "lastSubmittedAt": "2026-05-11T03:57:21.101Z"
     },
     {
-      "nickname": "노무쿤",
-      "solvedCount": 694,
-      "elo": 1426,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-11T03:59:58.065Z",
-      "deviceId": "dev_mozr4rnn_x5hn00v8",
-      "lastSubmittedAt": "2026-05-11T03:59:58.065Z"
-    },
-    {
       "nickname": "기우회종신회장김준영",
       "solvedCount": 234,
       "elo": 1418,
@@ -198,6 +189,15 @@
       "createdAt": "2026-05-11T03:01:29.854Z",
       "deviceId": "dev_mowie1y7_adz64n0x",
       "lastSubmittedAt": "2026-05-11T03:01:29.854Z"
+    },
+    {
+      "nickname": "노무쿤",
+      "solvedCount": 694,
+      "elo": 1410,
+      "streakCurrent": 2,
+      "deviceId": "dev_mozr4rnn_x5hn00v8",
+      "lastSubmittedAt": "2026-05-11T04:00:12.323Z",
+      "createdAt": "2026-05-11T04:00:12.323Z"
     },
     {
       "nickname": "슝",
@@ -519,9 +519,9 @@
       "solvedCount": 110,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-11T04:00:06.439Z",
       "deviceId": "dev_mownv9vy_v2xmo7hx",
-      "lastSubmittedAt": "2026-05-11T04:00:06.439Z",
-      "createdAt": "2026-05-11T04:00:06.439Z"
+      "lastSubmittedAt": "2026-05-11T04:00:06.439Z"
     },
     {
       "nickname": "연유상",
