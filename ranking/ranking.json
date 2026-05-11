@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-11T14:24:48.420Z",
+  "updatedAt": "2026-05-11T14:24:57.773Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -353,6 +353,15 @@
       "lastSubmittedAt": "2026-05-10T04:00:39.505Z"
     },
     {
+      "nickname": "123456",
+      "solvedCount": 260,
+      "elo": 892,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp16d6io_ws0t8c9l",
+      "lastSubmittedAt": "2026-05-11T14:24:57.986Z",
+      "createdAt": "2026-05-11T14:24:57.986Z"
+    },
+    {
       "nickname": "달서구 피바라기 강지성",
       "solvedCount": 270,
       "elo": 887,
@@ -360,15 +369,6 @@
       "createdAt": "2026-05-11T14:24:35.033Z",
       "deviceId": "dev_mp0wh4lm_sy0wb6y3",
       "lastSubmittedAt": "2026-05-11T14:24:35.033Z"
-    },
-    {
-      "nickname": "123456",
-      "solvedCount": 259,
-      "elo": 881,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-11T14:24:38.837Z",
-      "deviceId": "dev_mp16d6io_ws0t8c9l",
-      "lastSubmittedAt": "2026-05-11T14:24:38.837Z"
     },
     {
       "nickname": "라선",
@@ -519,9 +519,9 @@
       "solvedCount": 85,
       "elo": 496,
       "streakCurrent": 1,
+      "createdAt": "2026-05-11T14:24:48.334Z",
       "deviceId": "dev_mp0h8pqh_velov2po",
-      "lastSubmittedAt": "2026-05-11T14:24:48.334Z",
-      "createdAt": "2026-05-11T14:24:48.334Z"
+      "lastSubmittedAt": "2026-05-11T14:24:48.334Z"
     },
     {
       "nickname": "사용자",
