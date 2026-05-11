@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>사활문제집 밴 목록</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+        margin: 0;
+        background: #f5fbfd;
+        color: #1d2a33;
+      }
+      .wrap {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 24px 16px 40px;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 28px;
+        font-weight: 800;
+      }
+      .meta {
+        color: #607480;
+        font-size: 13px;
+        margin-bottom: 12px;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #d7eaf1;
+        border-radius: 16px;
+        padding: 14px;
+        margin-bottom: 12px;
+        box-shadow: 0 6px 20px rgba(21, 50, 61, 0.05);
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      li {
+        margin: 4px 0;
+        word-break: break-all;
+      }
+      .empty {
+        color: #607480;
+      }
+      .back {
+        display: inline-block;
+        margin-top: 8px;
+        color: #0b8f3e;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>디바이스 영구 밴 목록</h1>
+      <div id="updatedAt" class="meta">업데이트 시각: -</div>
+
+      <div class="card">
+        <h2>닉네임 밴</h2>
+        <ul id="nickList"></ul>
+      </div>
+
+      <div class="card">
+        <h2>DeviceId 밴</h2>
+        <ul id="deviceList"></ul>
+      </div>
+
+      <a class="back" href="./index.html">랭킹 페이지로 돌아가기</a>
+    </div>
+    <script>
+      function renderList(el, values) {
+        el.innerHTML = "";
+        if (!values || values.length === 0) {
+          const li = document.createElement("li");
+          li.className = "empty";
+          li.textContent = "등록된 항목이 없습니다.";
+          el.appendChild(li);
+          return;
+        }
+        values.forEach((v) => {
+          const li = document.createElement("li");
+          li.textContent = String(v);
+          el.appendChild(li);
+        });
+      }
+
+      async function load() {
+        try {
+          const res = await fetch("./device_ban.json", { cache: "no-store" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          const data = await res.json();
+          document.getElementById("updatedAt").textContent = `업데이트 시각: ${data.updatedAt || "-"}`;
+          renderList(document.getElementById("nickList"), Array.isArray(data.bannedNicknames) ? data.bannedNicknames : []);
+          renderList(document.getElementById("deviceList"), Array.isArray(data.bannedDeviceIds) ? data.bannedDeviceIds : []);
+        } catch {
+          document.getElementById("updatedAt").textContent = "업데이트 시각: 로딩 실패";
+          renderList(document.getElementById("nickList"), []);
+          renderList(document.getElementById("deviceList"), []);
+        }
+      }
+      load();
+    </script>
+  </body>
+</html>

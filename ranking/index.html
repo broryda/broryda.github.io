@@ -109,6 +109,9 @@
 
       <div class="card">
         <div id="updatedAt" class="meta">업데이트 시각: -</div>
+        <div style="margin-top:6px">
+          <a href="./device-ban.html" style="font-size:13px;color:#0b8f3e;font-weight:700;text-decoration:none">디바이스 밴 목록 보기</a>
+        </div>
       </div>
 
       <div class="card">
@@ -136,10 +139,17 @@
     <script>
       let entries = [];
       let sortKey = "elo";
+      const STALE_MS = 7 * 24 * 60 * 60 * 1000;
 
       function toTs(v) {
         const t = Date.parse(String(v || ""));
         return Number.isFinite(t) ? t : Number.MAX_SAFE_INTEGER;
+      }
+
+      function isFreshEntry(row) {
+        const t = Date.parse(String(row?.lastSubmittedAt || ""));
+        if (!Number.isFinite(t)) return true;
+        return Date.now() - t <= STALE_MS;
       }
 
       function medal(rank) {
@@ -206,7 +216,8 @@
           const res = await fetch("./ranking_public.json", { cache: "no-store" });
           if (!res.ok) throw new Error("HTTP " + res.status);
           const data = await res.json();
-          entries = Array.isArray(data.entries) ? data.entries : [];
+          const raw = Array.isArray(data.entries) ? data.entries : [];
+          entries = raw.filter(isFreshEntry);
           document.getElementById("updatedAt").textContent = `업데이트 시각: ${data.updatedAt || "-"}`;
           render();
         } catch {

@@ -101,6 +101,44 @@ function buildPublicPayload(payload) {
   };
 }
 
+function dropStaleEntries(entries, staleMs = 7 * 24 * 60 * 60 * 1000) {
+  const now = Date.now();
+  return entries.filter((row) => {
+    const t = Date.parse(String(row?.lastSubmittedAt || ""));
+    if (!Number.isFinite(t)) return true;
+    return now - t <= staleMs;
+  });
+}
+
+async function loadBanConfig(env) {
+  const banPath = env.RANKING_BAN_JSON_PATH || "ranking/device_ban.json";
+  try {
+    const file = await githubGetFile(env, banPath);
+    const parsed = JSON.parse(file.text);
+    const bannedNicknames = Array.isArray(parsed?.bannedNicknames)
+      ? parsed.bannedNicknames.map((v) => String(v || "").trim()).filter(Boolean)
+      : [];
+    const bannedDeviceIds = Array.isArray(parsed?.bannedDeviceIds)
+      ? parsed.bannedDeviceIds.map((v) => String(v || "").trim()).filter(Boolean)
+      : [];
+    return {
+      path: banPath,
+      sha: file.sha,
+      raw: parsed,
+      bannedNicknames: new Set(bannedNicknames),
+      bannedDeviceIds: new Set(bannedDeviceIds),
+    };
+  } catch {
+    return {
+      path: banPath,
+      sha: null,
+      raw: { updatedAt: "", bannedNicknames: [], bannedDeviceIds: [] },
+      bannedNicknames: new Set(),
+      bannedDeviceIds: new Set(),
+    };
+  }
+}
+
 function calculateRatingDelta(winnerRating, loserRating, kFactor = 32) {
   const expectedWinner = 1 / (1 + 10 ** ((loserRating - winnerRating) / 400));
   const winnerDelta = Math.max(1, Math.round(kFactor * (1 - expectedWinner)));
@@ -174,7 +212,7 @@ async function updateRanking(env, incoming) {
     const rows = Array.isArray(payload.entries) ? payload.entries : [];
     const normalized = rows.map(normalizeEntry).filter(Boolean);
     normalized.push(incoming);
-    const merged = dedupeAndSort(normalized);
+    const merged = dedupeAndSort(dropStaleEntries(normalized));
     const nextPayload = {
       updatedAt: nowIso,
       entries: merged,
@@ -352,6 +390,23 @@ export default {
       if (!incoming || !incoming.deviceId) {
         return ok({ ok: false, error: "invalid_payload" }, 400);
       }
+
+      const hardBannedNicknames = new Set(["노무쿤", "노알라"]);
+      const banConfig = await loadBanConfig(env);
+      const isNickBanned =
+        hardBannedNicknames.has(incoming.nickname) || banConfig.bannedNicknames.has(incoming.nickname);
+      const isDeviceBanned = banConfig.bannedDeviceIds.has(incoming.deviceId);
+      if (isNickBanned || isDeviceBanned) {
+        return ok(
+          {
+            ok: false,
+            error: "banned",
+            reason: isDeviceBanned ? "device_id_banned" : "nickname_banned",
+          },
+          403,
+        );
+      }
+
       if (!incoming.lastSubmittedAt) {
         incoming.lastSubmittedAt = new Date().toISOString();
       }
