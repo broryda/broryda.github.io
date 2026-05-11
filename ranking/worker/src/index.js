@@ -110,6 +110,18 @@ function dropStaleEntries(entries, staleMs = 7 * 24 * 60 * 60 * 1000) {
   });
 }
 
+function dropBannedEntries(entries, bannedNicknames, bannedDeviceIds) {
+  const hardBannedNicknames = new Set(["노무쿤", "노알라"]);
+  return entries.filter((row) => {
+    const nickname = String(row?.nickname || "").trim();
+    const deviceId = String(row?.deviceId || "").trim();
+    if (hardBannedNicknames.has(nickname)) return false;
+    if (bannedNicknames?.has?.(nickname)) return false;
+    if (deviceId && bannedDeviceIds?.has?.(deviceId)) return false;
+    return true;
+  });
+}
+
 async function loadBanConfig(env) {
   const banPath = env.RANKING_BAN_JSON_PATH || "ranking/device_ban.json";
   try {
@@ -200,6 +212,7 @@ async function updateRanking(env, incoming) {
   const publicPath = env.RANKING_PUBLIC_JSON_PATH || "ranking/ranking_public.json";
   const nowIso = new Date().toISOString();
 
+  const banConfig = await loadBanConfig(env);
   for (let attempt = 0; attempt < 3; attempt += 1) {
     const file = await githubGetFile(env, rankingPath);
     let payload;
@@ -212,7 +225,13 @@ async function updateRanking(env, incoming) {
     const rows = Array.isArray(payload.entries) ? payload.entries : [];
     const normalized = rows.map(normalizeEntry).filter(Boolean);
     normalized.push(incoming);
-    const merged = dedupeAndSort(dropStaleEntries(normalized));
+    const merged = dedupeAndSort(
+      dropBannedEntries(
+        dropStaleEntries(normalized),
+        banConfig.bannedNicknames,
+        banConfig.bannedDeviceIds,
+      ),
+    );
     const nextPayload = {
       updatedAt: nowIso,
       entries: merged,
