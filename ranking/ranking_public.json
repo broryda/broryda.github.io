@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-11T05:43:56.412Z",
+  "updatedAt": "2026-05-11T05:44:07.311Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -205,6 +205,13 @@
       "createdAt": "2026-05-10T17:29:10.525Z"
     },
     {
+      "nickname": "개구리바둑",
+      "solvedCount": 232,
+      "elo": 1012,
+      "streakCurrent": 2,
+      "createdAt": "2026-05-11T05:44:07.041Z"
+    },
+    {
       "nickname": "사용자",
       "solvedCount": 16,
       "elo": 1000,
@@ -224,13 +231,6 @@
       "elo": 1000,
       "streakCurrent": 0,
       "createdAt": "2026-04-27T01:37:44.868Z"
-    },
-    {
-      "nickname": "개구리바둑",
-      "solvedCount": 231,
-      "elo": 999,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-11T05:43:56.161Z"
     },
     {
       "nickname": "사용자",
