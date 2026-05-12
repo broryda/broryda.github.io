@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T08:40:54.481Z",
+  "updatedAt": "2026-05-12T08:40:59.642Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -200,15 +200,6 @@
       "lastSubmittedAt": "2026-05-12T05:59:31.566Z"
     },
     {
-      "nickname": "전자22 김준영",
-      "solvedCount": 821,
-      "elo": 1461,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-12T08:40:41.647Z",
-      "deviceId": "dev_mozr4rnn_x5hn00v8",
-      "lastSubmittedAt": "2026-05-12T08:40:41.647Z"
-    },
-    {
       "nickname": "선진국1등김준영",
       "solvedCount": 366,
       "elo": 1452,
@@ -216,6 +207,15 @@
       "createdAt": "2026-05-12T03:29:43.286Z",
       "deviceId": "dev_mowej6f6_tzahwjdn",
       "lastSubmittedAt": "2026-05-12T03:29:43.286Z"
+    },
+    {
+      "nickname": "전자22 김준영",
+      "solvedCount": 822,
+      "elo": 1447,
+      "streakCurrent": 3,
+      "deviceId": "dev_mozr4rnn_x5hn00v8",
+      "lastSubmittedAt": "2026-05-12T08:40:59.462Z",
+      "createdAt": "2026-05-12T08:40:59.462Z"
     },
     {
       "nickname": "슝",
@@ -708,9 +708,9 @@
       "solvedCount": 160,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-12T08:40:54.014Z",
       "deviceId": "dev_mp26zg4v_fcs9octl",
-      "lastSubmittedAt": "2026-05-12T08:40:54.014Z",
-      "createdAt": "2026-05-12T08:40:54.014Z"
+      "lastSubmittedAt": "2026-05-12T08:40:54.014Z"
     },
     {
       "nickname": "조새우볶음밥",
