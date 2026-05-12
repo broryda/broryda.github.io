@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T12:50:47.140Z",
+  "updatedAt": "2026-05-12T12:50:46.075Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -137,15 +137,6 @@
       "lastSubmittedAt": "2026-04-28T16:18:43.556Z"
     },
     {
-      "nickname": "임제자",
-      "solvedCount": 2910,
-      "elo": 1504,
-      "streakCurrent": 16,
-      "createdAt": "2026-05-12T11:01:24.236Z",
-      "deviceId": "dev_moh2gqb6_zo5kbnl0",
-      "lastSubmittedAt": "2026-05-12T11:01:24.236Z"
-    },
-    {
       "nickname": "기우회종신회장김준영",
       "solvedCount": 275,
       "elo": 1504,
@@ -153,6 +144,15 @@
       "createdAt": "2026-05-12T07:12:03.340Z",
       "deviceId": "dev_mowie1y7_adz64n0x",
       "lastSubmittedAt": "2026-05-12T07:12:03.340Z"
+    },
+    {
+      "nickname": "임제자",
+      "solvedCount": 2910,
+      "elo": 1499,
+      "streakCurrent": 16,
+      "deviceId": "dev_moh2gqb6_zo5kbnl0",
+      "lastSubmittedAt": "2026-05-12T12:50:46.027Z",
+      "createdAt": "2026-05-12T12:50:46.027Z"
     },
     {
       "nickname": "주연",
@@ -735,9 +735,9 @@
       "solvedCount": 194,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-12T12:50:47.116Z",
       "deviceId": "dev_mp29laaw_gw1g4x36",
-      "lastSubmittedAt": "2026-05-12T12:50:47.116Z",
-      "createdAt": "2026-05-12T12:50:47.116Z"
+      "lastSubmittedAt": "2026-05-12T12:50:47.116Z"
     },
     {
       "nickname": "커피",
