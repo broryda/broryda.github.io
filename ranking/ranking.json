@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T07:04:24.132Z",
+  "updatedAt": "2026-05-12T07:04:38.033Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -425,15 +425,6 @@
       "lastSubmittedAt": "2026-05-11T10:40:13.296Z"
     },
     {
-      "nickname": "사용자",
-      "solvedCount": 55,
-      "elo": 795,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-12T07:03:55.510Z",
-      "deviceId": "dev_mox2oqpv_dyr3d7xy",
-      "lastSubmittedAt": "2026-05-12T07:03:55.510Z"
-    },
-    {
       "nickname": "뚱보아키",
       "solvedCount": 1152,
       "elo": 792,
@@ -441,6 +432,15 @@
       "createdAt": "2026-05-12T05:34:43.156Z",
       "deviceId": "dev_moj9lgxr_reijlfen",
       "lastSubmittedAt": "2026-05-12T05:34:43.156Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 56,
+      "elo": 790,
+      "streakCurrent": 1,
+      "deviceId": "dev_mox2oqpv_dyr3d7xy",
+      "lastSubmittedAt": "2026-05-12T07:04:38.158Z",
+      "createdAt": "2026-05-12T07:04:38.158Z"
     },
     {
       "nickname": "라선",
@@ -915,9 +915,9 @@
       "solvedCount": 20,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-12T07:04:23.829Z",
       "deviceId": "dev_mp2a8cnc_j4dutapz",
-      "lastSubmittedAt": "2026-05-12T07:04:23.829Z",
-      "createdAt": "2026-05-12T07:04:23.829Z"
+      "lastSubmittedAt": "2026-05-12T07:04:23.829Z"
     },
     {
       "nickname": "김도영의홈런교실",
