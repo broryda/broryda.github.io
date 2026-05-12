@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T14:26:59.599Z",
+  "updatedAt": "2026-05-12T14:27:03.986Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -525,6 +525,15 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 31,
+      "elo": 566,
+      "streakCurrent": 1,
+      "deviceId": "dev_mown8olg_a5iui20x",
+      "lastSubmittedAt": "2026-05-12T14:27:07.145Z",
+      "createdAt": "2026-05-12T14:27:07.145Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 111,
       "elo": 562,
       "streakCurrent": 2,
@@ -540,15 +549,6 @@
       "createdAt": "2026-05-11T11:44:34.806Z",
       "deviceId": "dev_mowyh7ua_3t5njas5",
       "lastSubmittedAt": "2026-05-11T11:44:34.806Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 30,
-      "elo": 555,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-12T14:26:20.358Z",
-      "deviceId": "dev_mown8olg_a5iui20x",
-      "lastSubmittedAt": "2026-05-12T14:26:20.358Z"
     },
     {
       "nickname": "엄마저는커서김준영이될래요",
@@ -582,9 +582,9 @@
       "solvedCount": 419,
       "elo": 519,
       "streakCurrent": 2,
+      "createdAt": "2026-05-12T14:26:59.058Z",
       "deviceId": "dev_mowt885v_4e13kw3h",
-      "lastSubmittedAt": "2026-05-12T14:26:59.058Z",
-      "createdAt": "2026-05-12T14:26:59.058Z"
+      "lastSubmittedAt": "2026-05-12T14:26:59.058Z"
     },
     {
       "nickname": "태연이",
