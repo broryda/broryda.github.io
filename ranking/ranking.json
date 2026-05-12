@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T14:37:19.504Z",
+  "updatedAt": "2026-05-12T14:37:26.740Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -434,6 +434,15 @@
       "lastSubmittedAt": "2026-05-12T02:27:02.942Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 56,
+      "elo": 801,
+      "streakCurrent": 1,
+      "deviceId": "dev_mown8olg_a5iui20x",
+      "lastSubmittedAt": "2026-05-12T14:37:29.944Z",
+      "createdAt": "2026-05-12T14:37:29.944Z"
+    },
+    {
       "nickname": "뚱보아키",
       "solvedCount": 1152,
       "elo": 792,
@@ -441,15 +450,6 @@
       "createdAt": "2026-05-12T05:34:43.156Z",
       "deviceId": "dev_moj9lgxr_reijlfen",
       "lastSubmittedAt": "2026-05-12T05:34:43.156Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 55,
-      "elo": 791,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-12T14:37:17.155Z",
-      "deviceId": "dev_mown8olg_a5iui20x",
-      "lastSubmittedAt": "2026-05-12T14:37:17.155Z"
     },
     {
       "nickname": "타이어 갈기 장인",
@@ -474,9 +474,9 @@
       "solvedCount": 242,
       "elo": 724,
       "streakCurrent": 2,
+      "createdAt": "2026-05-12T14:37:19.290Z",
       "deviceId": "dev_mp0h8pqh_velov2po",
-      "lastSubmittedAt": "2026-05-12T14:37:19.290Z",
-      "createdAt": "2026-05-12T14:37:19.290Z"
+      "lastSubmittedAt": "2026-05-12T14:37:19.290Z"
     },
     {
       "nickname": "서현",
