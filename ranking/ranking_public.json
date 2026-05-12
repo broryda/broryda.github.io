@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T03:44:24.415Z",
+  "updatedAt": "2026-05-12T03:44:28.811Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -191,6 +191,13 @@
       "createdAt": "2026-05-11T04:25:46.305Z"
     },
     {
+      "nickname": "개구리바둑",
+      "solvedCount": 290,
+      "elo": 1285,
+      "streakCurrent": 3,
+      "createdAt": "2026-05-12T03:44:27.793Z"
+    },
+    {
       "nickname": "임제자팬",
       "solvedCount": 396,
       "elo": 1283,
@@ -203,13 +210,6 @@
       "elo": 1270,
       "streakCurrent": 2,
       "createdAt": "2026-05-12T01:32:57.822Z"
-    },
-    {
-      "nickname": "개구리바둑",
-      "solvedCount": 289,
-      "elo": 1269,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-12T03:43:42.955Z"
     },
     {
       "nickname": "엄태승",
