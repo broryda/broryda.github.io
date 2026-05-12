@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T04:11:17.762Z",
+  "updatedAt": "2026-05-12T04:11:21.232Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -290,15 +290,6 @@
       "lastSubmittedAt": "2026-05-11T17:49:01.568Z"
     },
     {
-      "nickname": "엄태승",
-      "solvedCount": 1356,
-      "elo": 1116,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-12T04:10:34.334Z",
-      "deviceId": "dev_mofd9phu_r9duemsw",
-      "lastSubmittedAt": "2026-05-12T04:10:34.334Z"
-    },
-    {
       "nickname": "Lig",
       "solvedCount": 117,
       "elo": 1114,
@@ -306,6 +297,15 @@
       "createdAt": "2026-05-11T20:57:46.430Z",
       "deviceId": "dev_mogj2aoo_6pvi0fia",
       "lastSubmittedAt": "2026-05-11T20:57:46.430Z"
+    },
+    {
+      "nickname": "엄태승",
+      "solvedCount": 1357,
+      "elo": 1108,
+      "streakCurrent": 2,
+      "deviceId": "dev_mofd9phu_r9duemsw",
+      "lastSubmittedAt": "2026-05-12T04:11:21.504Z",
+      "createdAt": "2026-05-12T04:11:21.504Z"
     },
     {
       "nickname": "수성구야만의몽둥이태경",
@@ -852,9 +852,9 @@
       "solvedCount": 14,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-12T04:11:18.068Z",
       "deviceId": "dev_mp218jmt_c2ynv5ip",
-      "lastSubmittedAt": "2026-05-12T04:11:18.068Z",
-      "createdAt": "2026-05-12T04:11:18.068Z"
+      "lastSubmittedAt": "2026-05-12T04:11:18.068Z"
     },
     {
       "nickname": "김도영의홈런교실",
