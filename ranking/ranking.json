@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T10:41:32.973Z",
+  "updatedAt": "2026-05-12T10:41:35.466Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -171,15 +171,6 @@
       "createdAt": "2026-05-12T08:38:54.637Z",
       "deviceId": "dev_mp1209my_4o59jwt4",
       "lastSubmittedAt": "2026-05-12T08:38:54.637Z"
-    },
-    {
-      "nickname": "송채린",
-      "solvedCount": 841,
-      "elo": 1488,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-12T10:37:47.640Z",
-      "deviceId": "dev_mozr4rnn_x5hn00v8",
-      "lastSubmittedAt": "2026-05-12T10:37:47.640Z"
     },
     {
       "nickname": "공구소년",
@@ -591,9 +582,9 @@
       "solvedCount": 40,
       "elo": 423,
       "streakCurrent": 1,
+      "createdAt": "2026-05-12T10:41:32.770Z",
       "deviceId": "dev_moypniv0_hx72ur7m",
-      "lastSubmittedAt": "2026-05-12T10:41:32.770Z",
-      "createdAt": "2026-05-12T10:41:32.770Z"
+      "lastSubmittedAt": "2026-05-12T10:41:32.770Z"
     },
     {
       "nickname": "전사이가도난",
@@ -1449,6 +1440,15 @@
       "createdAt": "2026-05-12T09:16:38.508Z",
       "deviceId": "dev_mp24xenc_j7m29daf",
       "lastSubmittedAt": "2026-05-12T09:16:38.508Z"
+    },
+    {
+      "nickname": "송채린",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mozr4rnn_x5hn00v8",
+      "lastSubmittedAt": "2026-05-12T10:41:34.103Z",
+      "createdAt": "2026-05-12T10:41:34.103Z"
     },
     {
       "nickname": "ㅆㄷㄴ션ㄷㄱ",
