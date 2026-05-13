@@ -17,3 +17,4 @@ export function formatProblemTitle(problemPath: string, index: ProblemIndex): st
   }
   return basenameNoExt(problemPath);
 }
+

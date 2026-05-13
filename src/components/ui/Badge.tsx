@@ -1,8 +1,8 @@
-﻿import React from 'react';
-import {StyleSheet, Text, type StyleProp, type TextStyle, type ViewStyle, View} from 'react-native';
+import React from 'react';
+import {StyleSheet, Text, View, type StyleProp, type TextStyle, type ViewStyle} from 'react-native';
 import {theme} from '../../design/theme';
 
-type BadgeVariant = 'neutral' | 'info' | 'success' | 'warning' | 'error' | 'outline';
+type BadgeVariant = 'neutral' | 'info' | 'success' | 'warning' | 'error' | 'outline' | 'streak';
 type BadgeSize = 'sm' | 'md';
 
 type Props = {
@@ -13,13 +13,42 @@ type Props = {
   textStyle?: StyleProp<TextStyle>;
 };
 
-const variantStyle: Record<BadgeVariant, {bg: string; border: string; text: string}> = {
-  neutral: {bg: '#EAF0EF', border: '#D5E1DE', text: theme.color.text.secondary},
-  info: {bg: '#E6F1F8', border: '#C8DDED', text: theme.color.state.info},
-  success: {bg: '#E5F4EC', border: '#BFE2CF', text: theme.color.state.success},
-  warning: {bg: '#FFF4E5', border: '#F2D7AD', text: theme.color.state.warning},
-  error: {bg: '#FDECEC', border: '#F4C9C9', text: theme.color.state.error},
-  outline: {bg: 'transparent', border: theme.color.border.soft, text: theme.color.text.secondary},
+const variantStyle: Record<BadgeVariant, {background: string; border: string; text: string}> = {
+  neutral: {
+    background: '#EEF8FB',
+    border: '#D7E8F5',
+    text: '#567080',
+  },
+  info: {
+    background: '#EAF3FF',
+    border: '#BFD9FF',
+    text: '#3F79C8',
+  },
+  success: {
+    background: '#E7F7EC',
+    border: '#BFE5CA',
+    text: '#2A7A49',
+  },
+  warning: {
+    background: '#FFF4DB',
+    border: '#F3D48B',
+    text: '#9A6A12',
+  },
+  error: {
+    background: '#FDEBED',
+    border: '#F4C4C8',
+    text: '#B4464C',
+  },
+  outline: {
+    background: 'transparent',
+    border: '#C5DDED',
+    text: '#567080',
+  },
+  streak: {
+    background: '#F1ECFF',
+    border: '#D8CBFF',
+    text: '#6D55CC',
+  },
 };
 
 export function Badge({
@@ -35,10 +64,14 @@ export function Badge({
       style={[
         styles.base,
         size === 'sm' ? styles.sm : styles.md,
-        {backgroundColor: token.bg, borderColor: token.border},
+        {
+          backgroundColor: token.background,
+          borderColor: token.border,
+        },
         style,
       ]}>
       <Text
+        numberOfLines={1}
         style={[
           styles.text,
           size === 'sm' ? styles.textSm : styles.textMd,
@@ -53,32 +86,29 @@ export function Badge({
 
 const styles = StyleSheet.create({
   base: {
+    alignSelf: 'flex-start',
     borderRadius: theme.radius.pill,
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    alignSelf: 'flex-start',
+    paddingHorizontal: theme.space.xs,
   },
   sm: {
-    minHeight: 22,
-    paddingHorizontal: 8,
+    minHeight: 24,
     paddingVertical: 2,
   },
   md: {
-    minHeight: 28,
-    paddingHorizontal: 10,
+    minHeight: 31,
+    paddingHorizontal: theme.space.sm,
     paddingVertical: 4,
   },
   text: {
     includeFontPadding: false,
-    fontWeight: '700',
   },
   textSm: {
-    fontSize: 11,
-    lineHeight: 14,
+    ...theme.typography.micro,
   },
   textMd: {
-    fontSize: 13,
-    lineHeight: 16,
+    ...theme.typography.label,
   },
 });

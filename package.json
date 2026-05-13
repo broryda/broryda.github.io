@@ -10,37 +10,51 @@
     "ios:archive": "bash ./scripts/build_ios_release.sh",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "windows": "npx @react-native-community/cli run-windows",
+    "test:windows": "jest --config jest.config.windows.js"
   },
   "dependencies": {
-    "@react-native/new-app-screen": "0.85.2",
-    "react": "19.2.3",
-    "react-native": "0.85.2",
+    "@react-native/new-app-screen": "^0.82.1",
+    "react": "^19.1.1",
+    "react-native": "^0.82.1",
     "react-native-fs": "^2.20.0",
-    "react-native-safe-area-context": "^5.5.2"
+    "react-native-google-mobile-ads": "^16.3.3",
+    "react-native-safe-area-context": "^5.5.2",
+    "react-native-share": "^12.3.1",
+    "react-native-view-shot": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
-    "@react-native-community/cli": "20.1.0",
-    "@react-native-community/cli-platform-android": "20.1.0",
-    "@react-native-community/cli-platform-ios": "20.1.0",
-    "@react-native/babel-preset": "0.85.2",
-    "@react-native/eslint-config": "0.85.2",
-    "@react-native/jest-preset": "0.85.2",
-    "@react-native/metro-config": "0.85.2",
-    "@react-native/typescript-config": "0.85.2",
+    "@react-native-community/cli": "^20.0.2",
+    "@react-native-community/cli-platform-android": "^20.0.2",
+    "@react-native-community/cli-platform-ios": "^20.0.2",
+    "@react-native-windows/cli": "^0.82.0",
+    "@react-native/babel-preset": "^0.82.0",
+    "@react-native/eslint-config": "^0.82.0",
+    "@react-native/metro-config": "^0.82.0",
+    "@react-native/typescript-config": "^0.82.0",
+    "@rnx-kit/jest-preset": "^0.1.17",
     "@types/jest": "^29.5.13",
-    "@types/react": "^19.2.0",
+    "@types/react": "^19.1.1",
     "@types/react-test-renderer": "^19.1.0",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
-    "react-test-renderer": "19.2.3",
+    "react-native-windows": "^0.82.5",
+    "react-test-renderer": "^19.1.1",
     "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">= 22.11.0"
+  },
+  "react-native-windows": {
+    "init-windows": {
+      "name": "SahwalReact",
+      "namespace": "SahwalReact",
+      "template": "cpp-app"
+    }
   }
 }

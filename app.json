@@ -1,4 +1,7 @@
-{
+﻿{
   "name": "SahwalReact",
-  "displayName": "사활문제집"
+  "displayName": "사활문제집",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-9437162392957939~7647875553"
+  }
 }

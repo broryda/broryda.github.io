@@ -236,11 +236,12 @@ export class ProblemEngine {
     return false;
   }
 
-  candidateUserMoves(): Coord[] {
+  candidateUserMoves(includeFail = false): Coord[] {
     const ts = this.collectTransitions().filter(t => t.color === this.userColor);
     const map = new Map<string, Coord>();
     for (const t of ts) {
-      if (!t.rc || this.transitionWouldFail(t)) continue;
+      if (!t.rc) continue;
+      if (!includeFail && this.transitionWouldFail(t)) continue;
       map.set(`${t.rc.row},${t.rc.col}`, t.rc);
     }
     return [...map.values()].sort((a, b) =>

@@ -1,35 +1,41 @@
-﻿import React from 'react';
+import React from 'react';
 import {
   Pressable,
   StyleSheet,
+  View,
   type PressableProps,
   type StyleProp,
   type ViewStyle,
-  View,
 } from 'react-native';
 import {cardPreset, shadows, theme} from '../../design/theme';
 
-type CardVariant = 'default' | 'strong' | 'outlined' | 'board';
-type CardShadow = 'none' | 'soft' | 'focus';
+type CardVariant =
+  | 'base'
+  | 'soft'
+  | 'emphasis'
+  | 'outlined'
+  | 'board'
+  | 'achievement'
+  | 'default'
+  | 'strong';
+type CardShadow = 'none' | 'soft' | 'focus' | 'floating';
 
-type BaseProps = {
+type Props = Omit<PressableProps, 'style'> & {
+  children: React.ReactNode;
   variant?: CardVariant;
   padded?: boolean;
   shadowType?: CardShadow;
-  style?: StyleProp<ViewStyle>;
-  children: React.ReactNode;
   pressable?: boolean;
+  style?: StyleProp<ViewStyle>;
 };
 
-type Props = BaseProps & PressableProps;
-
 export function Card({
-  variant = 'default',
+  children,
+  variant = 'base',
   padded = true,
   shadowType = 'none',
-  style,
-  children,
   pressable = false,
+  style,
   ...pressableProps
 }: Props): React.JSX.Element {
   const baseStyle: StyleProp<ViewStyle> = [
@@ -40,28 +46,29 @@ export function Card({
     style,
   ];
 
-  if (pressable) {
-    return (
-      <Pressable
-        {...pressableProps}
-        style={({pressed}) => [baseStyle, pressed && styles.pressed]}>
-        {children}
-      </Pressable>
-    );
+  if (!pressable) {
+    return <View style={baseStyle}>{children}</View>;
   }
 
-  return <View style={baseStyle}>{children}</View>;
+  return (
+    <Pressable
+      {...pressableProps}
+      style={({pressed}) => [baseStyle, pressed && styles.pressed]}>
+      {children}
+    </Pressable>
+  );
 }
 
 const styles = StyleSheet.create({
   base: {
-    borderRadius: theme.radius.lg,
+    borderRadius: theme.radius.xl,
     overflow: 'hidden',
   },
   padded: {
     padding: theme.space.md,
   },
   pressed: {
-    opacity: 0.94,
+    opacity: 0.96,
+    transform: [{scale: 0.995}],
   },
 });

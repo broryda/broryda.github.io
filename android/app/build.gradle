@@ -87,8 +87,8 @@ android {
         applicationId "com.sahwalreact"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 4
-        versionName "4"
+        versionCode 12
+        versionName "8.0"
     }
     signingConfigs {
         debug {
@@ -114,11 +114,6 @@ android {
             signingConfig keystorePropertiesFile.exists() ? signingConfigs.release : signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-        }
-    }
-    sourceSets {
-        main {
-            assets.srcDirs += ["../../assets"]
         }
     }
 }

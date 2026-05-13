@@ -1,23 +1,26 @@
-﻿import React from 'react';
+import React from 'react';
 import {
   Pressable,
   StyleSheet,
   Text,
+  View,
   type PressableProps,
   type StyleProp,
   type TextStyle,
   type ViewStyle,
 } from 'react-native';
 import {
-  buttonSizePreset,
+  buttonHeight,
+  buttonPaddingX,
+  buttonSizeTextPreset,
   buttonTextPreset,
   buttonVariantPreset,
   shadows,
   theme,
+  type ButtonSize,
+  type ButtonVariant,
 } from '../../design/theme';
 
-type ButtonVariant = 'primary' | 'secondary' | 'neutral' | 'ghost' | 'disabled';
-type ButtonSize = 'sm' | 'md' | 'lg' | 'xl';
 type ButtonShadow = 'none' | 'soft' | 'focus';
 
 type Props = Omit<PressableProps, 'style'> & {
@@ -26,6 +29,8 @@ type Props = Omit<PressableProps, 'style'> & {
   size?: ButtonSize;
   block?: boolean;
   disabled?: boolean;
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
   shadowType?: ButtonShadow;
   style?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
@@ -37,50 +42,87 @@ export function AppButton({
   size = 'md',
   block = false,
   disabled = false,
+  leftIcon,
+  rightIcon,
   shadowType = 'none',
   style,
   textStyle,
-  ...props
+  ...pressableProps
 }: Props): React.JSX.Element {
   const resolvedVariant: ButtonVariant = disabled ? 'disabled' : variant;
-  const preset = buttonVariantPreset[resolvedVariant];
+  const token = buttonVariantPreset[resolvedVariant];
 
   return (
     <Pressable
-      {...props}
+      {...pressableProps}
       disabled={disabled}
       style={({pressed}) => [
         styles.base,
-        buttonSizePreset[size],
-        block && styles.block,
         {
-          backgroundColor: pressed ? preset.pressedBackgroundColor : preset.backgroundColor,
-          borderColor: preset.borderColor,
+          minHeight: buttonHeight[size],
+          paddingHorizontal: buttonPaddingX[size],
+          borderRadius: size === 'sm' ? theme.radius.md : theme.radius.lg,
+          backgroundColor: pressed ? token.pressedBackgroundColor : token.backgroundColor,
+          borderColor: token.borderColor,
         },
+        block && styles.block,
         shadows[shadowType],
+        pressed && !disabled && styles.pressed,
         disabled && styles.disabled,
         style,
       ]}>
-      <Text style={[styles.text, buttonTextPreset[resolvedVariant], textStyle]}>{label}</Text>
+      <View style={styles.inner}>
+        {leftIcon ? <View style={styles.iconLeft}>{leftIcon}</View> : null}
+        <Text
+          numberOfLines={1}
+          adjustsFontSizeToFit
+          minimumFontScale={0.82}
+          style={[
+            styles.text,
+            buttonSizeTextPreset[size],
+            buttonTextPreset[resolvedVariant],
+            textStyle,
+          ]}>
+          {label}
+        </Text>
+        {rightIcon ? <View style={styles.iconRight}>{rightIcon}</View> : null}
+      </View>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   base: {
-    borderRadius: theme.radius.md,
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   block: {
-    alignSelf: 'stretch',
+    width: '100%',
+  },
+  pressed: {
+    opacity: 0.95,
+    transform: [{scale: 0.994}],
   },
   disabled: {
-    opacity: 0.6,
+    opacity: 1,
+  },
+  inner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: theme.space.xs,
+    minWidth: 0,
+  },
+  iconLeft: {
+    marginRight: theme.space.xxs,
+  },
+  iconRight: {
+    marginLeft: theme.space.xxs,
   },
   text: {
-    ...theme.typography.button,
     includeFontPadding: false,
+    textAlign: 'center',
+    flexShrink: 1,
   },
 });

@@ -30,10 +30,8 @@ export function naturalCompare(a: string, b: string): number {
       continue;
     }
     if (typeof va === 'string' && typeof vb === 'string') {
-      const c = va.localeCompare(vb);
-      if (c !== 0) {
-        return c;
-      }
+      if (va < vb) return -1;
+      if (va > vb) return 1;
       continue;
     }
     if (typeof va === 'number') {
