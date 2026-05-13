@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T02:40:48.281Z",
+  "updatedAt": "2026-05-13T02:40:56.984Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -236,6 +236,15 @@
       "lastSubmittedAt": "2026-05-12T11:18:35.575Z"
     },
     {
+      "nickname": "송채린",
+      "solvedCount": 954,
+      "elo": 1296,
+      "streakCurrent": 4,
+      "deviceId": "dev_mozr4rnn_x5hn00v8",
+      "lastSubmittedAt": "2026-05-13T02:40:56.790Z",
+      "createdAt": "2026-05-13T02:40:56.790Z"
+    },
+    {
       "nickname": "개구리바둑",
       "solvedCount": 301,
       "elo": 1288,
@@ -243,15 +252,6 @@
       "createdAt": "2026-05-12T17:18:12.323Z",
       "deviceId": "dev_mozfmz66_mzdwyiq7",
       "lastSubmittedAt": "2026-05-12T17:18:12.323Z"
-    },
-    {
-      "nickname": "송채린",
-      "solvedCount": 953,
-      "elo": 1286,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-13T02:40:24.637Z",
-      "deviceId": "dev_mozr4rnn_x5hn00v8",
-      "lastSubmittedAt": "2026-05-13T02:40:24.637Z"
     },
     {
       "nickname": "임제자팬",
@@ -798,9 +798,9 @@
       "solvedCount": 75,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-13T02:40:48.221Z",
       "deviceId": "dev_mp3fv0e4_i115is9f",
-      "lastSubmittedAt": "2026-05-13T02:40:48.221Z",
-      "createdAt": "2026-05-13T02:40:48.221Z"
+      "lastSubmittedAt": "2026-05-13T02:40:48.221Z"
     },
     {
       "nickname": "알",
