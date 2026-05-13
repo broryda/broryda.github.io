@@ -15,6 +15,10 @@ function toInt(v, fallback = 0) {
   return Math.floor(n);
 }
 
+function normKey(v) {
+  return String(v || "").trim().toLowerCase();
+}
+
 function normalizeEntry(raw) {
   if (!raw || typeof raw !== "object") return null;
   const nickname = String(raw.nickname ?? "").trim();
@@ -111,10 +115,10 @@ function dropStaleEntries(entries, staleMs = 7 * 24 * 60 * 60 * 1000) {
 }
 
 function dropBannedEntries(entries, bannedNicknames, bannedDeviceIds) {
-  const hardBannedNicknames = new Set(["노무쿤", "노알라"]);
+  const hardBannedNicknames = new Set(["노무쿤", "노알라"].map(normKey));
   return entries.filter((row) => {
-    const nickname = String(row?.nickname || "").trim();
-    const deviceId = String(row?.deviceId || "").trim();
+    const nickname = normKey(row?.nickname);
+    const deviceId = normKey(row?.deviceId);
     if (hardBannedNicknames.has(nickname)) return false;
     if (bannedNicknames?.has?.(nickname)) return false;
     if (deviceId && bannedDeviceIds?.has?.(deviceId)) return false;
@@ -128,10 +132,10 @@ async function loadBanConfig(env) {
     const file = await githubGetFile(env, banPath);
     const parsed = JSON.parse(file.text);
     const bannedNicknames = Array.isArray(parsed?.bannedNicknames)
-      ? parsed.bannedNicknames.map((v) => String(v || "").trim()).filter(Boolean)
+      ? parsed.bannedNicknames.map((v) => normKey(v)).filter(Boolean)
       : [];
     const bannedDeviceIds = Array.isArray(parsed?.bannedDeviceIds)
-      ? parsed.bannedDeviceIds.map((v) => String(v || "").trim()).filter(Boolean)
+      ? parsed.bannedDeviceIds.map((v) => normKey(v)).filter(Boolean)
       : [];
     return {
       path: banPath,
@@ -410,11 +414,13 @@ export default {
         return ok({ ok: false, error: "invalid_payload" }, 400);
       }
 
-      const hardBannedNicknames = new Set(["노무쿤", "노알라"]);
+      const hardBannedNicknames = new Set(["노무쿤", "노알라"].map(normKey));
       const banConfig = await loadBanConfig(env);
+      const incomingNickname = normKey(incoming.nickname);
+      const incomingDeviceId = normKey(incoming.deviceId);
       const isNickBanned =
-        hardBannedNicknames.has(incoming.nickname) || banConfig.bannedNicknames.has(incoming.nickname);
-      const isDeviceBanned = banConfig.bannedDeviceIds.has(incoming.deviceId);
+        hardBannedNicknames.has(incomingNickname) || banConfig.bannedNicknames.has(incomingNickname);
+      const isDeviceBanned = banConfig.bannedDeviceIds.has(incomingDeviceId);
       if (isNickBanned || isDeviceBanned) {
         return ok(
           {

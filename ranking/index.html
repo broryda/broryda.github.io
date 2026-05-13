@@ -140,6 +140,7 @@
       let entries = [];
       let sortKey = "elo";
       const STALE_MS = 7 * 24 * 60 * 60 * 1000;
+      const HARD_BANNED_NICKS = new Set(["노무쿤", "노알라"]);
 
       function toTs(v) {
         const t = Date.parse(String(v || ""));
@@ -150,6 +151,26 @@
         const t = Date.parse(String(row?.lastSubmittedAt || ""));
         if (!Number.isFinite(t)) return true;
         return Date.now() - t <= STALE_MS;
+      }
+
+      function normalizeKey(v) {
+        return String(v || "").trim().toLowerCase();
+      }
+
+      function applyBan(entriesSrc, banCfg, hasDeviceId) {
+        const bannedNickSet = new Set((Array.isArray(banCfg?.bannedNicknames) ? banCfg.bannedNicknames : []).map(normalizeKey));
+        const bannedDeviceSet = new Set((Array.isArray(banCfg?.bannedDeviceIds) ? banCfg.bannedDeviceIds : []).map(normalizeKey));
+        return entriesSrc.filter(row => {
+          const nick = normalizeKey(row?.nickname);
+          if (!nick) return false;
+          if (HARD_BANNED_NICKS.has(String(row?.nickname || "").trim())) return false;
+          if (bannedNickSet.has(nick)) return false;
+          if (hasDeviceId) {
+            const dev = normalizeKey(row?.deviceId);
+            if (dev && bannedDeviceSet.has(dev)) return false;
+          }
+          return true;
+        });
       }
 
       function medal(rank) {
@@ -211,13 +232,34 @@
         render();
       }
 
+      async function loadBan() {
+        try {
+          const res = await fetch("./device_ban.json", { cache: "no-store" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          return await res.json();
+        } catch {
+          return { bannedNicknames: [], bannedDeviceIds: [] };
+        }
+      }
+
       async function load() {
         try {
-          const res = await fetch("./ranking_public.json", { cache: "no-store" });
-          if (!res.ok) throw new Error("HTTP " + res.status);
-          const data = await res.json();
+          const banCfg = await loadBan();
+          let data;
+          let hasDeviceId = false;
+          try {
+            const fullRes = await fetch("./ranking.json", { cache: "no-store" });
+            if (!fullRes.ok) throw new Error("HTTP " + fullRes.status);
+            data = await fullRes.json();
+            hasDeviceId = true;
+          } catch {
+            const publicRes = await fetch("./ranking_public.json", { cache: "no-store" });
+            if (!publicRes.ok) throw new Error("HTTP " + publicRes.status);
+            data = await publicRes.json();
+            hasDeviceId = false;
+          }
           const raw = Array.isArray(data.entries) ? data.entries : [];
-          entries = raw.filter(isFreshEntry);
+          entries = applyBan(raw, banCfg, hasDeviceId).filter(isFreshEntry);
           document.getElementById("updatedAt").textContent = `업데이트 시각: ${data.updatedAt || "-"}`;
           render();
         } catch {
