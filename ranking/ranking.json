@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T07:48:12.192Z",
+  "updatedAt": "2026-05-13T07:48:14.619Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -144,15 +144,6 @@
       "createdAt": "2026-04-28T16:18:43.556Z",
       "deviceId": "dev_mohm8tzz_xsycb8hb",
       "lastSubmittedAt": "2026-04-28T16:18:43.556Z"
-    },
-    {
-      "nickname": "제자",
-      "solvedCount": 3064,
-      "elo": 1501,
-      "streakCurrent": 17,
-      "createdAt": "2026-05-13T07:43:05.104Z",
-      "deviceId": "dev_moh2gqb6_zo5kbnl0",
-      "lastSubmittedAt": "2026-05-13T07:43:05.104Z"
     },
     {
       "nickname": "김준영: 고백할걸",
@@ -528,9 +519,9 @@
       "solvedCount": 56,
       "elo": 680,
       "streakCurrent": 1,
+      "createdAt": "2026-05-13T07:48:11.674Z",
       "deviceId": "dev_mp3mdmls_t2zj4smy",
-      "lastSubmittedAt": "2026-05-13T07:48:11.674Z",
-      "createdAt": "2026-05-13T07:48:11.674Z"
+      "lastSubmittedAt": "2026-05-13T07:48:11.674Z"
     },
     {
       "nickname": "빙파",
@@ -1719,6 +1710,15 @@
       "createdAt": "2026-05-13T07:46:37.388Z",
       "deviceId": "dev_mp3raavg_j1gkv9wk",
       "lastSubmittedAt": "2026-05-13T07:46:37.388Z"
+    },
+    {
+      "nickname": "제자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_moh2gqb6_zo5kbnl0",
+      "lastSubmittedAt": "2026-05-13T07:48:14.258Z",
+      "createdAt": "2026-05-13T07:48:14.258Z"
     },
     {
       "nickname": "도겸",
