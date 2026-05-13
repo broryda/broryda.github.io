@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T01:58:02.385Z",
+  "updatedAt": "2026-05-13T01:58:06.068Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -182,15 +182,6 @@
       "lastSubmittedAt": "2026-05-12T23:47:29.456Z"
     },
     {
-      "nickname": "송채린",
-      "solvedCount": 887,
-      "elo": 1469,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-13T01:57:23.926Z",
-      "deviceId": "dev_mozr4rnn_x5hn00v8",
-      "lastSubmittedAt": "2026-05-13T01:57:23.926Z"
-    },
-    {
       "nickname": "Wxy",
       "solvedCount": 186,
       "elo": 1468,
@@ -198,6 +189,15 @@
       "createdAt": "2026-05-12T11:48:07.033Z",
       "deviceId": "dev_mp1209my_4o59jwt4",
       "lastSubmittedAt": "2026-05-12T11:48:07.033Z"
+    },
+    {
+      "nickname": "송채린",
+      "solvedCount": 888,
+      "elo": 1460,
+      "streakCurrent": 4,
+      "deviceId": "dev_mozr4rnn_x5hn00v8",
+      "lastSubmittedAt": "2026-05-13T01:58:05.695Z",
+      "createdAt": "2026-05-13T01:58:05.695Z"
     },
     {
       "nickname": "김준영: 고백할걸",
@@ -645,9 +645,9 @@
       "solvedCount": 60,
       "elo": 336,
       "streakCurrent": 1,
+      "createdAt": "2026-05-13T01:58:02.312Z",
       "deviceId": "dev_mp3dfqza_azw6oloz",
-      "lastSubmittedAt": "2026-05-13T01:58:02.312Z",
-      "createdAt": "2026-05-13T01:58:02.312Z"
+      "lastSubmittedAt": "2026-05-13T01:58:02.312Z"
     },
     {
       "nickname": "사용자",
