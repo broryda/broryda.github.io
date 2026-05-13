@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T07:06:06.054Z",
+  "updatedAt": "2026-05-13T07:06:22.342Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -24,9 +24,9 @@
       "solvedCount": 1512,
       "elo": 2028,
       "streakCurrent": 8,
+      "createdAt": "2026-05-13T07:06:09.793Z",
       "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-13T07:06:09.793Z",
-      "createdAt": "2026-05-13T07:06:09.793Z"
+      "lastSubmittedAt": "2026-05-13T07:06:09.793Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -200,15 +200,6 @@
       "lastSubmittedAt": "2026-05-12T23:47:29.456Z"
     },
     {
-      "nickname": "Wxy",
-      "solvedCount": 191,
-      "elo": 1454,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-13T07:06:03.050Z",
-      "deviceId": "dev_mp1209my_4o59jwt4",
-      "lastSubmittedAt": "2026-05-13T07:06:03.050Z"
-    },
-    {
       "nickname": "주연",
       "solvedCount": 558,
       "elo": 1449,
@@ -216,6 +207,15 @@
       "createdAt": "2026-05-13T03:51:49.002Z",
       "deviceId": "dev_mp1uv6ne_4gfa3zp9",
       "lastSubmittedAt": "2026-05-13T03:51:49.002Z"
+    },
+    {
+      "nickname": "Wxy",
+      "solvedCount": 192,
+      "elo": 1442,
+      "streakCurrent": 3,
+      "deviceId": "dev_mp1209my_4o59jwt4",
+      "lastSubmittedAt": "2026-05-13T07:06:21.851Z",
+      "createdAt": "2026-05-13T07:06:21.851Z"
     },
     {
       "nickname": "망했네",
