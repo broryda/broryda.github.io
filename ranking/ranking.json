@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T03:28:15.411Z",
+  "updatedAt": "2026-05-13T03:28:42.880Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -155,15 +155,6 @@
       "lastSubmittedAt": "2026-05-13T03:10:27.093Z"
     },
     {
-      "nickname": "공구소년",
-      "solvedCount": 271,
-      "elo": 1488,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-12T04:31:12.958Z",
-      "deviceId": "dev_mofd1oai_igfyi63x",
-      "lastSubmittedAt": "2026-05-12T04:31:12.958Z"
-    },
-    {
       "nickname": "갈빙",
       "solvedCount": 367,
       "elo": 1471,
@@ -258,9 +249,9 @@
       "solvedCount": 349,
       "elo": 1217,
       "streakCurrent": 3,
+      "createdAt": "2026-05-13T03:28:15.237Z",
       "deviceId": "dev_mp184lsm_f79jo9rg",
-      "lastSubmittedAt": "2026-05-13T03:28:15.237Z",
-      "createdAt": "2026-05-13T03:28:15.237Z"
+      "lastSubmittedAt": "2026-05-13T03:28:15.237Z"
     },
     {
       "nickname": "평산책방사서오우현",
@@ -369,6 +360,15 @@
       "createdAt": "2026-04-27T01:37:44.868Z",
       "deviceId": "dev_mogj2aor_z7jdziu0",
       "lastSubmittedAt": "2026-04-27T01:37:44.868Z"
+    },
+    {
+      "nickname": "공구소년",
+      "solvedCount": 0,
+      "elo": 1000,
+      "streakCurrent": 0,
+      "deviceId": "dev_mofd1oai_igfyi63x",
+      "lastSubmittedAt": "2026-05-13T03:28:41.926Z",
+      "createdAt": "2026-05-13T03:28:41.926Z"
     },
     {
       "nickname": "사용자",
