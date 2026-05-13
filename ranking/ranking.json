@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T04:28:05.966Z",
+  "updatedAt": "2026-05-13T04:28:06.650Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -645,9 +645,9 @@
       "solvedCount": 110,
       "elo": 336,
       "streakCurrent": 1,
+      "createdAt": "2026-05-13T04:28:05.919Z",
       "deviceId": "dev_mp3dfqza_azw6oloz",
-      "lastSubmittedAt": "2026-05-13T04:28:05.919Z",
-      "createdAt": "2026-05-13T04:28:05.919Z"
+      "lastSubmittedAt": "2026-05-13T04:28:05.919Z"
     },
     {
       "nickname": "사용자",
@@ -1172,15 +1172,6 @@
       "lastSubmittedAt": "2026-05-12T14:22:51.294Z"
     },
     {
-      "nickname": "전국초등학교 블랙리스트 김준영",
-      "solvedCount": 10,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-13T00:59:59.892Z",
-      "deviceId": "dev_mp3cho3y_zgxmp4nv",
-      "lastSubmittedAt": "2026-05-13T00:59:59.892Z"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 10,
       "elo": 300,
@@ -1197,6 +1188,15 @@
       "createdAt": "2026-05-13T02:57:39.451Z",
       "deviceId": "dev_mp3e6r6p_70b14tac",
       "lastSubmittedAt": "2026-05-13T02:57:39.451Z"
+    },
+    {
+      "nickname": "전국초등학교 블랙리스트 김준영",
+      "solvedCount": 10,
+      "elo": 300,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp3cho3y_zgxmp4nv",
+      "lastSubmittedAt": "2026-05-13T04:28:05.969Z",
+      "createdAt": "2026-05-13T04:28:05.969Z"
     },
     {
       "nickname": "chobo",
