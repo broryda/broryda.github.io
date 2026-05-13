@@ -77,6 +77,12 @@
         text-align: right;
         width: 120px;
       }
+      td.dev,
+      th.dev {
+        width: 220px;
+        color: #607480;
+        font-size: 12px;
+      }
       .nick {
         max-width: 420px;
         overflow: hidden;
@@ -128,6 +134,7 @@
             <tr>
               <th>순위</th>
               <th>닉네임</th>
+              <th class="dev">deviceId</th>
               <th id="metricHeader" class="value">ELO</th>
             </tr>
           </thead>
@@ -204,7 +211,7 @@
         const rows = sortEntries(entries, sortKey).slice(0, 100);
         if (rows.length === 0) {
           const tr = document.createElement("tr");
-          tr.innerHTML = '<td class="empty" colspan="3">랭킹 데이터가 없습니다.</td>';
+          tr.innerHTML = '<td class="empty" colspan="4">랭킹 데이터가 없습니다.</td>';
           tbody.appendChild(tr);
           return;
         }
@@ -218,6 +225,7 @@
           tr.innerHTML = `
             <td class="rank">${rank}</td>
             <td class="nick">${m ? `<span class="medal">${m}</span>` : ""}${String(r.nickname || "")}</td>
+            <td class="dev">${String(r.deviceId || "-")}</td>
             <td class="value">${metricValue}</td>
           `;
           tbody.appendChild(tr);
@@ -234,7 +242,7 @@
 
       async function loadBan() {
         try {
-          const res = await fetch("./device_ban.json", { cache: "no-store" });
+          const res = await fetch(`./device_ban.json?t=${Date.now()}`, { cache: "no-store" });
           if (!res.ok) throw new Error("HTTP " + res.status);
           return await res.json();
         } catch {
@@ -248,12 +256,12 @@
           let data;
           let hasDeviceId = false;
           try {
-            const fullRes = await fetch("./ranking.json", { cache: "no-store" });
+            const fullRes = await fetch(`./ranking.json?t=${Date.now()}`, { cache: "no-store" });
             if (!fullRes.ok) throw new Error("HTTP " + fullRes.status);
             data = await fullRes.json();
             hasDeviceId = true;
           } catch {
-            const publicRes = await fetch("./ranking_public.json", { cache: "no-store" });
+            const publicRes = await fetch(`./ranking_public.json?t=${Date.now()}`, { cache: "no-store" });
             if (!publicRes.ok) throw new Error("HTTP " + publicRes.status);
             data = await publicRes.json();
             hasDeviceId = false;
