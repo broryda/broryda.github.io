@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-14T08:09:13.655Z",
+  "updatedAt": "2026-05-14T08:09:19.975Z",
   "entries": [
     {
       "nickname": "되겠냐",
@@ -27,15 +27,6 @@
       "createdAt": "2026-05-14T03:46:02.805Z",
       "deviceId": "dev_moif1xk6_8f9bf70c",
       "lastSubmittedAt": "2026-05-14T03:46:02.805Z"
-    },
-    {
-      "nickname": "쿠로사와 다이아",
-      "solvedCount": 1054,
-      "elo": 1979,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-13T23:52:04.442Z",
-      "deviceId": "dev_mow00ua9_9vlqlhn2",
-      "lastSubmittedAt": "2026-05-13T23:52:04.442Z"
     },
     {
       "nickname": "Broryda",
@@ -402,9 +393,9 @@
       "solvedCount": 184,
       "elo": 931,
       "streakCurrent": 1,
+      "createdAt": "2026-05-14T08:09:13.046Z",
       "deviceId": "dev_mp4y906u_61v1izav",
-      "lastSubmittedAt": "2026-05-14T08:09:13.046Z",
-      "createdAt": "2026-05-14T08:09:13.046Z"
+      "lastSubmittedAt": "2026-05-14T08:09:13.046Z"
     },
     {
       "nickname": "사용자",
@@ -1782,6 +1773,15 @@
       "createdAt": "2026-05-14T08:09:01.890Z",
       "deviceId": "dev_movo1jgs_sh39ydkj",
       "lastSubmittedAt": "2026-05-14T08:09:01.890Z"
+    },
+    {
+      "nickname": "쿠로사와 다이아",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mow00ua9_9vlqlhn2",
+      "lastSubmittedAt": "2026-05-14T08:09:13.924Z",
+      "createdAt": "2026-05-14T08:09:13.924Z"
     },
     {
       "nickname": "ㅆㄷㄴ션ㄷㄱ",
