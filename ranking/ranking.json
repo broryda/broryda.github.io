@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T07:35:19.898Z",
+  "updatedAt": "2026-05-15T07:35:20.656Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -677,6 +677,15 @@
       "lastSubmittedAt": "2026-05-10T10:52:28.257Z"
     },
     {
+      "nickname": "Mini",
+      "solvedCount": 75,
+      "elo": 395,
+      "streakCurrent": 1,
+      "deviceId": "dev_mowu3avv_xn2qf23k",
+      "lastSubmittedAt": "2026-05-15T07:35:20.387Z",
+      "createdAt": "2026-05-15T07:35:20.387Z"
+    },
+    {
       "nickname": "Kuna",
       "solvedCount": 119,
       "elo": 390,
@@ -684,15 +693,6 @@
       "createdAt": "2026-05-14T06:22:42.204Z",
       "deviceId": "dev_mp169q4c_4avh1vh5",
       "lastSubmittedAt": "2026-05-14T06:22:42.204Z"
-    },
-    {
-      "nickname": "Mini",
-      "solvedCount": 74,
-      "elo": 390,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-15T07:34:36.727Z",
-      "deviceId": "dev_mowu3avv_xn2qf23k",
-      "lastSubmittedAt": "2026-05-15T07:34:36.727Z"
     },
     {
       "nickname": "장카설 아니고 이주연",
@@ -789,9 +789,9 @@
       "solvedCount": 273,
       "elo": 300,
       "streakCurrent": 3,
+      "createdAt": "2026-05-15T07:35:19.775Z",
       "deviceId": "dev_mp3stsbw_xxfnd0iu",
-      "lastSubmittedAt": "2026-05-15T07:35:19.775Z",
-      "createdAt": "2026-05-15T07:35:19.775Z"
+      "lastSubmittedAt": "2026-05-15T07:35:19.775Z"
     },
     {
       "nickname": "흑백기사",
