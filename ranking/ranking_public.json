@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T12:10:33.779Z",
+  "updatedAt": "2026-05-15T12:10:43.148Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -63,13 +63,6 @@
       "elo": 1672,
       "streakCurrent": 1,
       "createdAt": "2026-05-15T07:35:26.835Z"
-    },
-    {
-      "nickname": "인형놀이",
-      "solvedCount": 321,
-      "elo": 1672,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-15T07:30:25.422Z"
     },
     {
       "nickname": "쉬바이누",
@@ -402,10 +395,10 @@
     },
     {
       "nickname": "Uubu",
-      "solvedCount": 523,
-      "elo": 793,
+      "solvedCount": 524,
+      "elo": 800,
       "streakCurrent": 2,
-      "createdAt": "2026-05-15T12:10:33.265Z"
+      "createdAt": "2026-05-15T12:10:41.544Z"
     },
     {
       "nickname": "뚱보아키",
@@ -1288,6 +1281,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-15T09:49:35.884Z"
+    },
+    {
+      "nickname": "인형놀이",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-15T12:10:41.187Z"
     },
     {
       "nickname": "이주호",
