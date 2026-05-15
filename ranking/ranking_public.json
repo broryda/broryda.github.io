@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T09:00:01.609Z",
+  "updatedAt": "2026-05-15T09:00:03.526Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -709,6 +709,13 @@
       "createdAt": "2026-05-13T23:28:04.883Z"
     },
     {
+      "nickname": "개미",
+      "solvedCount": 91,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-15T09:00:02.853Z"
+    },
+    {
       "nickname": "마마마마",
       "solvedCount": 90,
       "elo": 300,
@@ -721,13 +728,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-13T02:01:09.517Z"
-    },
-    {
-      "nickname": "개미",
-      "solvedCount": 90,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-15T08:59:32.574Z"
     },
     {
       "nickname": "하하",
@@ -770,13 +770,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-12T17:49:05.933Z"
-    },
-    {
-      "nickname": "하루노아",
-      "solvedCount": 50,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-08T09:00:04.515Z"
     },
     {
       "nickname": "하나포",
