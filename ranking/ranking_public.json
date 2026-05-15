@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T09:41:40.324Z",
+  "updatedAt": "2026-05-15T09:41:43.533Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -842,6 +842,13 @@
       "createdAt": "2026-05-10T03:26:49.810Z"
     },
     {
+      "nickname": "어부찡",
+      "solvedCount": 32,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-15T09:41:41.988Z"
+    },
+    {
       "nickname": "사용자",
       "solvedCount": 31,
       "elo": 300,
@@ -854,13 +861,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-14T05:53:10.059Z"
-    },
-    {
-      "nickname": "어부찡",
-      "solvedCount": 30,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-15T09:41:24.083Z"
     },
     {
       "nickname": "온아이",
