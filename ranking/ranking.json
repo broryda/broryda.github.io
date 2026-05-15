@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T12:23:48.469Z",
+  "updatedAt": "2026-05-15T12:24:10.776Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -83,6 +83,15 @@
       "lastSubmittedAt": "2026-05-15T07:35:26.835Z"
     },
     {
+      "nickname": "인형놀이",
+      "solvedCount": 340,
+      "elo": 1665,
+      "streakCurrent": 2,
+      "deviceId": "dev_mp4tn189_k9fhdtvd",
+      "lastSubmittedAt": "2026-05-15T12:24:10.445Z",
+      "createdAt": "2026-05-15T12:24:10.445Z"
+    },
+    {
       "nickname": "쉬바이누",
       "solvedCount": 988,
       "elo": 1663,
@@ -90,15 +99,6 @@
       "createdAt": "2026-05-15T03:41:32.296Z",
       "deviceId": "dev_mojd8zh0_7nhvtzip",
       "lastSubmittedAt": "2026-05-15T03:41:32.296Z"
-    },
-    {
-      "nickname": "인형놀이",
-      "solvedCount": 339,
-      "elo": 1661,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-15T12:23:09.188Z",
-      "deviceId": "dev_mp4tn189_k9fhdtvd",
-      "lastSubmittedAt": "2026-05-15T12:23:09.188Z"
     },
     {
       "nickname": "초보",
@@ -177,9 +177,9 @@
       "solvedCount": 313,
       "elo": 1488,
       "streakCurrent": 1,
+      "createdAt": "2026-05-15T12:23:47.753Z",
       "deviceId": "dev_mofd1oai_igfyi63x",
-      "lastSubmittedAt": "2026-05-15T12:23:47.753Z",
-      "createdAt": "2026-05-15T12:23:47.753Z"
+      "lastSubmittedAt": "2026-05-15T12:23:47.753Z"
     },
     {
       "nickname": "26년2학기 기우회회장 김동화",
