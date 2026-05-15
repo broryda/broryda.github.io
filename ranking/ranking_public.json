@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T09:58:16.110Z",
+  "updatedAt": "2026-05-15T09:58:22.644Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -758,6 +758,13 @@
       "createdAt": "2026-05-13T09:08:41.761Z"
     },
     {
+      "nickname": "이로여",
+      "solvedCount": 52,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-15T09:58:22.742Z"
+    },
+    {
       "nickname": "사용자",
       "solvedCount": 51,
       "elo": 300,
@@ -770,13 +777,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-12T04:16:12.794Z"
-    },
-    {
-      "nickname": "이로여",
-      "solvedCount": 50,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-15T09:57:23.221Z"
     },
     {
       "nickname": "천사수열",
