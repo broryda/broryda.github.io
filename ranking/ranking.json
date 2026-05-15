@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T11:29:49.833Z",
+  "updatedAt": "2026-05-15T11:31:22.641Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -132,9 +132,9 @@
       "solvedCount": 6195,
       "elo": 1549,
       "streakCurrent": 19,
+      "createdAt": "2026-05-15T11:29:47.370Z",
       "deviceId": "dev_mogc30dq_pqthw4ut",
-      "lastSubmittedAt": "2026-05-15T11:29:47.370Z",
-      "createdAt": "2026-05-15T11:29:47.370Z"
+      "lastSubmittedAt": "2026-05-15T11:29:47.370Z"
     },
     {
       "nickname": "Jenew",
@@ -531,15 +531,6 @@
       "createdAt": "2026-05-14T17:02:48.077Z",
       "deviceId": "dev_moj9lgxr_reijlfen",
       "lastSubmittedAt": "2026-05-14T17:02:48.077Z"
-    },
-    {
-      "nickname": "타이어 갈기 장인",
-      "solvedCount": 257,
-      "elo": 788,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-12T14:09:59.318Z",
-      "deviceId": "dev_mp26zg4v_fcs9octl",
-      "lastSubmittedAt": "2026-05-12T14:09:59.318Z"
     },
     {
       "nickname": "사용자",
@@ -1665,6 +1656,15 @@
       "createdAt": "2026-05-15T09:49:35.884Z",
       "deviceId": "dev_mojhmlgt_ug0gyb7s",
       "lastSubmittedAt": "2026-05-15T09:49:35.884Z"
+    },
+    {
+      "nickname": "타이어 갈기 장인",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp26zg4v_fcs9octl",
+      "lastSubmittedAt": "2026-05-15T11:31:20.983Z",
+      "createdAt": "2026-05-15T11:31:20.983Z"
     },
     {
       "nickname": "이주호",
