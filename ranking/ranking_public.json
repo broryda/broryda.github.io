@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T09:21:04.483Z",
+  "updatedAt": "2026-05-15T09:21:09.912Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -968,6 +968,13 @@
       "createdAt": "2026-05-12T01:45:43.380Z"
     },
     {
+      "nickname": "이로여",
+      "solvedCount": 11,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-15T09:21:09.431Z"
+    },
+    {
       "nickname": "밤양갱",
       "solvedCount": 10,
       "elo": 300,
@@ -1008,13 +1015,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-13T22:08:01.868Z"
-    },
-    {
-      "nickname": "이로여",
-      "solvedCount": 10,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-15T09:20:17.652Z"
     },
     {
       "nickname": "신진서",
