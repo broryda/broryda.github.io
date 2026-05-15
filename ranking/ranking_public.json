@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T03:54:08.994Z",
+  "updatedAt": "2026-05-15T03:54:17.117Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -632,6 +632,13 @@
       "createdAt": "2026-05-12T12:56:53.456Z"
     },
     {
+      "nickname": "한바고",
+      "solvedCount": 208,
+      "elo": 300,
+      "streakCurrent": 4,
+      "createdAt": "2026-05-15T03:54:16.780Z"
+    },
+    {
       "nickname": "사용자",
       "solvedCount": 208,
       "elo": 300,
@@ -644,13 +651,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-15T01:12:34.186Z"
-    },
-    {
-      "nickname": "한바고",
-      "solvedCount": 207,
-      "elo": 300,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-15T03:54:08.574Z"
     },
     {
       "nickname": "커피",
