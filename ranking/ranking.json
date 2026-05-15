@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T10:50:36.608Z",
+  "updatedAt": "2026-05-15T10:51:32.199Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -263,15 +263,6 @@
       "lastSubmittedAt": "2026-05-15T07:42:03.065Z"
     },
     {
-      "nickname": "어렵다",
-      "solvedCount": 386,
-      "elo": 1192,
-      "streakCurrent": 5,
-      "createdAt": "2026-05-15T10:50:31.533Z",
-      "deviceId": "dev_mp184lsm_f79jo9rg",
-      "lastSubmittedAt": "2026-05-15T10:50:31.533Z"
-    },
-    {
       "nickname": "morphi",
       "solvedCount": 240,
       "elo": 1192,
@@ -281,13 +272,22 @@
       "lastSubmittedAt": "2026-05-14T03:54:32.258Z"
     },
     {
+      "nickname": "어렵다",
+      "solvedCount": 387,
+      "elo": 1182,
+      "streakCurrent": 5,
+      "deviceId": "dev_mp184lsm_f79jo9rg",
+      "lastSubmittedAt": "2026-05-15T10:51:31.619Z",
+      "createdAt": "2026-05-15T10:51:31.619Z"
+    },
+    {
       "nickname": "신주아",
       "solvedCount": 441,
       "elo": 1173,
       "streakCurrent": 5,
+      "createdAt": "2026-05-15T10:50:36.047Z",
       "deviceId": "dev_mp194ne1_sn3gllwu",
-      "lastSubmittedAt": "2026-05-15T10:50:36.047Z",
-      "createdAt": "2026-05-15T10:50:36.047Z"
+      "lastSubmittedAt": "2026-05-15T10:50:36.047Z"
     },
     {
       "nickname": "27년 복현기우회 회장 김동화",
