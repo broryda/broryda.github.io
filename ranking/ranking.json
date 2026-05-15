@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T05:54:06.267Z",
+  "updatedAt": "2026-05-15T05:54:11.820Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -195,9 +195,9 @@
       "solvedCount": 649,
       "elo": 1437,
       "streakCurrent": 8,
+      "createdAt": "2026-05-15T05:54:05.905Z",
       "deviceId": "dev_mowe60vq_f2u6fykm",
-      "lastSubmittedAt": "2026-05-15T05:54:05.905Z",
-      "createdAt": "2026-05-15T05:54:05.905Z"
+      "lastSubmittedAt": "2026-05-15T05:54:05.905Z"
     },
     {
       "nickname": "경영여신 송채린",
@@ -596,15 +596,6 @@
       "lastSubmittedAt": "2026-05-13T03:34:39.098Z"
     },
     {
-      "nickname": "스누피",
-      "solvedCount": 65,
-      "elo": 627,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-15T05:53:49.277Z",
-      "deviceId": "dev_mp3idsm0_eecq56lv",
-      "lastSubmittedAt": "2026-05-15T05:53:49.277Z"
-    },
-    {
       "nickname": "림도림도림",
       "solvedCount": 280,
       "elo": 624,
@@ -612,6 +603,15 @@
       "createdAt": "2026-05-14T06:10:51.511Z",
       "deviceId": "dev_mp0h8pqh_velov2po",
       "lastSubmittedAt": "2026-05-14T06:10:51.511Z"
+    },
+    {
+      "nickname": "스누피",
+      "solvedCount": 66,
+      "elo": 622,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp3idsm0_eecq56lv",
+      "lastSubmittedAt": "2026-05-15T05:54:12.585Z",
+      "createdAt": "2026-05-15T05:54:12.585Z"
     },
     {
       "nickname": "전사이가도난",
