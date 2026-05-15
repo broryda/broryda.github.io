@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T00:52:38.005Z",
+  "updatedAt": "2026-05-15T00:52:42.228Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -191,6 +191,15 @@
       "lastSubmittedAt": "2026-05-14T04:21:18.423Z"
     },
     {
+      "nickname": "경영여신 송채린",
+      "solvedCount": 1307,
+      "elo": 1432,
+      "streakCurrent": 6,
+      "deviceId": "dev_mozr4rnn_x5hn00v8",
+      "lastSubmittedAt": "2026-05-15T00:52:41.205Z",
+      "createdAt": "2026-05-15T00:52:41.205Z"
+    },
+    {
       "nickname": "슝",
       "solvedCount": 625,
       "elo": 1431,
@@ -207,15 +216,6 @@
       "createdAt": "2026-05-14T16:25:08.460Z",
       "deviceId": "dev_moh2gqb6_zo5kbnl0",
       "lastSubmittedAt": "2026-05-14T16:25:08.460Z"
-    },
-    {
-      "nickname": "경영여신 송채린",
-      "solvedCount": 1305,
-      "elo": 1419,
-      "streakCurrent": 6,
-      "createdAt": "2026-05-15T00:50:46.669Z",
-      "deviceId": "dev_mozr4rnn_x5hn00v8",
-      "lastSubmittedAt": "2026-05-15T00:50:46.669Z"
     },
     {
       "nickname": "인도바둑의마지막희망84세오우현",
@@ -726,9 +726,9 @@
       "solvedCount": 272,
       "elo": 331,
       "streakCurrent": 2,
+      "createdAt": "2026-05-15T00:52:38.278Z",
       "deviceId": "dev_mp4w52ck_fuosrhj3",
-      "lastSubmittedAt": "2026-05-15T00:52:38.278Z",
-      "createdAt": "2026-05-15T00:52:38.278Z"
+      "lastSubmittedAt": "2026-05-15T00:52:38.278Z"
     },
     {
       "nickname": "사용자",
