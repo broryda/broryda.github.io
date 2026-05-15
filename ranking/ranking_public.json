@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T11:29:49.833Z",
+  "updatedAt": "2026-05-15T11:31:22.641Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -413,13 +413,6 @@
       "elo": 792,
       "streakCurrent": 8,
       "createdAt": "2026-05-14T17:02:48.077Z"
-    },
-    {
-      "nickname": "타이어 갈기 장인",
-      "solvedCount": 257,
-      "elo": 788,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-12T14:09:59.318Z"
     },
     {
       "nickname": "사용자",
@@ -1295,6 +1288,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-15T09:49:35.884Z"
+    },
+    {
+      "nickname": "타이어 갈기 장인",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-15T11:31:20.983Z"
     },
     {
       "nickname": "이주호",
