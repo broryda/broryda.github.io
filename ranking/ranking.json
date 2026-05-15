@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T02:54:30.557Z",
+  "updatedAt": "2026-05-15T02:55:40.680Z",
   "entries": [
     {
       "nickname": "사용자",
@@ -213,9 +213,9 @@
       "solvedCount": 3216,
       "elo": 1416,
       "streakCurrent": 19,
+      "createdAt": "2026-05-15T02:54:30.222Z",
       "deviceId": "dev_moh2gqb6_zo5kbnl0",
-      "lastSubmittedAt": "2026-05-15T02:54:30.222Z",
-      "createdAt": "2026-05-15T02:54:30.222Z"
+      "lastSubmittedAt": "2026-05-15T02:54:30.222Z"
     },
     {
       "nickname": "인도바둑의마지막희망84세오우현",
@@ -317,15 +317,6 @@
       "lastSubmittedAt": "2026-05-14T22:29:42.098Z"
     },
     {
-      "nickname": "Pookya",
-      "solvedCount": 433,
-      "elo": 1116,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-15T01:22:35.245Z",
-      "deviceId": "dev_mp3rnqwa_lq0st79p",
-      "lastSubmittedAt": "2026-05-15T01:22:35.245Z"
-    },
-    {
       "nickname": "미캉",
       "solvedCount": 372,
       "elo": 1115,
@@ -342,6 +333,15 @@
       "createdAt": "2026-05-12T14:45:44.986Z",
       "deviceId": "dev_mogj2aoo_6pvi0fia",
       "lastSubmittedAt": "2026-05-12T14:45:44.986Z"
+    },
+    {
+      "nickname": "Pookya",
+      "solvedCount": 434,
+      "elo": 1113,
+      "streakCurrent": 3,
+      "deviceId": "dev_mp3rnqwa_lq0st79p",
+      "lastSubmittedAt": "2026-05-15T02:55:39.560Z",
+      "createdAt": "2026-05-15T02:55:39.560Z"
     },
     {
       "nickname": "도겸",
