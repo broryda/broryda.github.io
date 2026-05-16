@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-16T01:40:18.110Z",
+  "updatedAt": "2026-05-16T01:43:22.366Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -141,9 +141,9 @@
       "solvedCount": 6282,
       "elo": 1546,
       "streakCurrent": 20,
+      "createdAt": "2026-05-16T01:40:17.275Z",
       "deviceId": "dev_mogc30dq_pqthw4ut",
-      "lastSubmittedAt": "2026-05-16T01:40:17.275Z",
-      "createdAt": "2026-05-16T01:40:17.275Z"
+      "lastSubmittedAt": "2026-05-16T01:40:17.275Z"
     },
     {
       "nickname": "Jenew",
@@ -630,15 +630,6 @@
       "createdAt": "2026-05-14T00:25:00.472Z",
       "deviceId": "dev_mowe7oi8_18pzp14d",
       "lastSubmittedAt": "2026-05-14T00:25:00.472Z"
-    },
-    {
-      "nickname": "옆집 강아지 뽀삐",
-      "solvedCount": 547,
-      "elo": 598,
-      "streakCurrent": 5,
-      "createdAt": "2026-05-15T11:42:11.062Z",
-      "deviceId": "dev_mowt885v_4e13kw3h",
-      "lastSubmittedAt": "2026-05-15T11:42:11.062Z"
     },
     {
       "nickname": "소탐대득",
@@ -1665,6 +1656,15 @@
       "createdAt": "2026-05-16T00:51:23.565Z",
       "deviceId": "dev_mp7mrv8p_ppjvutej",
       "lastSubmittedAt": "2026-05-16T00:51:23.565Z"
+    },
+    {
+      "nickname": "옆집 강아지 뽀삐",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mowt885v_4e13kw3h",
+      "lastSubmittedAt": "2026-05-16T01:43:21.689Z",
+      "createdAt": "2026-05-16T01:43:21.689Z"
     },
     {
       "nickname": "이주호",
