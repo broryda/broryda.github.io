@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-16T11:04:19.508Z",
+  "updatedAt": "2026-05-16T11:06:22.746Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -1038,13 +1038,6 @@
       "createdAt": "2026-05-12T14:22:51.294Z"
     },
     {
-      "nickname": "바둑할고양",
-      "solvedCount": 10,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-13T02:57:39.451Z"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 10,
       "elo": 300,
@@ -1323,6 +1316,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-16T10:03:54.392Z"
+    },
+    {
+      "nickname": "바둑할고양",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-16T11:06:21.420Z"
     },
     {
       "nickname": "이주호",
