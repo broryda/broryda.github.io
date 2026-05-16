@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-05-16T14:48:26.648Z",
+  "updatedAt": "2026-05-16T14:50:21.881Z",
   "entries": [
-    {
-      "nickname": "윤영우",
-      "solvedCount": 394,
-      "elo": 2104,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-15T23:55:47.433Z",
-      "deviceId": "dev_movkwoeq_xyz34zad",
-      "lastSubmittedAt": "2026-05-15T23:55:47.433Z"
-    },
     {
       "nickname": "억울하다 억울해",
       "solvedCount": 1759,
@@ -330,9 +321,9 @@
       "solvedCount": 497,
       "elo": 1140,
       "streakCurrent": 6,
+      "createdAt": "2026-05-16T14:48:27.153Z",
       "deviceId": "dev_mp194ne1_sn3gllwu",
-      "lastSubmittedAt": "2026-05-16T14:48:27.153Z",
-      "createdAt": "2026-05-16T14:48:27.153Z"
+      "lastSubmittedAt": "2026-05-16T14:48:27.153Z"
     },
     {
       "nickname": "엄태승",
@@ -1728,6 +1719,15 @@
       "createdAt": "2026-05-16T14:40:26.330Z",
       "deviceId": "dev_mp8ge10v_qkn3qobw",
       "lastSubmittedAt": "2026-05-16T14:40:26.330Z"
+    },
+    {
+      "nickname": "윤영우",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_movkwoeq_xyz34zad",
+      "lastSubmittedAt": "2026-05-16T14:50:20.518Z",
+      "createdAt": "2026-05-16T14:50:20.518Z"
     },
     {
       "nickname": "이주호",
