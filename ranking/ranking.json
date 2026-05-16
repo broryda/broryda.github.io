@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-16T11:58:56.979Z",
+  "updatedAt": "2026-05-16T11:59:17.401Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -432,15 +432,6 @@
       "createdAt": "2026-05-14T05:50:08.458Z",
       "deviceId": "dev_mozd9yux_dapz41yt",
       "lastSubmittedAt": "2026-05-14T05:50:08.458Z"
-    },
-    {
-      "nickname": "곽지섭그는감히전설이라말할수있다",
-      "solvedCount": 1009,
-      "elo": 903,
-      "streakCurrent": 6,
-      "createdAt": "2026-05-16T10:25:28.744Z",
-      "deviceId": "dev_mowawr36_cjjlukyw",
-      "lastSubmittedAt": "2026-05-16T10:25:28.744Z"
     },
     {
       "nickname": "골드러쉬",
@@ -1086,9 +1077,9 @@
       "solvedCount": 45,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-16T11:58:56.736Z",
       "deviceId": "dev_mp24xenc_j7m29daf",
-      "lastSubmittedAt": "2026-05-16T11:58:56.736Z",
-      "createdAt": "2026-05-16T11:58:56.736Z"
+      "lastSubmittedAt": "2026-05-16T11:58:56.736Z"
     },
     {
       "nickname": "Alex",
@@ -1710,6 +1701,15 @@
       "createdAt": "2026-05-16T10:03:54.392Z",
       "deviceId": "dev_mp86hbdw_5dlfdjq6",
       "lastSubmittedAt": "2026-05-16T10:03:54.392Z"
+    },
+    {
+      "nickname": "곽지섭그는감히전설이라말할수있다",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mowawr36_cjjlukyw",
+      "lastSubmittedAt": "2026-05-16T11:59:15.564Z",
+      "createdAt": "2026-05-16T11:59:15.564Z"
     },
     {
       "nickname": "이주호",
