@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-16T11:41:45.261Z",
+  "updatedAt": "2026-05-16T11:47:53.142Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -573,9 +573,9 @@
       "solvedCount": 354,
       "elo": 670,
       "streakCurrent": 2,
+      "createdAt": "2026-05-16T11:41:44.060Z",
       "deviceId": "dev_mp6imkk8_nacrpznm",
-      "lastSubmittedAt": "2026-05-16T11:41:44.060Z",
-      "createdAt": "2026-05-16T11:41:44.060Z"
+      "lastSubmittedAt": "2026-05-16T11:41:44.060Z"
     },
     {
       "nickname": "전국초등학교 블랙리스트 김준영",
@@ -729,15 +729,6 @@
       "createdAt": "2026-05-15T10:44:28.752Z",
       "deviceId": "dev_mp3w7ld4_35bb4zm2",
       "lastSubmittedAt": "2026-05-15T10:44:28.752Z"
-    },
-    {
-      "nickname": "Kuna",
-      "solvedCount": 119,
-      "elo": 390,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-14T06:22:42.204Z",
-      "deviceId": "dev_mp169q4c_4avh1vh5",
-      "lastSubmittedAt": "2026-05-14T06:22:42.204Z"
     },
     {
       "nickname": "구사이생",
@@ -1710,6 +1701,15 @@
       "createdAt": "2026-05-16T10:03:54.392Z",
       "deviceId": "dev_mp86hbdw_5dlfdjq6",
       "lastSubmittedAt": "2026-05-16T10:03:54.392Z"
+    },
+    {
+      "nickname": "Kuna",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp169q4c_4avh1vh5",
+      "lastSubmittedAt": "2026-05-16T11:47:52.036Z",
+      "createdAt": "2026-05-16T11:47:52.036Z"
     },
     {
       "nickname": "이주호",
