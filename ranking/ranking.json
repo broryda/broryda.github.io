@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-16T21:48:30.312Z",
+  "updatedAt": "2026-05-16T21:48:59.280Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -294,9 +294,9 @@
       "solvedCount": 713,
       "elo": 1196,
       "streakCurrent": 7,
+      "createdAt": "2026-05-16T21:48:29.949Z",
       "deviceId": "dev_movo1jgs_sh39ydkj",
-      "lastSubmittedAt": "2026-05-16T21:48:29.949Z",
-      "createdAt": "2026-05-16T21:48:29.949Z"
+      "lastSubmittedAt": "2026-05-16T21:48:29.949Z"
     },
     {
       "nickname": "morphi",
@@ -486,15 +486,6 @@
       "createdAt": "2026-05-16T21:00:43.572Z",
       "deviceId": "dev_mp3cho3y_zgxmp4nv",
       "lastSubmittedAt": "2026-05-16T21:00:43.572Z"
-    },
-    {
-      "nickname": "몽키",
-      "solvedCount": 126,
-      "elo": 857,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-15T16:11:48.482Z",
-      "deviceId": "dev_mp3mdmls_t2zj4smy",
-      "lastSubmittedAt": "2026-05-15T16:11:48.482Z"
     },
     {
       "nickname": "2학기회장강지성",
@@ -1728,6 +1719,15 @@
       "createdAt": "2026-05-16T14:40:26.330Z",
       "deviceId": "dev_mp8ge10v_qkn3qobw",
       "lastSubmittedAt": "2026-05-16T14:40:26.330Z"
+    },
+    {
+      "nickname": "몽키",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp3mdmls_t2zj4smy",
+      "lastSubmittedAt": "2026-05-16T21:48:59.511Z",
+      "createdAt": "2026-05-16T21:48:59.511Z"
     },
     {
       "nickname": "이주호",
