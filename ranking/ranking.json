@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-16T11:01:03.422Z",
+  "updatedAt": "2026-05-16T11:01:03.651Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -317,15 +317,6 @@
       "lastSubmittedAt": "2026-05-15T12:19:51.692Z"
     },
     {
-      "nickname": "신주아",
-      "solvedCount": 480,
-      "elo": 1149,
-      "streakCurrent": 6,
-      "createdAt": "2026-05-16T11:00:51.281Z",
-      "deviceId": "dev_mp194ne1_sn3gllwu",
-      "lastSubmittedAt": "2026-05-16T11:00:51.281Z"
-    },
-    {
       "nickname": "엄태승",
       "solvedCount": 1449,
       "elo": 1135,
@@ -501,9 +492,9 @@
       "solvedCount": 257,
       "elo": 816,
       "streakCurrent": 1,
+      "createdAt": "2026-05-16T11:01:01.389Z",
       "deviceId": "dev_mp0xor5z_c6pxgpmj",
-      "lastSubmittedAt": "2026-05-16T11:01:01.389Z",
-      "createdAt": "2026-05-16T11:01:01.389Z"
+      "lastSubmittedAt": "2026-05-16T11:01:01.389Z"
     },
     {
       "nickname": "사랑의추적자김준영♡",
@@ -1701,6 +1692,15 @@
       "createdAt": "2026-05-16T10:03:54.392Z",
       "deviceId": "dev_mp86hbdw_5dlfdjq6",
       "lastSubmittedAt": "2026-05-16T10:03:54.392Z"
+    },
+    {
+      "nickname": "신주아",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp194ne1_sn3gllwu",
+      "lastSubmittedAt": "2026-05-16T11:01:02.872Z",
+      "createdAt": "2026-05-16T11:01:02.872Z"
     },
     {
       "nickname": "이주호",
