@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-17T11:29:23.440Z",
+  "updatedAt": "2026-05-17T11:29:58.935Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -9,15 +9,6 @@
       "createdAt": "2026-05-17T08:28:56.410Z",
       "deviceId": "dev_movkwoeq_xyz34zad",
       "lastSubmittedAt": "2026-05-17T08:28:56.410Z"
-    },
-    {
-      "nickname": "억울하다 억울해",
-      "solvedCount": 1789,
-      "elo": 2044,
-      "streakCurrent": 12,
-      "createdAt": "2026-05-17T10:28:59.735Z",
-      "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-17T10:28:59.735Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -1311,9 +1302,9 @@
       "solvedCount": 20,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-17T11:29:23.058Z",
       "deviceId": "dev_mp9owj3w_i14jkw6a",
-      "lastSubmittedAt": "2026-05-17T11:29:23.058Z",
-      "createdAt": "2026-05-17T11:29:23.058Z"
+      "lastSubmittedAt": "2026-05-17T11:29:23.058Z"
     },
     {
       "nickname": "구름나그네",
@@ -1818,6 +1809,15 @@
       "createdAt": "2026-05-17T08:25:49.447Z",
       "deviceId": "dev_mp9ig42l_4ptjsrfu",
       "lastSubmittedAt": "2026-05-17T08:25:49.447Z"
+    },
+    {
+      "nickname": "억울하다 억울해",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_moif1xk6_8f9bf70c",
+      "lastSubmittedAt": "2026-05-17T11:30:00.242Z",
+      "createdAt": "2026-05-17T11:30:00.242Z"
     },
     {
       "nickname": "이주호",
