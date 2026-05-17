@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-17T11:31:34.509Z",
+  "updatedAt": "2026-05-17T11:31:41.071Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -623,15 +623,6 @@
       "lastSubmittedAt": "2026-05-13T03:34:39.098Z"
     },
     {
-      "nickname": "라하미온느",
-      "solvedCount": 60,
-      "elo": 626,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-17T11:31:32.221Z",
-      "deviceId": "dev_mp9lqqqx_1w3wha3m",
-      "lastSubmittedAt": "2026-05-17T11:31:32.221Z"
-    },
-    {
       "nickname": "림도림도림",
       "solvedCount": 280,
       "elo": 624,
@@ -648,6 +639,15 @@
       "createdAt": "2026-05-16T15:13:47.202Z",
       "deviceId": "dev_mp3idsm0_eecq56lv",
       "lastSubmittedAt": "2026-05-16T15:13:47.202Z"
+    },
+    {
+      "nickname": "라하미온느",
+      "solvedCount": 61,
+      "elo": 621,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp9lqqqx_1w3wha3m",
+      "lastSubmittedAt": "2026-05-17T11:31:40.637Z",
+      "createdAt": "2026-05-17T11:31:40.637Z"
     },
     {
       "nickname": "용산역 매콤주먹 강지성",
@@ -1248,9 +1248,9 @@
       "solvedCount": 28,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-17T11:31:34.145Z",
       "deviceId": "dev_mp9owj3w_i14jkw6a",
-      "lastSubmittedAt": "2026-05-17T11:31:34.145Z",
-      "createdAt": "2026-05-17T11:31:34.145Z"
+      "lastSubmittedAt": "2026-05-17T11:31:34.145Z"
     },
     {
       "nickname": "북두신권",
