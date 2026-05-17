@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-17T07:11:41.431Z",
+  "updatedAt": "2026-05-17T07:11:48.521Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -807,13 +807,6 @@
       "createdAt": "2026-05-11T14:18:38.597Z"
     },
     {
-      "nickname": "horangian",
-      "solvedCount": 75,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-17T05:06:07.035Z"
-    },
-    {
       "nickname": "곰미달",
       "solvedCount": 72,
       "elo": 300,
@@ -1386,6 +1379,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-17T04:02:28.968Z"
+    },
+    {
+      "nickname": "horangian",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-17T07:11:47.793Z"
     },
     {
       "nickname": "이주호",
