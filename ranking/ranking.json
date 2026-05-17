@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-17T06:05:07.056Z",
+  "updatedAt": "2026-05-17T06:05:14.642Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -29,6 +29,15 @@
       "lastSubmittedAt": "2026-05-17T03:31:24.881Z"
     },
     {
+      "nickname": "찰올",
+      "solvedCount": 1359,
+      "elo": 1902,
+      "streakCurrent": 3,
+      "deviceId": "dev_mogkdgdp_jlbz3my7",
+      "lastSubmittedAt": "2026-05-17T06:05:13.799Z",
+      "createdAt": "2026-05-17T06:05:13.799Z"
+    },
+    {
       "nickname": "학살자",
       "solvedCount": 531,
       "elo": 1900,
@@ -36,15 +45,6 @@
       "createdAt": "2026-05-16T06:56:44.369Z",
       "deviceId": "dev_mowmp79r_yfagw09g",
       "lastSubmittedAt": "2026-05-16T06:56:44.369Z"
-    },
-    {
-      "nickname": "찰올",
-      "solvedCount": 1358,
-      "elo": 1895,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-17T06:04:24.108Z",
-      "deviceId": "dev_mogkdgdp_jlbz3my7",
-      "lastSubmittedAt": "2026-05-17T06:04:24.108Z"
     },
     {
       "nickname": "AJK",
@@ -906,9 +906,9 @@
       "solvedCount": 123,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-17T06:05:06.723Z",
       "deviceId": "dev_mp9b0q0l_6w7amgeo",
-      "lastSubmittedAt": "2026-05-17T06:05:06.723Z",
-      "createdAt": "2026-05-17T06:05:06.723Z"
+      "lastSubmittedAt": "2026-05-17T06:05:06.723Z"
     },
     {
       "nickname": "조새우볶음밥",
