@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-17T11:59:46.988Z",
+  "updatedAt": "2026-05-17T12:00:10.534Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -189,15 +189,6 @@
       "createdAt": "2026-05-16T08:21:01.793Z",
       "deviceId": "dev_mowej6f6_tzahwjdn",
       "lastSubmittedAt": "2026-05-16T08:21:01.793Z"
-    },
-    {
-      "nickname": "공구소년",
-      "solvedCount": 480,
-      "elo": 1423,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-17T10:48:33.814Z",
-      "deviceId": "dev_mofd1oai_igfyi63x",
-      "lastSubmittedAt": "2026-05-17T10:48:33.814Z"
     },
     {
       "nickname": "인도바둑의마지막희망84세오우현",
@@ -663,9 +654,9 @@
       "solvedCount": 552,
       "elo": 610,
       "streakCurrent": 7,
+      "createdAt": "2026-05-17T11:59:46.605Z",
       "deviceId": "dev_mowt885v_4e13kw3h",
-      "lastSubmittedAt": "2026-05-17T11:59:46.605Z",
-      "createdAt": "2026-05-17T11:59:46.605Z"
+      "lastSubmittedAt": "2026-05-17T11:59:46.605Z"
     },
     {
       "nickname": "전사이가도난",
@@ -1818,6 +1809,15 @@
       "createdAt": "2026-05-17T11:34:29.671Z",
       "deviceId": "dev_mp2mn313_maj6hvi4",
       "lastSubmittedAt": "2026-05-17T11:34:29.671Z"
+    },
+    {
+      "nickname": "공구소년",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mofd1oai_igfyi63x",
+      "lastSubmittedAt": "2026-05-17T12:00:09.462Z",
+      "createdAt": "2026-05-17T12:00:09.462Z"
     },
     {
       "nickname": "이주호",
