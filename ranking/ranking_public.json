@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-17T06:01:26.765Z",
+  "updatedAt": "2026-05-17T06:01:29.687Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -21,13 +21,6 @@
       "elo": 2004,
       "streakCurrent": 1,
       "createdAt": "2026-05-17T03:31:24.881Z"
-    },
-    {
-      "nickname": "찰올",
-      "solvedCount": 1353,
-      "elo": 1908,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-17T06:01:04.354Z"
     },
     {
       "nickname": "학살자",
@@ -786,18 +779,18 @@
       "createdAt": "2026-05-17T04:35:39.917Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 80,
+      "elo": 300,
+      "streakCurrent": 2,
+      "createdAt": "2026-05-17T06:01:26.417Z"
+    },
+    {
       "nickname": "이로여",
       "solvedCount": 80,
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-15T10:08:25.298Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 79,
-      "elo": 300,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-17T06:01:11.003Z"
     },
     {
       "nickname": "니라시드",
@@ -1386,6 +1379,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-17T04:02:28.968Z"
+    },
+    {
+      "nickname": "찰올",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-17T06:01:28.221Z"
     },
     {
       "nickname": "이주호",
