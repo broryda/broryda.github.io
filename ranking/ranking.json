@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-18T12:06:25.855Z",
+  "updatedAt": "2026-05-18T12:07:16.595Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -189,15 +189,6 @@
       "createdAt": "2026-05-18T05:33:10.583Z",
       "deviceId": "dev_mowe60vq_f2u6fykm",
       "lastSubmittedAt": "2026-05-18T05:33:10.583Z"
-    },
-    {
-      "nickname": "경영여신 송채린",
-      "solvedCount": 1337,
-      "elo": 1400,
-      "streakCurrent": 7,
-      "createdAt": "2026-05-18T12:04:47.715Z",
-      "deviceId": "dev_mozr4rnn_x5hn00v8",
-      "lastSubmittedAt": "2026-05-18T12:04:47.715Z"
     },
     {
       "nickname": "공구소년",
@@ -672,9 +663,9 @@
       "solvedCount": 71,
       "elo": 610,
       "streakCurrent": 1,
+      "createdAt": "2026-05-18T12:06:25.390Z",
       "deviceId": "dev_mpb51dz5_ouuie9b3",
-      "lastSubmittedAt": "2026-05-18T12:06:25.390Z",
-      "createdAt": "2026-05-18T12:06:25.390Z"
+      "lastSubmittedAt": "2026-05-18T12:06:25.390Z"
     },
     {
       "nickname": "옆집 강아지 뽀삐",
@@ -1917,6 +1908,15 @@
       "createdAt": "2026-05-18T11:45:59.300Z",
       "deviceId": "dev_mpb51dz5_r878ll7r",
       "lastSubmittedAt": "2026-05-18T11:45:59.300Z"
+    },
+    {
+      "nickname": "경영여신 송채린",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mozr4rnn_x5hn00v8",
+      "lastSubmittedAt": "2026-05-18T12:07:15.265Z",
+      "createdAt": "2026-05-18T12:07:15.265Z"
     },
     {
       "nickname": "이주호",
