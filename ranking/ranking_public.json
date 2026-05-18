@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-18T12:25:55.528Z",
+  "updatedAt": "2026-05-18T12:25:55.555Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -154,6 +154,13 @@
       "elo": 1400,
       "streakCurrent": 7,
       "createdAt": "2026-05-18T12:07:15.329Z"
+    },
+    {
+      "nickname": "공구소년",
+      "solvedCount": 497,
+      "elo": 1400,
+      "streakCurrent": 2,
+      "createdAt": "2026-05-18T12:25:54.714Z"
     },
     {
       "nickname": "개구리바둑",
@@ -1484,13 +1491,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-18T11:45:59.300Z"
-    },
-    {
-      "nickname": "공구소년",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-05-18T12:25:54.496Z"
     },
     {
       "nickname": "이주호",
