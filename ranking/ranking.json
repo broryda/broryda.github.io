@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-18T04:52:04.260Z",
+  "updatedAt": "2026-05-18T04:52:06.675Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -213,9 +213,9 @@
       "solvedCount": 3240,
       "elo": 1387,
       "streakCurrent": 22,
+      "createdAt": "2026-05-18T04:52:03.916Z",
       "deviceId": "dev_moh2gqb6_zo5kbnl0",
-      "lastSubmittedAt": "2026-05-18T04:52:03.916Z",
-      "createdAt": "2026-05-18T04:52:03.916Z"
+      "lastSubmittedAt": "2026-05-18T04:52:03.916Z"
     },
     {
       "nickname": "개구리바둑",
@@ -470,15 +470,6 @@
       "lastSubmittedAt": "2026-05-18T02:03:27.127Z"
     },
     {
-      "nickname": "Uubu",
-      "solvedCount": 654,
-      "elo": 873,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-18T04:51:07.751Z",
-      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
-      "lastSubmittedAt": "2026-05-18T04:51:07.751Z"
-    },
-    {
       "nickname": "달서구 피바라기 강지성",
       "solvedCount": 355,
       "elo": 864,
@@ -486,6 +477,15 @@
       "createdAt": "2026-05-12T02:44:53.388Z",
       "deviceId": "dev_mp0wh4lm_sy0wb6y3",
       "lastSubmittedAt": "2026-05-12T02:44:53.388Z"
+    },
+    {
+      "nickname": "Uubu",
+      "solvedCount": 654,
+      "elo": 858,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
+      "lastSubmittedAt": "2026-05-18T04:52:06.311Z",
+      "createdAt": "2026-05-18T04:52:06.311Z"
     },
     {
       "nickname": "윤희진",
