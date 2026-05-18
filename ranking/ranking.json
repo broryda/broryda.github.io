@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-18T12:40:40.279Z",
+  "updatedAt": "2026-05-18T12:40:46.832Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -204,9 +204,9 @@
       "solvedCount": 519,
       "elo": 1396,
       "streakCurrent": 2,
+      "createdAt": "2026-05-18T12:40:39.357Z",
       "deviceId": "dev_mofd1oai_igfyi63x",
-      "lastSubmittedAt": "2026-05-18T12:40:39.357Z",
-      "createdAt": "2026-05-18T12:40:39.357Z"
+      "lastSubmittedAt": "2026-05-18T12:40:39.357Z"
     },
     {
       "nickname": "개구리바둑",
@@ -477,15 +477,6 @@
       "createdAt": "2026-05-18T08:35:06.364Z",
       "deviceId": "dev_moypniv0_hx72ur7m",
       "lastSubmittedAt": "2026-05-18T08:35:06.364Z"
-    },
-    {
-      "nickname": "전국초등학교 블랙리스트 김준영",
-      "solvedCount": 239,
-      "elo": 908,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-17T16:51:24.329Z",
-      "deviceId": "dev_mp3cho3y_zgxmp4nv",
-      "lastSubmittedAt": "2026-05-17T16:51:24.329Z"
     },
     {
       "nickname": "곽지섭그는감히전설이라할수있다",
@@ -1926,6 +1917,15 @@
       "createdAt": "2026-05-18T12:26:34.347Z",
       "deviceId": "dev_mpb6hkt1_p3wed3y5",
       "lastSubmittedAt": "2026-05-18T12:26:34.347Z"
+    },
+    {
+      "nickname": "전국초등학교 블랙리스트 김준영",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp3cho3y_zgxmp4nv",
+      "lastSubmittedAt": "2026-05-18T12:40:45.777Z",
+      "createdAt": "2026-05-18T12:40:45.777Z"
     },
     {
       "nickname": "이주호",
