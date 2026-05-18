@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-18T09:28:34.359Z",
+  "updatedAt": "2026-05-18T09:28:50.522Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -524,15 +524,6 @@
       "lastSubmittedAt": "2026-05-12T02:44:53.388Z"
     },
     {
-      "nickname": "Uubu",
-      "solvedCount": 745,
-      "elo": 844,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-18T09:28:03.403Z",
-      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
-      "lastSubmittedAt": "2026-05-18T09:28:03.403Z"
-    },
-    {
       "nickname": "윤희진",
       "solvedCount": 400,
       "elo": 839,
@@ -540,6 +531,15 @@
       "createdAt": "2026-05-18T02:24:32.167Z",
       "deviceId": "dev_mow6woft_nhmxpib4",
       "lastSubmittedAt": "2026-05-18T02:24:32.167Z"
+    },
+    {
+      "nickname": "Uubu",
+      "solvedCount": 745,
+      "elo": 838,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
+      "lastSubmittedAt": "2026-05-18T09:28:50.139Z",
+      "createdAt": "2026-05-18T09:28:50.139Z"
     },
     {
       "nickname": "김자반",
@@ -717,9 +717,9 @@
       "solvedCount": 106,
       "elo": 511,
       "streakCurrent": 3,
+      "createdAt": "2026-05-18T09:28:32.924Z",
       "deviceId": "dev_mp7bpry3_kcj1u4ao",
-      "lastSubmittedAt": "2026-05-18T09:28:32.924Z",
-      "createdAt": "2026-05-18T09:28:32.924Z"
+      "lastSubmittedAt": "2026-05-18T09:28:32.924Z"
     },
     {
       "nickname": "최강좆밥",
