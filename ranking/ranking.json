@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T10:14:10.829Z",
+  "updatedAt": "2026-05-19T10:14:14.835Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -198,15 +198,6 @@
       "createdAt": "2026-05-19T07:31:02.224Z",
       "deviceId": "dev_mowej6f6_tzahwjdn",
       "lastSubmittedAt": "2026-05-19T07:31:02.224Z"
-    },
-    {
-      "nickname": "공구소년",
-      "solvedCount": 571,
-      "elo": 1370,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-19T10:13:00.616Z",
-      "deviceId": "dev_mofd1oai_igfyi63x",
-      "lastSubmittedAt": "2026-05-19T10:13:00.616Z"
     },
     {
       "nickname": "개구리바둑",
@@ -618,9 +609,9 @@
       "solvedCount": 38,
       "elo": 738,
       "streakCurrent": 1,
+      "createdAt": "2026-05-19T10:14:10.463Z",
       "deviceId": "dev_mpch22ug_lujshal2",
-      "lastSubmittedAt": "2026-05-19T10:14:10.463Z",
-      "createdAt": "2026-05-19T10:14:10.463Z"
+      "lastSubmittedAt": "2026-05-19T10:14:10.463Z"
     },
     {
       "nickname": "라하미온느",
@@ -1773,6 +1764,15 @@
       "createdAt": "2026-05-19T09:59:10.718Z",
       "deviceId": "dev_moijx29f_nr2wnqb4",
       "lastSubmittedAt": "2026-05-19T09:59:10.718Z"
+    },
+    {
+      "nickname": "공구소년",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mofd1oai_igfyi63x",
+      "lastSubmittedAt": "2026-05-19T10:14:13.635Z",
+      "createdAt": "2026-05-19T10:14:13.635Z"
     },
     {
       "nickname": "이주호",
