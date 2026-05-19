@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T15:00:46.579Z",
+  "updatedAt": "2026-05-19T15:00:49.562Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -416,15 +416,6 @@
       "lastSubmittedAt": "2026-05-19T12:23:57.128Z"
     },
     {
-      "nickname": "두비",
-      "solvedCount": 836,
-      "elo": 1006,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-19T14:58:45.528Z",
-      "deviceId": "dev_mp28pqzq_ruefusof",
-      "lastSubmittedAt": "2026-05-19T14:58:45.528Z"
-    },
-    {
       "nickname": "사슴풍뎅이",
       "solvedCount": 359,
       "elo": 1006,
@@ -432,6 +423,15 @@
       "createdAt": "2026-05-15T12:32:57.628Z",
       "deviceId": "dev_mp40mktp_bat46ew7",
       "lastSubmittedAt": "2026-05-15T12:32:57.628Z"
+    },
+    {
+      "nickname": "두비",
+      "solvedCount": 837,
+      "elo": 999,
+      "streakCurrent": 2,
+      "deviceId": "dev_mp28pqzq_ruefusof",
+      "lastSubmittedAt": "2026-05-19T15:00:49.011Z",
+      "createdAt": "2026-05-19T15:00:49.011Z"
     },
     {
       "nickname": "구문룡권신",
@@ -600,9 +600,9 @@
       "solvedCount": 302,
       "elo": 788,
       "streakCurrent": 2,
+      "createdAt": "2026-05-19T15:00:46.548Z",
       "deviceId": "dev_mpcpewh5_9oz1rxks",
-      "lastSubmittedAt": "2026-05-19T15:00:46.548Z",
-      "createdAt": "2026-05-19T15:00:46.548Z"
+      "lastSubmittedAt": "2026-05-19T15:00:46.548Z"
     },
     {
       "nickname": "선하고 진한 그녀",
