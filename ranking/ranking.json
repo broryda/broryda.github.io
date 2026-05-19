@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T14:22:10.232Z",
+  "updatedAt": "2026-05-19T14:22:11.563Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -24,9 +24,9 @@
       "solvedCount": 1999,
       "elo": 2009,
       "streakCurrent": 14,
+      "createdAt": "2026-05-19T14:22:11.327Z",
       "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-19T14:22:11.327Z",
-      "createdAt": "2026-05-19T14:22:11.327Z"
+      "lastSubmittedAt": "2026-05-19T14:22:11.327Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -632,15 +632,6 @@
       "lastSubmittedAt": "2026-05-19T05:46:57.002Z"
     },
     {
-      "nickname": "달서구의 왕자 강지성",
-      "solvedCount": 105,
-      "elo": 698,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-19T14:22:05.607Z",
-      "deviceId": "dev_mpcpewh5_9oz1rxks",
-      "lastSubmittedAt": "2026-05-19T14:22:05.607Z"
-    },
-    {
       "nickname": "오크예거",
       "solvedCount": 193,
       "elo": 696,
@@ -648,6 +639,15 @@
       "createdAt": "2026-05-19T14:10:44.871Z",
       "deviceId": "dev_mpb6hkt1_p3wed3y5",
       "lastSubmittedAt": "2026-05-19T14:10:44.871Z"
+    },
+    {
+      "nickname": "달서구의 왕자 강지성",
+      "solvedCount": 106,
+      "elo": 691,
+      "streakCurrent": 1,
+      "deviceId": "dev_mpcpewh5_9oz1rxks",
+      "lastSubmittedAt": "2026-05-19T14:22:11.562Z",
+      "createdAt": "2026-05-19T14:22:11.562Z"
     },
     {
       "nickname": "유메꾸이",
