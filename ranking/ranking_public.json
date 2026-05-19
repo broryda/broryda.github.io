@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T05:41:16.100Z",
+  "updatedAt": "2026-05-19T05:43:21.508Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -140,13 +140,6 @@
       "elo": 1467,
       "streakCurrent": 3,
       "createdAt": "2026-05-19T05:19:40.503Z"
-    },
-    {
-      "nickname": "임제자",
-      "solvedCount": 3258,
-      "elo": 1426,
-      "streakCurrent": 22,
-      "createdAt": "2026-05-19T02:40:15.987Z"
     },
     {
       "nickname": "그대란우주",
@@ -835,13 +828,6 @@
       "createdAt": "2026-05-17T16:48:30.365Z"
     },
     {
-      "nickname": "알",
-      "solvedCount": 71,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-12T05:43:14.166Z"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 68,
       "elo": 300,
@@ -1428,6 +1414,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-19T04:20:41.503Z"
+    },
+    {
+      "nickname": "임제자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-19T05:43:20.583Z"
     },
     {
       "nickname": "이주호",
