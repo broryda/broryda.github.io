@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T10:14:50.429Z",
+  "updatedAt": "2026-05-19T10:14:56.467Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -524,6 +524,15 @@
       "lastSubmittedAt": "2026-05-18T02:24:32.167Z"
     },
     {
+      "nickname": "ZED",
+      "solvedCount": 46,
+      "elo": 833,
+      "streakCurrent": 1,
+      "deviceId": "dev_mpch22ug_lujshal2",
+      "lastSubmittedAt": "2026-05-19T10:14:56.066Z",
+      "createdAt": "2026-05-19T10:14:56.066Z"
+    },
+    {
       "nickname": "달서구 피바라기 강지성",
       "solvedCount": 621,
       "elo": 827,
@@ -531,15 +540,6 @@
       "createdAt": "2026-05-19T03:54:07.436Z",
       "deviceId": "dev_mp0wh4lm_sy0wb6y3",
       "lastSubmittedAt": "2026-05-19T03:54:07.436Z"
-    },
-    {
-      "nickname": "ZED",
-      "solvedCount": 45,
-      "elo": 816,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-19T10:14:48.790Z",
-      "deviceId": "dev_mpch22ug_lujshal2",
-      "lastSubmittedAt": "2026-05-19T10:14:48.790Z"
     },
     {
       "nickname": "타이어 갈기 장인",
@@ -708,9 +708,9 @@
       "solvedCount": 231,
       "elo": 572,
       "streakCurrent": 4,
+      "createdAt": "2026-05-19T10:14:51.288Z",
       "deviceId": "dev_mp7bpry3_kcj1u4ao",
-      "lastSubmittedAt": "2026-05-19T10:14:51.288Z",
-      "createdAt": "2026-05-19T10:14:51.288Z"
+      "lastSubmittedAt": "2026-05-19T10:14:51.288Z"
     },
     {
       "nickname": "프로토토러",
