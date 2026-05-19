@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T08:33:43.235Z",
+  "updatedAt": "2026-05-19T08:33:48.460Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -651,13 +651,6 @@
       "elo": 329,
       "streakCurrent": 1,
       "createdAt": "2026-05-19T00:48:01.220Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 321,
-      "elo": 327,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-18T15:07:12.178Z"
     },
     {
       "nickname": "우미",
@@ -1381,6 +1374,13 @@
       "createdAt": "2026-05-19T07:12:04.946Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-19T08:33:46.301Z"
+    },
+    {
       "nickname": "이주호",
       "solvedCount": 1,
       "elo": 298,
@@ -1398,8 +1398,8 @@
       "nickname": "해솔",
       "solvedCount": 114,
       "elo": 287,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-19T08:33:13.149Z"
+      "streakCurrent": 3,
+      "createdAt": "2026-05-19T08:33:46.925Z"
     },
     {
       "nickname": "키움짱",
