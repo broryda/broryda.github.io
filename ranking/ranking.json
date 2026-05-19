@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T15:22:01.701Z",
+  "updatedAt": "2026-05-19T15:22:04.217Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -123,9 +123,9 @@
       "solvedCount": 1908,
       "elo": 1601,
       "streakCurrent": 17,
+      "createdAt": "2026-05-19T15:22:00.907Z",
       "deviceId": "dev_mojhmlgt_ug0gyb7s",
-      "lastSubmittedAt": "2026-05-19T15:22:00.907Z",
-      "createdAt": "2026-05-19T15:22:00.907Z"
+      "lastSubmittedAt": "2026-05-19T15:22:00.907Z"
     },
     {
       "nickname": "주연",
@@ -533,15 +533,6 @@
       "lastSubmittedAt": "2026-05-18T02:24:32.167Z"
     },
     {
-      "nickname": "달서구 피바라기 강지성",
-      "solvedCount": 653,
-      "elo": 823,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-19T15:21:50.791Z",
-      "deviceId": "dev_mp0wh4lm_sy0wb6y3",
-      "lastSubmittedAt": "2026-05-19T15:21:50.791Z"
-    },
-    {
       "nickname": "달서구의 왕자 강지성",
       "solvedCount": 331,
       "elo": 819,
@@ -567,6 +558,15 @@
       "createdAt": "2026-05-17T02:34:06.564Z",
       "deviceId": "dev_mp26zg4v_fcs9octl",
       "lastSubmittedAt": "2026-05-17T02:34:06.564Z"
+    },
+    {
+      "nickname": "달서구 피바라기 강지성",
+      "solvedCount": 654,
+      "elo": 812,
+      "streakCurrent": 2,
+      "deviceId": "dev_mp0wh4lm_sy0wb6y3",
+      "lastSubmittedAt": "2026-05-19T15:22:03.805Z",
+      "createdAt": "2026-05-19T15:22:03.805Z"
     },
     {
       "nickname": "Spade",
