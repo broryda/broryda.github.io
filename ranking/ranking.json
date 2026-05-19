@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T10:11:04.531Z",
+  "updatedAt": "2026-05-19T10:11:06.367Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -204,9 +204,9 @@
       "solvedCount": 555,
       "elo": 1370,
       "streakCurrent": 3,
+      "createdAt": "2026-05-19T10:11:03.803Z",
       "deviceId": "dev_mofd1oai_igfyi63x",
-      "lastSubmittedAt": "2026-05-19T10:11:03.803Z",
-      "createdAt": "2026-05-19T10:11:03.803Z"
+      "lastSubmittedAt": "2026-05-19T10:11:03.803Z"
     },
     {
       "nickname": "개구리바둑",
@@ -704,15 +704,6 @@
       "lastSubmittedAt": "2026-05-14T19:04:59.522Z"
     },
     {
-      "nickname": "jun0405",
-      "solvedCount": 225,
-      "elo": 562,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-19T10:10:50.123Z",
-      "deviceId": "dev_mp7bpry3_kcj1u4ao",
-      "lastSubmittedAt": "2026-05-19T10:10:50.123Z"
-    },
-    {
       "nickname": "프로토토러",
       "solvedCount": 86,
       "elo": 562,
@@ -720,6 +711,15 @@
       "createdAt": "2026-05-14T04:21:07.150Z",
       "deviceId": "dev_mowyh7ua_3t5njas5",
       "lastSubmittedAt": "2026-05-14T04:21:07.150Z"
+    },
+    {
+      "nickname": "jun0405",
+      "solvedCount": 226,
+      "elo": 546,
+      "streakCurrent": 4,
+      "deviceId": "dev_mp7bpry3_kcj1u4ao",
+      "lastSubmittedAt": "2026-05-19T10:11:07.188Z",
+      "createdAt": "2026-05-19T10:11:07.188Z"
     },
     {
       "nickname": "최강좆밥",
