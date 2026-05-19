@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T10:12:06.564Z",
+  "updatedAt": "2026-05-19T10:12:11.230Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -590,6 +590,13 @@
       "createdAt": "2026-05-19T03:10:05.146Z"
     },
     {
+      "nickname": "ZED",
+      "solvedCount": 10,
+      "elo": 400,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-19T10:12:10.811Z"
+    },
+    {
       "nickname": "용쓰는바둑",
       "solvedCount": 109,
       "elo": 399,
@@ -609,13 +616,6 @@
       "elo": 394,
       "streakCurrent": 2,
       "createdAt": "2026-05-15T22:21:12.603Z"
-    },
-    {
-      "nickname": "ZED",
-      "solvedCount": 9,
-      "elo": 384,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-19T10:12:06.222Z"
     },
     {
       "nickname": "바벨",
