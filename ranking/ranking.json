@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T03:50:32.421Z",
+  "updatedAt": "2026-05-19T03:50:34.450Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -549,15 +549,6 @@
       "createdAt": "2026-05-16T11:02:53.370Z",
       "deviceId": "dev_mp0xor5z_c6pxgpmj",
       "lastSubmittedAt": "2026-05-16T11:02:53.370Z"
-    },
-    {
-      "nickname": "달서구 피바라기 강지성",
-      "solvedCount": 559,
-      "elo": 813,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-19T03:32:51.666Z",
-      "deviceId": "dev_mp0wh4lm_sy0wb6y3",
-      "lastSubmittedAt": "2026-05-19T03:32:51.666Z"
     },
     {
       "nickname": "타이어 갈기 장인",
@@ -1374,9 +1365,9 @@
       "solvedCount": 17,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-19T03:50:32.091Z",
       "deviceId": "dev_mpc397n1_ftyu4chl",
-      "lastSubmittedAt": "2026-05-19T03:50:32.091Z",
-      "createdAt": "2026-05-19T03:50:32.091Z"
+      "lastSubmittedAt": "2026-05-19T03:50:32.091Z"
     },
     {
       "nickname": "mt0535",
@@ -1845,6 +1836,15 @@
       "createdAt": "2026-05-19T03:47:13.723Z",
       "deviceId": "dev_mpao5x1f_liywezpf",
       "lastSubmittedAt": "2026-05-19T03:47:13.723Z"
+    },
+    {
+      "nickname": "달서구 피바라기 강지성",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp0wh4lm_sy0wb6y3",
+      "lastSubmittedAt": "2026-05-19T03:50:33.161Z",
+      "createdAt": "2026-05-19T03:50:33.161Z"
     },
     {
       "nickname": "이주호",
