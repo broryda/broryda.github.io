@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T10:49:07.403Z",
+  "updatedAt": "2026-05-19T10:49:36.601Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -429,9 +429,9 @@
       "solvedCount": 1225,
       "elo": 983,
       "streakCurrent": 16,
+      "createdAt": "2026-05-19T10:49:06.742Z",
       "deviceId": "dev_mojb3d6m_df7sfc3r",
-      "lastSubmittedAt": "2026-05-19T10:49:06.742Z",
-      "createdAt": "2026-05-19T10:49:06.742Z"
+      "lastSubmittedAt": "2026-05-19T10:49:06.742Z"
     },
     {
       "nickname": "안녕",
@@ -713,15 +713,6 @@
       "lastSubmittedAt": "2026-05-14T19:04:59.522Z"
     },
     {
-      "nickname": "jun0405",
-      "solvedCount": 269,
-      "elo": 572,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-19T10:48:56.737Z",
-      "deviceId": "dev_mp7bpry3_kcj1u4ao",
-      "lastSubmittedAt": "2026-05-19T10:48:56.737Z"
-    },
-    {
       "nickname": "프로토토러",
       "solvedCount": 86,
       "elo": 562,
@@ -729,6 +720,15 @@
       "createdAt": "2026-05-14T04:21:07.150Z",
       "deviceId": "dev_mowyh7ua_3t5njas5",
       "lastSubmittedAt": "2026-05-14T04:21:07.150Z"
+    },
+    {
+      "nickname": "jun0405",
+      "solvedCount": 269,
+      "elo": 554,
+      "streakCurrent": 4,
+      "deviceId": "dev_mp7bpry3_kcj1u4ao",
+      "lastSubmittedAt": "2026-05-19T10:49:36.761Z",
+      "createdAt": "2026-05-19T10:49:36.761Z"
     },
     {
       "nickname": "최강좆밥",
