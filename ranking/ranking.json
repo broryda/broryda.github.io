@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T07:29:54.419Z",
+  "updatedAt": "2026-05-19T07:29:58.532Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -207,15 +207,6 @@
       "createdAt": "2026-05-19T02:14:07.019Z",
       "deviceId": "dev_mozr4rnn_x5hn00v8",
       "lastSubmittedAt": "2026-05-19T02:14:07.019Z"
-    },
-    {
-      "nickname": "26년2학기 기우회회장 김동화",
-      "solvedCount": 559,
-      "elo": 1398,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-19T01:07:49.885Z",
-      "deviceId": "dev_mowej6f6_tzahwjdn",
-      "lastSubmittedAt": "2026-05-19T01:07:49.885Z"
     },
     {
       "nickname": "개구리바둑",
@@ -618,9 +609,9 @@
       "solvedCount": 767,
       "elo": 740,
       "streakCurrent": 1,
+      "createdAt": "2026-05-19T07:29:54.402Z",
       "deviceId": "dev_mp17w35n_f022miw8",
-      "lastSubmittedAt": "2026-05-19T07:29:54.402Z",
-      "createdAt": "2026-05-19T07:29:54.402Z"
+      "lastSubmittedAt": "2026-05-19T07:29:54.402Z"
     },
     {
       "nickname": "라하미온느",
@@ -1800,6 +1791,15 @@
       "createdAt": "2026-05-19T07:12:04.946Z",
       "deviceId": "dev_mpc4kkym_ep31a3n4",
       "lastSubmittedAt": "2026-05-19T07:12:04.946Z"
+    },
+    {
+      "nickname": "26년2학기 기우회회장 김동화",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mowej6f6_tzahwjdn",
+      "lastSubmittedAt": "2026-05-19T07:29:57.339Z",
+      "createdAt": "2026-05-19T07:29:57.339Z"
     },
     {
       "nickname": "이주호",
