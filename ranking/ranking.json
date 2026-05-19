@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T03:54:22.243Z",
+  "updatedAt": "2026-05-19T03:54:43.254Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -306,15 +306,6 @@
       "createdAt": "2026-05-18T15:00:59.073Z",
       "deviceId": "dev_mp184lsm_f79jo9rg",
       "lastSubmittedAt": "2026-05-18T15:00:59.073Z"
-    },
-    {
-      "nickname": "Pookya",
-      "solvedCount": 463,
-      "elo": 1143,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-19T01:08:06.531Z",
-      "deviceId": "dev_mp3rnqwa_lq0st79p",
-      "lastSubmittedAt": "2026-05-19T01:08:06.531Z"
     },
     {
       "nickname": "2026.05.17 1212",
@@ -1266,9 +1257,9 @@
       "solvedCount": 31,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-19T03:54:21.464Z",
       "deviceId": "dev_mpc397n1_ftyu4chl",
-      "lastSubmittedAt": "2026-05-19T03:54:21.464Z",
-      "createdAt": "2026-05-19T03:54:21.464Z"
+      "lastSubmittedAt": "2026-05-19T03:54:21.464Z"
     },
     {
       "nickname": "기우회종신형김준영",
@@ -1845,6 +1836,15 @@
       "createdAt": "2026-05-19T03:47:13.723Z",
       "deviceId": "dev_mpao5x1f_liywezpf",
       "lastSubmittedAt": "2026-05-19T03:47:13.723Z"
+    },
+    {
+      "nickname": "Pookya",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp3rnqwa_lq0st79p",
+      "lastSubmittedAt": "2026-05-19T03:54:41.555Z",
+      "createdAt": "2026-05-19T03:54:41.555Z"
     },
     {
       "nickname": "이주호",
