@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T10:15:01.431Z",
+  "updatedAt": "2026-05-19T10:15:03.778Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -515,6 +515,15 @@
       "lastSubmittedAt": "2026-05-18T12:35:19.548Z"
     },
     {
+      "nickname": "ZED",
+      "solvedCount": 47,
+      "elo": 849,
+      "streakCurrent": 1,
+      "deviceId": "dev_mpch22ug_lujshal2",
+      "lastSubmittedAt": "2026-05-19T10:15:03.321Z",
+      "createdAt": "2026-05-19T10:15:03.321Z"
+    },
+    {
       "nickname": "윤희진",
       "solvedCount": 400,
       "elo": 839,
@@ -522,15 +531,6 @@
       "createdAt": "2026-05-18T02:24:32.167Z",
       "deviceId": "dev_mow6woft_nhmxpib4",
       "lastSubmittedAt": "2026-05-18T02:24:32.167Z"
-    },
-    {
-      "nickname": "ZED",
-      "solvedCount": 46,
-      "elo": 833,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-19T10:14:56.066Z",
-      "deviceId": "dev_mpch22ug_lujshal2",
-      "lastSubmittedAt": "2026-05-19T10:14:56.066Z"
     },
     {
       "nickname": "달서구 피바라기 강지성",
@@ -708,9 +708,9 @@
       "solvedCount": 232,
       "elo": 586,
       "streakCurrent": 4,
+      "createdAt": "2026-05-19T10:15:02.262Z",
       "deviceId": "dev_mp7bpry3_kcj1u4ao",
-      "lastSubmittedAt": "2026-05-19T10:15:02.262Z",
-      "createdAt": "2026-05-19T10:15:02.262Z"
+      "lastSubmittedAt": "2026-05-19T10:15:02.262Z"
     },
     {
       "nickname": "프로토토러",
