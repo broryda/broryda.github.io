@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T03:51:55.460Z",
+  "updatedAt": "2026-05-19T03:51:59.183Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -542,15 +542,6 @@
       "lastSubmittedAt": "2026-05-19T01:31:24.078Z"
     },
     {
-      "nickname": "달서구 피바라기 강지성",
-      "solvedCount": 616,
-      "elo": 829,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-19T03:51:44.033Z",
-      "deviceId": "dev_mp0wh4lm_sy0wb6y3",
-      "lastSubmittedAt": "2026-05-19T03:51:44.033Z"
-    },
-    {
       "nickname": "김자반",
       "solvedCount": 262,
       "elo": 816,
@@ -558,6 +549,15 @@
       "createdAt": "2026-05-16T11:02:53.370Z",
       "deviceId": "dev_mp0xor5z_c6pxgpmj",
       "lastSubmittedAt": "2026-05-16T11:02:53.370Z"
+    },
+    {
+      "nickname": "달서구 피바라기 강지성",
+      "solvedCount": 617,
+      "elo": 815,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp0wh4lm_sy0wb6y3",
+      "lastSubmittedAt": "2026-05-19T03:51:58.476Z",
+      "createdAt": "2026-05-19T03:51:58.476Z"
     },
     {
       "nickname": "타이어 갈기 장인",
@@ -1329,9 +1329,9 @@
       "solvedCount": 22,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-19T03:51:55.601Z",
       "deviceId": "dev_mpc397n1_ftyu4chl",
-      "lastSubmittedAt": "2026-05-19T03:51:55.601Z",
-      "createdAt": "2026-05-19T03:51:55.601Z"
+      "lastSubmittedAt": "2026-05-19T03:51:55.601Z"
     },
     {
       "nickname": "글리",
