@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T08:41:43.272Z",
+  "updatedAt": "2026-05-19T08:41:49.611Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -24,9 +24,9 @@
       "solvedCount": 1944,
       "elo": 2022,
       "streakCurrent": 14,
+      "createdAt": "2026-05-19T08:41:44.345Z",
       "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-19T08:41:44.345Z",
-      "createdAt": "2026-05-19T08:41:44.345Z"
+      "lastSubmittedAt": "2026-05-19T08:41:44.345Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -540,15 +540,6 @@
       "createdAt": "2026-05-19T03:54:07.436Z",
       "deviceId": "dev_mp0wh4lm_sy0wb6y3",
       "lastSubmittedAt": "2026-05-19T03:54:07.436Z"
-    },
-    {
-      "nickname": "김자반",
-      "solvedCount": 262,
-      "elo": 816,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-16T11:02:53.370Z",
-      "deviceId": "dev_mp0xor5z_c6pxgpmj",
-      "lastSubmittedAt": "2026-05-16T11:02:53.370Z"
     },
     {
       "nickname": "타이어 갈기 장인",
@@ -1773,6 +1764,15 @@
       "createdAt": "2026-05-19T08:33:46.301Z",
       "deviceId": "dev_mp25sg83_bnyxbfav",
       "lastSubmittedAt": "2026-05-19T08:33:46.301Z"
+    },
+    {
+      "nickname": "김자반",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp0xor5z_c6pxgpmj",
+      "lastSubmittedAt": "2026-05-19T08:41:48.005Z",
+      "createdAt": "2026-05-19T08:41:48.005Z"
     },
     {
       "nickname": "이주호",
