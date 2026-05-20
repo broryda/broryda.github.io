@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T06:05:20.557Z",
+  "updatedAt": "2026-05-20T06:05:21.097Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -497,15 +497,6 @@
       "lastSubmittedAt": "2026-05-17T19:24:24.723Z"
     },
     {
-      "nickname": "권빠따",
-      "solvedCount": 107,
-      "elo": 919,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-20T06:04:24.678Z",
-      "deviceId": "dev_mpdc5mez_lql4xf9n",
-      "lastSubmittedAt": "2026-05-20T06:04:24.678Z"
-    },
-    {
       "nickname": "달서구 피바라기 강지성",
       "solvedCount": 1018,
       "elo": 918,
@@ -513,6 +504,15 @@
       "createdAt": "2026-05-20T01:40:22.753Z",
       "deviceId": "dev_mp0wh4lm_sy0wb6y3",
       "lastSubmittedAt": "2026-05-20T01:40:22.753Z"
+    },
+    {
+      "nickname": "권빠따",
+      "solvedCount": 108,
+      "elo": 911,
+      "streakCurrent": 1,
+      "deviceId": "dev_mpdc5mez_lql4xf9n",
+      "lastSubmittedAt": "2026-05-20T06:05:20.372Z",
+      "createdAt": "2026-05-20T06:05:20.372Z"
     },
     {
       "nickname": "전국초등학교 블랙리스트 김준영",
@@ -1617,9 +1617,9 @@
       "solvedCount": 0,
       "elo": 300,
       "streakCurrent": 0,
+      "createdAt": "2026-05-20T06:05:19.327Z",
       "deviceId": "dev_mp9veaiv_2q2tmgij",
-      "lastSubmittedAt": "2026-05-20T06:05:19.327Z",
-      "createdAt": "2026-05-20T06:05:19.327Z"
+      "lastSubmittedAt": "2026-05-20T06:05:19.327Z"
     },
     {
       "nickname": "R0cket",
