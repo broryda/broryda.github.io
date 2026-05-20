@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T05:24:14.158Z",
+  "updatedAt": "2026-05-20T05:25:07.453Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -28,6 +28,13 @@
       "elo": 2004,
       "streakCurrent": 1,
       "createdAt": "2026-05-19T21:30:59.802Z"
+    },
+    {
+      "nickname": "찰올",
+      "solvedCount": 1777,
+      "elo": 1876,
+      "streakCurrent": 6,
+      "createdAt": "2026-05-20T05:24:13.115Z"
     },
     {
       "nickname": "Broryda",
@@ -842,18 +849,18 @@
       "createdAt": "2026-05-19T05:14:32.935Z"
     },
     {
+      "nickname": "놀부심보",
+      "solvedCount": 52,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-20T05:25:06.633Z"
+    },
+    {
       "nickname": "동작현수",
       "solvedCount": 51,
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-17T03:49:50.869Z"
-    },
-    {
-      "nickname": "놀부심보",
-      "solvedCount": 51,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-20T05:23:00.541Z"
     },
     {
       "nickname": "세호랑이",
@@ -1253,13 +1260,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-20T04:09:43.341Z"
-    },
-    {
-      "nickname": "찰올",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-05-20T05:24:13.052Z"
     },
     {
       "nickname": "R0cket",
