@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T07:21:55.526Z",
+  "updatedAt": "2026-05-20T07:23:40.153Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -69,9 +69,9 @@
       "solvedCount": 380,
       "elo": 1710,
       "streakCurrent": 1,
+      "createdAt": "2026-05-20T07:21:55.442Z",
       "deviceId": "dev_mp4tn189_k9fhdtvd",
-      "lastSubmittedAt": "2026-05-20T07:21:55.442Z",
-      "createdAt": "2026-05-20T07:21:55.442Z"
+      "lastSubmittedAt": "2026-05-20T07:21:55.442Z"
     },
     {
       "nickname": "학살자",
@@ -711,15 +711,6 @@
       "createdAt": "2026-05-14T06:10:51.511Z",
       "deviceId": "dev_mp0h8pqh_velov2po",
       "lastSubmittedAt": "2026-05-14T06:10:51.511Z"
-    },
-    {
-      "nickname": "전자과 승냥이",
-      "solvedCount": 769,
-      "elo": 607,
-      "streakCurrent": 10,
-      "createdAt": "2026-05-20T07:11:46.395Z",
-      "deviceId": "dev_mowt885v_4e13kw3h",
-      "lastSubmittedAt": "2026-05-20T07:11:46.395Z"
     },
     {
       "nickname": "전사이가도난",
@@ -1611,6 +1602,15 @@
       "createdAt": "2026-05-20T04:09:43.341Z",
       "deviceId": "dev_mofd9phu_r9duemsw",
       "lastSubmittedAt": "2026-05-20T04:09:43.341Z"
+    },
+    {
+      "nickname": "전자과 승냥이",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mowt885v_4e13kw3h",
+      "lastSubmittedAt": "2026-05-20T07:23:39.075Z",
+      "createdAt": "2026-05-20T07:23:39.075Z"
     },
     {
       "nickname": "R0cket",
