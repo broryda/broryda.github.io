@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T01:00:42.574Z",
+  "updatedAt": "2026-05-20T01:00:57.209Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -353,6 +353,15 @@
       "lastSubmittedAt": "2026-05-18T08:21:21.926Z"
     },
     {
+      "nickname": "Pookya",
+      "solvedCount": 505,
+      "elo": 1101,
+      "streakCurrent": 3,
+      "deviceId": "dev_mp3rnqwa_lq0st79p",
+      "lastSubmittedAt": "2026-05-20T01:00:56.967Z",
+      "createdAt": "2026-05-20T01:00:56.967Z"
+    },
+    {
       "nickname": "도겸",
       "solvedCount": 183,
       "elo": 1100,
@@ -360,15 +369,6 @@
       "createdAt": "2026-05-19T09:52:45.104Z",
       "deviceId": "dev_mow7wktz_xrzbz6y9",
       "lastSubmittedAt": "2026-05-19T09:52:45.104Z"
-    },
-    {
-      "nickname": "Pookya",
-      "solvedCount": 505,
-      "elo": 1091,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-20T00:59:35.401Z",
-      "deviceId": "dev_mp3rnqwa_lq0st79p",
-      "lastSubmittedAt": "2026-05-20T00:59:35.401Z"
     },
     {
       "nickname": "사용",
@@ -546,9 +546,9 @@
       "solvedCount": 502,
       "elo": 825,
       "streakCurrent": 3,
+      "createdAt": "2026-05-20T01:00:42.069Z",
       "deviceId": "dev_mp6imkk8_nacrpznm",
-      "lastSubmittedAt": "2026-05-20T01:00:42.069Z",
-      "createdAt": "2026-05-20T01:00:42.069Z"
+      "lastSubmittedAt": "2026-05-20T01:00:42.069Z"
     },
     {
       "nickname": "달서구의 왕자 강지성",
