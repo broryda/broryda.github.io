@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T01:12:23.871Z",
+  "updatedAt": "2026-05-20T01:13:03.559Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -546,9 +546,9 @@
       "solvedCount": 545,
       "elo": 825,
       "streakCurrent": 3,
+      "createdAt": "2026-05-20T01:12:23.344Z",
       "deviceId": "dev_mp6imkk8_nacrpznm",
-      "lastSubmittedAt": "2026-05-20T01:12:23.344Z",
-      "createdAt": "2026-05-20T01:12:23.344Z"
+      "lastSubmittedAt": "2026-05-20T01:12:23.344Z"
     },
     {
       "nickname": "달서구의 왕자 강지성",
@@ -1080,15 +1080,6 @@
       "createdAt": "2026-05-13T09:08:41.761Z",
       "deviceId": "dev_mp3tus6z_sjabc0fc",
       "lastSubmittedAt": "2026-05-13T09:08:41.761Z"
-    },
-    {
-      "nickname": "구름나그네",
-      "solvedCount": 67,
-      "elo": 300,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-18T07:40:12.203Z",
-      "deviceId": "dev_mp9imsvp_b4ygmg8v",
-      "lastSubmittedAt": "2026-05-18T07:40:12.203Z"
     },
     {
       "nickname": "사용자",
@@ -1755,6 +1746,15 @@
       "createdAt": "2026-05-20T00:40:46.527Z",
       "deviceId": "dev_mpdc5mez_wxg9u64k",
       "lastSubmittedAt": "2026-05-20T00:40:46.527Z"
+    },
+    {
+      "nickname": "구름나그네",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp9imsvp_b4ygmg8v",
+      "lastSubmittedAt": "2026-05-20T01:13:00.963Z",
+      "createdAt": "2026-05-20T01:13:00.963Z"
     },
     {
       "nickname": "R0cket",
