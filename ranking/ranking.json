@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T15:17:13.732Z",
+  "updatedAt": "2026-05-20T15:17:49.352Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -123,9 +123,9 @@
       "solvedCount": 2668,
       "elo": 1601,
       "streakCurrent": 18,
+      "createdAt": "2026-05-20T15:17:12.293Z",
       "deviceId": "dev_mojhmlgt_ug0gyb7s",
-      "lastSubmittedAt": "2026-05-20T15:17:12.293Z",
-      "createdAt": "2026-05-20T15:17:12.293Z"
+      "lastSubmittedAt": "2026-05-20T15:17:12.293Z"
     },
     {
       "nickname": "주연",
@@ -567,15 +567,6 @@
       "createdAt": "2026-05-20T04:06:34.060Z",
       "deviceId": "dev_mp6imkk8_nacrpznm",
       "lastSubmittedAt": "2026-05-20T04:06:34.060Z"
-    },
-    {
-      "nickname": "달서구의 왕자 강지성",
-      "solvedCount": 375,
-      "elo": 820,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-19T17:35:48.759Z",
-      "deviceId": "dev_mpcpewh5_9oz1rxks",
-      "lastSubmittedAt": "2026-05-19T17:35:48.759Z"
     },
     {
       "nickname": "타이어 갈기 장인",
@@ -1584,6 +1575,15 @@
       "createdAt": "2026-05-20T10:03:06.502Z",
       "deviceId": "dev_mpdw6xtt_arsorqxw",
       "lastSubmittedAt": "2026-05-20T10:03:06.502Z"
+    },
+    {
+      "nickname": "달서구의 왕자 강지성",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mpcpewh5_9oz1rxks",
+      "lastSubmittedAt": "2026-05-20T15:17:48.888Z",
+      "createdAt": "2026-05-20T15:17:48.888Z"
     },
     {
       "nickname": "R0cket",
