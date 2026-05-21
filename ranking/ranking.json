@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-21T07:44:22.772Z",
+  "updatedAt": "2026-05-21T07:46:13.414Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -486,15 +486,6 @@
       "createdAt": "2026-05-17T19:24:24.723Z",
       "deviceId": "dev_mp3mdmls_t2zj4smy",
       "lastSubmittedAt": "2026-05-17T19:24:24.723Z"
-    },
-    {
-      "nickname": "구문룡권신",
-      "solvedCount": 1480,
-      "elo": 919,
-      "streakCurrent": 17,
-      "createdAt": "2026-05-20T22:36:00.988Z",
-      "deviceId": "dev_mojb3d6m_df7sfc3r",
-      "lastSubmittedAt": "2026-05-20T22:36:00.988Z"
     },
     {
       "nickname": "달서구 피바라기 강지성",
@@ -1496,13 +1487,22 @@
       "lastSubmittedAt": "2026-05-21T05:49:13.367Z"
     },
     {
+      "nickname": "구문룡권신",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mojb3d6m_df7sfc3r",
+      "lastSubmittedAt": "2026-05-21T07:46:11.561Z",
+      "createdAt": "2026-05-21T07:46:11.561Z"
+    },
+    {
       "nickname": "R0cket",
       "solvedCount": 353,
       "elo": 287,
       "streakCurrent": 5,
+      "createdAt": "2026-05-21T07:44:21.983Z",
       "deviceId": "dev_mp9sy7t3_ec64yrp0",
-      "lastSubmittedAt": "2026-05-21T07:44:21.983Z",
-      "createdAt": "2026-05-21T07:44:21.983Z"
+      "lastSubmittedAt": "2026-05-21T07:44:21.983Z"
     },
     {
       "nickname": "해솔♡",
