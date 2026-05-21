@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-21T06:18:20.306Z",
+  "updatedAt": "2026-05-21T06:18:20.318Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -427,6 +427,13 @@
       "elo": 867,
       "streakCurrent": 3,
       "createdAt": "2026-05-20T01:52:13.036Z"
+    },
+    {
+      "nickname": "개미",
+      "solvedCount": 591,
+      "elo": 825,
+      "streakCurrent": 4,
+      "createdAt": "2026-05-21T06:18:19.599Z"
     },
     {
       "nickname": "타이어 갈기 장인",
@@ -1176,13 +1183,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-21T05:49:13.367Z"
-    },
-    {
-      "nickname": "개미",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-05-21T06:18:19.506Z"
     },
     {
       "nickname": "R0cket",
