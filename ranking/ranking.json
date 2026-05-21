@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-21T03:08:43.913Z",
+  "updatedAt": "2026-05-21T03:08:45.107Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -9,15 +9,6 @@
       "createdAt": "2026-05-20T06:11:13.447Z",
       "deviceId": "dev_movkwoeq_xyz34zad",
       "lastSubmittedAt": "2026-05-20T06:11:13.447Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 443,
-      "elo": 2052,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-20T04:46:08.797Z",
-      "deviceId": "dev_mp9autn7_tr3eb4pq",
-      "lastSubmittedAt": "2026-05-20T04:46:08.797Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -204,9 +195,9 @@
       "solvedCount": 949,
       "elo": 1382,
       "streakCurrent": 5,
+      "createdAt": "2026-05-21T03:08:44.429Z",
       "deviceId": "dev_mowe60vq_f2u6fykm",
-      "lastSubmittedAt": "2026-05-21T03:08:44.429Z",
-      "createdAt": "2026-05-21T03:08:44.429Z"
+      "lastSubmittedAt": "2026-05-21T03:08:44.429Z"
     },
     {
       "nickname": "개구리바둑",
@@ -1566,6 +1557,15 @@
       "createdAt": "2026-05-21T01:49:57.753Z",
       "deviceId": "dev_mp96rsde_vfg0ofpc",
       "lastSubmittedAt": "2026-05-21T01:49:57.753Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp9autn7_tr3eb4pq",
+      "lastSubmittedAt": "2026-05-21T03:08:44.256Z",
+      "createdAt": "2026-05-21T03:08:44.256Z"
     },
     {
       "nickname": "R0cket",
