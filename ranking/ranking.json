@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-21T14:02:16.407Z",
+  "updatedAt": "2026-05-21T14:02:19.191Z",
   "entries": [
     {
       "nickname": "스트레스가 쌓여요",
@@ -330,9 +330,9 @@
       "solvedCount": 661,
       "elo": 1118,
       "streakCurrent": 2,
+      "createdAt": "2026-05-21T14:02:15.558Z",
       "deviceId": "dev_moypniv0_hx72ur7m",
-      "lastSubmittedAt": "2026-05-21T14:02:15.558Z",
-      "createdAt": "2026-05-21T14:02:15.558Z"
+      "lastSubmittedAt": "2026-05-21T14:02:15.558Z"
     },
     {
       "nickname": "5층대장 이주연",
@@ -533,15 +533,6 @@
       "lastSubmittedAt": "2026-05-20T01:52:13.036Z"
     },
     {
-      "nickname": "Uubu",
-      "solvedCount": 867,
-      "elo": 829,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-21T14:02:05.027Z",
-      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
-      "lastSubmittedAt": "2026-05-21T14:02:05.027Z"
-    },
-    {
       "nickname": "개미",
       "solvedCount": 690,
       "elo": 825,
@@ -549,6 +540,15 @@
       "createdAt": "2026-05-21T06:41:11.975Z",
       "deviceId": "dev_mp6imkk8_nacrpznm",
       "lastSubmittedAt": "2026-05-21T06:41:11.975Z"
+    },
+    {
+      "nickname": "Uubu",
+      "solvedCount": 868,
+      "elo": 824,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
+      "lastSubmittedAt": "2026-05-21T14:02:17.844Z",
+      "createdAt": "2026-05-21T14:02:17.844Z"
     },
     {
       "nickname": "타이어 갈기 장인",
