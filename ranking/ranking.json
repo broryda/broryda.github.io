@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-21T22:57:22.354Z",
+  "updatedAt": "2026-05-21T23:04:25.204Z",
   "entries": [
     {
       "nickname": "스트레스가 쌓여요",
@@ -438,9 +438,9 @@
       "solvedCount": 131,
       "elo": 980,
       "streakCurrent": 10,
+      "createdAt": "2026-05-21T22:57:23.177Z",
       "deviceId": "dev_mp3w07m7_jftxwbsi",
-      "lastSubmittedAt": "2026-05-21T22:57:23.177Z",
-      "createdAt": "2026-05-21T22:57:23.177Z"
+      "lastSubmittedAt": "2026-05-21T22:57:23.177Z"
     },
     {
       "nickname": "모모",
@@ -549,15 +549,6 @@
       "createdAt": "2026-05-21T15:18:23.554Z",
       "deviceId": "dev_mp0pkz5o_kxh6mb5f",
       "lastSubmittedAt": "2026-05-21T15:18:23.554Z"
-    },
-    {
-      "nickname": "개미",
-      "solvedCount": 690,
-      "elo": 825,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-21T06:41:11.975Z",
-      "deviceId": "dev_mp6imkk8_nacrpznm",
-      "lastSubmittedAt": "2026-05-21T06:41:11.975Z"
     },
     {
       "nickname": "타이어 갈기 장인",
@@ -1485,6 +1476,15 @@
       "createdAt": "2026-05-21T12:19:45.045Z",
       "deviceId": "dev_mpdw6xtt_arsorqxw",
       "lastSubmittedAt": "2026-05-21T12:19:45.045Z"
+    },
+    {
+      "nickname": "개미",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp6imkk8_nacrpznm",
+      "lastSubmittedAt": "2026-05-21T23:04:24.522Z",
+      "createdAt": "2026-05-21T23:04:24.522Z"
     },
     {
       "nickname": "키움짱",
