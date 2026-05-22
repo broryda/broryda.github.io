@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-22T23:30:05.003Z",
+  "updatedAt": "2026-05-22T23:30:06.322Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -27,15 +27,6 @@
       "createdAt": "2026-05-22T04:10:18.595Z",
       "deviceId": "dev_mow00ua9_9vlqlhn2",
       "lastSubmittedAt": "2026-05-22T04:10:18.595Z"
-    },
-    {
-      "nickname": "스트레스가 쌓여요",
-      "solvedCount": 2263,
-      "elo": 1995,
-      "streakCurrent": 18,
-      "createdAt": "2026-05-22T17:46:27.969Z",
-      "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-22T17:46:27.969Z"
     },
     {
       "nickname": "Broryda",
@@ -1059,9 +1050,9 @@
       "solvedCount": 41,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-22T23:30:04.714Z",
       "deviceId": "dev_mp3df04v_c1hb5532",
-      "lastSubmittedAt": "2026-05-22T23:30:04.714Z",
-      "createdAt": "2026-05-22T23:30:04.714Z"
+      "lastSubmittedAt": "2026-05-22T23:30:04.714Z"
     },
     {
       "nickname": "파인",
@@ -1485,6 +1476,15 @@
       "createdAt": "2026-05-22T02:43:29.264Z",
       "deviceId": "dev_mp96rsde_vfg0ofpc",
       "lastSubmittedAt": "2026-05-22T02:43:29.264Z"
+    },
+    {
+      "nickname": "스트레스가 쌓여요",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_moif1xk6_8f9bf70c",
+      "lastSubmittedAt": "2026-05-22T23:27:37.697Z",
+      "createdAt": "2026-05-22T23:27:37.697Z"
     },
     {
       "nickname": "키움짱",
