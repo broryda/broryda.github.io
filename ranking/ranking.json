@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-22T03:25:26.368Z",
+  "updatedAt": "2026-05-22T03:26:32.640Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -540,15 +540,6 @@
       "createdAt": "2026-05-20T19:18:10.209Z",
       "deviceId": "dev_mp3cho3y_zgxmp4nv",
       "lastSubmittedAt": "2026-05-20T19:18:10.209Z"
-    },
-    {
-      "nickname": "곽지섭그는감히전설이라할수있다",
-      "solvedCount": 1044,
-      "elo": 903,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-21T23:19:23.873Z",
-      "deviceId": "dev_mowawr36_cjjlukyw",
-      "lastSubmittedAt": "2026-05-21T23:19:23.873Z"
     },
     {
       "nickname": "유메꾸이",
@@ -1505,6 +1496,15 @@
       "lastSubmittedAt": "2026-05-22T02:43:29.264Z"
     },
     {
+      "nickname": "곽지섭그는감히전설이라할수있다",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mowawr36_cjjlukyw",
+      "lastSubmittedAt": "2026-05-22T03:26:31.618Z",
+      "createdAt": "2026-05-22T03:26:31.618Z"
+    },
+    {
       "nickname": "키움짱",
       "solvedCount": 6,
       "elo": 289,
@@ -1518,9 +1518,9 @@
       "solvedCount": 375,
       "elo": 287,
       "streakCurrent": 6,
+      "createdAt": "2026-05-22T03:25:25.551Z",
       "deviceId": "dev_mp9sy7t3_ec64yrp0",
-      "lastSubmittedAt": "2026-05-22T03:25:25.551Z",
-      "createdAt": "2026-05-22T03:25:25.551Z"
+      "lastSubmittedAt": "2026-05-22T03:25:25.551Z"
     },
     {
       "nickname": "해솔♡",
