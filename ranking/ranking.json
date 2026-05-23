@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-23T16:40:42.563Z",
+  "updatedAt": "2026-05-23T16:41:14.322Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -20,15 +20,6 @@
       "lastSubmittedAt": "2026-05-23T03:01:20.886Z"
     },
     {
-      "nickname": "스트레스가 쌓여요",
-      "solvedCount": 2344,
-      "elo": 2020,
-      "streakCurrent": 19,
-      "createdAt": "2026-05-23T16:39:25.435Z",
-      "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-23T16:39:25.435Z"
-    },
-    {
       "nickname": "쿠로사와 다이아",
       "solvedCount": 1613,
       "elo": 2004,
@@ -36,6 +27,15 @@
       "createdAt": "2026-05-22T04:10:18.595Z",
       "deviceId": "dev_mow00ua9_9vlqlhn2",
       "lastSubmittedAt": "2026-05-22T04:10:18.595Z"
+    },
+    {
+      "nickname": "스트레스가 쌓여요",
+      "solvedCount": 2345,
+      "elo": 2002,
+      "streakCurrent": 19,
+      "deviceId": "dev_moif1xk6_8f9bf70c",
+      "lastSubmittedAt": "2026-05-23T16:41:13.114Z",
+      "createdAt": "2026-05-23T16:41:13.114Z"
     },
     {
       "nickname": "찰올",
@@ -213,9 +213,9 @@
       "solvedCount": 1337,
       "elo": 1400,
       "streakCurrent": 7,
+      "createdAt": "2026-05-23T16:40:41.996Z",
       "deviceId": "dev_mozr4rnn_x5hn00v8",
-      "lastSubmittedAt": "2026-05-23T16:40:41.996Z",
-      "createdAt": "2026-05-23T16:40:41.996Z"
+      "lastSubmittedAt": "2026-05-23T16:40:41.996Z"
     },
     {
       "nickname": "개구리바둑",
