@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-23T08:57:03.509Z",
+  "updatedAt": "2026-05-23T08:57:04.072Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -11,6 +11,15 @@
       "lastSubmittedAt": "2026-05-22T12:18:43.466Z"
     },
     {
+      "nickname": "스트레스가 쌓여요",
+      "solvedCount": 2298,
+      "elo": 2028,
+      "streakCurrent": 18,
+      "deviceId": "dev_moif1xk6_8f9bf70c",
+      "lastSubmittedAt": "2026-05-23T08:57:05.162Z",
+      "createdAt": "2026-05-23T08:57:05.162Z"
+    },
+    {
       "nickname": "AJK",
       "solvedCount": 495,
       "elo": 2024,
@@ -18,15 +27,6 @@
       "createdAt": "2026-05-23T03:01:20.886Z",
       "deviceId": "dev_mp9autn7_tr3eb4pq",
       "lastSubmittedAt": "2026-05-23T03:01:20.886Z"
-    },
-    {
-      "nickname": "스트레스가 쌓여요",
-      "solvedCount": 2297,
-      "elo": 2021,
-      "streakCurrent": 18,
-      "createdAt": "2026-05-23T08:56:44.946Z",
-      "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-23T08:56:44.946Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -591,9 +591,9 @@
       "solvedCount": 828,
       "elo": 825,
       "streakCurrent": 6,
+      "createdAt": "2026-05-23T08:57:03.419Z",
       "deviceId": "dev_mp6imkk8_nacrpznm",
-      "lastSubmittedAt": "2026-05-23T08:57:03.419Z",
-      "createdAt": "2026-05-23T08:57:03.419Z"
+      "lastSubmittedAt": "2026-05-23T08:57:03.419Z"
     },
     {
       "nickname": "타이어 갈기 장인",
