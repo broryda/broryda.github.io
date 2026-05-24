@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-24T02:29:12.772Z",
+  "updatedAt": "2026-05-24T02:29:19.086Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -154,13 +154,6 @@
       "elo": 1442,
       "streakCurrent": 7,
       "createdAt": "2026-05-23T00:32:10.594Z"
-    },
-    {
-      "nickname": "임제자",
-      "solvedCount": 3293,
-      "elo": 1412,
-      "streakCurrent": 27,
-      "createdAt": "2026-05-23T02:59:38.715Z"
     },
     {
       "nickname": "경영여신 송채린",
@@ -457,18 +450,18 @@
       "createdAt": "2026-05-20T01:52:13.036Z"
     },
     {
-      "nickname": "Uubu",
-      "solvedCount": 1000,
-      "elo": 827,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-24T02:29:11.953Z"
-    },
-    {
       "nickname": "개미",
       "solvedCount": 876,
       "elo": 825,
       "streakCurrent": 6,
       "createdAt": "2026-05-23T09:14:54.428Z"
+    },
+    {
+      "nickname": "Uubu",
+      "solvedCount": 1001,
+      "elo": 822,
+      "streakCurrent": 4,
+      "createdAt": "2026-05-24T02:29:18.627Z"
     },
     {
       "nickname": "달서구의 왕자 강지성",
@@ -1169,6 +1162,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-24T02:05:12.037Z"
+    },
+    {
+      "nickname": "임제자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-05-24T02:29:17.429Z"
     },
     {
       "nickname": "키움짱",
