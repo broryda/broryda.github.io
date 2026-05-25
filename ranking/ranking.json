@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-25T00:11:06.305Z",
+  "updatedAt": "2026-05-25T00:47:44.933Z",
   "entries": [
     {
       "nickname": "PJD",
@@ -110,15 +110,6 @@
       "lastSubmittedAt": "2026-05-20T04:36:27.588Z"
     },
     {
-      "nickname": "쉬바이누",
-      "solvedCount": 988,
-      "elo": 1663,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-24T10:16:54.874Z",
-      "deviceId": "dev_mojd8zh0_7nhvtzip",
-      "lastSubmittedAt": "2026-05-24T10:16:54.874Z"
-    },
-    {
       "nickname": "초보",
       "solvedCount": 272,
       "elo": 1632,
@@ -150,9 +141,9 @@
       "solvedCount": 6860,
       "elo": 1527,
       "streakCurrent": 29,
+      "createdAt": "2026-05-25T00:11:04.407Z",
       "deviceId": "dev_mogc30dq_pqthw4ut",
-      "lastSubmittedAt": "2026-05-25T00:11:04.407Z",
-      "createdAt": "2026-05-25T00:11:04.407Z"
+      "lastSubmittedAt": "2026-05-25T00:11:04.407Z"
     },
     {
       "nickname": "기우회종신회장김준영",
@@ -1431,6 +1422,15 @@
       "createdAt": "2026-05-24T08:20:42.741Z",
       "deviceId": "dev_mp3em7wl_slzqbfgg",
       "lastSubmittedAt": "2026-05-24T08:20:42.741Z"
+    },
+    {
+      "nickname": "쉬바이누",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mojd8zh0_7nhvtzip",
+      "lastSubmittedAt": "2026-05-25T00:47:43.770Z",
+      "createdAt": "2026-05-25T00:47:43.770Z"
     },
     {
       "nickname": "드래곤볼  손오공",
