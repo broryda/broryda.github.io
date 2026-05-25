@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-25T14:05:06.877Z",
+  "updatedAt": "2026-05-25T14:05:17.661Z",
   "entries": [
     {
       "nickname": "PJD",
@@ -209,6 +209,15 @@
       "lastSubmittedAt": "2026-05-25T06:42:01.930Z"
     },
     {
+      "nickname": "Vertice",
+      "solvedCount": 111,
+      "elo": 1420,
+      "streakCurrent": 1,
+      "deviceId": "dev_mpl8a8ax_yvxkjk7g",
+      "lastSubmittedAt": "2026-05-25T14:05:16.683Z",
+      "createdAt": "2026-05-25T14:05:16.683Z"
+    },
+    {
       "nickname": "경영여신 송채린",
       "solvedCount": 1350,
       "elo": 1413,
@@ -225,15 +234,6 @@
       "createdAt": "2026-05-25T05:19:01.897Z",
       "deviceId": "dev_moh2gqb6_zo5kbnl0",
       "lastSubmittedAt": "2026-05-25T05:19:01.897Z"
-    },
-    {
-      "nickname": "Vertice",
-      "solvedCount": 110,
-      "elo": 1405,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-25T14:04:23.261Z",
-      "deviceId": "dev_mpl8a8ax_yvxkjk7g",
-      "lastSubmittedAt": "2026-05-25T14:04:23.261Z"
     },
     {
       "nickname": "개구리바둑",
@@ -1239,9 +1239,9 @@
       "solvedCount": 10,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-25T14:05:03.570Z",
       "deviceId": "dev_mpla0pdi_7zpp8rut",
-      "lastSubmittedAt": "2026-05-25T14:05:03.570Z",
-      "createdAt": "2026-05-25T14:05:03.570Z"
+      "lastSubmittedAt": "2026-05-25T14:05:03.570Z"
     },
     {
       "nickname": "콩",
