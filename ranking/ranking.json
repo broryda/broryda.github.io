@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-25T09:49:39.772Z",
+  "updatedAt": "2026-05-25T09:49:43.052Z",
   "entries": [
     {
       "nickname": "PJD",
@@ -222,9 +222,9 @@
       "solvedCount": 1349,
       "elo": 1400,
       "streakCurrent": 1,
+      "createdAt": "2026-05-25T09:49:39.281Z",
       "deviceId": "dev_mozr4rnn_x5hn00v8",
-      "lastSubmittedAt": "2026-05-25T09:49:39.281Z",
-      "createdAt": "2026-05-25T09:49:39.281Z"
+      "lastSubmittedAt": "2026-05-25T09:49:39.281Z"
     },
     {
       "nickname": "개구리바둑",
@@ -299,15 +299,6 @@
       "lastSubmittedAt": "2026-05-20T17:58:03.890Z"
     },
     {
-      "nickname": "사용자",
-      "solvedCount": 1118,
-      "elo": 1214,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-25T09:49:24.649Z",
-      "deviceId": "dev_mp1vcmq8_hsffaz6d",
-      "lastSubmittedAt": "2026-05-25T09:49:24.649Z"
-    },
-    {
       "nickname": "27년 복현기우회 회장 김동화",
       "solvedCount": 384,
       "elo": 1210,
@@ -315,6 +306,15 @@
       "createdAt": "2026-05-21T02:36:06.815Z",
       "deviceId": "dev_mp22bnkn_z9oytw69",
       "lastSubmittedAt": "2026-05-21T02:36:06.815Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 1119,
+      "elo": 1206,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp1vcmq8_hsffaz6d",
+      "lastSubmittedAt": "2026-05-25T09:49:45.371Z",
+      "createdAt": "2026-05-25T09:49:45.371Z"
     },
     {
       "nickname": "시바이뉴",
