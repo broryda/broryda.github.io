@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T04:23:31.596Z",
+  "updatedAt": "2026-05-26T04:23:42.168Z",
   "entries": [
     {
       "nickname": "이거 넘기면 니가 이긴걸로해라",
@@ -15,9 +15,9 @@
       "solvedCount": 2592,
       "elo": 2088,
       "streakCurrent": 21,
+      "createdAt": "2026-05-26T04:23:30.444Z",
       "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-26T04:23:30.444Z",
-      "createdAt": "2026-05-26T04:23:30.444Z"
+      "lastSubmittedAt": "2026-05-26T04:23:30.444Z"
     },
     {
       "nickname": "AJK",
@@ -198,15 +198,6 @@
       "createdAt": "2026-05-25T06:26:04.670Z",
       "deviceId": "dev_mpjnxwso_4ocjzrky",
       "lastSubmittedAt": "2026-05-25T06:26:04.670Z"
-    },
-    {
-      "nickname": "슝",
-      "solvedCount": 1130,
-      "elo": 1500,
-      "streakCurrent": 10,
-      "createdAt": "2026-05-26T00:16:59.617Z",
-      "deviceId": "dev_mowe60vq_f2u6fykm",
-      "lastSubmittedAt": "2026-05-26T00:16:59.617Z"
     },
     {
       "nickname": "갈빙",
@@ -1368,6 +1359,15 @@
       "createdAt": "2026-05-25T09:16:20.083Z",
       "deviceId": "dev_mowfjus4_umx9197s",
       "lastSubmittedAt": "2026-05-25T09:16:20.083Z"
+    },
+    {
+      "nickname": "슝",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mowe60vq_f2u6fykm",
+      "lastSubmittedAt": "2026-05-26T04:23:39.251Z",
+      "createdAt": "2026-05-26T04:23:39.251Z"
     },
     {
       "nickname": "드래곤볼  손오공",
