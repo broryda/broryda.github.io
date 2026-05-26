@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T04:48:41.236Z",
+  "updatedAt": "2026-05-26T04:48:41.209Z",
   "entries": [
     {
       "nickname": "이거 넘기면 니가 이긴걸로해라",
@@ -36,15 +36,6 @@
       "createdAt": "2026-05-22T04:10:18.595Z",
       "deviceId": "dev_mow00ua9_9vlqlhn2",
       "lastSubmittedAt": "2026-05-22T04:10:18.595Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 539,
-      "elo": 2004,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-26T04:48:29.726Z",
-      "deviceId": "dev_mp9autn7_tr3eb4pq",
-      "lastSubmittedAt": "2026-05-26T04:48:29.726Z"
     },
     {
       "nickname": "Broryda",
@@ -186,9 +177,9 @@
       "solvedCount": 872,
       "elo": 1503,
       "streakCurrent": 1,
+      "createdAt": "2026-05-26T04:48:40.219Z",
       "deviceId": "dev_mofd1oai_igfyi63x",
-      "lastSubmittedAt": "2026-05-26T04:48:40.219Z",
-      "createdAt": "2026-05-26T04:48:40.219Z"
+      "lastSubmittedAt": "2026-05-26T04:48:40.219Z"
     },
     {
       "nickname": "사고제자",
@@ -1368,6 +1359,15 @@
       "createdAt": "2026-05-25T09:16:20.083Z",
       "deviceId": "dev_mowfjus4_umx9197s",
       "lastSubmittedAt": "2026-05-25T09:16:20.083Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp9autn7_tr3eb4pq",
+      "lastSubmittedAt": "2026-05-26T04:48:40.433Z",
+      "createdAt": "2026-05-26T04:48:40.433Z"
     },
     {
       "nickname": "드래곤볼  손오공",
