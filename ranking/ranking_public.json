@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T05:22:35.483Z",
+  "updatedAt": "2026-05-26T05:22:50.563Z",
   "entries": [
     {
       "nickname": "이거 넘기면 니가 이긴걸로해라",
@@ -933,6 +933,13 @@
       "createdAt": "2026-05-21T14:50:52.157Z"
     },
     {
+      "nickname": "박선생",
+      "solvedCount": 9,
+      "elo": 300,
+      "streakCurrent": 3,
+      "createdAt": "2026-05-26T05:22:50.473Z"
+    },
+    {
       "nickname": "콩",
       "solvedCount": 9,
       "elo": 300,
@@ -945,13 +952,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-05-24T06:07:20.182Z"
-    },
-    {
-      "nickname": "박선생",
-      "solvedCount": 8,
-      "elo": 300,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-26T05:22:30.465Z"
     },
     {
       "nickname": "모찌",
