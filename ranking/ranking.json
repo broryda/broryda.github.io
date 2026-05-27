@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-27T05:50:49.176Z",
+  "updatedAt": "2026-05-27T05:50:55.012Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -87,9 +87,9 @@
       "solvedCount": 422,
       "elo": 1752,
       "streakCurrent": 1,
+      "createdAt": "2026-05-27T05:50:48.555Z",
       "deviceId": "dev_mogrv9l2_1s13ehcb",
-      "lastSubmittedAt": "2026-05-27T05:50:48.555Z",
-      "createdAt": "2026-05-27T05:50:48.555Z"
+      "lastSubmittedAt": "2026-05-27T05:50:48.555Z"
     },
     {
       "nickname": "인형놀이",
@@ -776,15 +776,6 @@
       "lastSubmittedAt": "2026-05-23T01:38:38.883Z"
     },
     {
-      "nickname": "바벨",
-      "solvedCount": 439,
-      "elo": 336,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-24T22:06:04.775Z",
-      "deviceId": "dev_mp3dfqza_azw6oloz",
-      "lastSubmittedAt": "2026-05-24T22:06:04.775Z"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 321,
       "elo": 327,
@@ -1242,6 +1233,15 @@
       "createdAt": "2026-05-27T01:37:00.000Z",
       "deviceId": "dev_codex_token_check",
       "lastSubmittedAt": "2026-05-27T01:37:00.000Z"
+    },
+    {
+      "nickname": "바벨",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp3dfqza_azw6oloz",
+      "lastSubmittedAt": "2026-05-27T05:50:53.611Z",
+      "createdAt": "2026-05-27T05:50:53.611Z"
     },
     {
       "nickname": "드래곤볼  손오공",
