@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-27T04:20:26.031Z",
+  "updatedAt": "2026-05-27T04:20:39.207Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -69,9 +69,9 @@
       "solvedCount": 2123,
       "elo": 1797,
       "streakCurrent": 13,
+      "createdAt": "2026-05-27T04:20:25.210Z",
       "deviceId": "dev_mogkdgdp_jlbz3my7",
-      "lastSubmittedAt": "2026-05-27T04:20:25.210Z",
-      "createdAt": "2026-05-27T04:20:25.210Z"
+      "lastSubmittedAt": "2026-05-27T04:20:25.210Z"
     },
     {
       "nickname": "바두기멍멍",
@@ -317,15 +317,6 @@
       "lastSubmittedAt": "2026-05-20T17:58:03.890Z"
     },
     {
-      "nickname": "사용자",
-      "solvedCount": 1353,
-      "elo": 1220,
-      "streakCurrent": 3,
-      "createdAt": "2026-05-27T04:19:51.568Z",
-      "deviceId": "dev_mp1vcmq8_hsffaz6d",
-      "lastSubmittedAt": "2026-05-27T04:19:51.568Z"
-    },
-    {
       "nickname": "엄태승",
       "solvedCount": 1487,
       "elo": 1212,
@@ -333,6 +324,15 @@
       "createdAt": "2026-05-27T02:11:28.390Z",
       "deviceId": "dev_mofd9phu_r9duemsw",
       "lastSubmittedAt": "2026-05-27T02:11:28.390Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 1353,
+      "elo": 1212,
+      "streakCurrent": 3,
+      "deviceId": "dev_mp1vcmq8_hsffaz6d",
+      "lastSubmittedAt": "2026-05-27T04:20:41.383Z",
+      "createdAt": "2026-05-27T04:20:41.383Z"
     },
     {
       "nickname": "27년 복현기우회 회장 김동화",
