@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-27T05:35:49.041Z",
+  "updatedAt": "2026-05-27T05:35:54.978Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -65,15 +65,6 @@
       "lastSubmittedAt": "2026-05-25T05:50:49.901Z"
     },
     {
-      "nickname": "찰올",
-      "solvedCount": 2140,
-      "elo": 1819,
-      "streakCurrent": 13,
-      "createdAt": "2026-05-27T05:33:24.415Z",
-      "deviceId": "dev_mogkdgdp_jlbz3my7",
-      "lastSubmittedAt": "2026-05-27T05:33:24.415Z"
-    },
-    {
       "nickname": "바두기멍멍",
       "solvedCount": 225,
       "elo": 1796,
@@ -87,9 +78,9 @@
       "solvedCount": 402,
       "elo": 1770,
       "streakCurrent": 1,
+      "createdAt": "2026-05-27T05:35:48.341Z",
       "deviceId": "dev_mogrv9l2_1s13ehcb",
-      "lastSubmittedAt": "2026-05-27T05:35:48.341Z",
-      "createdAt": "2026-05-27T05:35:48.341Z"
+      "lastSubmittedAt": "2026-05-27T05:35:48.341Z"
     },
     {
       "nickname": "인형놀이",
@@ -1242,6 +1233,15 @@
       "createdAt": "2026-05-27T01:37:00.000Z",
       "deviceId": "dev_codex_token_check",
       "lastSubmittedAt": "2026-05-27T01:37:00.000Z"
+    },
+    {
+      "nickname": "찰올",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mogkdgdp_jlbz3my7",
+      "lastSubmittedAt": "2026-05-27T05:35:53.465Z",
+      "createdAt": "2026-05-27T05:35:53.465Z"
     },
     {
       "nickname": "드래곤볼  손오공",
