@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-05-27T12:00:58.143Z",
+  "updatedAt": "2026-05-27T12:00:58.459Z",
   "entries": [
-    {
-      "nickname": "박재동",
-      "solvedCount": 2774,
-      "elo": 2152,
-      "streakCurrent": 22,
-      "createdAt": "2026-05-27T11:58:25.228Z",
-      "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-27T11:58:25.228Z"
-    },
     {
       "nickname": "윤영우",
       "solvedCount": 805,
@@ -645,9 +636,9 @@
       "solvedCount": 72,
       "elo": 670,
       "streakCurrent": 1,
+      "createdAt": "2026-05-27T12:00:57.803Z",
       "deviceId": "dev_mpnznb9l_c6p5fd6h",
-      "lastSubmittedAt": "2026-05-27T12:00:57.803Z",
-      "createdAt": "2026-05-27T12:00:57.803Z"
+      "lastSubmittedAt": "2026-05-27T12:00:57.803Z"
     },
     {
       "nickname": "와룡고 매콤주먹 강지성",
@@ -1233,6 +1224,15 @@
       "createdAt": "2026-05-27T11:51:54.724Z",
       "deviceId": "dev_mp3ekpq7_dapr6ama",
       "lastSubmittedAt": "2026-05-27T11:51:54.724Z"
+    },
+    {
+      "nickname": "박재동",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_moif1xk6_8f9bf70c",
+      "lastSubmittedAt": "2026-05-27T12:00:57.438Z",
+      "createdAt": "2026-05-27T12:00:57.438Z"
     },
     {
       "nickname": "드래곤볼  손오공",
