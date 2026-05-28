@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T01:37:33.709Z",
+  "updatedAt": "2026-05-28T01:38:50.484Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -9,15 +9,6 @@
       "createdAt": "2026-05-28T01:24:59.471Z",
       "deviceId": "dev_moif1xk6_8f9bf70c",
       "lastSubmittedAt": "2026-05-28T01:24:59.471Z"
-    },
-    {
-      "nickname": "윤영우",
-      "solvedCount": 835,
-      "elo": 2160,
-      "streakCurrent": 4,
-      "createdAt": "2026-05-27T16:43:06.308Z",
-      "deviceId": "dev_movkwoeq_xyz34zad",
-      "lastSubmittedAt": "2026-05-27T16:43:06.308Z"
     },
     {
       "nickname": "AJK",
@@ -159,9 +150,9 @@
       "solvedCount": 6984,
       "elo": 1532,
       "streakCurrent": 32,
+      "createdAt": "2026-05-28T01:37:33.163Z",
       "deviceId": "dev_mogc30dq_pqthw4ut",
-      "lastSubmittedAt": "2026-05-28T01:37:33.163Z",
-      "createdAt": "2026-05-28T01:37:33.163Z"
+      "lastSubmittedAt": "2026-05-28T01:37:33.163Z"
     },
     {
       "nickname": "26년2학기 기우회회장 김동화",
@@ -1197,6 +1188,15 @@
       "createdAt": "2026-05-27T11:51:54.724Z",
       "deviceId": "dev_mp3ekpq7_dapr6ama",
       "lastSubmittedAt": "2026-05-27T11:51:54.724Z"
+    },
+    {
+      "nickname": "윤영우",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_movkwoeq_xyz34zad",
+      "lastSubmittedAt": "2026-05-28T01:38:49.473Z",
+      "createdAt": "2026-05-28T01:38:49.473Z"
     },
     {
       "nickname": "드래곤볼  손오공",
