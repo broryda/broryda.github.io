@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
@@ -147,6 +147,7 @@
       let entries = [];
       let sortKey = "elo";
       const STALE_MS = 7 * 24 * 60 * 60 * 1000;
+      const CACHE_KEY = "sahwal-ranking-cache-v1";
       const HARD_BANNED_NICKS = new Set(["노무쿤", "노알라"]);
 
       function toTs(v) {
@@ -178,6 +179,39 @@
           }
           return true;
         });
+      }
+
+      function readCachedRanking() {
+        try {
+          const raw = localStorage.getItem(CACHE_KEY);
+          if (!raw) return null;
+          const cached = JSON.parse(raw);
+          if (!cached || typeof cached !== "object") return null;
+          if (!cached.data || !Array.isArray(cached.data.entries)) return null;
+          return { data: cached.data, hasDeviceId: !!cached.hasDeviceId };
+        } catch {
+          return null;
+        }
+      }
+
+      function writeCachedRanking(data, hasDeviceId) {
+        if (!data || !Array.isArray(data.entries) || data.entries.length === 0) return;
+        try {
+          localStorage.setItem(
+            CACHE_KEY,
+            JSON.stringify({ data, hasDeviceId: !!hasDeviceId, cachedAt: new Date().toISOString() }),
+          );
+        } catch {
+          // Storage can be unavailable in private mode; ranking should still render.
+        }
+      }
+
+      function applyRankingPayload(data, banCfg, hasDeviceId, suffix = "") {
+        const raw = Array.isArray(data?.entries) ? data.entries : [];
+        entries = applyBan(raw, banCfg, hasDeviceId).filter(isFreshEntry);
+        document.getElementById("updatedAt").textContent = `업데이트 시각: ${data?.updatedAt || "-"}${suffix}`;
+        render();
+        return raw.length;
       }
 
       function medal(rank) {
@@ -251,8 +285,8 @@
       }
 
       async function load() {
+        const banCfg = await loadBan();
         try {
-          const banCfg = await loadBan();
           let data;
           let hasDeviceId = false;
           try {
@@ -266,13 +300,23 @@
             data = await publicRes.json();
             hasDeviceId = false;
           }
-          const raw = Array.isArray(data.entries) ? data.entries : [];
-          entries = applyBan(raw, banCfg, hasDeviceId).filter(isFreshEntry);
-          document.getElementById("updatedAt").textContent = `업데이트 시각: ${data.updatedAt || "-"}`;
-          render();
+          const rawCount = Array.isArray(data.entries) ? data.entries.length : 0;
+          if (rawCount === 0) {
+            const cached = readCachedRanking();
+            if (cached) {
+              applyRankingPayload(cached.data, banCfg, cached.hasDeviceId, " (업데이트 중, 저장된 데이터)");
+              return;
+            }
+          }
+          writeCachedRanking(data, hasDeviceId);
+          applyRankingPayload(data, banCfg, hasDeviceId);
         } catch {
+          const cached = readCachedRanking();
+          if (cached) {
+            applyRankingPayload(cached.data, banCfg, cached.hasDeviceId, " (업데이트 중, 저장된 데이터)");
+            return;
+          }
           document.getElementById("updatedAt").textContent = "업데이트 시각: 로딩 실패";
-          entries = [];
           render();
         }
       }
