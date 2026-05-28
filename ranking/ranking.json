@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T06:01:02.261Z",
+  "updatedAt": "2026-05-28T06:01:04.630Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -96,9 +96,9 @@
       "solvedCount": 302,
       "elo": 1733,
       "streakCurrent": 2,
+      "createdAt": "2026-05-28T06:00:59.205Z",
       "deviceId": "dev_mpnqlazv_5silxa3h",
-      "lastSubmittedAt": "2026-05-28T06:00:59.205Z",
-      "createdAt": "2026-05-28T06:00:59.205Z"
+      "lastSubmittedAt": "2026-05-28T06:00:59.205Z"
     },
     {
       "nickname": "Vertice",
@@ -542,15 +542,6 @@
       "lastSubmittedAt": "2026-05-27T08:26:48.479Z"
     },
     {
-      "nickname": "이젠 잊은 그",
-      "solvedCount": 805,
-      "elo": 798,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-28T06:00:57.315Z",
-      "deviceId": "dev_mp17w35n_f022miw8",
-      "lastSubmittedAt": "2026-05-28T06:00:57.315Z"
-    },
-    {
       "nickname": "뚱보아키",
       "solvedCount": 1314,
       "elo": 792,
@@ -558,6 +549,15 @@
       "createdAt": "2026-05-27T14:40:54.525Z",
       "deviceId": "dev_moj9lgxr_reijlfen",
       "lastSubmittedAt": "2026-05-27T14:40:54.525Z"
+    },
+    {
+      "nickname": "이젠 잊은 그",
+      "solvedCount": 805,
+      "elo": 783,
+      "streakCurrent": 2,
+      "deviceId": "dev_mp17w35n_f022miw8",
+      "lastSubmittedAt": "2026-05-28T06:01:04.510Z",
+      "createdAt": "2026-05-28T06:01:04.510Z"
     },
     {
       "nickname": "매미킴",
