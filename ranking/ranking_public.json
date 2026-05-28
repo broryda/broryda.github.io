@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T15:36:09.983Z",
+  "updatedAt": "2026-05-28T15:36:37.520Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -80,10 +80,10 @@
     },
     {
       "nickname": "Vertice",
-      "solvedCount": 1861,
-      "elo": 1772,
+      "solvedCount": 1862,
+      "elo": 1760,
       "streakCurrent": 5,
-      "createdAt": "2026-05-28T15:35:49.998Z"
+      "createdAt": "2026-05-28T15:36:36.206Z"
     },
     {
       "nickname": "브로리다",
@@ -926,6 +926,13 @@
       "createdAt": "2026-05-28T10:44:39.286Z"
     },
     {
+      "nickname": "JSH",
+      "solvedCount": 1420,
+      "elo": 299,
+      "streakCurrent": 13,
+      "createdAt": "2026-05-28T15:36:33.298Z"
+    },
+    {
       "nickname": "드래곤볼  손오공",
       "solvedCount": 631,
       "elo": 295,
@@ -952,13 +959,6 @@
       "elo": 282,
       "streakCurrent": 4,
       "createdAt": "2026-05-28T09:21:07.931Z"
-    },
-    {
-      "nickname": "JSH",
-      "solvedCount": 1418,
-      "elo": 279,
-      "streakCurrent": 13,
-      "createdAt": "2026-05-28T15:36:08.812Z"
     }
   ]
 }
