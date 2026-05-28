@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T07:39:24.315Z",
+  "updatedAt": "2026-05-28T07:39:24.451Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -933,13 +933,6 @@
       "createdAt": "2026-05-28T06:54:55.877Z"
     },
     {
-      "nickname": "R0cket",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-05-28T07:39:23.308Z"
-    },
-    {
       "nickname": "드래곤볼  손오공",
       "solvedCount": 631,
       "elo": 295,
@@ -952,6 +945,13 @@
       "elo": 289,
       "streakCurrent": 1,
       "createdAt": "2026-05-21T08:44:40.734Z"
+    },
+    {
+      "nickname": "R0cket",
+      "solvedCount": 462,
+      "elo": 287,
+      "streakCurrent": 12,
+      "createdAt": "2026-05-28T07:39:23.373Z"
     },
     {
       "nickname": "해솔♡",
