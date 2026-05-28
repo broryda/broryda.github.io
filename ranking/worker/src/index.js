@@ -161,14 +161,19 @@ function calculateRatingDelta(winnerRating, loserRating, kFactor = 32) {
   return winnerDelta;
 }
 
-async function githubGetFile(env, path) {
-  const url = `https://api.github.com/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/contents/${path}?ref=${encodeURIComponent(env.GITHUB_BRANCH)}`;
+function githubHeaders(env, extra = {}) {
+  return {
+    Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+    Accept: "application/vnd.github+json",
+    "User-Agent": "ranking-submit-worker",
+    ...extra,
+  };
+}
+
+async function githubGetFile(env, path, ref = env.GITHUB_BRANCH) {
+  const url = `https://api.github.com/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/contents/${path}?ref=${encodeURIComponent(ref)}`;
   const res = await fetch(url, {
-    headers: {
-      Authorization: `Bearer ${env.GITHUB_TOKEN}`,
-      Accept: "application/vnd.github+json",
-      "User-Agent": "ranking-submit-worker",
-    },
+    headers: githubHeaders(env),
   });
   if (!res.ok) {
     throw new Error(`github_get_failed:${res.status}`);
@@ -179,6 +184,71 @@ async function githubGetFile(env, path) {
   const bytes = Uint8Array.from(binary, (ch) => ch.charCodeAt(0));
   const content = new TextDecoder("utf-8").decode(bytes);
   return { sha: data.sha, text: content };
+}
+
+async function githubJson(env, path, options = {}) {
+  const url = `https://api.github.com/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}${path}`;
+  const res = await fetch(url, {
+    ...options,
+    headers: githubHeaders(env, {
+      "Content-Type": "application/json",
+      ...(options.headers || {}),
+    }),
+  });
+  const text = await res.text();
+  let body = null;
+  if (text) {
+    try {
+      body = JSON.parse(text);
+    } catch {
+      body = { raw: text };
+    }
+  }
+  if (!res.ok) {
+    throw new Error(`github_git_failed:${res.status}:${text.slice(0, 200)}`);
+  }
+  return body;
+}
+
+async function githubGetBranchHead(env) {
+  const data = await githubJson(env, `/git/ref/heads/${env.GITHUB_BRANCH}`);
+  const sha = data?.object?.sha;
+  if (!sha) throw new Error("github_ref_missing_sha");
+  return sha;
+}
+
+async function githubCommitFiles(env, parentSha, files, message) {
+  const parent = await githubJson(env, `/git/commits/${parentSha}`);
+  const baseTreeSha = parent?.tree?.sha;
+  if (!baseTreeSha) throw new Error("github_parent_missing_tree");
+
+  const tree = [];
+  for (const file of files) {
+    const blob = await githubJson(env, "/git/blobs", {
+      method: "POST",
+      body: JSON.stringify({ content: file.contentText, encoding: "utf-8" }),
+    });
+    if (!blob?.sha) throw new Error("github_blob_missing_sha");
+    tree.push({ path: file.path, mode: "100644", type: "blob", sha: blob.sha });
+  }
+
+  const nextTree = await githubJson(env, "/git/trees", {
+    method: "POST",
+    body: JSON.stringify({ base_tree: baseTreeSha, tree }),
+  });
+  if (!nextTree?.sha) throw new Error("github_tree_missing_sha");
+
+  const commit = await githubJson(env, "/git/commits", {
+    method: "POST",
+    body: JSON.stringify({ message, tree: nextTree.sha, parents: [parentSha] }),
+  });
+  if (!commit?.sha) throw new Error("github_commit_missing_sha");
+
+  await githubJson(env, `/git/refs/heads/${env.GITHUB_BRANCH}`, {
+    method: "PATCH",
+    body: JSON.stringify({ sha: commit.sha, force: false }),
+  });
+  return commit;
 }
 
 async function githubPutFile(env, path, contentText, sha, message) {
@@ -197,12 +267,9 @@ async function githubPutFile(env, path, contentText, sha, message) {
   };
   const res = await fetch(url, {
     method: "PUT",
-    headers: {
-      Authorization: `Bearer ${env.GITHUB_TOKEN}`,
-      Accept: "application/vnd.github+json",
+    headers: githubHeaders(env, {
       "Content-Type": "application/json",
-      "User-Agent": "ranking-submit-worker",
-    },
+    }),
     body: JSON.stringify(body),
   });
   if (!res.ok) {
@@ -218,7 +285,8 @@ async function updateRanking(env, incoming) {
 
   const banConfig = await loadBanConfig(env);
   for (let attempt = 0; attempt < 3; attempt += 1) {
-    const file = await githubGetFile(env, rankingPath);
+    const parentSha = await githubGetBranchHead(env);
+    const file = await githubGetFile(env, rankingPath, parentSha);
     let payload;
     try {
       payload = JSON.parse(file.text);
@@ -245,26 +313,20 @@ async function updateRanking(env, incoming) {
     const publicText = `${JSON.stringify(buildPublicPayload(nextPayload), null, 2)}\n`;
 
     try {
-      await githubPutFile(
+      await githubCommitFiles(
         env,
-        rankingPath,
-        nextText,
-        file.sha,
+        parentSha,
+        [
+          { path: rankingPath, contentText: nextText },
+          { path: publicPath, contentText: publicText },
+        ],
         `chore: ranking update (${incoming.nickname})`,
-      );
-
-      const publicFile = await githubGetFile(env, publicPath);
-      await githubPutFile(
-        env,
-        publicPath,
-        publicText,
-        publicFile.sha,
-        "chore: refresh ranking_public.json",
       );
       return { ok: true, updatedAt: nowIso, total: merged.length };
     } catch (e) {
       const msg = String(e?.message || e || "");
-      if (!msg.includes("409") || attempt === 2) {
+      const retryable = msg.includes(":409") || msg.includes(":422");
+      if (!retryable || attempt === 2) {
         throw e;
       }
     }
