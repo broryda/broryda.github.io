@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T05:58:03.640Z",
+  "updatedAt": "2026-05-28T05:58:13.108Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -552,12 +552,12 @@
     },
     {
       "nickname": "이젠 잊은 그",
-      "solvedCount": 800,
-      "elo": 791,
+      "solvedCount": 801,
+      "elo": 778,
       "streakCurrent": 2,
-      "createdAt": "2026-05-28T05:57:54.343Z",
       "deviceId": "dev_mp17w35n_f022miw8",
-      "lastSubmittedAt": "2026-05-28T05:57:54.343Z"
+      "lastSubmittedAt": "2026-05-28T05:58:13.002Z",
+      "createdAt": "2026-05-28T05:58:13.002Z"
     },
     {
       "nickname": "매미킴",
@@ -1212,9 +1212,9 @@
       "solvedCount": 264,
       "elo": 287,
       "streakCurrent": 4,
+      "createdAt": "2026-05-28T05:58:03.099Z",
       "deviceId": "dev_mp59azm9_3zsajb69",
-      "lastSubmittedAt": "2026-05-28T05:58:03.099Z",
-      "createdAt": "2026-05-28T05:58:03.099Z"
+      "lastSubmittedAt": "2026-05-28T05:58:03.099Z"
     }
   ]
 }
