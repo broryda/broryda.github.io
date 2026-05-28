@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T14:53:45.480Z",
+  "updatedAt": "2026-05-28T14:53:49.252Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -533,15 +533,6 @@
       "lastSubmittedAt": "2026-05-23T09:14:54.428Z"
     },
     {
-      "nickname": "매미킴",
-      "solvedCount": 207,
-      "elo": 824,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-28T14:53:36.023Z",
-      "deviceId": "dev_mpnznb9l_c6p5fd6h",
-      "lastSubmittedAt": "2026-05-28T14:53:36.023Z"
-    },
-    {
       "nickname": "달서구의 왕자 강지성",
       "solvedCount": 375,
       "elo": 820,
@@ -558,6 +549,15 @@
       "createdAt": "2026-05-23T15:30:53.002Z",
       "deviceId": "dev_mpigu019_lj4h8g7d",
       "lastSubmittedAt": "2026-05-23T15:30:53.002Z"
+    },
+    {
+      "nickname": "매미킴",
+      "solvedCount": 208,
+      "elo": 808,
+      "streakCurrent": 2,
+      "deviceId": "dev_mpnznb9l_c6p5fd6h",
+      "lastSubmittedAt": "2026-05-28T14:53:48.817Z",
+      "createdAt": "2026-05-28T14:53:48.817Z"
     },
     {
       "nickname": "윤희진",
@@ -744,9 +744,9 @@
       "solvedCount": 1128,
       "elo": 384,
       "streakCurrent": 12,
+      "createdAt": "2026-05-28T14:53:44.797Z",
       "deviceId": "dev_mp10g4e4_0xnwckgj",
-      "lastSubmittedAt": "2026-05-28T14:53:44.797Z",
-      "createdAt": "2026-05-28T14:53:44.797Z"
+      "lastSubmittedAt": "2026-05-28T14:53:44.797Z"
     },
     {
       "nickname": "해쿠♡",
