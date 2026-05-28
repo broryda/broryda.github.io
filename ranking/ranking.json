@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T11:36:42.412Z",
+  "updatedAt": "2026-05-28T11:36:52.083Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -726,9 +726,9 @@
       "solvedCount": 551,
       "elo": 405,
       "streakCurrent": 12,
+      "createdAt": "2026-05-28T11:36:41.938Z",
       "deviceId": "dev_mp10g4e4_0xnwckgj",
-      "lastSubmittedAt": "2026-05-28T11:36:41.938Z",
-      "createdAt": "2026-05-28T11:36:41.938Z"
+      "lastSubmittedAt": "2026-05-28T11:36:41.938Z"
     },
     {
       "nickname": "용쓰는바둑",
@@ -765,15 +765,6 @@
       "createdAt": "2026-05-28T05:04:14.071Z",
       "deviceId": "dev_mp2bepyu_y8qjxvry",
       "lastSubmittedAt": "2026-05-28T05:04:14.071Z"
-    },
-    {
-      "nickname": "기우회종신형김준영",
-      "solvedCount": 32,
-      "elo": 304,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-28T10:23:01.289Z",
-      "deviceId": "dev_mp23l855_r8mc8kev",
-      "lastSubmittedAt": "2026-05-28T10:23:01.289Z"
     },
     {
       "nickname": "사용자",
@@ -1224,6 +1215,15 @@
       "createdAt": "2026-05-24T10:05:13.867Z",
       "deviceId": "dev_mphxhjmb_wicdddzc",
       "lastSubmittedAt": "2026-05-24T10:05:13.867Z"
+    },
+    {
+      "nickname": "기우회종신형김준영",
+      "solvedCount": 33,
+      "elo": 294,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp23l855_r8mc8kev",
+      "lastSubmittedAt": "2026-05-28T11:36:50.488Z",
+      "createdAt": "2026-05-28T11:36:50.488Z"
     },
     {
       "nickname": "R0cket",
