@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T15:00:52.921Z",
+  "updatedAt": "2026-05-28T15:00:55.551Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -137,15 +137,6 @@
       "lastSubmittedAt": "2026-05-28T12:50:40.572Z"
     },
     {
-      "nickname": "Vertice",
-      "solvedCount": 1815,
-      "elo": 1660,
-      "streakCurrent": 5,
-      "createdAt": "2026-05-28T15:00:38.545Z",
-      "deviceId": "dev_mpl8a8ax_yvxkjk7g",
-      "lastSubmittedAt": "2026-05-28T15:00:38.545Z"
-    },
-    {
       "nickname": "무궁화",
       "solvedCount": 3100,
       "elo": 1651,
@@ -153,6 +144,15 @@
       "createdAt": "2026-05-28T14:49:30.263Z",
       "deviceId": "dev_mojhmlgt_ug0gyb7s",
       "lastSubmittedAt": "2026-05-28T14:49:30.263Z"
+    },
+    {
+      "nickname": "Vertice",
+      "solvedCount": 1815,
+      "elo": 1651,
+      "streakCurrent": 5,
+      "deviceId": "dev_mpl8a8ax_yvxkjk7g",
+      "lastSubmittedAt": "2026-05-28T15:00:54.316Z",
+      "createdAt": "2026-05-28T15:00:54.316Z"
     },
     {
       "nickname": "그대란우주",
@@ -537,9 +537,9 @@
       "solvedCount": 224,
       "elo": 824,
       "streakCurrent": 3,
+      "createdAt": "2026-05-28T15:00:52.459Z",
       "deviceId": "dev_mpnznb9l_c6p5fd6h",
-      "lastSubmittedAt": "2026-05-28T15:00:52.459Z",
-      "createdAt": "2026-05-28T15:00:52.459Z"
+      "lastSubmittedAt": "2026-05-28T15:00:52.459Z"
     },
     {
       "nickname": "달서구의 왕자 강지성",
