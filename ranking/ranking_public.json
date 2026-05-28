@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T15:13:20.302Z",
+  "updatedAt": "2026-05-28T15:13:27.624Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -926,6 +926,13 @@
       "createdAt": "2026-05-28T10:44:39.286Z"
     },
     {
+      "nickname": "JSH",
+      "solvedCount": 1268,
+      "elo": 296,
+      "streakCurrent": 13,
+      "createdAt": "2026-05-28T15:13:26.463Z"
+    },
+    {
       "nickname": "드래곤볼  손오공",
       "solvedCount": 631,
       "elo": 295,
@@ -952,13 +959,6 @@
       "elo": 282,
       "streakCurrent": 4,
       "createdAt": "2026-05-28T09:21:07.931Z"
-    },
-    {
-      "nickname": "JSH",
-      "solvedCount": 1267,
-      "elo": 280,
-      "streakCurrent": 13,
-      "createdAt": "2026-05-28T15:13:19.694Z"
     }
   ]
 }
