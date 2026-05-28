@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T06:35:07.456Z",
+  "updatedAt": "2026-05-28T06:35:25.600Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -1199,15 +1199,6 @@
       "lastSubmittedAt": "2026-05-28T06:22:10.072Z"
     },
     {
-      "nickname": "R0cket",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-05-28T06:35:06.568Z",
-      "deviceId": "dev_mp9sy7t3_ec64yrp0",
-      "lastSubmittedAt": "2026-05-28T06:35:06.568Z"
-    },
-    {
       "nickname": "드래곤볼  손오공",
       "solvedCount": 631,
       "elo": 295,
@@ -1224,6 +1215,15 @@
       "createdAt": "2026-05-21T08:44:40.734Z",
       "deviceId": "dev_mp10rhd6_i10js2zh",
       "lastSubmittedAt": "2026-05-21T08:44:40.734Z"
+    },
+    {
+      "nickname": "R0cket",
+      "solvedCount": 459,
+      "elo": 287,
+      "streakCurrent": 12,
+      "deviceId": "dev_mp9sy7t3_ec64yrp0",
+      "lastSubmittedAt": "2026-05-28T06:35:25.282Z",
+      "createdAt": "2026-05-28T06:35:25.282Z"
     },
     {
       "nickname": "해솔♡",
