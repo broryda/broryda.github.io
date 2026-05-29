@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-29T05:30:05.803Z",
+  "updatedAt": "2026-05-29T05:30:22.636Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -24,9 +24,9 @@
       "solvedCount": 237,
       "elo": 2133,
       "streakCurrent": 1,
+      "createdAt": "2026-05-29T05:30:05.440Z",
       "deviceId": "dev_mpqe3s98_p34qgbii",
-      "lastSubmittedAt": "2026-05-29T05:30:05.440Z",
-      "createdAt": "2026-05-29T05:30:05.440Z"
+      "lastSubmittedAt": "2026-05-29T05:30:05.440Z"
     },
     {
       "nickname": "AJK",
@@ -317,15 +317,6 @@
       "lastSubmittedAt": "2026-05-27T09:42:25.633Z"
     },
     {
-      "nickname": "사용자",
-      "solvedCount": 1721,
-      "elo": 1163,
-      "streakCurrent": 5,
-      "createdAt": "2026-05-29T05:29:21.168Z",
-      "deviceId": "dev_mp1vcmq8_hsffaz6d",
-      "lastSubmittedAt": "2026-05-29T05:29:21.168Z"
-    },
-    {
       "nickname": "인도가선진국이되는그날까지",
       "solvedCount": 81,
       "elo": 1159,
@@ -333,6 +324,15 @@
       "createdAt": "2026-05-23T17:34:11.015Z",
       "deviceId": "dev_mpiku0bc_k8dtrcta",
       "lastSubmittedAt": "2026-05-23T17:34:11.015Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 1721,
+      "elo": 1154,
+      "streakCurrent": 5,
+      "deviceId": "dev_mp1vcmq8_hsffaz6d",
+      "lastSubmittedAt": "2026-05-29T05:30:23.431Z",
+      "createdAt": "2026-05-29T05:30:23.431Z"
     },
     {
       "nickname": "미캉",
