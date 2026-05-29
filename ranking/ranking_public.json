@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-29T04:08:10.640Z",
+  "updatedAt": "2026-05-29T04:08:16.641Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -212,6 +212,13 @@
       "createdAt": "2026-05-23T04:02:47.845Z"
     },
     {
+      "nickname": "npa",
+      "solvedCount": 101,
+      "elo": 1242,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-29T04:08:16.292Z"
+    },
+    {
       "nickname": "김자반",
       "solvedCount": 330,
       "elo": 1239,
@@ -224,13 +231,6 @@
       "elo": 1234,
       "streakCurrent": 1,
       "createdAt": "2026-05-27T14:59:13.314Z"
-    },
-    {
-      "nickname": "npa",
-      "solvedCount": 100,
-      "elo": 1227,
-      "streakCurrent": 1,
-      "createdAt": "2026-05-29T04:08:10.303Z"
     },
     {
       "nickname": "사용자",
@@ -556,10 +556,10 @@
     },
     {
       "nickname": "JSH",
-      "solvedCount": 1795,
-      "elo": 460,
+      "solvedCount": 1796,
+      "elo": 458,
       "streakCurrent": 13,
-      "createdAt": "2026-05-29T04:08:02.239Z"
+      "createdAt": "2026-05-29T04:08:10.481Z"
     },
     {
       "nickname": "천사수열",
