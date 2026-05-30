@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-30T09:04:37.706Z",
+  "updatedAt": "2026-05-30T09:04:40.235Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -27,15 +27,6 @@
       "createdAt": "2026-05-29T08:25:31.669Z",
       "deviceId": "dev_mp9autn7_tr3eb4pq",
       "lastSubmittedAt": "2026-05-29T08:25:31.669Z"
-    },
-    {
-      "nickname": "박재동",
-      "solvedCount": 3375,
-      "elo": 2081,
-      "streakCurrent": 25,
-      "createdAt": "2026-05-30T08:13:05.976Z",
-      "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-05-30T08:13:05.976Z"
     },
     {
       "nickname": "ㅇㅅㅇ",
@@ -897,9 +888,9 @@
       "solvedCount": 192,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-05-30T09:04:35.818Z",
       "deviceId": "dev_mp7j5lzk_39ycrhxh",
-      "lastSubmittedAt": "2026-05-30T09:04:35.818Z",
-      "createdAt": "2026-05-30T09:04:35.818Z"
+      "lastSubmittedAt": "2026-05-30T09:04:35.818Z"
     },
     {
       "nickname": "동작현수",
@@ -1278,6 +1269,15 @@
       "createdAt": "2026-05-30T08:20:32.001Z",
       "deviceId": "dev_mp54pk83_ez7chgy8",
       "lastSubmittedAt": "2026-05-30T08:20:32.001Z"
+    },
+    {
+      "nickname": "박재동",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_moif1xk6_8f9bf70c",
+      "lastSubmittedAt": "2026-05-30T09:04:38.786Z",
+      "createdAt": "2026-05-30T09:04:38.786Z"
     },
     {
       "nickname": "기우회종신형김준영",
