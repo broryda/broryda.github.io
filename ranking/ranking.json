@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-05-30T10:41:13.673Z",
+  "updatedAt": "2026-05-30T10:49:49.718Z",
   "entries": [
     {
       "nickname": "윤영우",
       "solvedCount": 1009,
       "elo": 2222,
       "streakCurrent": 6,
+      "createdAt": "2026-05-30T10:41:12.689Z",
       "deviceId": "dev_movkwoeq_xyz34zad",
-      "lastSubmittedAt": "2026-05-30T10:41:12.689Z",
-      "createdAt": "2026-05-30T10:41:12.689Z"
+      "lastSubmittedAt": "2026-05-30T10:41:12.689Z"
     },
     {
       "nickname": "npa",
@@ -1260,6 +1260,15 @@
       "createdAt": "2026-05-30T09:42:33.613Z",
       "deviceId": "dev_mpryqmrv_xdl6ghn6",
       "lastSubmittedAt": "2026-05-30T09:42:33.613Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mps8b9o7_6v0c9aa3",
+      "lastSubmittedAt": "2026-05-30T10:49:44.258Z",
+      "createdAt": "2026-05-30T10:49:44.258Z"
     },
     {
       "nickname": "기우회종신형김준영",
