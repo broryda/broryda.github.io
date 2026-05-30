@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-05-30T00:44:55.970Z",
+  "updatedAt": "2026-05-30T00:44:55.969Z",
   "entries": [
+    {
+      "nickname": "npa",
+      "solvedCount": 495,
+      "elo": 2165,
+      "streakCurrent": 1,
+      "createdAt": "2026-05-30T00:44:54.912Z"
+    },
     {
       "nickname": "박재동",
       "solvedCount": 3309,
@@ -945,13 +952,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-05-29T22:30:48.339Z"
-    },
-    {
-      "nickname": "npa",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-05-30T00:44:54.817Z"
     },
     {
       "nickname": "드래곤볼  손오공",
