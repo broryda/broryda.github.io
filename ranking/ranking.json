@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-02T05:32:48.608Z",
+  "updatedAt": "2026-06-02T05:32:53.902Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -114,9 +114,9 @@
       "solvedCount": 2190,
       "elo": 1758,
       "streakCurrent": 9,
+      "createdAt": "2026-06-02T05:32:50.023Z",
       "deviceId": "dev_mpl8a8ax_yvxkjk7g",
-      "lastSubmittedAt": "2026-06-02T05:32:50.023Z",
-      "createdAt": "2026-06-02T05:32:50.023Z"
+      "lastSubmittedAt": "2026-06-02T05:32:50.023Z"
     },
     {
       "nickname": "인형놀이",
@@ -459,15 +459,6 @@
       "createdAt": "2026-05-31T23:08:40.153Z",
       "deviceId": "dev_mpdc5mez_lql4xf9n",
       "lastSubmittedAt": "2026-05-31T23:08:40.153Z"
-    },
-    {
-      "nickname": "구문룡권신",
-      "solvedCount": 2450,
-      "elo": 919,
-      "streakCurrent": 30,
-      "createdAt": "2026-06-02T05:29:03.998Z",
-      "deviceId": "dev_mojb3d6m_df7sfc3r",
-      "lastSubmittedAt": "2026-06-02T05:29:03.998Z"
     },
     {
       "nickname": "달서구 피바라기 강지성",
@@ -1215,6 +1206,15 @@
       "createdAt": "2026-06-01T14:53:33.627Z",
       "deviceId": "dev_mow79rbx_0h9nq8fp",
       "lastSubmittedAt": "2026-06-01T14:53:33.627Z"
+    },
+    {
+      "nickname": "구문룡권신",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mojb3d6m_df7sfc3r",
+      "lastSubmittedAt": "2026-06-02T05:32:52.411Z",
+      "createdAt": "2026-06-02T05:32:52.411Z"
     },
     {
       "nickname": "식~세븐",
