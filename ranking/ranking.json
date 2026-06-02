@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-02T12:53:21.846Z",
+  "updatedAt": "2026-06-02T12:53:40.116Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -276,9 +276,9 @@
       "solvedCount": 1021,
       "elo": 1299,
       "streakCurrent": 38,
+      "createdAt": "2026-06-02T12:53:21.105Z",
       "deviceId": "dev_mofulsf9_49qn1jj0",
-      "lastSubmittedAt": "2026-06-02T12:53:21.105Z",
-      "createdAt": "2026-06-02T12:53:21.105Z"
+      "lastSubmittedAt": "2026-06-02T12:53:21.105Z"
     },
     {
       "nickname": "27년 복현기우회 회장 김동화",
@@ -702,15 +702,6 @@
       "createdAt": "2026-06-02T10:32:58.635Z",
       "deviceId": "dev_mpji0x8h_9j6bsh79",
       "lastSubmittedAt": "2026-06-02T10:32:58.635Z"
-    },
-    {
-      "nickname": "바벨",
-      "solvedCount": 593,
-      "elo": 336,
-      "streakCurrent": 7,
-      "createdAt": "2026-06-02T12:53:14.837Z",
-      "deviceId": "dev_mp3dfqza_azw6oloz",
-      "lastSubmittedAt": "2026-06-02T12:53:14.837Z"
     },
     {
       "nickname": "창환",
@@ -1233,6 +1224,15 @@
       "createdAt": "2026-06-02T10:33:17.283Z",
       "deviceId": "dev_mpwi0p48_0ldntjh5",
       "lastSubmittedAt": "2026-06-02T10:33:17.283Z"
+    },
+    {
+      "nickname": "바벨",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp3dfqza_azw6oloz",
+      "lastSubmittedAt": "2026-06-02T12:53:38.849Z",
+      "createdAt": "2026-06-02T12:53:38.849Z"
     },
     {
       "nickname": "식~세븐",
