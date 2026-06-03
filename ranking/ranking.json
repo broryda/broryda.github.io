@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T02:05:17.833Z",
+  "updatedAt": "2026-06-03T02:05:27.016Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -402,9 +402,9 @@
       "solvedCount": 300,
       "elo": 1082,
       "streakCurrent": 1,
+      "createdAt": "2026-06-03T02:05:16.740Z",
       "deviceId": "dev_mogj2aoo_6pvi0fia",
-      "lastSubmittedAt": "2026-06-03T02:05:16.740Z",
-      "createdAt": "2026-06-03T02:05:16.740Z"
+      "lastSubmittedAt": "2026-06-03T02:05:16.740Z"
     },
     {
       "nickname": "모모",
@@ -1251,6 +1251,15 @@
       "createdAt": "2026-06-02T10:33:17.283Z",
       "deviceId": "dev_mpwi0p48_0ldntjh5",
       "lastSubmittedAt": "2026-06-02T10:33:17.283Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mpxfcet5_w59exc6k",
+      "lastSubmittedAt": "2026-06-03T02:05:25.770Z",
+      "createdAt": "2026-06-03T02:05:25.770Z"
     },
     {
       "nickname": "식~세븐",
