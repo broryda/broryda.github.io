@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T11:46:09.318Z",
+  "updatedAt": "2026-06-03T11:49:42.383Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -276,9 +276,9 @@
       "solvedCount": 1216,
       "elo": 1304,
       "streakCurrent": 1,
+      "createdAt": "2026-06-03T11:46:08.666Z",
       "deviceId": "dev_mp7xpw9x_6u5u0hw6",
-      "lastSubmittedAt": "2026-06-03T11:46:08.666Z",
-      "createdAt": "2026-06-03T11:46:08.666Z"
+      "lastSubmittedAt": "2026-06-03T11:46:08.666Z"
     },
     {
       "nickname": "27년 복현기우회 회장 김동화",
@@ -911,15 +911,6 @@
       "lastSubmittedAt": "2026-06-03T04:43:20.257Z"
     },
     {
-      "nickname": "다덤벼라내가최강이다",
-      "solvedCount": 109,
-      "elo": 300,
-      "streakCurrent": 2,
-      "createdAt": "2026-05-28T09:47:44.093Z",
-      "deviceId": "dev_mpfb2c0q_rn3l9fyb",
-      "lastSubmittedAt": "2026-05-28T09:47:44.093Z"
-    },
-    {
       "nickname": "아이림",
       "solvedCount": 105,
       "elo": 300,
@@ -1233,6 +1224,15 @@
       "createdAt": "2026-06-03T05:08:44.348Z",
       "deviceId": "dev_mpryqmrv_xdl6ghn6",
       "lastSubmittedAt": "2026-06-03T05:08:44.348Z"
+    },
+    {
+      "nickname": "다덤벼라내가최강이다",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mpfb2c0q_rn3l9fyb",
+      "lastSubmittedAt": "2026-06-03T11:49:41.425Z",
+      "createdAt": "2026-06-03T11:49:41.425Z"
     },
     {
       "nickname": "식~세븐",
