@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="theme-color" content="#12100d" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>정석 공부</title>
+  </head>
+  <body>
+    <main id="homeScreen" class="menu-screen">
+      <section class="menu-card">
+        <div class="brand">
+          <h1>정석 공부</h1>
+          <span>원하는 학습 방식을 선택하세요.</span>
+        </div>
+        <div class="menu-actions">
+          <button id="findJosekiBtn">정석 찾기</button>
+          <button id="categoryJosekiBtn" class="secondary">종류별 정석</button>
+        </div>
+      </section>
+    </main>
+
+    <main id="categoryScreen" class="menu-screen hidden">
+      <section class="menu-card">
+        <div class="top-bar">
+          <div class="brand">
+            <h1>종류별 정석</h1>
+            <span>첫 수 위치로 자동 분류했습니다.</span>
+          </div>
+          <button class="secondary small-button" data-home>홈</button>
+        </div>
+        <div id="categoryButtons" class="menu-actions"></div>
+      </section>
+    </main>
+
+    <main id="listScreen" class="menu-screen hidden">
+      <section class="menu-card list-card">
+        <div class="top-bar">
+          <div class="brand">
+            <h1 id="listTitle">정석 목록</h1>
+            <span id="listMeta">정석을 선택하세요.</span>
+          </div>
+          <button class="secondary small-button" id="backToCategoriesBtn">분류</button>
+        </div>
+        <div id="josekiList" class="joseki-list"></div>
+      </section>
+    </main>
+
+    <main id="studyScreen" class="app-shell study portrait-study hidden">
+      <section class="board-stage">
+        <div class="top-bar">
+          <div class="brand">
+            <h1 id="studyTitle">정석 공부</h1>
+            <span id="entryMeta">초록색 수를 탭해서 분기를 선택하세요.</span>
+          </div>
+          <div class="top-actions">
+            <button id="memoryBtn" class="secondary small-button hidden">암기모드</button>
+            <button class="secondary small-button" data-home>홈</button>
+          </div>
+        </div>
+        <div class="board-wrap">
+          <svg id="board"></svg>
+        </div>
+      </section>
+
+      <aside class="side-panel compact-panel">
+        <label class="step-row">
+          <span id="moveNumber">수순 0</span>
+          <input id="moveSlider" type="range" min="0" value="0" />
+        </label>
+
+        <section class="card comment-card">
+          <h3>코멘트</h3>
+          <div id="moveComment" class="comment muted"></div>
+        </section>
+      </aside>
+    </main>
+
+    <div id="completeModal" class="complete-modal hidden" role="dialog" aria-modal="true" aria-labelledby="completeTitle">
+      <section class="complete-card">
+        <div class="complete-badge">✓</div>
+        <h2 id="completeTitle">학습 완료!</h2>
+        <p>마지막 수순까지 모두 맞췄습니다.</p>
+        <button id="completeOkBtn" type="button">확인</button>
+      </section>
+    </div>
+
+    <script src="./data/merged-joseki-tree.js"></script>
+    <script src="./data/joseki-data.js"></script>
+    <script src="./assets/sgf.js"></script>
+    <script src="./assets/board.js"></script>
+    <script src="./assets/study.js"></script>
+  </body>
+</html>
