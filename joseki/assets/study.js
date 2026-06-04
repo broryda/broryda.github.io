@@ -28,6 +28,9 @@
     moveSlider: document.getElementById("moveSlider"),
     moveComment: document.getElementById("moveComment"),
     memoryBtn: document.getElementById("memoryBtn"),
+    josekiListBtn: document.getElementById("josekiListBtn"),
+    prevJosekiBtn: document.getElementById("prevJosekiBtn"),
+    nextJosekiBtn: document.getElementById("nextJosekiBtn"),
     completeModal: document.getElementById("completeModal"),
     completeOkBtn: document.getElementById("completeOkBtn"),
   };
@@ -51,6 +54,8 @@
     nodes: [],
     move: 0,
     singleLine: null,
+    currentCategory: null,
+    currentIndex: -1,
     memory: null,
   };
 
@@ -107,7 +112,7 @@
       const button = document.createElement("button");
       button.type = "button";
       button.innerHTML = `<strong>${index + 1}번 정석</strong>`;
-      button.addEventListener("click", () => startSingle(line, index + 1, category.label));
+      button.addEventListener("click", () => startSingle(line, index, category));
       dom.josekiList.appendChild(button);
     });
     showScreen("list");
@@ -118,6 +123,8 @@
     state.nodes = [];
     state.move = 0;
     state.singleLine = null;
+    state.currentCategory = null;
+    state.currentIndex = -1;
     state.memory = null;
     hideCompleteModal();
     dom.studyTitle.textContent = "정석 찾기";
@@ -125,16 +132,36 @@
     renderStudy();
   }
 
-  function startSingle(line, number, categoryLabel) {
+  function startSingle(line, index, category) {
     state.mode = "single";
     state.nodes = [];
     state.move = 0;
-    state.singleLine = { ...line, number };
+    state.singleLine = { ...line, number: index + 1 };
+    state.currentCategory = category;
+    state.currentIndex = index;
     state.memory = null;
     hideCompleteModal();
-    dom.studyTitle.textContent = `${number}번 정석`;
+    dom.studyTitle.textContent = `${index + 1}번 정석`;
     showScreen("study");
     renderStudy();
+  }
+
+  function currentCategoryItems() {
+    return state.currentCategory ? categoryLines(state.currentCategory.key) : [];
+  }
+
+  function goCurrentList() {
+    if (!state.currentCategory) return;
+    state.memory = null;
+    hideCompleteModal();
+    renderList(state.currentCategory);
+  }
+
+  function goAdjacent(delta) {
+    const items = currentCategoryItems();
+    const nextIndex = state.currentIndex + delta;
+    if (nextIndex < 0 || nextIndex >= items.length) return;
+    startSingle(items[nextIndex], nextIndex, state.currentCategory);
   }
 
   function currentTreeNode() {
@@ -282,6 +309,7 @@
   function renderStudy() {
     const candidates = currentCandidates();
     const memory = state.memory;
+    const isSingle = state.mode === "single";
     const hintMove = memory && memory.wrong ? memory.sequence[memory.index] : null;
     window.JosekiBoard.drawBoard(dom.board, boardEntry(), state.move, {
       candidates,
@@ -305,6 +333,9 @@
       dom.entryMeta.textContent = "암기모드 · 후보수 없이 다음 수를 직접 클릭하세요.";
       dom.memoryBtn.textContent = "암기 종료";
       dom.memoryBtn.classList.remove("hidden");
+      dom.josekiListBtn.classList.add("hidden");
+      dom.prevJosekiBtn.classList.add("hidden");
+      dom.nextJosekiBtn.classList.add("hidden");
       return;
     }
 
@@ -316,6 +347,11 @@
 
     dom.memoryBtn.textContent = "암기모드";
     dom.memoryBtn.classList.toggle("hidden", !isAtEnd());
+    dom.josekiListBtn.classList.toggle("hidden", !isSingle || !!memory);
+    dom.prevJosekiBtn.classList.toggle("hidden", !isSingle || !!memory);
+    dom.nextJosekiBtn.classList.toggle("hidden", !isSingle || !!memory);
+    dom.prevJosekiBtn.disabled = !isSingle || state.currentIndex <= 0;
+    dom.nextJosekiBtn.disabled = !isSingle || state.currentIndex >= currentCategoryItems().length - 1;
   }
 
   dom.findJosekiBtn.addEventListener("click", startTree);
@@ -339,6 +375,9 @@
     if (state.memory) exitMemory();
     else startMemory();
   });
+  dom.josekiListBtn.addEventListener("click", goCurrentList);
+  dom.prevJosekiBtn.addEventListener("click", () => goAdjacent(-1));
+  dom.nextJosekiBtn.addEventListener("click", () => goAdjacent(1));
   dom.moveSlider.addEventListener("input", () => {
     if (state.memory) return;
     setMove(Number.parseInt(dom.moveSlider.value, 10) || 0);
