@@ -541,6 +541,34 @@
     return payload;
   }
 
+  function encodeContentPath(path) {
+    return path.split("/").map(encodeURIComponent).join("/");
+  }
+
+  function base64EncodeUtf8(value) {
+    const bytes = new TextEncoder().encode(value);
+    let binary = "";
+    const chunkSize = 0x8000;
+    for (let i = 0; i < bytes.length; i += chunkSize) {
+      binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
+    }
+    return btoa(binary);
+  }
+
+  async function updateFileWithContentsApi(token, file, branch, message) {
+    const encodedPath = encodeContentPath(file.path);
+    const current = await githubRequest(token, `contents/${encodedPath}?ref=${encodeURIComponent(branch)}`);
+    return githubRequest(token, `contents/${encodedPath}`, {
+      method: "PUT",
+      body: JSON.stringify({
+        message,
+        content: base64EncodeUtf8(file.content),
+        sha: current.sha,
+        branch,
+      }),
+    });
+  }
+
   async function commitFilesToGithub() {
     const token = dom.tokenInput.value.trim();
     if (!token) {
@@ -554,40 +582,27 @@
 
     dom.commitBtn.disabled = true;
     try {
-      setStatus("GitHub 현재 브랜치 정보를 가져오는 중...");
-      const ref = await githubRequest(token, `git/ref/heads/${encodeURIComponent(branch)}`);
-      const headSha = ref.object.sha;
-      const baseCommit = await githubRequest(token, `git/commits/${headSha}`);
-
-      setStatus("변경 파일 blob 생성 중...");
-      const tree = [];
-      for (const file of files) {
-        const blob = await githubRequest(token, "git/blobs", {
-          method: "POST",
-          body: JSON.stringify({ content: file.content, encoding: "utf-8" }),
-        });
-        tree.push({ path: file.path, mode: "100644", type: "blob", sha: blob.sha });
+      const updated = [];
+      for (let i = 0; i < files.length; i += 1) {
+        const file = files[i];
+        setStatus(`GitHub에 ${file.path} 업데이트 중... (${i + 1}/${files.length})`);
+        const suffix = files.length > 1 ? ` [${i + 1}/${files.length}]` : "";
+        const result = await updateFileWithContentsApi(token, file, branch, `${message}${suffix}`);
+        updated.push(result.commit && result.commit.html_url ? result.commit.html_url : "");
       }
 
-      setStatus("커밋 트리 생성 중...");
-      const nextTree = await githubRequest(token, "git/trees", {
-        method: "POST",
-        body: JSON.stringify({ base_tree: baseCommit.tree.sha, tree }),
-      });
-      const nextCommit = await githubRequest(token, "git/commits", {
-        method: "POST",
-        body: JSON.stringify({ message, tree: nextTree.sha, parents: [headSha] }),
-      });
-
-      setStatus("브랜치 ref 업데이트 중...");
-      await githubRequest(token, `git/refs/heads/${encodeURIComponent(branch)}`, {
-        method: "PATCH",
-        body: JSON.stringify({ sha: nextCommit.sha }),
-      });
-
-      setStatus(`커밋 완료!\n${nextCommit.html_url}\n\nGitHub Pages 반영에는 잠시 시간이 걸릴 수 있습니다.`);
+      setStatus(
+        `커밋 완료!\n${updated.filter(Boolean).join("\n")}\n\nGitHub Pages 반영에는 잠시 시간이 걸릴 수 있습니다.`
+      );
     } catch (error) {
-      setStatus(`커밋 실패: ${error.message}\n\n토큰 권한(Contents read/write), 브랜치명, 저장소 권한을 확인하세요.`);
+      setStatus(
+        `커밋 실패: ${error.message}\n\n` +
+          "토큰 설정을 확인하세요:\n" +
+          "- Repository access: broryda/broryda.github.io 선택\n" +
+          "- Repository permissions > Contents: Read and write\n" +
+          "- 만료되지 않은 fine-grained token\n" +
+          "- 브랜치명: main"
+      );
     } finally {
       dom.commitBtn.disabled = false;
     }
