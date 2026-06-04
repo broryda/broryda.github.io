@@ -26,6 +26,10 @@
     entryMeta: document.getElementById("entryMeta"),
     moveNumber: document.getElementById("moveNumber"),
     moveSlider: document.getElementById("moveSlider"),
+    firstMoveBtn: document.getElementById("firstMoveBtn"),
+    prevMoveBtn: document.getElementById("prevMoveBtn"),
+    nextMoveBtn: document.getElementById("nextMoveBtn"),
+    lastMoveBtn: document.getElementById("lastMoveBtn"),
     moveComment: document.getElementById("moveComment"),
     memoryBtn: document.getElementById("memoryBtn"),
     josekiListBtn: document.getElementById("josekiListBtn"),
@@ -227,6 +231,35 @@
     state.move = Math.max(0, Math.min(nextMove, maxSliderMove()));
   }
 
+  function moveToStart() {
+    if (state.memory) return;
+    setMove(0);
+    renderStudy();
+  }
+
+  function moveBackward() {
+    if (state.memory) return;
+    setMove(state.move - 1);
+    renderStudy();
+  }
+
+  function moveForward() {
+    if (state.memory) return;
+    if (state.mode === "single" || state.move < state.nodes.length) {
+      setMove(state.move + 1);
+      renderStudy();
+      return;
+    }
+    const next = currentCandidates();
+    if (next.length === 1) chooseCandidate(next[0]);
+  }
+
+  function moveToEnd() {
+    if (state.memory) return;
+    setMove(maxSliderMove());
+    renderStudy();
+  }
+
   function chooseCandidate(candidate) {
     if (state.mode === "single") {
       state.move = Math.min(state.move + 1, singleMoves().length);
@@ -324,6 +357,12 @@
     dom.moveSlider.value = String(memory ? memory.index : state.move);
     dom.moveNumber.textContent =
       maxMove > 0 ? `수순 ${memory ? memory.index : state.move} / ${maxMove}` : "수순 0";
+    dom.firstMoveBtn.disabled = !!memory || state.move <= 0;
+    dom.prevMoveBtn.disabled = !!memory || state.move <= 0;
+    dom.nextMoveBtn.disabled =
+      !!memory ||
+      (state.mode === "single" ? state.move >= maxMove : state.move >= maxMove && currentCandidates().length !== 1);
+    dom.lastMoveBtn.disabled = !!memory || state.move >= maxMove;
 
     const text = commentText();
     dom.moveComment.textContent = text;
@@ -383,6 +422,10 @@
     setMove(Number.parseInt(dom.moveSlider.value, 10) || 0);
     renderStudy();
   });
+  dom.firstMoveBtn.addEventListener("click", moveToStart);
+  dom.prevMoveBtn.addEventListener("click", moveBackward);
+  dom.nextMoveBtn.addEventListener("click", moveForward);
+  dom.lastMoveBtn.addEventListener("click", moveToEnd);
 
   window.addEventListener("keydown", (event) => {
     if (screens.study.classList.contains("hidden") || state.memory) return;

@@ -240,6 +240,16 @@ label {
   font-size: clamp(1rem, 2.6vw, 1.45rem);
 }
 
+.move-nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.move-nav button {
+  min-height: 2.8rem;
+}
+
 .comment-card {
   min-height: 8rem;
 }
@@ -343,6 +353,46 @@ label {
 .comment {
   white-space: pre-wrap;
   line-height: 1.55;
+}
+
+@media (max-width: 520px) {
+  .move-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .app-shell.study {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+    grid-template-rows: minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .study .board-stage,
+  .study .side-panel {
+    min-height: 0;
+  }
+
+  .study .compact-panel {
+    max-height: calc(100vh - 2rem);
+  }
+
+  .study #board {
+    max-width: min(100%, calc(100vh - 7rem));
+    max-height: min(100%, calc(100vh - 7rem));
+  }
+
+  .portrait-study .brand h1 {
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+  }
+
+  .portrait-study .brand span {
+    font-size: 1rem;
+  }
+
+  .comment-card {
+    min-height: 16rem;
+  }
 }
 
 .complete-modal {
