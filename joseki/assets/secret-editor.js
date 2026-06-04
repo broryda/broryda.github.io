@@ -5,6 +5,7 @@
   const TREE_PATH = "joseki/data/merged-joseki-tree.js";
   const BOARD_SIZE = 19;
   const VIEW_SIZE = 13;
+  const CROP_START_X = BOARD_SIZE - VIEW_SIZE;
 
   const CATEGORIES = [
     { key: "all", label: "전체" },
@@ -27,14 +28,15 @@
     statusBox: document.getElementById("statusBox"),
     editorTitle: document.getElementById("editorTitle"),
     editorMeta: document.getElementById("editorMeta"),
-    titleInput: document.getElementById("titleInput"),
-    filenameInput: document.getElementById("filenameInput"),
-    folderInput: document.getElementById("folderInput"),
-    boardSizeInput: document.getElementById("boardSizeInput"),
-    rootCommentInput: document.getElementById("rootCommentInput"),
-    sgfInput: document.getElementById("sgfInput"),
-    parseSgfBtn: document.getElementById("parseSgfBtn"),
+    editBoard: document.getElementById("editBoard"),
+    moveNumber: document.getElementById("moveNumber"),
+    moveSlider: document.getElementById("moveSlider"),
+    undoMoveBtn: document.getElementById("undoMoveBtn"),
+    clearMovesBtn: document.getElementById("clearMovesBtn"),
     saveLocalBtn: document.getElementById("saveLocalBtn"),
+    rootCommentInput: document.getElementById("rootCommentInput"),
+    currentCommentInput: document.getElementById("currentCommentInput"),
+    selectedMoveText: document.getElementById("selectedMoveText"),
     moveComments: document.getElementById("moveComments"),
   };
 
@@ -42,10 +44,18 @@
   let data = JSON.parse(JSON.stringify(sourceData));
   let entries = data.entries || [];
   let activeIndex = entries.length ? 0 : -1;
-  let lastParsedSgf = "";
+  let editMove = 0;
 
   function setStatus(message) {
     dom.statusBox.textContent = message;
+  }
+
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
   }
 
   function sgfEscape(value) {
@@ -55,7 +65,7 @@
       .replace(/\r?\n/g, "\\n");
   }
 
-  function sgfCoord(move) {
+  function sgfCoordFromRaw(move) {
     if (move.x == null || move.y == null) return "";
     return String.fromCharCode(97 + Number(move.x)) + String.fromCharCode(97 + Number(move.y));
   }
@@ -64,18 +74,73 @@
     return String.fromCharCode(97 + Number(x)) + String.fromCharCode(97 + Number(y));
   }
 
+  function rawCoordLabel(move) {
+    return sgfCoordFromRaw(move).toUpperCase();
+  }
+
+  function displayCoordLabel(move) {
+    const x = move.x19 ?? move.x;
+    const y = move.y19 ?? move.y;
+    const col = String.fromCharCode(65 + Math.max(0, BOARD_SIZE - 1 - x));
+    return `${col}${y + 1}`;
+  }
+
+  function activeEntry() {
+    return entries[activeIndex] || null;
+  }
+
   function buildEntrySgf(entry) {
     const boardSize = Number.parseInt(entry.boardSize || 19, 10) || 19;
-    let sgf = `(;FF[4]GM[1]CA[UTF-8]SZ[${boardSize}]AP[JosekiStudy:web-editor]`;
+    let sgf = `(;FF[4]GM[1]CA[UTF-8]SZ[${boardSize}]AP[JosekiStudy:secret-board-editor]`;
     if (entry.title) sgf += `GN[${sgfEscape(entry.title)}]`;
     if (entry.rootComment) sgf += `C[${sgfEscape(entry.rootComment)}]`;
     for (const move of entry.moves || []) {
-      const coord = sgfCoord(move);
+      const coord = sgfCoordFromRaw(move);
       if (!coord) continue;
       sgf += `;${move.color || "B"}[${coord}]`;
       if (move.comment) sgf += `C[${sgfEscape(move.comment)}]`;
     }
     return `${sgf})`;
+  }
+
+  function displayMoves(entry) {
+    if (!entry) return [];
+    if (entry.__displayNormalized) {
+      return (entry.moves || []).map((move) => ({
+        ...move,
+        x19: move.x,
+        y19: move.y,
+      }));
+    }
+    const oriented = window.JosekiSgf.orientEntry(entry, VIEW_SIZE);
+    return oriented.orientedMoves || [];
+  }
+
+  function normalizeActiveToDisplay() {
+    const entry = activeEntry();
+    if (!entry || entry.__displayNormalized) return entry;
+    const oriented = displayMoves(entry);
+    entry.boardSize = BOARD_SIZE;
+    entry.moves = oriented.map((move) => ({
+      color: move.color,
+      x: move.x19,
+      y: move.y19,
+      comment: move.comment || "",
+    }));
+    entry.__displayNormalized = true;
+    entry.sgf = buildEntrySgf(entry);
+    return entry;
+  }
+
+  function persistCommentsToEntry() {
+    const entry = activeEntry();
+    if (!entry) return;
+    entry.rootComment = dom.rootCommentInput.value;
+    const currentIndex = editMove > 0 ? editMove - 1 : -1;
+    if (currentIndex >= 0 && entry.moves && entry.moves[currentIndex]) {
+      entry.moves[currentIndex].comment = dom.currentCommentInput.value;
+    }
+    entry.sgf = buildEntrySgf(entry);
   }
 
   function coordKey(move) {
@@ -122,6 +187,7 @@
       const haystack = [entry.order, entry.title, entry.filename, entry.path].filter(Boolean).join(" ").toLowerCase();
       return !q || haystack.includes(q);
     });
+
     dom.josekiList.innerHTML = "";
     for (const { entry, index } of items) {
       const button = document.createElement("button");
@@ -131,143 +197,168 @@
         entry.title || entry.filename || ""
       )}</span>`;
       button.addEventListener("click", () => {
-        saveCurrent({ silent: true });
+        persistCommentsToEntry();
         activeIndex = index;
-        renderEditor();
-        renderList();
+        editMove = 0;
+        renderAll();
       });
       dom.josekiList.appendChild(button);
     }
   }
 
-  function escapeHtml(value) {
-    return String(value || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
-  }
-
-  function activeEntry() {
-    return entries[activeIndex] || null;
-  }
-
-  function renderMoveComments(moves) {
-    dom.moveComments.innerHTML = "";
-    if (!moves || !moves.length) {
-      dom.moveComments.innerHTML = `<p class="muted">SGF를 파싱하면 수순별 코멘트 입력칸이 표시됩니다.</p>`;
-      return;
-    }
-    moves.forEach((move, index) => {
-      const row = document.createElement("label");
-      row.className = "comment-row";
-      const color = move.color === "W" ? "백" : "흑";
-      row.innerHTML = `<span>${index + 1}수<br>${color} ${sgfCoord(move).toUpperCase()}</span>`;
-      const textarea = document.createElement("textarea");
-      textarea.dataset.moveIndex = String(index);
-      textarea.value = move.comment || "";
-      textarea.placeholder = `${index + 1}수 코멘트`;
-      row.appendChild(textarea);
-      dom.moveComments.appendChild(row);
+  function renderBoard() {
+    const entry = activeEntry();
+    const moves = displayMoves(entry);
+    const boardEntry = {
+      title: entry ? entry.title || "정석" : "정석",
+      viewSize: VIEW_SIZE,
+      cropStartX: CROP_START_X,
+      orientedMoves: moves,
+    };
+    window.JosekiBoard.drawBoard(dom.editBoard, boardEntry, editMove, {
+      onPointClick: handleBoardClick,
     });
   }
 
-  function renderEditor() {
+  function renderMoveTools() {
+    const entry = activeEntry();
+    const moves = displayMoves(entry);
+    editMove = Math.max(0, Math.min(editMove, moves.length));
+    dom.moveSlider.max = String(moves.length);
+    dom.moveSlider.value = String(editMove);
+    dom.moveNumber.textContent = moves.length ? `수순 ${editMove} / ${moves.length}` : "수순 0";
+
+    const current = editMove > 0 ? moves[editMove - 1] : null;
+    if (!current) {
+      dom.selectedMoveText.textContent = "수순을 선택하세요.";
+      dom.currentCommentInput.value = "";
+      dom.currentCommentInput.disabled = true;
+    } else {
+      dom.selectedMoveText.textContent = `${editMove}수 ${current.color === "W" ? "백" : "흑"} · ${displayCoordLabel(current)}`;
+      dom.currentCommentInput.disabled = false;
+      dom.currentCommentInput.value = current.comment || "";
+    }
+  }
+
+  function renderComments() {
+    const entry = activeEntry();
+    const moves = displayMoves(entry);
+    dom.rootCommentInput.value = entry ? entry.rootComment || "" : "";
+    dom.moveComments.innerHTML = "";
+    if (!moves.length) {
+      dom.moveComments.innerHTML = `<p class="muted small">아직 수순이 없습니다. 바둑판을 클릭해서 첫 수를 놓으세요.</p>`;
+      return;
+    }
+
+    moves.forEach((move, index) => {
+      const item = document.createElement("div");
+      item.className = `comment-item${editMove === index + 1 ? " active" : ""}`;
+
+      const jump = document.createElement("button");
+      jump.type = "button";
+      jump.className = "secondary";
+      jump.textContent = `${index + 1}수 ${move.color === "W" ? "백" : "흑"} · ${displayCoordLabel(move)}`;
+      jump.addEventListener("click", () => {
+        persistCommentsToEntry();
+        editMove = index + 1;
+        renderAll();
+      });
+
+      const textarea = document.createElement("textarea");
+      textarea.value = move.comment || "";
+      textarea.placeholder = `${index + 1}수 코멘트`;
+      textarea.addEventListener("input", () => {
+        const entryToUpdate = activeEntry();
+        if (!entryToUpdate.moves[index]) return;
+        entryToUpdate.moves[index].comment = textarea.value;
+        if (editMove === index + 1) dom.currentCommentInput.value = textarea.value;
+        entryToUpdate.sgf = buildEntrySgf(entryToUpdate);
+      });
+
+      item.appendChild(jump);
+      item.appendChild(textarea);
+      dom.moveComments.appendChild(item);
+    });
+  }
+
+  function renderEditorHeader() {
     const entry = activeEntry();
     if (!entry) {
       dom.editorTitle.textContent = "정석 데이터가 없습니다";
+      dom.editorMeta.textContent = "";
+      dom.commitMessageInput.value = "Update joseki SGF/comment";
       return;
     }
     dom.editorTitle.textContent = `${entry.order || activeIndex + 1}번 정석`;
     dom.editorMeta.textContent = entry.path || entry.filename || "";
-    dom.titleInput.value = entry.title || "";
-    dom.filenameInput.value = entry.filename || "";
-    dom.folderInput.value = entry.category || (entry.path ? entry.path.split("/")[0] : "");
-    dom.boardSizeInput.value = String(entry.boardSize || 19);
-    dom.rootCommentInput.value = entry.rootComment || "";
-    dom.sgfInput.value = entry.sgf || buildEntrySgf(entry);
-    lastParsedSgf = dom.sgfInput.value;
-    renderMoveComments(entry.moves || []);
-    dom.commitMessageInput.value = `Update joseki ${entry.order || activeIndex + 1} SGF/comment`;
+    dom.commitMessageInput.value = `Update joseki ${entry.order || activeIndex + 1} board/comment`;
   }
 
-  function readMoveComments() {
-    const comments = [];
-    dom.moveComments.querySelectorAll("textarea[data-move-index]").forEach((textarea) => {
-      comments[Number(textarea.dataset.moveIndex)] = textarea.value;
-    });
-    return comments;
-  }
-
-  function parsedFromSgfInput() {
-    const title = dom.titleInput.value.trim() || "정석";
-    const parsed = window.JosekiSgf.parseSgfText(dom.sgfInput.value || "", title);
-    return parsed;
-  }
-
-  function saveCurrent(options = {}) {
-    const entry = activeEntry();
-    if (!entry) return null;
-    let parsed;
-    try {
-      parsed = parsedFromSgfInput();
-    } catch (error) {
-      if (!options.silent) setStatus(`SGF 파싱 실패: ${error.message}`);
-      return null;
-    }
-
-    const useTextareaComments = dom.sgfInput.value === lastParsedSgf;
-    const comments = useTextareaComments ? readMoveComments() : [];
-    const moves = parsed.moves.map((move, index) => ({
-      color: move.color,
-      x: move.x,
-      y: move.y,
-      comment: useTextareaComments ? comments[index] ?? move.comment ?? "" : move.comment ?? "",
-    }));
-    const folder = dom.folderInput.value.trim() || entry.category || "직접 입력";
-    const filename = dom.filenameInput.value.trim() || entry.filename || `${entry.id || "joseki"}.sgf`;
-    const next = {
-      ...entry,
-      title: dom.titleInput.value.trim() || parsed.title || entry.title || filename,
-      category: folder,
-      filename,
-      path: `${folder}/${filename}`,
-      boardSize: Number.parseInt(dom.boardSizeInput.value || parsed.boardSize || 19, 10) || 19,
-      rootComment: dom.rootCommentInput.value,
-      moves,
-    };
-    next.sgf = buildEntrySgf(next);
-    entries[activeIndex] = next;
-    data = { ...data, entries };
-    dom.sgfInput.value = next.sgf;
-    lastParsedSgf = next.sgf;
-    renderMoveComments(next.moves);
+  function renderAll() {
     renderCategorySelect();
     renderList();
-    renderEditorHeaderOnly(next);
-    if (!options.silent) setStatus(`${next.order || activeIndex + 1}번 정석을 브라우저 메모리에 저장했습니다. 아직 GitHub에는 커밋되지 않았습니다.`);
-    return next;
+    renderEditorHeader();
+    renderBoard();
+    renderMoveTools();
+    renderComments();
   }
 
-  function renderEditorHeaderOnly(entry) {
-    dom.editorTitle.textContent = `${entry.order || activeIndex + 1}번 정석`;
-    dom.editorMeta.textContent = entry.path || entry.filename || "";
-  }
+  function handleBoardClick(point) {
+    persistCommentsToEntry();
+    const entry = normalizeActiveToDisplay();
+    if (!entry) return;
 
-  function parseSgfIntoEditor() {
-    let parsed;
-    try {
-      parsed = parsedFromSgfInput();
-    } catch (error) {
-      setStatus(`SGF 파싱 실패: ${error.message}`);
+    const prefix = (entry.moves || []).slice(0, editMove);
+    const occupied = prefix.some((move) => move.x === point.x19 && move.y === point.y19);
+    if (occupied) {
+      setStatus("이미 현재 수순에 돌이 있는 자리입니다.");
       return;
     }
-    dom.boardSizeInput.value = String(parsed.boardSize || 19);
-    if (!dom.titleInput.value.trim()) dom.titleInput.value = parsed.title || "";
-    if (!dom.rootCommentInput.value) dom.rootCommentInput.value = parsed.rootComment || "";
-    renderMoveComments(parsed.moves || []);
-    lastParsedSgf = dom.sgfInput.value;
-    setStatus(`SGF 파싱 완료: ${parsed.moves.length}수`);
+
+    const nextColor = prefix.length % 2 === 0 ? "B" : "W";
+    prefix.push({
+      color: nextColor,
+      x: point.x19,
+      y: point.y19,
+      comment: "",
+    });
+    entry.moves = prefix;
+    editMove = entry.moves.length;
+    entry.sgf = buildEntrySgf(entry);
+    setStatus(`${editMove}수 ${nextColor === "W" ? "백" : "흑"}을 추가했습니다.`);
+    renderAll();
+  }
+
+  function undoLastMove() {
+    persistCommentsToEntry();
+    const entry = normalizeActiveToDisplay();
+    if (!entry || !entry.moves.length) return;
+    entry.moves = entry.moves.slice(0, -1);
+    editMove = Math.min(editMove, entry.moves.length);
+    entry.sgf = buildEntrySgf(entry);
+    setStatus("마지막 수를 삭제했습니다.");
+    renderAll();
+  }
+
+  function clearMoves() {
+    if (!window.confirm("이 정석의 모든 수순을 삭제할까요?")) return;
+    const entry = normalizeActiveToDisplay();
+    if (!entry) return;
+    entry.moves = [];
+    editMove = 0;
+    entry.sgf = buildEntrySgf(entry);
+    setStatus("수순을 모두 삭제했습니다.");
+    renderAll();
+  }
+
+  function saveCurrentLocal() {
+    persistCommentsToEntry();
+    const entry = activeEntry();
+    if (!entry) return;
+    entry.sgf = buildEntrySgf(entry);
+    data = { ...data, entries };
+    setStatus(`${entry.order || activeIndex + 1}번 정석을 브라우저 메모리에 저장했습니다. GitHub 커밋은 아직 하지 않았습니다.`);
+    renderAll();
   }
 
   function leafCount(node) {
@@ -351,7 +442,14 @@
     };
   }
 
-  function buildMergedTreePayload() {
+  function entryForCommit(entry) {
+    const clean = { ...entry };
+    delete clean.__displayNormalized;
+    clean.sgf = buildEntrySgf(clean);
+    return clean;
+  }
+
+  function buildMergedTreePayload(cleanEntries) {
     const root = {
       move: null,
       comments: new Set(),
@@ -362,7 +460,7 @@
     const orientationCounts = {};
     let totalInputMoves = 0;
 
-    for (const entry of entries) {
+    for (const entry of cleanEntries) {
       const oriented = window.JosekiSgf.orientEntry(entry, VIEW_SIZE);
       const moves = oriented.orientedMoves || [];
       if (!moves.length) continue;
@@ -373,7 +471,7 @@
       included.push(source);
     }
 
-    const rawSgf = `(;FF[4]GM[1]CA[UTF-8]SZ[19]AP[JosekiStudy:web-editor]GN[통합 정석 트리]${childrenToSgf(root)})\n`;
+    const rawSgf = `(;FF[4]GM[1]CA[UTF-8]SZ[19]AP[JosekiStudy:secret-board-editor]GN[통합 정석 트리]${childrenToSgf(root)})\n`;
     const report = {
       output: "merged_joseki.sgf",
       included_count: included.length,
@@ -397,12 +495,19 @@
   }
 
   function makeDataFiles() {
-    data = { ...data, version: data.version || 1, name: data.name || "기본정석 SGF 데이터", entries };
-    const tree = buildMergedTreePayload();
+    persistCommentsToEntry();
+    const cleanEntries = entries.map(entryForCommit);
+    const cleanData = {
+      ...data,
+      version: data.version || 1,
+      name: data.name || "기본정석 SGF 데이터",
+      entries: cleanEntries,
+    };
+    const tree = buildMergedTreePayload(cleanEntries);
     return [
       {
         path: DATA_PATH,
-        content: `window.JOSEKI_DATA = ${JSON.stringify(data, null, 2)};\n`,
+        content: `window.JOSEKI_DATA = ${JSON.stringify(cleanData, null, 2)};\n`,
       },
       {
         path: TREE_PATH,
@@ -442,10 +547,9 @@
       setStatus("GitHub token을 입력하세요. fine-grained token에는 broryda.github.io Contents read/write 권한이 필요합니다.");
       return;
     }
+
     const branch = dom.branchInput.value.trim() || "main";
-    const message = dom.commitMessageInput.value.trim() || "Update joseki SGF/comment";
-    const current = saveCurrent({ silent: true });
-    if (!current) return;
+    const message = dom.commitMessageInput.value.trim() || "Update joseki board/comment";
     const files = makeDataFiles();
 
     dom.commitBtn.disabled = true;
@@ -490,13 +594,19 @@
   }
 
   function init() {
-    renderCategorySelect();
-    renderList();
-    renderEditor();
+    renderAll();
     dom.categorySelect.addEventListener("change", renderList);
     dom.searchInput.addEventListener("input", renderList);
-    dom.parseSgfBtn.addEventListener("click", parseSgfIntoEditor);
-    dom.saveLocalBtn.addEventListener("click", () => saveCurrent());
+    dom.moveSlider.addEventListener("input", () => {
+      persistCommentsToEntry();
+      editMove = Number.parseInt(dom.moveSlider.value, 10) || 0;
+      renderAll();
+    });
+    dom.currentCommentInput.addEventListener("input", persistCommentsToEntry);
+    dom.rootCommentInput.addEventListener("input", persistCommentsToEntry);
+    dom.undoMoveBtn.addEventListener("click", undoLastMove);
+    dom.clearMovesBtn.addEventListener("click", clearMoves);
+    dom.saveLocalBtn.addEventListener("click", saveCurrentLocal);
     dom.commitBtn.addEventListener("click", commitFilesToGithub);
   }
 
