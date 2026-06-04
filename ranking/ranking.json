@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-04T14:47:54.408Z",
+  "updatedAt": "2026-06-04T14:47:57.856Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -483,9 +483,9 @@
       "solvedCount": 1310,
       "elo": 869,
       "streakCurrent": 2,
+      "createdAt": "2026-06-04T14:47:53.875Z",
       "deviceId": "dev_mp0pkz5o_kxh6mb5f",
-      "lastSubmittedAt": "2026-06-04T14:47:53.875Z",
-      "createdAt": "2026-06-04T14:47:53.875Z"
+      "lastSubmittedAt": "2026-06-04T14:47:53.875Z"
     },
     {
       "nickname": "매미킴",
@@ -756,15 +756,6 @@
       "createdAt": "2026-06-04T13:58:24.666Z",
       "deviceId": "dev_mp3stsbw_xxfnd0iu",
       "lastSubmittedAt": "2026-06-04T13:58:24.666Z"
-    },
-    {
-      "nickname": "정연욱",
-      "solvedCount": 892,
-      "elo": 300,
-      "streakCurrent": 5,
-      "createdAt": "2026-06-03T12:55:49.935Z",
-      "deviceId": "dev_mprlmqw6_2lq2pxjw",
-      "lastSubmittedAt": "2026-06-03T12:55:49.935Z"
     },
     {
       "nickname": "사용자",
@@ -1197,6 +1188,15 @@
       "createdAt": "2026-06-04T03:12:51.516Z",
       "deviceId": "dev_mojd8zh0_7nhvtzip",
       "lastSubmittedAt": "2026-06-04T03:12:51.516Z"
+    },
+    {
+      "nickname": "정연욱",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mprlmqw6_2lq2pxjw",
+      "lastSubmittedAt": "2026-06-04T14:47:55.653Z",
+      "createdAt": "2026-06-04T14:47:55.653Z"
     },
     {
       "nickname": "식~세븐",
