@@ -1387,47 +1387,47 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-017",
       "order": 17,
-      "title": "기본도-1",
+      "title": "001",
       "category": "정석63개 모음",
-      "filename": "01_기본도-1.sgf",
-      "path": "정석63개 모음/01_기본도-1.sgf",
+      "filename": "001.sgf",
+      "path": "정석63개 모음/001.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-1];B[dj];W[fk];B[ch];W[dl];B[ck];W[ik])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[kk]\n;W[ek]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
+          "x": 9,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 10,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 8,
+          "x": 4,
           "y": 10,
           "comment": ""
         }
@@ -1436,48 +1436,90 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-018",
       "order": 18,
-      "title": "기본도-2",
+      "title": "002",
       "category": "정석63개 모음",
-      "filename": "02_기본도-2.sgf",
-      "path": "정석63개 모음/02_기본도-2.sgf",
+      "filename": "002.sgf",
+      "path": "정석63개 모음/002.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-2];B[dj];W[fk];B[dh];W[dl];B[ck];W[ik])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[fk]\n;W[kk]\n;B[ik]\n;W[il]\n;B[hj]\n;W[gj]\n;B[gk]\n;W[hl]\n;B[gi]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 3,
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
+          "x": 9,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
           "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 6,
           "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 6,
+          "y": 8,
           "comment": ""
         }
       ]
@@ -1485,90 +1527,66 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-019",
       "order": 19,
-      "title": "기본도-3",
+      "title": "003",
       "category": "정석63개 모음",
-      "filename": "03_기본도-3.sgf",
-      "path": "정석63개 모음/03_기본도-3.sgf",
+      "filename": "003.sgf",
+      "path": "정석63개 모음/003.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-3];B[dj];W[fk];B[ch];W[dl];B[hk];W[ck];B[ek];W[el];B[fj];W[gj];B[gk];W[fl];B[gi])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[fk]\n;W[hi]\n;B[ck]\n;W[kk]\n;B[ke]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
           "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 2,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "B",
-          "x": 4,
+          "color": "W",
+          "x": 10,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
           "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 8,
+          "x": 10,
+          "y": 4,
           "comment": ""
         }
       ]
@@ -1576,14 +1594,165 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-020",
       "order": 20,
-      "title": "기본도-4",
+      "title": "004",
       "category": "정석63개 모음",
-      "filename": "04_기본도-4.sgf",
-      "path": "정석63개 모음/04_기본도-4.sgf",
+      "filename": "004.sgf",
+      "path": "정석63개 모음/004.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-4];B[dj];W[fk];B[ch];W[dl];B[hk];W[ck];B[fj];W[ek];B[gj])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[fk]\n;W[fj]\n;B[ej]\n;W[gj]\n;B[dk]\n;W[kk]\n;B[ke]\n)",
       "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 4,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 4,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-021",
+      "order": 21,
+      "title": "005",
+      "category": "정석63개 모음",
+      "filename": "005.sgf",
+      "path": "정석63개 모음/005.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[fk]\n;W[fj]\n;B[ej]\n;W[gj]\n;B[kk]\n;W[ek]\n;B[dk]\n;W[el]\n;B[dj]\n;W[fl]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 4,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 4,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 4,
+          "y": 11,
+          "comment": ""
+        },
         {
           "color": "B",
           "x": 3,
@@ -1593,42 +1762,382 @@ window.JOSEKI_DATA = {
         {
           "color": "W",
           "x": 5,
+          "y": 11,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-022",
+      "order": 22,
+      "title": "006",
+      "category": "정석63개 모음",
+      "filename": "006.sgf",
+      "path": "정석63개 모음/006.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[gk]\n;W[gj]\n;B[fk]\n;W[fj]\n;B[hl]\n;W[ik]\n;B[dk]\n;W[ej]\n;B[cl]\n;W[kk]\n;B[kj]\n;W[il]\n;B[ke]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 6,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 4,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 2,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 4,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-023",
+      "order": 23,
+      "title": "007",
+      "category": "정석63개 모음",
+      "filename": "007.sgf",
+      "path": "정석63개 모음/007.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[gk]\n;W[gj]\n;B[fk]\n;W[hl]\n;B[kk]\n;W[fj]\n;B[ek]\n;W[ej]\n;B[dk]\n;W[ij]\n;B[dj]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 6,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 4,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 4,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 3,
+          "y": 9,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-024",
+      "order": 24,
+      "title": "008",
+      "category": "정석63개 모음",
+      "filename": "008.sgf",
+      "path": "정석63개 모음/008.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[gk]\n;W[gl]\n;B[hl]\n;W[gj]\n;B[fk]\n;W[fl]\n;B[ik]\n;W[hj]\n;B[il]\n;W[ek]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 6,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
           "x": 7,
-          "y": 10,
+          "y": 11,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
-          "y": 10,
+          "x": 6,
+          "y": 9,
           "comment": ""
         },
         {
           "color": "B",
           "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
           "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 11,
           "comment": ""
         },
         {
           "color": "W",
           "x": 4,
+          "y": 10,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-025",
+      "order": 25,
+      "title": "009",
+      "category": "정석63개 모음",
+      "filename": "009.sgf",
+      "path": "정석63개 모음/009.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[gk]\n;W[gl]\n;B[hl]\n;W[fk]\n;B[gj]\n;W[il]\n;B[fl]\n;W[hm]\n;B[ek]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 6,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
           "y": 10,
           "comment": ""
         },
@@ -1637,139 +2146,90 @@ window.JOSEKI_DATA = {
           "x": 6,
           "y": 9,
           "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-021",
-      "order": 21,
-      "title": "기본도-5",
-      "category": "정석63개 모음",
-      "filename": "05_기본도-5.sgf",
-      "path": "정석63개 모음/05_기본도-5.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-5];B[dj];W[fk];B[hk];W[ck];B[dk];W[cj];B[di];W[dl];B[el];W[cl];B[fl];W[ch])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
+          "x": 8,
           "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 12,
           "comment": ""
         },
         {
           "color": "B",
           "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
+          "y": 10,
           "comment": ""
         }
       ]
     },
     {
-      "id": "joseki-022",
-      "order": 22,
-      "title": "기본도-6",
+      "id": "joseki-026",
+      "order": 26,
+      "title": "010",
       "category": "정석63개 모음",
-      "filename": "06_기본도-6.sgf",
-      "path": "정석63개 모음/06_기본도-6.sgf",
+      "filename": "010.sgf",
+      "path": "정석63개 모음/010.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-6];B[dj];W[fk];B[hk];W[fi];B[ch];W[ij];B[hj];W[hi];B[ik];W[jj];B[jk];W[kj];B[lk])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jl]\n;B[gk]\n;W[gl]\n;B[hl]\n;W[il]\n;B[hj]\n;W[hm]\n;B[fk]\n;W[kk]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
           "color": "B",
-          "x": 2,
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 6,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
           "x": 8,
-          "y": 9,
+          "y": 11,
           "comment": ""
         },
         {
@@ -1781,7 +2241,281 @@ window.JOSEKI_DATA = {
         {
           "color": "W",
           "x": 7,
-          "y": 8,
+          "y": 12,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-027",
+      "order": 27,
+      "title": "011",
+      "category": "정석63개 모음",
+      "filename": "011.sgf",
+      "path": "정석63개 모음/011.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jk]\n;B[kk]\n;W[kl]\n;B[kj]\n;W[il]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-028",
+      "order": 28,
+      "title": "012",
+      "category": "정석63개 모음",
+      "filename": "012.sgf",
+      "path": "정석63개 모음/012.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj];W[hk];B[kh];W[jk];B[kk];W[kl];B[lk];W[ij];B[jl];W[ik];B[ll]LB[dj:A][ji:B])",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 11,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-029",
+      "order": 29,
+      "title": "013",
+      "category": "정석63개 모음",
+      "filename": "013.sgf",
+      "path": "정석63개 모음/013.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jk]\n;B[kk]\n;W[kl]\n;B[lj]\n;W[il]\n;B[ij]\n;W[hj]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-030",
+      "order": 30,
+      "title": "014",
+      "category": "정석63개 모음",
+      "filename": "014.sgf",
+      "path": "정석63개 모음/014.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jk]\n;B[kk]\n;W[kl]\n;B[ik]\n;W[jl]\n;B[ij]\n;W[kj]\n;B[lk]\n;W[lj]\n;B[ll]\n;W[lm]\n;B[il]\n;W[mk]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
           "comment": ""
         },
         {
@@ -1793,13 +2527,13 @@ window.JOSEKI_DATA = {
         {
           "color": "W",
           "x": 9,
-          "y": 9,
+          "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 9,
-          "y": 10,
+          "x": 8,
+          "y": 9,
           "comment": ""
         },
         {
@@ -1813,595 +2547,35 @@ window.JOSEKI_DATA = {
           "x": 11,
           "y": 10,
           "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-023",
-      "order": 23,
-      "title": "기본도-7",
-      "category": "정석63개 모음",
-      "filename": "07_기본도-7.sgf",
-      "path": "정석63개 모음/07_기본도-7.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-7];B[dj];W[fk];B[hk];W[fi];B[ch];W[ij];B[ek];W[ik];B[fl];W[gk])",
-      "moves": [
+        },
         {
-          "color": "B",
-          "x": 3,
+          "color": "W",
+          "x": 11,
           "y": 9,
           "comment": ""
         },
         {
+          "color": "B",
+          "x": 11,
+          "y": 11,
+          "comment": ""
+        },
+        {
           "color": "W",
-          "x": 5,
-          "y": 10,
+          "x": 11,
+          "y": 12,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
           "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 8,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
           "y": 11,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 6,
+          "x": 12,
           "y": 10,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-024",
-      "order": 24,
-      "title": "기본도-8",
-      "category": "정석63개 모음",
-      "filename": "08_기본도-8.sgf",
-      "path": "정석63개 모음/08_기본도-8.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-8];B[dj];W[fk];B[hk];W[ch];B[fj];W[gj];B[gk];W[cj];B[ek];W[ck])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-025",
-      "order": 25,
-      "title": "기본도-9",
-      "category": "정석63개 모음",
-      "filename": "09_기본도-9.sgf",
-      "path": "정석63개 모음/09_기본도-9.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-9];B[dj];W[fk];B[hk];W[ch];B[fj];W[ck];B[ek];W[cj])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-026",
-      "order": 26,
-      "title": "기본도-10",
-      "category": "정석63개 모음",
-      "filename": "10_기본도-10.sgf",
-      "path": "정석63개 모음/10_기본도-10.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-10];B[dj];W[fk];B[hk];W[ch];B[fj];W[ck];B[dk];W[cj];B[di];W[ci])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 8,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-027",
-      "order": 27,
-      "title": "기본도-11",
-      "category": "정석63개 모음",
-      "filename": "11_기본도-11.sgf",
-      "path": "정석63개 모음/11_기본도-11.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-11];B[dj];W[fk];B[hk];W[ch];B[fj];W[ck];B[dk];W[cj];B[di];W[cl])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-028",
-      "order": 28,
-      "title": "기본도-12",
-      "category": "정석63개 모음",
-      "filename": "12_기본도-12.sgf",
-      "path": "정석63개 모음/12_기본도-12.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-12];B[dj];W[fk];B[hk];W[dh];B[fj];W[gj];B[gk];W[cj];B[ek];W[ck])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-029",
-      "order": 29,
-      "title": "기본도-13",
-      "category": "정석63개 모음",
-      "filename": "13_기본도-13.sgf",
-      "path": "정석63개 모음/13_기본도-13.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-13];B[dj];W[fk];B[hk];W[dh];B[fj];W[ck];B[ek];W[cj])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-030",
-      "order": 30,
-      "title": "기본도-14",
-      "category": "정석63개 모음",
-      "filename": "14_기본도-14.sgf",
-      "path": "정석63개 모음/14_기본도-14.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-14];B[dj];W[fk];B[hk];W[ch];B[fj];W[ck];B[cj];W[dk];B[ek];W[el];B[ej];W[fl];B[bj];W[bk];B[dg])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 1,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 1,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 6,
           "comment": ""
         }
       ]
@@ -2409,108 +2583,157 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-031",
       "order": 31,
-      "title": "기본도-15",
+      "title": "015",
       "category": "정석63개 모음",
-      "filename": "15_기본도-15.sgf",
-      "path": "정석63개 모음/15_기본도-15.sgf",
+      "filename": "015.sgf",
+      "path": "정석63개 모음/015.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-15];B[dj];W[fk];B[hk];W[ch];B[fj];W[ck];B[cj];W[dk];B[ek];W[el];B[ej];W[fl];B[bj];W[dd];B[bl];W[gk];B[hj];W[gj];B[gi];W[hl];B[il];W[gm])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jk]\n;B[kk]\n;W[kl]\n;B[ik]\n;W[jl]\n;B[ij]\n;W[il]\n;B[lk]\n;W[hj]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 2,
+          "color": "B",
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
           "color": "W",
-          "x": 2,
+          "x": 9,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
+          "x": 10,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 4,
+          "x": 10,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 1,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 3,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 1,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
+          "x": 8,
           "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-032",
+      "order": 32,
+      "title": "016",
+      "category": "정석63개 모음",
+      "filename": "016.sgf",
+      "path": "정석63개 모음/016.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jk]\n;B[kk]\n;W[kl]\n;B[ik]\n;W[jl]\n;B[ij]\n;W[il]\n;B[hj]\n;W[gk]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 11,
           "comment": ""
         },
         {
@@ -2522,18 +2745,67 @@ window.JOSEKI_DATA = {
         {
           "color": "W",
           "x": 6,
-          "y": 9,
+          "y": 10,
           "comment": ""
-        },
+        }
+      ]
+    },
+    {
+      "id": "joseki-033",
+      "order": 33,
+      "title": "017",
+      "category": "정석63개 모음",
+      "filename": "017.sgf",
+      "path": "정석63개 모음/017.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jk]\n;B[kk]\n;W[kl]\n;B[ik]\n;W[jl]\n;B[il]\n;W[ij]\n;B[hl]\n;W[kj]\n;B[ji]\n;W[lj]\n;B[gk]\n;W[hj]\n;B[gj]\n;W[ih]\n)",
+      "moves": [
         {
           "color": "B",
-          "x": 6,
-          "y": 8,
+          "x": 9,
+          "y": 9,
           "comment": ""
         },
         {
           "color": "W",
           "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
           "y": 11,
           "comment": ""
         },
@@ -2545,178 +2817,56 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 6,
-          "y": 12,
+          "y": 10,
           "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-032",
-      "order": 32,
-      "title": "기본도-16",
-      "category": "정석63개 모음",
-      "filename": "16_기본도-16.sgf",
-      "path": "정석63개 모음/16_기본도-16.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-16];B[dj];W[fk];B[ch];W[dk];B[ck];W[cl];B[cj];W[el])",
-      "moves": [
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
         {
           "color": "B",
-          "x": 3,
+          "x": 6,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
+          "x": 8,
           "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-033",
-      "order": 33,
-      "title": "기본도-17",
-      "category": "정석63개 모음",
-      "filename": "17_기본도-17.sgf",
-      "path": "정석63개 모음/17_기본도-17.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-17];B[dj];W[fk];B[ch];W[dk];B[ck];W[cl];B[ek];W[dl];B[ej];W[cj];B[bk];W[bj];B[bl];W[bm];B[el];W[ak])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 1,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 1,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 1,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 1,
-          "y": 12,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 0,
-          "y": 10,
           "comment": ""
         }
       ]
@@ -2724,102 +2874,96 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-034",
       "order": 34,
-      "title": "기본도-18",
+      "title": "018",
       "category": "정석63개 모음",
-      "filename": "18_기본도-18.sgf",
-      "path": "정석63개 모음/18_기본도-18.sgf",
+      "filename": "018.sgf",
+      "path": "정석63개 모음/018.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-18];B[dj];W[fk];B[ch];W[dk];B[ck];W[cl];B[ek];W[dl];B[el];W[ej];B[fl];W[cj];B[di];W[bj];B[gk])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[jk]\n;B[kk]\n;W[kl]\n;B[ll]\n;W[il]\n;B[km]\n;W[ij]\n;B[jl]\n;W[ji]\n;B[kj]\n;W[dj]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
+          "x": 9,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 10,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
+          "x": 10,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
-          "y": 10,
+          "x": 11,
+          "y": 11,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
+          "x": 8,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
-          "y": 11,
+          "x": 10,
+          "y": 12,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 4,
+          "x": 8,
           "y": 9,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 5,
+          "x": 9,
           "y": 11,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 8,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 1,
+          "color": "B",
+          "x": 10,
           "y": 9,
           "comment": ""
         },
         {
-          "color": "B",
-          "x": 6,
-          "y": 10,
+          "color": "W",
+          "x": 3,
+          "y": 9,
           "comment": ""
         }
       ]
@@ -2827,95 +2971,35 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-035",
       "order": 35,
-      "title": "기본도-19",
+      "title": "019",
       "category": "정석63개 모음",
-      "filename": "19_기본도-19.sgf",
-      "path": "정석63개 모음/19_기본도-19.sgf",
+      "filename": "019.sgf",
+      "path": "정석63개 모음/019.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-19];B[dj];W[fk];B[ch];W[dk];B[ck];W[cl];B[bl];W[el];B[cm];W[ej];B[di];W[dl];B[bj];W[jj])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[kh]\n;W[dj]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
           "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 1,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 12,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 1,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 9,
           "y": 9,
           "comment": ""
         }
@@ -2924,108 +3008,54 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-036",
       "order": 36,
-      "title": "기본도-20",
+      "title": "020",
       "category": "정석63개 모음",
-      "filename": "20_기본도-20.sgf",
-      "path": "정석63개 모음/20_기본도-20.sgf",
+      "filename": "020.sgf",
+      "path": "정석63개 모음/020.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-20];B[dj];W[fk];B[ch];W[dk];B[ck];W[cl];B[bl];W[el];B[cm];W[ej];B[dl];W[di];B[cj];W[dh];B[cg];W[jj])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[jh]\n;W[jl]\n;B[kk]\n;W[ek]\n;B[kd]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 9,
           "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 1,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 12,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 6,
           "comment": ""
         },
         {
           "color": "W",
           "x": 9,
-          "y": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 4,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 3,
           "comment": ""
         }
       ]
@@ -3033,36 +3063,66 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-037",
       "order": 37,
-      "title": "기본도-21",
+      "title": "021",
       "category": "정석63개 모음",
-      "filename": "21_기본도-21.sgf",
-      "path": "정석63개 모음/21_기본도-21.sgf",
+      "filename": "021.sgf",
+      "path": "정석63개 모음/021.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-21];B[dj];W[fk];B[ch];W[jj])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[jh]\n;W[jk]\n;B[kk]\n;W[kl]\n;B[kj]\n;W[il]\n;B[kd]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 9,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
           "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
           "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 3,
           "comment": ""
         }
       ]
@@ -3070,48 +3130,48 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-038",
       "order": 38,
-      "title": "22_기본도-22",
+      "title": "022",
       "category": "정석63개 모음",
-      "filename": "22_기본도-22.sgf",
-      "path": "정석63개 모음/22_기본도-22.sgf",
+      "filename": "022.sgf",
+      "path": "정석63개 모음/022.sgf",
       "boardSize": 13,
-      "rootComment": "JFG mark: Kdh -2jk -2|",
-      "sgf": "(;FF[4]GM[1]C[JFG mark\\: Kdh -2jk -2|]AP[JFG-to-SGF]SZ[13]CA[UTF-8]GN[기본??22]\nMULTIGOGM[1]\n;B[dj];W[fk];B[ek];W[fj];B[ch];W[jj])",
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[ik]\n;W[hj]\n;B[jh]\n;W[dk]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
+          "x": 8,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 9,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 9,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 9,
-          "y": 9,
+          "x": 3,
+          "y": 10,
           "comment": ""
         }
       ]
@@ -3119,78 +3179,48 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-039",
       "order": 39,
-      "title": "기본도-23",
+      "title": "023",
       "category": "정석63개 모음",
-      "filename": "23_기본도-23.sgf",
-      "path": "정석63개 모음/23_기본도-23.sgf",
+      "filename": "023.sgf",
+      "path": "정석63개 모음/023.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-23];B[dj];W[fk];B[fj];W[gj];B[fi];W[dk];B[ck];W[ek];B[cj];W[jk];B[cd])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[ik]\n;W[hj]\n;B[kh]\n;W[dj]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
           "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 3,
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 3,
+          "y": 9,
           "comment": ""
         }
       ]
@@ -3198,66 +3228,48 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-040",
       "order": 40,
-      "title": "기본도-24",
+      "title": "024",
       "category": "정석63개 모음",
-      "filename": "24_기본도-24.sgf",
-      "path": "정석63개 모음/24_기본도-24.sgf",
+      "filename": "024.sgf",
+      "path": "정석63개 모음/024.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-24];B[dj];W[fk];B[fj];W[gj];B[fi];W[ek];B[dk];W[jk];B[dh])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[ik]\n;W[hj]\n;B[kh]\n;W[dk]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
           "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 3,
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
           "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 3,
+          "y": 10,
           "comment": ""
         }
       ]
@@ -3265,29 +3277,29 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-041",
       "order": 41,
-      "title": "기본도-25",
+      "title": "025",
       "category": "정석63개 모음",
-      "filename": "25_기본도-25.sgf",
-      "path": "정석63개 모음/25_기본도-25.sgf",
+      "filename": "025.sgf",
+      "path": "정석63개 모음/025.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-25];B[dj];W[fk];B[fj];W[gj];B[ek];W[fi];B[ej];W[gi];B[dh])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[ik]\n;W[hi]\n;B[ij]\n;W[gi]\n;B[jh]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 5,
+          "x": 7,
           "y": 9,
           "comment": ""
         },
@@ -3299,19 +3311,19 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "B",
-          "x": 4,
+          "x": 8,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 8,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
+          "x": 8,
           "y": 9,
           "comment": ""
         },
@@ -3323,7 +3335,7 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 7,
           "comment": ""
         }
@@ -3332,29 +3344,29 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-042",
       "order": 42,
-      "title": "기본도-25",
+      "title": "026",
       "category": "정석63개 모음",
-      "filename": "26_기본도-25.sgf",
-      "path": "정석63개 모음/26_기본도-25.sgf",
+      "filename": "026.sgf",
+      "path": "정석63개 모음/026.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-25];B[dj];W[fk];B[fj];W[gj];B[ek];W[fi];B[ej];W[fl];B[gi];W[hj];B[hi];W[ij];B[fh];W[el];B[ck])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[ik]\n;W[hi]\n;B[ij]\n;W[hl]\n;B[gi]\n;W[fj]\n;B[fi]\n;W[ej]\n;B[hh]\n;W[il]\n;B[kk]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 5,
+          "x": 7,
           "y": 9,
           "comment": ""
         },
@@ -3366,67 +3378,67 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "B",
-          "x": 4,
+          "x": 8,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 8,
           "comment": ""
         },
         {
-          "color": "W",
+          "color": "B",
           "x": 8,
           "y": 9,
           "comment": ""
         },
         {
-          "color": "B",
-          "x": 5,
-          "y": 7,
-          "comment": ""
-        },
-        {
           "color": "W",
-          "x": 4,
+          "x": 7,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 6,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 4,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
           "y": 10,
           "comment": ""
         }
@@ -3435,53 +3447,29 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-043",
       "order": 43,
-      "title": "기본도-26",
+      "title": "027",
       "category": "정석63개 모음",
-      "filename": "27_기본도-26.sgf",
-      "path": "정석63개 모음/27_기본도-26.sgf",
+      "filename": "027.sgf",
+      "path": "정석63개 모음/027.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-26];B[dj];W[fk];B[ch];W[dl];B[hk];W[hj];B[ij];W[gj];B[ck];W[ik];B[jk];W[il];B[jj];W[hl])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[hi]\n;W[ik]\n;B[jk]\n;W[fk]\n;B[jh]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
           "color": "B",
-          "x": 8,
+          "x": 7,
           "y": 9,
           "comment": ""
         },
@@ -3493,38 +3481,32 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 8,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 9,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 8,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 9,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
           "x": 7,
-          "y": 11,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 7,
           "comment": ""
         }
       ]
@@ -3532,53 +3514,29 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-044",
       "order": 44,
-      "title": "기본도-27",
+      "title": "028",
       "category": "정석63개 모음",
-      "filename": "28_기본도-27.sgf",
-      "path": "정석63개 모음/28_기본도-27.sgf",
+      "filename": "028.sgf",
+      "path": "정석63개 모음/028.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-27];B[dj];W[fk];B[ch];W[dl];B[hk];W[hj];B[ij];W[gj];B[jk];W[ck];B[ce])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[hi]\n;W[ik]\n;B[jk]\n;W[fk]\n;B[kh]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
           "color": "B",
-          "x": 8,
+          "x": 7,
           "y": 9,
           "comment": ""
         },
@@ -3590,20 +3548,32 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "B",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 9,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
+          "x": 5,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 4,
+          "x": 10,
+          "y": 7,
           "comment": ""
         }
       ]
@@ -3611,102 +3581,66 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-045",
       "order": 45,
-      "title": "기본도-28",
+      "title": "029",
       "category": "정석63개 모음",
-      "filename": "29_기본도-28.sgf",
-      "path": "정석63개 모음/29_기본도-28.sgf",
+      "filename": "029.sgf",
+      "path": "정석63개 모음/029.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-28];B[dj];W[fk];B[ch];W[dl];B[gk];W[gj];B[hk];W[fl];B[ck];W[hj];B[ik];W[ij];B[jk];W[ej];B[jj])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[hi]\n;W[ik]\n;B[jk]\n;W[dk]\n;B[jh]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
           "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 9,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 9,
-          "y": 9,
           "comment": ""
         }
       ]
@@ -3714,42 +3648,30 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-046",
       "order": 46,
-      "title": "기본도-29",
+      "title": "030",
       "category": "정석63개 모음",
-      "filename": "30_기본도-29.sgf",
-      "path": "정석63개 모음/30_기본도-29.sgf",
+      "filename": "030.sgf",
+      "path": "정석63개 모음/030.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-29];B[dj];W[fk];B[ch];W[dl];B[gk];W[gj];B[hk];W[hj];B[fl];W[ek];B[jk];W[ij];B[kk];W[ck];B[cj];W[el];B[ce])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[hi]\n;W[ik]\n;B[jk]\n;W[dk]\n;B[kh]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
+          "x": 7,
+          "y": 9,
           "comment": ""
         },
         {
@@ -3761,24 +3683,12 @@ window.JOSEKI_DATA = {
         {
           "color": "B",
           "x": 7,
-          "y": 10,
+          "y": 8,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
+          "x": 8,
           "y": 10,
           "comment": ""
         },
@@ -3790,38 +3700,14 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
-          "x": 8,
-          "y": 9,
+          "x": 3,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "B",
           "x": 10,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 4,
+          "y": 7,
           "comment": ""
         }
       ]
@@ -3829,84 +3715,78 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-047",
       "order": 47,
-      "title": "기본도-30",
+      "title": "031",
       "category": "정석63개 모음",
-      "filename": "31_기본도-30.sgf",
-      "path": "정석63개 모음/31_기본도-30.sgf",
+      "filename": "031.sgf",
+      "path": "정석63개 모음/031.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-30];B[dj];W[fk];B[ch];W[dl];B[gk];W[gl];B[fl];W[el];B[fj];W[fm];B[hk];W[ck])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[hi]\n;W[jk]\n;B[kk]\n;W[ik]\n;B[kj]\n;W[dk]\n;B[jd]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 12,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
           "color": "W",
-          "x": 2,
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
           "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 3,
           "comment": ""
         }
       ]
@@ -3914,54 +3794,30 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-048",
       "order": 48,
-      "title": "기본도-31",
+      "title": "032",
       "category": "정석63개 모음",
-      "filename": "32_기본도-31.sgf",
-      "path": "정석63개 모음/32_기본도-31.sgf",
+      "filename": "032.sgf",
+      "path": "정석63개 모음/032.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-31];B[dj];W[fk];B[ch];W[dl];B[gk];W[gl];B[fl];W[gj];B[hk];W[hl];B[ek];W[fj];B[el];W[ik])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[hi]\n;W[jk]\n;B[kk]\n;W[ik]\n;B[kj]\n;W[fk]\n;B[jd]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
+          "x": 7,
+          "y": 9,
           "comment": ""
         },
         {
@@ -3973,37 +3829,43 @@ window.JOSEKI_DATA = {
         {
           "color": "B",
           "x": 7,
-          "y": 10,
+          "y": 8,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 7,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
+          "x": 9,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
           "color": "B",
-          "x": 4,
-          "y": 11,
+          "x": 10,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "W",
           "x": 8,
           "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 3,
           "comment": ""
         }
       ]
@@ -4011,54 +3873,18 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-049",
       "order": 49,
-      "title": "기본도-32",
+      "title": "033",
       "category": "정석63개 모음",
-      "filename": "33_기본도-32.sgf",
-      "path": "정석63개 모음/33_기본도-32.sgf",
+      "filename": "033.sgf",
+      "path": "정석63개 모음/033.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-32];B[dj];W[fk];B[ch];W[dl];B[gk];W[gl];B[fl];W[hk];B[gj];W[el])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[hi]\n;W[il]\n;B[jl]\n;W[jk]\n;B[kk]\n;W[ik]\n;B[kl]\n;W[dk]\n;B[jh]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
           "comment": ""
         },
         {
@@ -4069,14 +3895,68 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "B",
-          "x": 6,
+          "x": 7,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 4,
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
           "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 7,
           "comment": ""
         }
       ]
@@ -4084,84 +3964,66 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-050",
       "order": 50,
-      "title": "기본도-33",
+      "title": "034",
       "category": "정석63개 모음",
-      "filename": "34_기본도-33.sgf",
-      "path": "정석63개 모음/34_기본도-33.sgf",
+      "filename": "034.sgf",
+      "path": "정석63개 모음/034.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-33];B[dj];W[fk];B[ch];W[dl];B[gk];W[gl];B[ek];W[fj];B[el];W[fl];B[cl];W[jk])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[hj]\n;W[gj]\n;B[hi]\n;W[il]\n;B[kk]\n;W[dk]\n;B[kd]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
           "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
           "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 3,
           "comment": ""
         }
       ]
@@ -4169,60 +4031,84 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-051",
       "order": 51,
-      "title": "기본도-34",
+      "title": "035",
       "category": "정석63개 모음",
-      "filename": "35_기본도-34.sgf",
-      "path": "정석63개 모음/35_기본도-34.sgf",
+      "filename": "035.sgf",
+      "path": "정석63개 모음/035.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-34];B[dj];W[fk];B[ch];W[dl];B[hk];W[fi];B[ck];W[jk])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[jl]\n;B[il]\n;W[kl]\n;B[hl]\n;W[kh]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 7,
+          "x": 5,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
           "x": 7,
-          "y": 10,
+          "y": 11,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 9,
-          "y": 10,
+          "x": 10,
+          "y": 7,
           "comment": ""
         }
       ]
@@ -4230,66 +4116,84 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-052",
       "order": 52,
-      "title": "기본도-35",
+      "title": "036",
       "category": "정석63개 모음",
-      "filename": "36_기본도-35.sgf",
-      "path": "정석63개 모음/36_기본도-35.sgf",
+      "filename": "036.sgf",
+      "path": "정석63개 모음/036.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-35];B[dj];W[fk];B[ch];W[dl];B[hk];W[fi];B[kk];W[ck];B[ce])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[jl]\n;B[il]\n;W[kl]\n;B[ik]\n;W[kh]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
+          "color": "B",
           "x": 5,
-          "y": 8,
+          "y": 10,
           "comment": ""
         },
         {
-          "color": "B",
+          "color": "W",
           "x": 10,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 2,
+          "color": "B",
+          "x": 9,
           "y": 10,
           "comment": ""
         },
         {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
           "color": "B",
-          "x": 2,
-          "y": 4,
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
           "comment": ""
         }
       ]
@@ -4297,78 +4201,96 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-053",
       "order": 53,
-      "title": "기본도-36",
+      "title": "037",
       "category": "정석63개 모음",
-      "filename": "37_기본도-36.sgf",
-      "path": "정석63개 모음/37_기본도-36.sgf",
-      "boardSize": 13,
+      "filename": "037.sgf",
+      "path": "정석63개 모음/037.sgf",
+      "boardSize": 19,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-36];B[dj];W[fk];B[ch];W[dl];B[gk];W[gl];B[ek];W[hk];B[el];W[fl];B[cl])",
+      "sgf": "(;AP[MultiGo:4.2.1]SZ[19]MULTIGOGM[1]\n;B[pp];W[nq];B[lq];W[no];B[pn];W[kp];B[lp];W[lo];B[kq];W[jp];B[jq];W[ip];B[hq];W[go])",
       "moves": [
         {
           "color": "B",
-          "x": 3,
-          "y": 9,
+          "x": 15,
+          "y": 15,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
+          "x": 13,
+          "y": 16,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 7,
+          "x": 11,
+          "y": 16,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
-          "y": 11,
+          "x": 13,
+          "y": 14,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 6,
-          "y": 10,
+          "x": 15,
+          "y": 13,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 6,
-          "y": 11,
+          "x": 10,
+          "y": 15,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
-          "y": 10,
+          "x": 11,
+          "y": 15,
           "comment": ""
         },
         {
           "color": "W",
+          "x": 11,
+          "y": 14,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 15,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 15,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 11,
+          "y": 16,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 11,
+          "x": 6,
+          "y": 14,
           "comment": ""
         }
       ]
@@ -4376,96 +4298,168 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-054",
       "order": 54,
-      "title": "기본도-37",
+      "title": "038",
       "category": "정석63개 모음",
-      "filename": "38_기본도-37.sgf",
-      "path": "정석63개 모음/38_기본도-37.sgf",
-      "boardSize": 13,
+      "filename": "038.sgf",
+      "path": "정석63개 모음/038.sgf",
+      "boardSize": 19,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-37];B[dj];W[fk];B[ch];W[dl];B[gk];W[gj];B[hk];W[fj];B[ck];W[ij];B[fl];W[ik];B[el];W[hj])",
+      "sgf": "(;AP[MultiGo:4.2.1]SZ[19]MULTIGOGM[1]\n;B[pp];W[nq];B[lq];W[no];B[pn];W[kp];B[lp];W[lo];B[ko];W[jo];B[kn];W[ln];B[jp];W[kq]\n;B[jq];W[kr];B[lr];W[jr];B[ir];W[iq];B[ip];W[km];B[jn];W[io];B[hp];W[in])",
       "moves": [
         {
           "color": "B",
-          "x": 3,
-          "y": 9,
+          "x": 15,
+          "y": 15,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
+          "x": 13,
+          "y": 16,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 7,
+          "x": 11,
+          "y": 16,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
-          "y": 11,
+          "x": 13,
+          "y": 14,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 6,
-          "y": 10,
+          "x": 15,
+          "y": 13,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 6,
-          "y": 9,
+          "x": 10,
+          "y": 15,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 7,
-          "y": 10,
+          "x": 11,
+          "y": 15,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 9,
+          "x": 11,
+          "y": 14,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 10,
+          "x": 10,
+          "y": 14,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 14,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 13,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 13,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 15,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 17,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 17,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 17,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 17,
           "comment": ""
         },
         {
           "color": "W",
           "x": 8,
-          "y": 9,
+          "y": 16,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 5,
-          "y": 11,
+          "x": 8,
+          "y": 15,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 12,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 13,
           "comment": ""
         },
         {
           "color": "W",
           "x": 8,
-          "y": 10,
+          "y": 14,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
-          "y": 11,
+          "x": 7,
+          "y": 15,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 7,
-          "y": 9,
+          "x": 8,
+          "y": 13,
           "comment": ""
         }
       ]
@@ -4473,84 +4467,60 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-055",
       "order": 55,
-      "title": "기본도-38",
+      "title": "039",
       "category": "정석63개 모음",
-      "filename": "39_기본도-38.sgf",
-      "path": "정석63개 모음/39_기본도-38.sgf",
+      "filename": "039.sgf",
+      "path": "정석63개 모음/039.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-38];B[dj];W[fk];B[ch];W[dl];B[gk];W[gj];B[hk];W[fj];B[fl];W[el];B[ck];W[gl];B[hl];W[fm])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[hi]\n;B[jh]\n;W[ej]\n;B[ik]\n;W[ek]\n;B[hl]\n;W[gk]\n;B[ke]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
+          "x": 4,
           "y": 9,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 7,
+          "x": 8,
           "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
           "comment": ""
         },
         {
           "color": "W",
           "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
           "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 11,
           "comment": ""
         },
         {
@@ -4561,8 +4531,14 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 12,
+          "x": 6,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 4,
           "comment": ""
         }
       ]
@@ -4570,36 +4546,224 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-056",
       "order": 56,
-      "title": "기본도-39",
+      "title": "040",
       "category": "정석63개 모음",
-      "filename": "40_기본도-39.sgf",
-      "path": "정석63개 모음/40_기본도-39.sgf",
-      "boardSize": 13,
+      "filename": "040.sgf",
+      "path": "정석63개 모음/040.sgf",
+      "boardSize": 19,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-39];B[dj];W[fk];B[ch];W[dl];B[gk];W[gj];B[hk];W[fj];B[ck];W[ij];B[fl];W[el];B[jk];W[ik];B[il];W[jl];B[hl];W[kl];B[hj];W[hi];B[ii];W[jj];B[gi];W[hh];B[gm])",
+      "sgf": "(;AP[MultiGo:4.2.1]SZ[19]MULTIGOGM[1]\n;B[pp];W[nq];B[lq];W[no];B[pn];W[kp];B[oq];W[nr];B[lp];W[lo];B[kq];W[jp];B[jq];W[ip]\n;B[hq];W[mo])",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 15,
+          "y": 15,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 13,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 13,
+          "y": 14,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 15,
+          "y": 13,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 15,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 14,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 13,
+          "y": 17,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 15,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 14,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 15,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 15,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 16,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 12,
+          "y": 14,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-057",
+      "order": 57,
+      "title": "041",
+      "category": "정석63개 모음",
+      "filename": "041.sgf",
+      "path": "정석63개 모음/041.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[hi]\n;B[jh]\n;W[dk]\n;B[fi]\n;W[hg]\n;B[jf]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
           "x": 3,
-          "y": 11,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 6,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 5,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-058",
+      "order": 58,
+      "title": "042",
+      "category": "정석63개 모음",
+      "filename": "042.sgf",
+      "path": "정석63개 모음/042.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kh]\n;B[hj]\n;W[gj]\n;B[gk]\n;W[kj]\n;B[ik]\n;W[kk]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
           "comment": ""
         },
         {
@@ -4610,44 +4774,415 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-059",
+      "order": 59,
+      "title": "043",
+      "category": "정석63개 모음",
+      "filename": "043.sgf",
+      "path": "정석63개 모음/043.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kh]\n;B[hj]\n;W[kk]\n;B[ik]\n;W[kj]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-060",
+      "order": 60,
+      "title": "044",
+      "category": "정석63개 모음",
+      "filename": "044.sgf",
+      "path": "정석63개 모음/044.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj];W[hk];B[fk];W[kh];B[hj];W[kk];B[kj];W[jk];B[ij];W[hl];B[lj];W[lk];B[kf]LB[gj:A])",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 5,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-061",
+      "order": 61,
+      "title": "045",
+      "category": "정석63개 모음",
+      "filename": "045.sgf",
+      "path": "정석63개 모음/045.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kh]\n;B[hj]\n;W[kk]\n;B[kj]\n;W[jk]\n;B[ij]\n;W[hl]\n;B[lj]\n;W[lk]\n;B[gk]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 6,
+          "y": 10,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-062",
+      "order": 62,
+      "title": "046",
+      "category": "정석63개 모음",
+      "filename": "046.sgf",
+      "path": "정석63개 모음/046.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kh]\n;B[hj]\n;W[kk]\n;B[kj]\n;W[jk]\n;B[ij]\n;W[ik]\n;B[gk]\n;W[lj]\n;B[li]\n;W[lk]\n;B[ki]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
-          "color": "B",
+          "color": "W",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
           "color": "B",
-          "x": 2,
+          "x": 5,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 8,
           "y": 9,
           "comment": ""
         },
         {
+          "color": "W",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
           "color": "B",
-          "x": 5,
-          "y": 11,
+          "x": 6,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 4,
-          "y": 11,
+          "x": 11,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 8,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-063",
+      "order": 63,
+      "title": "047",
+      "category": "정석63개 모음",
+      "filename": "047.sgf",
+      "path": "정석63개 모음/047.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kh]\n;B[hj]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[kl]\n;B[jl]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
           "comment": ""
         },
         {
@@ -4658,26 +5193,14 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
-          "x": 8,
-          "y": 10,
+          "x": 10,
+          "y": 9,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 8,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
           "x": 9,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 11,
+          "y": 8,
           "comment": ""
         },
         {
@@ -4688,638 +5211,7 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "B",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
           "x": 9,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 12,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-057",
-      "order": 57,
-      "title": "기본도-40",
-      "category": "정석63개 모음",
-      "filename": "41_기본도-40.sgf",
-      "path": "정석63개 모음/41_기본도-40.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-40];B[dj];W[fk];B[hj];W[fi];B[dh];W[dl];B[ck];W[hl])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 11,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-058",
-      "order": 58,
-      "title": "기본도-41",
-      "category": "정석63개 모음",
-      "filename": "42_기본도-41.sgf",
-      "path": "정석63개 모음/42_기본도-41.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-41];B[dj];W[fk];B[hj];W[ck];B[dk];W[cj];B[di];W[dl];B[el];W[cl];B[ek];W[ch])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-059",
-      "order": 59,
-      "title": "기본도-42",
-      "category": "정석63개 모음",
-      "filename": "43_기본도-42.sgf",
-      "path": "정석63개 모음/43_기본도-42.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-42];B[dj];W[fk];B[hj];W[fi];B[ch];W[dl];B[gk];W[gj];B[hk];W[fl];B[ck];W[hi];B[ii];W[hh];B[ih];W[hg])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 6,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-060",
-      "order": 60,
-      "title": "기본도-43",
-      "category": "정석63개 모음",
-      "filename": "44_기본도-43.sgf",
-      "path": "정석63개 모음/44_기본도-43.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-43];B[dj];W[fk];B[hj];W[fi];B[ch];W[dl];B[gk];W[gj];B[hk];W[ck];B[fl];W[el];B[ek];W[fj];B[gl];W[bi])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 1,
-          "y": 8,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-061",
-      "order": 61,
-      "title": "기본도-44",
-      "category": "정석63개 모음",
-      "filename": "45_기본도-44.sgf",
-      "path": "정석63개 모음/45_기본도-44.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-44];B[dj];W[fk];B[ij];W[ck];B[dk];W[cj];B[di];W[dl];B[el];W[cl];B[ek];W[ch])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-062",
-      "order": 62,
-      "title": "기본도-45",
-      "category": "정석63개 모음",
-      "filename": "46_기본도-45.sgf",
-      "path": "정석63개 모음/46_기본도-45.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-45];B[dj];W[fk];B[ik];W[ck];B[dk];W[cj];B[di];W[dl];B[el];W[cl];B[ek];W[ch])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-063",
-      "order": 63,
-      "title": "기본도-46",
-      "category": "정석63개 모음",
-      "filename": "47_기본도-46.sgf",
-      "path": "정석63개 모음/47_기본도-46.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-46];B[dj];W[fk];B[ij];W[fi];B[dh];W[dl];B[ck];W[il])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 8,
           "y": 11,
           "comment": ""
         }
@@ -5328,126 +5220,72 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-064",
       "order": 64,
-      "title": "기본도-47",
+      "title": "048",
       "category": "정석63개 모음",
-      "filename": "48_기본도-47.sgf",
-      "path": "정석63개 모음/48_기본도-47.sgf",
+      "filename": "048.sgf",
+      "path": "정석63개 모음/048.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-47];B[dj];W[fk];B[ch];W[dl];B[hk];W[ck];B[ek];W[ej];B[fj];W[ei];B[fl];W[dk];B[gk];W[ci];B[dh];W[di];B[bi];W[bj];B[fh])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kh]\n;B[hj]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[ki]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
           "color": "B",
           "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 6,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
           "color": "W",
-          "x": 3,
-          "y": 8,
+          "x": 10,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 1,
-          "y": 8,
+          "x": 9,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 1,
+          "x": 10,
           "y": 9,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 5,
-          "y": 7,
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 8,
           "comment": ""
         }
       ]
@@ -5455,114 +5293,72 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-065",
       "order": 65,
-      "title": "기본도-48",
+      "title": "049",
       "category": "정석63개 모음",
-      "filename": "49_기본도-48.sgf",
-      "path": "정석63개 모음/49_기본도-48.sgf",
+      "filename": "049.sgf",
+      "path": "정석63개 모음/049.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-48];B[dj];W[fk];B[ch];W[dl];B[hk];W[ck];B[ek];W[ej];B[fj];W[ei];B[fl];W[ci];B[di];W[dk];B[eh];W[el];B[fi])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kh]\n;B[hj]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[lg]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 7,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
           "color": "B",
           "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "B",
-          "x": 4,
+          "color": "W",
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
           "color": "W",
-          "x": 4,
-          "y": 11,
+          "x": 10,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 5,
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
           "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 6,
           "comment": ""
         }
       ]
@@ -5570,76 +5366,82 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-066",
       "order": 66,
-      "title": "기본도-49",
+      "title": "050",
       "category": "정석63개 모음",
-      "filename": "50_기본도-49.sgf",
-      "path": "정석63개 모음/50_기본도-49.sgf",
+      "filename": "050.sgf",
+      "path": "정석63개 모음/050.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-49];B[dj];W[fk];B[ch];W[dl];B[hj];W[ck];B[ek];W[el];B[fj];W[gk];B[gj])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[kh]\n;B[jh]\n;W[jg]\n;B[ih]\n;W[kk]\n;B[ki]\n;W[jk]\n;B[kg]\n;W[gj]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
-          "y": 11,
+          "x": 9,
+          "y": 6,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 7,
-          "y": 9,
+          "x": 8,
+          "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
+          "x": 10,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
-          "y": 10,
+          "x": 10,
+          "y": 8,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
+          "x": 9,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
+          "x": 10,
+          "y": 6,
+          "comment": ""
+        },
+        {
+          "color": "W",
           "x": 6,
           "y": 9,
           "comment": ""
@@ -5649,26 +5451,14 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-067",
       "order": 67,
-      "title": "기본도-50",
+      "title": "051",
       "category": "정석63개 모음",
-      "filename": "51_기본도-50.sgf",
-      "path": "정석63개 모음/51_기본도-50.sgf",
+      "filename": "051.sgf",
+      "path": "정석63개 모음/051.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-50];B[dj];W[fk];B[jj];W[ck];B[dk];W[cj];B[di];W[dl];B[el];W[cl];B[ek];W[ch])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[jh]\n;B[hj]\n;W[gj]\n;B[gk]\n;W[kj]\n;B[ik]\n;W[kk]\n)",
       "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
         {
           "color": "B",
           "x": 9,
@@ -5677,56 +5467,56 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
-          "x": 2,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 3,
+          "x": 5,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
+          "x": 9,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
           "y": 9,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
+          "x": 6,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
-          "y": 7,
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
           "comment": ""
         }
       ]
@@ -5734,23 +5524,332 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-068",
       "order": 68,
-      "title": "기본도-51",
+      "title": "052",
       "category": "정석63개 모음",
-      "filename": "52_기본도-51.sgf",
-      "path": "정석63개 모음/52_기본도-51.sgf",
+      "filename": "052.sgf",
+      "path": "정석63개 모음/052.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-51];B[dj];W[fk];B[jk];W[ck];B[dk];W[cj];B[di];W[dl];B[el];W[cl];B[ek];W[ch])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[jh]\n;B[hj]\n;W[kk]\n;B[ik]\n;W[kj]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-069",
+      "order": 69,
+      "title": "053",
+      "category": "정석63개 모음",
+      "filename": "053.sgf",
+      "path": "정석63개 모음/053.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[jh]\n;B[hj]\n;W[kk]\n;B[kj]\n;W[jk]\n;B[ij]\n;W[hl]\n;B[gk]\n;W[lk]\n;B[lj]\n;W[kd]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 6,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 3,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-070",
+      "order": 70,
+      "title": "054",
+      "category": "정석63개 모음",
+      "filename": "054.sgf",
+      "path": "정석63개 모음/054.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[jh]\n;B[hj]\n;W[kk]\n;B[kj]\n;W[jk]\n;B[ij]\n;W[hl]\n;B[lj]\n;W[lk]\n;B[kg]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 6,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-071",
+      "order": 71,
+      "title": "055",
+      "category": "정석63개 모음",
+      "filename": "055.sgf",
+      "path": "정석63개 모음/055.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[fj]\n;B[ej]\n;W[gj]\n;B[dk]\n;W[jh]\n;B[ih]\n;W[ig]\n;B[ii]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[ki]\n;B[hg]\n;W[jg]\n;B[gh]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 4,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 8,
+          "y": 6,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
           "y": 10,
           "comment": ""
         },
@@ -5762,328 +5861,37 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
+          "x": 10,
           "y": 9,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 8,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-069",
-      "order": 69,
-      "title": "기본도-52",
-      "category": "정석63개 모음",
-      "filename": "53_기본도-52.sgf",
-      "path": "정석63개 모음/53_기본도-52.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-52];B[dj];W[fk];B[ij];W[ch];B[fj];W[gj];B[fi];W[ck];B[ek];W[cj];B[fl])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-070",
-      "order": 70,
-      "title": "기본도-53",
-      "category": "정석63개 모음",
-      "filename": "54_기본도-53.sgf",
-      "path": "정석63개 모음/54_기본도-53.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-53];B[dj];W[fk];B[ik];W[ch];B[fj];W[gj];B[fi];W[ck];B[ek];W[cj];B[fl])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 11,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-071",
-      "order": 71,
-      "title": "기본도-54",
-      "category": "정석63개 모음",
-      "filename": "55_기본도-54.sgf",
-      "path": "정석63개 모음/55_기본도-54.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-54];B[dj];W[fk];B[ij];W[ch];B[fj];W[gj];B[fi];W[dk];B[ck];W[ek];B[cj];W[gi];B[dg];W[cf];B[cg];W[bg];B[dh])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
+          "x": 10,
           "y": 8,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 3,
+          "x": 7,
           "y": 6,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
-          "y": 5,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 6,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 1,
+          "x": 9,
           "y": 6,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 3,
+          "x": 6,
           "y": 7,
           "comment": ""
         }
@@ -6092,102 +5900,90 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-072",
       "order": 72,
-      "title": "기본도-55",
+      "title": "056",
       "category": "정석63개 모음",
-      "filename": "56_기본도-55.sgf",
-      "path": "정석63개 모음/56_기본도-55.sgf",
+      "filename": "056.sgf",
+      "path": "정석63개 모음/056.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-55];B[dj];W[fk];B[ik];W[dh];B[fj];W[gj];B[fi];W[ck];B[cj];W[dk];B[gk];W[ek];B[ej];W[gl];B[hk])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[fj]\n;B[ej]\n;W[gj]\n;B[kh]\n;W[ek]\n;B[dk]\n;W[el]\n;B[dj]\n;W[fl]\n;B[il]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 8,
+          "x": 5,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
+          "x": 5,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 4,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
-          "color": "B",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
           "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 5,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
+          "x": 4,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
           "x": 3,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
           "color": "W",
           "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 7,
-          "y": 10,
+          "x": 3,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 11,
           "comment": ""
         }
       ]
@@ -6195,126 +5991,78 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-073",
       "order": 73,
-      "title": "기본도-56",
+      "title": "057",
       "category": "정석63개 모음",
-      "filename": "57_기본도-56.sgf",
-      "path": "정석63개 모음/57_기본도-56.sgf",
+      "filename": "057.sgf",
+      "path": "정석63개 모음/057.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-56];B[dj];W[fk];B[hk];W[hj];B[ij];W[gj];B[jk];W[dh];B[eh];W[eg];B[ei];W[ck];B[dk];W[cj];B[di];W[ci];B[fg];W[dg];B[gh])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[fj]\n;B[ej]\n;W[gj]\n;B[kh]\n;W[jl]\n;B[dk]\n;W[kk]\n;B[ke]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
           "x": 9,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 6,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 8,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
           "y": 9,
           "comment": ""
         },
         {
-          "color": "B",
-          "x": 3,
-          "y": 8,
-          "comment": ""
-        },
-        {
           "color": "W",
-          "x": 2,
-          "y": 8,
+          "x": 7,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "B",
           "x": 5,
-          "y": 6,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
-          "y": 6,
+          "x": 5,
+          "y": 9,
           "comment": ""
         },
         {
           "color": "B",
+          "x": 4,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
           "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
           "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 4,
           "comment": ""
         }
       ]
@@ -6322,199 +6070,47 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-074",
       "order": 74,
-      "title": "기본도-57",
+      "title": "058",
       "category": "정석63개 모음",
-      "filename": "58_기본도-57.sgf",
-      "path": "정석63개 모음/58_기본도-57.sgf",
+      "filename": "058.sgf",
+      "path": "정석63개 모음/058.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-57];B[dj];W[fk];B[hk];W[hj];B[ij];W[gj];B[ch];W[ik];B[jk];W[il];B[jj];W[hl];B[el])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fk]\n;W[fj]\n;B[ej]\n;W[fi]\n;B[gk]\n;W[hj]\n;B[kh]\n;W[hl]\n;B[ck]\n;W[kk]\n;B[jk]\n;W[jl]\n;B[kj]\n;W[lk]\n;B[il]\n;W[km]\n;B[ke]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 5,
           "y": 10,
           "comment": ""
         },
         {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
           "color": "W",
-          "x": 7,
+          "x": 5,
           "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 8,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 9,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 8,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 9,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 11,
           "comment": ""
         },
         {
           "color": "B",
           "x": 4,
-          "y": 11,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-075",
-      "order": 75,
-      "title": "기본도-58",
-      "category": "정석63개 모음",
-      "filename": "59_기본도-58.sgf",
-      "path": "정석63개 모음/59_기본도-58.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-58];B[dj];W[fk];B[hk];W[hj];B[ij];W[gj];B[ch];W[dl])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
           "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 6,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "id": "joseki-076",
-      "order": 76,
-      "title": "기본도-59",
-      "category": "정석63개 모음",
-      "filename": "60_기본도-59.sgf",
-      "path": "정석63개 모음/60_기본도-59.sgf",
-      "boardSize": 13,
-      "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-59];B[dj];W[fk];B[hk];W[hj];B[ij];W[hi];B[gk];W[fj];B[ch];W[fl];B[dl];W[ik];B[jk];W[il];B[jj];W[hl])",
-      "moves": [
-        {
-          "color": "B",
-          "x": 3,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 7,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 8,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 7,
           "y": 8,
           "comment": ""
         },
@@ -6526,31 +6122,31 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 9,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 3,
-          "y": 11,
+          "x": 2,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 8,
+          "x": 10,
           "y": 10,
           "comment": ""
         },
@@ -6562,10 +6158,53 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
           "x": 8,
           "y": 11,
           "comment": ""
         },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 12,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 4,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-075",
+      "order": 75,
+      "title": "059",
+      "category": "정석63개 모음",
+      "filename": "059.sgf",
+      "path": "정석63개 모음/059.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fj]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[jl]\n;B[il]\n;W[kl]\n;B[ik]\n;W[kh]\n)",
+      "moves": [
         {
           "color": "B",
           "x": 9,
@@ -6575,6 +6214,127 @@ window.JOSEKI_DATA = {
         {
           "color": "W",
           "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-076",
+      "order": 76,
+      "title": "060",
+      "category": "정석63개 모음",
+      "filename": "060.sgf",
+      "path": "정석63개 모음/060.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[fj]\n;W[hi]\n;B[jh]\n;W[jl]\n;B[kk]\n;W[fl]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 5,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 5,
           "y": 11,
           "comment": ""
         }
@@ -6583,41 +6343,363 @@ window.JOSEKI_DATA = {
     {
       "id": "joseki-077",
       "order": 77,
-      "title": "기본도-60",
+      "title": "061",
       "category": "정석63개 모음",
-      "filename": "61_기본도-60.sgf",
-      "path": "정석63개 모음/61_기본도-60.sgf",
+      "filename": "061.sgf",
+      "path": "정석63개 모음/061.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-60];B[dj];W[fk];B[hk];W[hj];B[ij];W[hi];B[gk];W[fj];B[ch];W[fl];B[jk];W[ck];B[dk];W[dl];B[cj];W[bk];B[el];W[cm];B[ce])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[ek]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[jl]\n;B[il]\n;W[kl]\n;B[ik]\n;W[kh]\n)",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 7,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 7,
+          "x": 4,
           "y": 10,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 7,
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
           "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
           "comment": ""
         },
         {
           "color": "B",
           "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-078",
+      "order": 78,
+      "title": "062",
+      "category": "정석63개 모음",
+      "filename": "062.sgf",
+      "path": "정석63개 모음/062.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[ek]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[jl]\n;B[il]\n;W[kl]\n;B[hl]\n;W[kh]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 4,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-079",
+      "order": 79,
+      "title": "063",
+      "category": "정석63개 모음",
+      "filename": "063.sgf",
+      "path": "정석63개 모음/063.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[ek]\n;W[kh]\n;B[hj]\n;W[gj]\n;B[hi]\n;W[kk]\n;B[ik]\n;W[kj]\n;B[hl]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 4,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 6,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 11,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-080",
+      "order": 80,
+      "title": "064",
+      "category": "정석63개 모음",
+      "filename": "064.sgf",
+      "path": "정석63개 모음/064.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[ej]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[jl]\n;B[il]\n;W[kl]\n;B[ik]\n;W[kh]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 4,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-081",
+      "order": 81,
+      "title": "065",
+      "category": "정석63개 모음",
+      "filename": "065.sgf",
+      "path": "정석63개 모음/065.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[ej]\n;W[hi]\n;B[jh]\n;W[jl]\n;B[kk]\n;W[el]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 4,
           "y": 9,
           "comment": ""
         },
@@ -6629,26 +6711,63 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "B",
-          "x": 6,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
+          "x": 9,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 9,
           "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 4,
+          "y": 11,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-082",
+      "order": 82,
+      "title": "066",
+      "category": "정석63개 모음",
+      "filename": "066.sgf",
+      "path": "정석63개 모음/066.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[dk]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[jl]\n;B[il]\n;W[kl]\n;B[ik]\n;W[kh]\n;B[hj]\n)",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 3,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
           "comment": ""
         },
         {
@@ -6659,65 +6778,77 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
+          "x": 10,
           "y": 9,
           "comment": ""
         },
         {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
           "color": "W",
-          "x": 1,
-          "y": 10,
+          "x": 9,
+          "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
+          "x": 8,
           "y": 11,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
-          "y": 12,
+          "x": 10,
+          "y": 11,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 4,
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
           "comment": ""
         }
       ]
     },
     {
-      "id": "joseki-078",
-      "order": 78,
-      "title": "기본도-61",
+      "id": "joseki-083",
+      "order": 83,
+      "title": "067",
       "category": "정석63개 모음",
-      "filename": "62_기본도-61.sgf",
-      "path": "정석63개 모음/62_기본도-61.sgf",
+      "filename": "067.sgf",
+      "path": "정석63개 모음/067.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-61];B[dj];W[fk];B[ch];W[dk];B[ck];W[cl];B[ek];W[dl];B[ej];W[el];B[fj];W[gk])",
+      "sgf": "(\n;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj]\n;W[hk]\n;B[dj]\n;W[kk]\n;B[jk]\n;W[kj]\n;B[ji]\n;W[jl]\n;B[il]\n;W[kl]\n;B[ik]\n;W[kh]\n;B[hj]\n)",
       "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 7,
+          "y": 10,
+          "comment": ""
+        },
         {
           "color": "B",
           "x": 3,
@@ -6726,153 +6857,281 @@ window.JOSEKI_DATA = {
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 10,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 9,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 11,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 8,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 7,
+          "y": 9,
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "joseki-084",
+      "order": 84,
+      "title": "068",
+      "category": "정석63개 모음",
+      "filename": "068.sgf",
+      "path": "정석63개 모음/068.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj];W[kk];B[jk];W[kj];B[ki];W[li];B[kh];W[lh];B[kg];W[lg];B[kf])",
+      "moves": [
+        {
+          "color": "B",
+          "x": 9,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
           "y": 7,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 3,
-          "y": 10,
+          "x": 11,
+          "y": 7,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
-          "y": 10,
+          "x": 10,
+          "y": 6,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 2,
-          "y": 11,
+          "x": 11,
+          "y": 6,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 4,
-          "y": 10,
+          "x": 10,
+          "y": 5,
           "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
+        }
+      ]
+    },
+    {
+      "id": "joseki-085",
+      "order": 85,
+      "title": "069",
+      "category": "정석63개 모음",
+      "filename": "069.sgf",
+      "path": "정석63개 모음/069.sgf",
+      "boardSize": 13,
+      "rootComment": "",
+      "sgf": "(;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj];W[kk];B[jk];W[kj];B[ki];W[li];B[lh];W[kh];B[ji];W[lg];B[lj];W[mh];B[lk])",
+      "moves": [
         {
           "color": "B",
-          "x": 4,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 4,
-          "y": 11,
+          "x": 10,
+          "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 5,
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 10,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
+          "y": 6,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 6,
+          "x": 12,
+          "y": 7,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 11,
           "y": 10,
           "comment": ""
         }
       ]
     },
     {
-      "id": "joseki-079",
-      "order": 79,
-      "title": "기본도-63",
+      "id": "joseki-086",
+      "order": 86,
+      "title": "070",
       "category": "정석63개 모음",
-      "filename": "63_기본도-63.sgf",
-      "path": "정석63개 모음/63_기본도-63.sgf",
+      "filename": "070.sgf",
+      "path": "정석63개 모음/070.sgf",
       "boardSize": 13,
       "rootComment": "",
-      "sgf": "(;FF[4]GM[1]CA[UTF-8]SZ[13]AP[JFG-to-SGF]GN[기본도-63];B[dj];W[fk];B[ch];W[dk];B[ck];W[cl];B[ek];W[dl];B[ej];W[el];B[bk];W[fj])",
+      "sgf": "(;AP[MultiGo:4.2.1]SZ[13]MULTIGOGM[1]\n;B[jj];W[kk];B[jk];W[kj];B[ji];W[lh])",
       "moves": [
         {
           "color": "B",
-          "x": 3,
+          "x": 9,
           "y": 9,
           "comment": ""
         },
         {
           "color": "W",
-          "x": 5,
+          "x": 10,
           "y": 10,
           "comment": ""
         },
         {
           "color": "B",
-          "x": 2,
+          "x": 9,
+          "y": 10,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 10,
+          "y": 9,
+          "comment": ""
+        },
+        {
+          "color": "B",
+          "x": 9,
+          "y": 8,
+          "comment": ""
+        },
+        {
+          "color": "W",
+          "x": 11,
           "y": 7,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 2,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 2,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 3,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 4,
-          "y": 9,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 4,
-          "y": 11,
-          "comment": ""
-        },
-        {
-          "color": "B",
-          "x": 1,
-          "y": 10,
-          "comment": ""
-        },
-        {
-          "color": "W",
-          "x": 5,
-          "y": 9,
           "comment": ""
         }
       ]

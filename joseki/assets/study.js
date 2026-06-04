@@ -1,5 +1,5 @@
 (function () {
-  const VIEW_SIZE = 12;
+  const VIEW_SIZE = 13;
   const CATEGORIES = [
     { key: "star", label: "화점 정석" },
     { key: "komoku", label: "소목 정석" },

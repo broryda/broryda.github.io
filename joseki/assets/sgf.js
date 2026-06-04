@@ -1,6 +1,6 @@
 (function () {
   const BOARD_SIZE = 19;
-  const DEFAULT_VIEW_SIZE = 11;
+  const DEFAULT_VIEW_SIZE = 13;
 
   const TRANSFORMS = [
     { key: "identity", label: "그대로", fn: (x, y, n) => [x, y] },

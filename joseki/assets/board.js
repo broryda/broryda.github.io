@@ -1,7 +1,7 @@
 (function () {
   const SVG_NS = "http://www.w3.org/2000/svg";
   const BOARD_SIZE = 19;
-  const COORD_LABELS = "ABCDEFGHJKLMNOPQRST";
+  const COORD_LABELS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   function el(name, attrs = {}, text = "") {
     const node = document.createElementNS(SVG_NS, name);
@@ -145,7 +145,6 @@
     }
 
     for (let i = 0; i < viewSize; i += 1) {
-      const x = cropStartX + i;
       svg.appendChild(
         el(
           "text",
@@ -155,19 +154,19 @@
             "text-anchor": "middle",
             class: "coord",
           },
-          COORD_LABELS[x] || String(x + 1)
+          COORD_LABELS[viewSize - 1 - i] || String(viewSize - i)
         )
       );
       svg.appendChild(
         el(
           "text",
           {
-            x: 30,
+            x: size - 30,
             y: pos(i) + 5,
             "text-anchor": "middle",
             class: "coord",
           },
-          String(BOARD_SIZE - i)
+          String(i + 1)
         )
       );
     }
