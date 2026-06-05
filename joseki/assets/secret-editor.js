@@ -388,7 +388,9 @@
   }
 
   function loadSheetSettings() {
-    dom.sheetEndpointInput.value = localStorage.getItem(STORAGE_KEYS.endpoint) || DEFAULT_SHEET_ENDPOINT;
+    const savedEndpoint = localStorage.getItem(STORAGE_KEYS.endpoint) || "";
+    dom.sheetEndpointInput.value = savedEndpoint === DEFAULT_SHEET_ENDPOINT ? savedEndpoint : DEFAULT_SHEET_ENDPOINT;
+    saveSheetSettings();
   }
 
   function jsonpRequest(url) {
