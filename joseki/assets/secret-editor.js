@@ -517,8 +517,7 @@
       iframe.remove();
       form.remove();
     };
-    iframe.addEventListener("load", () => window.setTimeout(cleanup, 1000), { once: true });
-    window.setTimeout(cleanup, 30000);
+    window.setTimeout(cleanup, 180000);
 
     document.body.appendChild(iframe);
     document.body.appendChild(form);
