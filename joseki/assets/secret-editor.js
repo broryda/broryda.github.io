@@ -427,6 +427,74 @@
     return payload;
   }
 
+  function sleep(ms) {
+    return new Promise((resolve) => window.setTimeout(resolve, ms));
+  }
+
+  function normalizedMove(move) {
+    return {
+      color: String((move && move.color) || "B"),
+      x: Number(move && move.x),
+      y: Number(move && move.y),
+      comment: String((move && move.comment) || ""),
+    };
+  }
+
+  function entrySignature(entry) {
+    const clean = cleanEntry(entry || {});
+    return JSON.stringify({
+      id: String(clean.id || ""),
+      order: Number(clean.order) || 0,
+      title: String(clean.title || ""),
+      category: String(clean.category || ""),
+      filename: String(clean.filename || ""),
+      path: String(clean.path || ""),
+      boardSize: Number(clean.boardSize) || BOARD_SIZE,
+      rootComment: String(clean.rootComment || ""),
+      sgf: String(clean.sgf || ""),
+      moves: (clean.moves || []).map(normalizedMove),
+    });
+  }
+
+  function entriesMatch(actual, expected) {
+    return !!actual && entrySignature(actual) === entrySignature(expected);
+  }
+
+  function sheetDataMatchesWrite(sheetData, action, payload) {
+    const sheetEntries = (sheetData && sheetData.entries) || [];
+    if (action === "saveEntry") {
+      const expected = payload.entry;
+      const actual = sheetEntries.find((entry) => String(entry.id || "") === String(expected.id || ""));
+      return entriesMatch(actual, expected);
+    }
+
+    if (action === "replaceAll") {
+      const expectedEntries = (payload.data && payload.data.entries) || [];
+      if (sheetEntries.length !== expectedEntries.length) return false;
+      const sheetById = new Map(sheetEntries.map((entry) => [String(entry.id || ""), entry]));
+      return expectedEntries.every((expected) => entriesMatch(sheetById.get(String(expected.id || "")), expected));
+    }
+
+    return false;
+  }
+
+  async function waitForSheetWrite(action, payload) {
+    let lastError = "";
+    for (let attempt = 1; attempt <= 30; attempt += 1) {
+      if (attempt > 1) await sleep(3000);
+      try {
+        const result = await sheetGet("data");
+        if (result && sheetDataMatchesWrite(result.data, action, payload)) {
+          return result;
+        }
+        lastError = "저장 요청은 보냈지만 아직 시트 데이터가 갱신되지 않았습니다.";
+      } catch (error) {
+        lastError = error.message;
+      }
+    }
+    throw new Error(`시트 저장 확인 시간이 초과되었습니다. ${lastError}`);
+  }
+
   async function sheetPost(action, payload) {
     const url = endpointUrl();
     if (!url) {
@@ -435,52 +503,18 @@
     }
     saveSheetSettings();
 
-    return new Promise((resolve, reject) => {
-      const requestId = `josekiSheetPost_${Date.now()}_${Math.random().toString(36).slice(2)}`;
-      const iframe = document.createElement("iframe");
-      iframe.name = requestId;
-      iframe.style.display = "none";
+    const requestId = `josekiSheetPost_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+    const body = new URLSearchParams();
+    body.set("payload", JSON.stringify({ requestId, action, ...payload }));
 
-      const form = document.createElement("form");
-      form.method = "POST";
-      form.action = url;
-      form.target = requestId;
-      form.style.display = "none";
-
-      const input = document.createElement("input");
-      input.type = "hidden";
-      input.name = "payload";
-      input.value = JSON.stringify({ requestId, action, ...payload });
-      form.appendChild(input);
-
-      const cleanup = () => {
-        window.removeEventListener("message", onMessage);
-        iframe.remove();
-        form.remove();
-        window.clearTimeout(timer);
-      };
-
-      const timer = window.setTimeout(() => {
-        cleanup();
-        reject(new Error("시트 저장 응답 시간이 초과되었습니다."));
-      }, 120000);
-
-      function onMessage(event) {
-        const result = event.data;
-        if (!result || result.requestId !== requestId) return;
-        cleanup();
-        if (result.ok === false) {
-          reject(new Error(result.error || "시트 저장 실패"));
-        } else {
-          resolve(result);
-        }
-      }
-
-      window.addEventListener("message", onMessage);
-      document.body.appendChild(iframe);
-      document.body.appendChild(form);
-      form.submit();
+    await fetch(url, {
+      method: "POST",
+      mode: "no-cors",
+      body,
     });
+
+    setStatus("시트에 저장 요청을 보냈습니다. 반영 여부를 확인하는 중...");
+    return waitForSheetWrite(action, payload);
   }
 
   async function loadFromSheet() {
