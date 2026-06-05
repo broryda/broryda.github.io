@@ -495,45 +495,13 @@
     throw new Error(`시트 저장 확인 시간이 초과되었습니다. ${lastError}`);
   }
 
-  function submitSheetForm(url, bodyText) {
-    const targetName = `josekiSheetPost_${Date.now()}_${Math.random().toString(36).slice(2)}`;
-    const iframe = document.createElement("iframe");
-    iframe.name = targetName;
-    iframe.style.display = "none";
-
-    const form = document.createElement("form");
-    form.method = "POST";
-    form.action = url;
-    form.target = targetName;
-    form.style.display = "none";
-
-    const input = document.createElement("input");
-    input.type = "hidden";
-    input.name = "payload";
-    input.value = bodyText;
-    form.appendChild(input);
-
-    const cleanup = () => {
-      iframe.remove();
-      form.remove();
-    };
-    window.setTimeout(cleanup, 180000);
-
-    document.body.appendChild(iframe);
-    document.body.appendChild(form);
-    form.submit();
-  }
-
   async function sheetPost(action, payload) {
-    const url = endpointUrl();
-    if (!url) {
-      setStatus("Apps Script Web App URL을 입력하세요.");
-      return null;
+    const payloadText = JSON.stringify(payload);
+    if (payloadText.length > 30000) {
+      throw new Error("저장 데이터가 너무 커서 브라우저 JSONP 저장 한도를 넘었습니다. 현재 정석 단위로 나눠 저장하세요.");
     }
-    saveSheetSettings();
 
-    const requestId = `josekiSheetPost_${Date.now()}_${Math.random().toString(36).slice(2)}`;
-    submitSheetForm(url, JSON.stringify({ requestId, action, ...payload }));
+    await sheetGet(action, { payload: payloadText });
     setStatus("시트에 저장 요청을 보냈습니다. 반영 여부를 확인하는 중...");
     return waitForSheetWrite(action, payload);
   }

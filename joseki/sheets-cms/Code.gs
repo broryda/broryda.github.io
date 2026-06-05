@@ -30,6 +30,16 @@ function doGet(e) {
     if (action === "health") {
       return output_({ ok: true, message: "ok" }, e.parameter.callback);
     }
+    if (action === "saveentry") {
+      const body = JSON.parse(e.parameter.payload || "{}");
+      saveEntry_(body.entry || body);
+      return output_({ ok: true, saved: 1 }, e.parameter.callback);
+    }
+    if (action === "replaceall") {
+      const body = JSON.parse(e.parameter.payload || "{}");
+      replaceAll_(body.data || body);
+      return output_({ ok: true, saved: body.data && body.data.entries ? body.data.entries.length : 0 }, e.parameter.callback);
+    }
     return output_({ ok: true, data: readData_() }, e.parameter.callback);
   } catch (error) {
     return output_({ ok: false, error: String(error && error.message ? error.message : error) }, e && e.parameter && e.parameter.callback);
