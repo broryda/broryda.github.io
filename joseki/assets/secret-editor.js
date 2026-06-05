@@ -2,6 +2,9 @@
   const BOARD_SIZE = 19;
   const VIEW_SIZE = 13;
   const CROP_START_X = BOARD_SIZE - VIEW_SIZE;
+  const DEFAULT_SHEET_ENDPOINT =
+    "https://script.google.com/macros/s/AKfycbw9zoXaKiq8YqRXnE6lqWyXh5SU3i8JO75OSQmyJisJoo6krqRz0z0A75RWH066UdUP/exec";
+  const DEFAULT_SHEET_ADMIN_KEY = "joseki_41d61668bdb6330d87669caad00e5321fc26fd4a110d2bba";
 
   const CATEGORIES = [
     { key: "all", label: "전체" },
@@ -393,8 +396,8 @@
   }
 
   function loadSheetSettings() {
-    dom.sheetEndpointInput.value = localStorage.getItem(STORAGE_KEYS.endpoint) || "";
-    dom.sheetKeyInput.value = localStorage.getItem(STORAGE_KEYS.adminKey) || "";
+    dom.sheetEndpointInput.value = localStorage.getItem(STORAGE_KEYS.endpoint) || DEFAULT_SHEET_ENDPOINT;
+    dom.sheetKeyInput.value = localStorage.getItem(STORAGE_KEYS.adminKey) || DEFAULT_SHEET_ADMIN_KEY;
   }
 
   function requireEndpoint() {
