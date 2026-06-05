@@ -1,8 +1,4 @@
 (function () {
-  const OWNER = "broryda";
-  const REPO = "broryda.github.io";
-  const DATA_PATH = "joseki/data/joseki-data.js";
-  const TREE_PATH = "joseki/data/merged-joseki-tree.js";
   const BOARD_SIZE = 19;
   const VIEW_SIZE = 13;
   const CROP_START_X = BOARD_SIZE - VIEW_SIZE;
@@ -21,10 +17,12 @@
     categorySelect: document.getElementById("categorySelect"),
     searchInput: document.getElementById("searchInput"),
     josekiList: document.getElementById("josekiList"),
-    tokenInput: document.getElementById("tokenInput"),
-    branchInput: document.getElementById("branchInput"),
-    commitMessageInput: document.getElementById("commitMessageInput"),
-    commitBtn: document.getElementById("commitBtn"),
+    sheetEndpointInput: document.getElementById("sheetEndpointInput"),
+    sheetKeyInput: document.getElementById("sheetKeyInput"),
+    loadSheetBtn: document.getElementById("loadSheetBtn"),
+    saveEntryBtn: document.getElementById("saveEntryBtn"),
+    uploadAllBtn: document.getElementById("uploadAllBtn"),
+    newJosekiBtn: document.getElementById("newJosekiBtn"),
     statusBox: document.getElementById("statusBox"),
     editorTitle: document.getElementById("editorTitle"),
     editorMeta: document.getElementById("editorMeta"),
@@ -45,6 +43,10 @@
   let entries = data.entries || [];
   let activeIndex = entries.length ? 0 : -1;
   let editMove = 0;
+  const STORAGE_KEYS = {
+    endpoint: "josekiSheetEndpoint",
+    adminKey: "josekiSheetAdminKey",
+  };
 
   function setStatus(message) {
     dom.statusBox.textContent = message;
@@ -286,12 +288,10 @@
     if (!entry) {
       dom.editorTitle.textContent = "정석 데이터가 없습니다";
       dom.editorMeta.textContent = "";
-      dom.commitMessageInput.value = "Update joseki SGF/comment";
       return;
     }
     dom.editorTitle.textContent = `${entry.order || activeIndex + 1}번 정석`;
     dom.editorMeta.textContent = entry.path || entry.filename || "";
-    dom.commitMessageInput.value = `Update joseki ${entry.order || activeIndex + 1} board/comment`;
   }
 
   function renderAll() {
@@ -357,258 +357,203 @@
     if (!entry) return;
     entry.sgf = buildEntrySgf(entry);
     data = { ...data, entries };
-    setStatus(`${entry.order || activeIndex + 1}번 정석을 브라우저 메모리에 저장했습니다. GitHub 커밋은 아직 하지 않았습니다.`);
+    setStatus(`${entry.order || activeIndex + 1}번 정석을 브라우저 메모리에 임시 저장했습니다. 시트 저장은 아직 하지 않았습니다.`);
     renderAll();
   }
 
-  function leafCount(node) {
-    if (!node.children.size) return Math.max(1, node.terminalSources.size);
-    let total = 0;
-    for (const child of node.children.values()) total += leafCount(child);
-    return total;
-  }
-
-  function countNodes(node) {
-    let total = 0;
-    for (const child of node.children.values()) total += 1 + countNodes(child);
-    return total;
-  }
-
-  function maxDepth(node) {
-    if (!node.children.size) return 0;
-    let max = 0;
-    for (const child of node.children.values()) max = Math.max(max, 1 + maxDepth(child));
-    return max;
-  }
-
-  function moveKey(move) {
-    return `${move.color}:${move.x19}:${move.y19}`;
-  }
-
-  function addLine(root, moves, source, rootComment) {
-    let node = root;
-    for (const move of moves) {
-      if (move.x19 == null || move.y19 == null) continue;
-      const key = moveKey(move);
-      if (!node.children.has(key)) {
-        node.children.set(key, {
-          move: { color: move.color, x19: move.x19, y19: move.y19 },
-          comments: new Set(),
-          terminalSources: new Set(),
-          children: new Map(),
-        });
-      }
-      node = node.children.get(key);
-      if (move.comment) node.comments.add(move.comment);
-    }
-    if (rootComment) node.comments.add(rootComment);
-    node.terminalSources.add(source);
-  }
-
-  function nodeToSgf(node) {
-    const move = node.move;
-    let props = `;${move.color}[${sgfCoord19(move.x19, move.y19)}]`;
-    if (node.comments.size) {
-      props += `C[${sgfEscape([...node.comments].sort().join("\n\n"))}]`;
-    }
-    return props;
-  }
-
-  function sortedChildren(node) {
-    return [...node.children.values()].sort((a, b) => {
-      if (a.move.color !== b.move.color) return a.move.color.localeCompare(b.move.color);
-      if (a.move.x19 !== b.move.x19) return a.move.x19 - b.move.x19;
-      return a.move.y19 - b.move.y19;
-    });
-  }
-
-  function childrenToSgf(node) {
-    const children = sortedChildren(node);
-    if (!children.length) return "";
-    if (children.length === 1) {
-      const child = children[0];
-      return nodeToSgf(child) + childrenToSgf(child);
-    }
-    return children.map((child) => `(${nodeToSgf(child)}${childrenToSgf(child)})`).join("");
-  }
-
-  function treeToData(node) {
-    return {
-      move: node.move ? { color: node.move.color, x19: node.move.x19, y19: node.move.y19 } : null,
-      comments: [...node.comments].sort(),
-      terminalSources: [...node.terminalSources].sort(),
-      leafCount: leafCount(node),
-      children: sortedChildren(node).map(treeToData),
-    };
-  }
-
-  function entryForCommit(entry) {
+  function cleanEntry(entry) {
     const clean = { ...entry };
     delete clean.__displayNormalized;
     clean.sgf = buildEntrySgf(clean);
     return clean;
   }
 
-  function buildMergedTreePayload(cleanEntries) {
-    const root = {
-      move: null,
-      comments: new Set(),
-      terminalSources: new Set(),
-      children: new Map(),
-    };
-    const included = [];
-    const orientationCounts = {};
-    let totalInputMoves = 0;
-
-    for (const entry of cleanEntries) {
-      const oriented = window.JosekiSgf.orientEntry(entry, VIEW_SIZE);
-      const moves = oriented.orientedMoves || [];
-      if (!moves.length) continue;
-      orientationCounts[oriented.orientationKey] = (orientationCounts[oriented.orientationKey] || 0) + 1;
-      totalInputMoves += moves.length;
-      const source = entry.path || entry.filename || entry.id || `joseki-${included.length + 1}`;
-      addLine(root, moves, source, entry.rootComment || "");
-      included.push(source);
-    }
-
-    const rawSgf = `(;FF[4]GM[1]CA[UTF-8]SZ[19]AP[JosekiStudy:secret-board-editor]GN[통합 정석 트리]${childrenToSgf(root)})\n`;
-    const report = {
-      output: "merged_joseki.sgf",
-      included_count: included.length,
-      skipped_count: (data.skipped || []).length,
-      skipped: data.skipped || [],
-      total_input_moves: totalInputMoves,
-      merged_tree_nodes: countNodes(root),
-      max_depth: maxDepth(root),
-      orientation_counts: orientationCounts,
-      included,
-    };
-    return {
-      version: 1,
-      name: "통합 정석 트리",
-      boardSize: BOARD_SIZE,
-      viewSize: VIEW_SIZE,
-      rawSgf,
-      report,
-      root: treeToData(root),
-    };
-  }
-
-  function makeDataFiles() {
+  function makeCleanData() {
     persistCommentsToEntry();
-    const cleanEntries = entries.map(entryForCommit);
-    const cleanData = {
+    const cleanEntries = entries.map(cleanEntry);
+    return {
       ...data,
       version: data.version || 1,
       name: data.name || "기본정석 SGF 데이터",
       entries: cleanEntries,
     };
-    const tree = buildMergedTreePayload(cleanEntries);
-    return [
-      {
-        path: DATA_PATH,
-        content: `window.JOSEKI_DATA = ${JSON.stringify(cleanData, null, 2)};\n`,
-      },
-      {
-        path: TREE_PATH,
-        content: `window.JOSEKI_TREE = ${JSON.stringify(tree, null, 2)};\n`,
-      },
-    ];
   }
 
-  async function githubRequest(token, path, options = {}) {
-    const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/${path}`, {
-      ...options,
-      headers: {
-        Accept: "application/vnd.github+json",
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-        "X-GitHub-Api-Version": "2022-11-28",
-        ...(options.headers || {}),
-      },
+  function endpointUrl() {
+    return dom.sheetEndpointInput.value.trim();
+  }
+
+  function adminKey() {
+    return dom.sheetKeyInput.value.trim();
+  }
+
+  function saveSheetSettings() {
+    localStorage.setItem(STORAGE_KEYS.endpoint, endpointUrl());
+    localStorage.setItem(STORAGE_KEYS.adminKey, adminKey());
+  }
+
+  function loadSheetSettings() {
+    dom.sheetEndpointInput.value = localStorage.getItem(STORAGE_KEYS.endpoint) || "";
+    dom.sheetKeyInput.value = localStorage.getItem(STORAGE_KEYS.adminKey) || "";
+  }
+
+  function requireEndpoint() {
+    const url = endpointUrl();
+    if (!url) {
+      setStatus("Apps Script Web App URL을 입력하세요.");
+      return "";
+    }
+    return url;
+  }
+
+  function requireAdminKey() {
+    const key = adminKey();
+    if (!key) {
+      setStatus("관리자 키를 입력하세요.");
+      return "";
+    }
+    return key;
+  }
+
+  function jsonpRequest(url) {
+    return new Promise((resolve, reject) => {
+      const callbackName = `__josekiSheetCallback_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      const script = document.createElement("script");
+      const cleanup = () => {
+        delete window[callbackName];
+        script.remove();
+      };
+      window[callbackName] = (payload) => {
+        cleanup();
+        resolve(payload);
+      };
+      script.onerror = () => {
+        cleanup();
+        reject(new Error("Apps Script 응답을 불러오지 못했습니다."));
+      };
+      const separator = url.includes("?") ? "&" : "?";
+      script.src = `${url}${separator}callback=${encodeURIComponent(callbackName)}&t=${Date.now()}`;
+      document.head.appendChild(script);
     });
-    const text = await response.text();
-    let payload = null;
-    try {
-      payload = text ? JSON.parse(text) : null;
-    } catch {
-      payload = text;
-    }
-    if (!response.ok) {
-      const message = payload && payload.message ? payload.message : response.statusText;
-      throw new Error(`${response.status} ${message}`);
-    }
+  }
+
+  async function sheetGet(action, params = {}) {
+    const base = requireEndpoint();
+    if (!base) return null;
+    saveSheetSettings();
+    const query = new URLSearchParams({ action, ...params });
+    const payload = await jsonpRequest(`${base}?${query.toString()}`);
+    if (!payload || payload.ok === false) throw new Error((payload && payload.error) || "시트 요청 실패");
     return payload;
   }
 
-  function encodeContentPath(path) {
-    return path.split("/").map(encodeURIComponent).join("/");
-  }
-
-  function base64EncodeUtf8(value) {
-    const bytes = new TextEncoder().encode(value);
-    let binary = "";
-    const chunkSize = 0x8000;
-    for (let i = 0; i < bytes.length; i += chunkSize) {
-      binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
-    }
-    return btoa(binary);
-  }
-
-  async function updateFileWithContentsApi(token, file, branch, message) {
-    const encodedPath = encodeContentPath(file.path);
-    const current = await githubRequest(token, `contents/${encodedPath}?ref=${encodeURIComponent(branch)}`);
-    return githubRequest(token, `contents/${encodedPath}`, {
-      method: "PUT",
-      body: JSON.stringify({
-        message,
-        content: base64EncodeUtf8(file.content),
-        sha: current.sha,
-        branch,
-      }),
+  async function sheetPost(action, payload) {
+    const url = requireEndpoint();
+    if (!url) return null;
+    const key = requireAdminKey();
+    if (!key) return null;
+    saveSheetSettings();
+    const response = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({ action, adminKey: key, ...payload }),
     });
+    const text = await response.text();
+    let result = null;
+    try {
+      result = text ? JSON.parse(text) : null;
+    } catch {
+      result = { ok: false, error: text || "Apps Script 응답을 해석하지 못했습니다." };
+    }
+    if (!response.ok || !result || result.ok === false) {
+      throw new Error((result && result.error) || response.statusText || "시트 저장 실패");
+    }
+    return result;
   }
 
-  async function commitFilesToGithub() {
-    const token = dom.tokenInput.value.trim();
-    if (!token) {
-      setStatus("GitHub token을 입력하세요. fine-grained token에는 broryda.github.io Contents read/write 권한이 필요합니다.");
-      return;
-    }
-
-    const branch = dom.branchInput.value.trim() || "main";
-    const message = dom.commitMessageInput.value.trim() || "Update joseki board/comment";
-    const files = makeDataFiles();
-
-    dom.commitBtn.disabled = true;
+  async function loadFromSheet() {
+    dom.loadSheetBtn.disabled = true;
     try {
-      const updated = [];
-      for (let i = 0; i < files.length; i += 1) {
-        const file = files[i];
-        setStatus(`GitHub에 ${file.path} 업데이트 중... (${i + 1}/${files.length})`);
-        const suffix = files.length > 1 ? ` [${i + 1}/${files.length}]` : "";
-        const result = await updateFileWithContentsApi(token, file, branch, `${message}${suffix}`);
-        updated.push(result.commit && result.commit.html_url ? result.commit.html_url : "");
-      }
-
-      setStatus(
-        `커밋 완료!\n${updated.filter(Boolean).join("\n")}\n\nGitHub Pages 반영에는 잠시 시간이 걸릴 수 있습니다.`
-      );
+      setStatus("스프레드시트에서 정석 데이터를 불러오는 중...");
+      const payload = await sheetGet("data");
+      if (!payload) return;
+      data = payload.data || { version: 1, name: "Google Sheets 정석 데이터", skipped: [], entries: [] };
+      entries = data.entries || [];
+      activeIndex = entries.length ? 0 : -1;
+      editMove = 0;
+      setStatus(`시트에서 ${entries.length}개 정석을 불러왔습니다.`);
+      renderAll();
     } catch (error) {
-      setStatus(
-        `커밋 실패: ${error.message}\n\n` +
-          "토큰 설정을 확인하세요:\n" +
-          "- Repository access: broryda/broryda.github.io 선택\n" +
-          "- Repository permissions > Contents: Read and write\n" +
-          "- 만료되지 않은 fine-grained token\n" +
-          "- 브랜치명: main"
-      );
+      setStatus(`시트 불러오기 실패: ${error.message}`);
     } finally {
-      dom.commitBtn.disabled = false;
+      dom.loadSheetBtn.disabled = false;
     }
+  }
+
+  async function saveCurrentToSheet() {
+    persistCommentsToEntry();
+    const entry = activeEntry();
+    if (!entry) return;
+    dom.saveEntryBtn.disabled = true;
+    try {
+      const clean = cleanEntry(entry);
+      setStatus(`${clean.order || activeIndex + 1}번 정석을 스프레드시트에 저장하는 중...`);
+      await sheetPost("saveEntry", { entry: clean });
+      setStatus(`${clean.order || activeIndex + 1}번 정석을 스프레드시트에 저장했습니다.`);
+    } catch (error) {
+      setStatus(`시트 저장 실패: ${error.message}`);
+    } finally {
+      dom.saveEntryBtn.disabled = false;
+    }
+  }
+
+  async function uploadAllToSheet() {
+    if (!window.confirm("현재 브라우저에 로드된 전체 정석 데이터로 스프레드시트를 교체할까요? 최초 1회 이관 또는 전체 덮어쓰기 때만 사용하세요.")) return;
+    dom.uploadAllBtn.disabled = true;
+    try {
+      const cleanData = makeCleanData();
+      setStatus(`전체 ${cleanData.entries.length}개 정석을 스프레드시트에 업로드하는 중...`);
+      await sheetPost("replaceAll", { data: cleanData });
+      setStatus(`전체 ${cleanData.entries.length}개 정석을 스프레드시트에 업로드했습니다.`);
+    } catch (error) {
+      setStatus(`전체 업로드 실패: ${error.message}`);
+    } finally {
+      dom.uploadAllBtn.disabled = false;
+    }
+  }
+
+  function nextOrder() {
+    return entries.reduce((max, entry) => Math.max(max, Number(entry.order) || 0), 0) + 1;
+  }
+
+  function addNewJoseki() {
+    persistCommentsToEntry();
+    const order = nextOrder();
+    const selectedCategory = dom.categorySelect.value && dom.categorySelect.value !== "all" ? dom.categorySelect.value : "unknown";
+    const entry = {
+      id: `sheet-${Date.now()}`,
+      order,
+      title: `${order}번 정석`,
+      category: selectedCategory,
+      filename: `${String(order).padStart(3, "0")}.sgf`,
+      path: `sheet/${String(order).padStart(3, "0")}.sgf`,
+      boardSize: BOARD_SIZE,
+      rootComment: "",
+      moves: [],
+      __displayNormalized: true,
+    };
+    entry.sgf = buildEntrySgf(entry);
+    entries.push(entry);
+    data = { ...data, entries };
+    activeIndex = entries.length - 1;
+    editMove = 0;
+    dom.categorySelect.value = "all";
+    setStatus("새 정석을 추가했습니다. 바둑판에 수순을 놓고 현재 정석 저장을 누르세요.");
+    renderAll();
   }
 
   function init() {
+    loadSheetSettings();
     renderAll();
     dom.categorySelect.addEventListener("change", renderList);
     dom.searchInput.addEventListener("input", renderList);
@@ -622,7 +567,12 @@
     dom.undoMoveBtn.addEventListener("click", undoLastMove);
     dom.clearMovesBtn.addEventListener("click", clearMoves);
     dom.saveLocalBtn.addEventListener("click", saveCurrentLocal);
-    dom.commitBtn.addEventListener("click", commitFilesToGithub);
+    dom.loadSheetBtn.addEventListener("click", loadFromSheet);
+    dom.saveEntryBtn.addEventListener("click", saveCurrentToSheet);
+    dom.uploadAllBtn.addEventListener("click", uploadAllToSheet);
+    dom.newJosekiBtn.addEventListener("click", addNewJoseki);
+    dom.sheetEndpointInput.addEventListener("change", saveSheetSettings);
+    dom.sheetKeyInput.addEventListener("change", saveSheetSettings);
   }
 
   init();

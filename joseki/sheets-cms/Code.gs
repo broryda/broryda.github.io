@@ -1,0 +1,249 @@
+const JOSEKI_SHEET = "Joseki";
+const MOVES_SHEET = "Moves";
+
+const JOSEKI_HEADERS = [
+  "id",
+  "order",
+  "title",
+  "category",
+  "filename",
+  "path",
+  "boardSize",
+  "rootComment",
+  "sgf",
+  "active",
+  "updatedAt",
+];
+
+const MOVES_HEADERS = ["josekiId", "moveNo", "color", "x", "y", "comment"];
+
+function setupJosekiSheets() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  ensureSheet_(ss, JOSEKI_SHEET, JOSEKI_HEADERS);
+  ensureSheet_(ss, MOVES_SHEET, MOVES_HEADERS);
+}
+
+function setAdminKey() {
+  // 원하는 관리자 키로 바꾼 뒤 Apps Script 편집기에서 이 함수를 한 번 실행하세요.
+  PropertiesService.getScriptProperties().setProperty("ADMIN_KEY", "CHANGE_ME_TO_RANDOM_SECRET");
+}
+
+function doGet(e) {
+  try {
+    setupJosekiSheets();
+    const action = (e.parameter.action || "data").toLowerCase();
+    if (action === "health") {
+      return output_({ ok: true, message: "ok" }, e.parameter.callback);
+    }
+    return output_({ ok: true, data: readData_() }, e.parameter.callback);
+  } catch (error) {
+    return output_({ ok: false, error: String(error && error.message ? error.message : error) }, e && e.parameter && e.parameter.callback);
+  }
+}
+
+function doPost(e) {
+  const lock = LockService.getScriptLock();
+  lock.waitLock(30000);
+  try {
+    setupJosekiSheets();
+    const bodyText = e && e.postData && e.postData.contents ? e.postData.contents : "{}";
+    const body = JSON.parse(bodyText);
+    verifyAdminKey_(body.adminKey);
+
+    if (body.action === "saveEntry") {
+      saveEntry_(body.entry);
+      return output_({ ok: true, saved: 1 });
+    }
+
+    if (body.action === "replaceAll") {
+      replaceAll_(body.data);
+      return output_({ ok: true, saved: body.data && body.data.entries ? body.data.entries.length : 0 });
+    }
+
+    throw new Error("Unknown action: " + body.action);
+  } catch (error) {
+    return output_({ ok: false, error: String(error && error.message ? error.message : error) });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function readData_() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const josekiRows = rowsAsObjects_(ss.getSheetByName(JOSEKI_SHEET));
+  const moveRows = rowsAsObjects_(ss.getSheetByName(MOVES_SHEET));
+  const movesById = {};
+
+  moveRows.forEach((row) => {
+    const id = String(row.josekiId || "");
+    if (!id) return;
+    if (!movesById[id]) movesById[id] = [];
+    movesById[id].push({
+      moveNo: Number(row.moveNo) || 0,
+      color: String(row.color || "B"),
+      x: Number(row.x),
+      y: Number(row.y),
+      comment: String(row.comment || ""),
+    });
+  });
+
+  Object.keys(movesById).forEach((id) => {
+    movesById[id] = movesById[id]
+      .sort((a, b) => a.moveNo - b.moveNo)
+      .map((move) => ({
+        color: move.color,
+        x: move.x,
+        y: move.y,
+        comment: move.comment,
+      }));
+  });
+
+  const entries = josekiRows
+    .filter((row) => String(row.active).toUpperCase() !== "FALSE")
+    .map((row) => ({
+      id: String(row.id || ""),
+      order: Number(row.order) || 0,
+      title: String(row.title || ""),
+      category: String(row.category || ""),
+      filename: String(row.filename || ""),
+      path: String(row.path || ""),
+      boardSize: Number(row.boardSize) || 19,
+      rootComment: String(row.rootComment || ""),
+      sgf: String(row.sgf || ""),
+      moves: movesById[String(row.id || "")] || [],
+    }))
+    .sort((a, b) => (a.order || 0) - (b.order || 0));
+
+  return {
+    version: 1,
+    name: "Google Sheets 정석 데이터",
+    skipped: [],
+    entries,
+  };
+}
+
+function saveEntry_(entry) {
+  if (!entry || !entry.id) throw new Error("entry.id is required");
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const josekiSheet = ss.getSheetByName(JOSEKI_SHEET);
+  const movesSheet = ss.getSheetByName(MOVES_SHEET);
+
+  upsertJosekiRow_(josekiSheet, entry);
+  replaceMoveRows_(movesSheet, entry.id, entry.moves || []);
+}
+
+function replaceAll_(data) {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const josekiSheet = ss.getSheetByName(JOSEKI_SHEET);
+  const movesSheet = ss.getSheetByName(MOVES_SHEET);
+  const entries = data && data.entries ? data.entries : [];
+
+  josekiSheet.clearContents();
+  movesSheet.clearContents();
+  josekiSheet.getRange(1, 1, 1, JOSEKI_HEADERS.length).setValues([JOSEKI_HEADERS]);
+  movesSheet.getRange(1, 1, 1, MOVES_HEADERS.length).setValues([MOVES_HEADERS]);
+
+  if (entries.length) {
+    josekiSheet.getRange(2, 1, entries.length, JOSEKI_HEADERS.length).setValues(entries.map(josekiRow_));
+    const moveRows = [];
+    entries.forEach((entry) => {
+      (entry.moves || []).forEach((move, index) => {
+        moveRows.push(moveRow_(entry.id, move, index + 1));
+      });
+    });
+    if (moveRows.length) {
+      movesSheet.getRange(2, 1, moveRows.length, MOVES_HEADERS.length).setValues(moveRows);
+    }
+  }
+}
+
+function ensureSheet_(ss, name, headers) {
+  const sheet = ss.getSheetByName(name) || ss.insertSheet(name);
+  const current = sheet.getRange(1, 1, 1, headers.length).getValues()[0];
+  const needsHeader = headers.some((header, index) => current[index] !== header);
+  if (needsHeader) {
+    sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
+    sheet.setFrozenRows(1);
+  }
+  return sheet;
+}
+
+function rowsAsObjects_(sheet) {
+  const values = sheet.getDataRange().getValues();
+  if (values.length < 2) return [];
+  const headers = values[0].map(String);
+  return values.slice(1).map((row) => {
+    const object = {};
+    headers.forEach((header, index) => {
+      object[header] = row[index];
+    });
+    return object;
+  });
+}
+
+function upsertJosekiRow_(sheet, entry) {
+  const values = sheet.getDataRange().getValues();
+  const foundIndex = values.findIndex((row, index) => index > 0 && String(row[0]) === String(entry.id));
+  const rowNumber = foundIndex >= 1 ? foundIndex + 1 : sheet.getLastRow() + 1;
+  sheet.getRange(rowNumber, 1, 1, JOSEKI_HEADERS.length).setValues([josekiRow_(entry)]);
+}
+
+function replaceMoveRows_(sheet, josekiId, moves) {
+  const values = sheet.getDataRange().getValues();
+  const header = values.length ? values[0] : MOVES_HEADERS;
+  const remaining = values.slice(1).filter((row) => String(row[0]) !== String(josekiId));
+  const nextRows = [header].concat(remaining);
+
+  sheet.clearContents();
+  sheet.getRange(1, 1, nextRows.length, MOVES_HEADERS.length).setValues(nextRows);
+
+  const rows = moves.map((move, index) => moveRow_(josekiId, move, index + 1));
+  if (rows.length) {
+    sheet.getRange(sheet.getLastRow() + 1, 1, rows.length, MOVES_HEADERS.length).setValues(rows);
+  }
+}
+
+function josekiRow_(entry) {
+  return [
+    String(entry.id || ""),
+    Number(entry.order) || "",
+    String(entry.title || ""),
+    String(entry.category || ""),
+    String(entry.filename || ""),
+    String(entry.path || ""),
+    Number(entry.boardSize) || 19,
+    String(entry.rootComment || ""),
+    String(entry.sgf || ""),
+    true,
+    new Date(),
+  ];
+}
+
+function moveRow_(josekiId, move, moveNo) {
+  return [
+    String(josekiId || ""),
+    moveNo,
+    String(move.color || "B"),
+    Number(move.x),
+    Number(move.y),
+    String(move.comment || ""),
+  ];
+}
+
+function verifyAdminKey_(key) {
+  const expected = PropertiesService.getScriptProperties().getProperty("ADMIN_KEY");
+  if (!expected || expected === "CHANGE_ME_TO_RANDOM_SECRET") {
+    throw new Error("Apps Script ADMIN_KEY가 설정되지 않았습니다.");
+  }
+  if (String(key || "") !== expected) {
+    throw new Error("관리자 키가 올바르지 않습니다.");
+  }
+}
+
+function output_(payload, callback) {
+  const json = JSON.stringify(payload);
+  if (callback && /^[A-Za-z_$][0-9A-Za-z_$.]*$/.test(callback)) {
+    return ContentService.createTextOutput(callback + "(" + json + ");").setMimeType(ContentService.MimeType.JAVASCRIPT);
+  }
+  return ContentService.createTextOutput(json).setMimeType(ContentService.MimeType.JSON);
+}
