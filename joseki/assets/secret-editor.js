@@ -409,7 +409,7 @@
   function requireAdminKey() {
     const key = adminKey();
     if (!key) {
-      setStatus("관리자 키를 입력하세요.");
+      setStatus("저장하려면 관리자 키를 입력하세요. 시트에서 불러오기는 키 없이 가능합니다.");
       return "";
     }
     return key;

@@ -1,5 +1,7 @@
 (function () {
   const VIEW_SIZE = 13;
+  const SHEET_ENDPOINT =
+    "https://script.google.com/macros/s/AKfycbw9zoXaKiq8YqRXnE6lqWyXh5SU3i8JO75OSQmyJisJoo6krqRz0z0A75RWH066UdUP/exec";
   const CATEGORIES = [
     { key: "star", label: "화점 정석" },
     { key: "komoku", label: "소목 정석" },
@@ -39,19 +41,81 @@
     completeOkBtn: document.getElementById("completeOkBtn"),
   };
 
-  const tree = window.JOSEKI_TREE;
-  const root = tree && tree.root;
   const cropStartX = window.JosekiSgf.BOARD_SIZE - VIEW_SIZE;
-  const lines = ((window.JOSEKI_DATA && window.JOSEKI_DATA.entries) || []).map((entry) => {
-    const oriented = window.JosekiSgf.orientEntry(entry, VIEW_SIZE);
+  let data = window.JOSEKI_DATA || { version: 1, name: "기본정석 SGF 데이터", entries: [] };
+  let root = (window.JOSEKI_TREE && window.JOSEKI_TREE.root) || buildTreeFromEntries(data.entries || []);
+  let lines = buildLines(data.entries || []);
+
+  function buildLines(entries) {
+    return (entries || []).map((entry) => {
+      const oriented = window.JosekiSgf.orientEntry(entry, VIEW_SIZE);
+      return {
+        entry,
+        title: entry.title,
+        source: entry.path || entry.filename,
+        moves: oriented.orientedMoves,
+        categoryKey: classifyFirstMove(oriented.orientedMoves[0]),
+      };
+    });
+  }
+
+  function buildTreeFromEntries(entries) {
+    const treeRoot = makeTreeNode(null);
+    for (const entry of entries || []) {
+      const oriented = window.JosekiSgf.orientEntry(entry, VIEW_SIZE);
+      addTreeLine(treeRoot, oriented.orientedMoves || [], entry.rootComment || "");
+    }
+    return treeToData(treeRoot);
+  }
+
+  function makeTreeNode(move) {
     return {
-      entry,
-      title: entry.title,
-      source: entry.path || entry.filename,
-      moves: oriented.orientedMoves,
-      categoryKey: classifyFirstMove(oriented.orientedMoves[0]),
+      move,
+      comments: new Set(),
+      terminalCount: 0,
+      children: new Map(),
     };
-  });
+  }
+
+  function treeMoveKey(move) {
+    return `${move.color}:${move.x19}:${move.y19}`;
+  }
+
+  function addTreeLine(treeRoot, moves, rootComment) {
+    let node = treeRoot;
+    for (const move of moves) {
+      if (move.x19 == null || move.y19 == null) continue;
+      const key = treeMoveKey(move);
+      if (!node.children.has(key)) {
+        node.children.set(key, makeTreeNode({ color: move.color, x19: move.x19, y19: move.y19 }));
+      }
+      node = node.children.get(key);
+      if (move.comment) node.comments.add(move.comment);
+    }
+    if (rootComment) node.comments.add(rootComment);
+    node.terminalCount += 1;
+  }
+
+  function sortedTreeChildren(node) {
+    return [...node.children.values()].sort((a, b) => {
+      if (a.move.color !== b.move.color) return a.move.color.localeCompare(b.move.color);
+      if (a.move.x19 !== b.move.x19) return a.move.x19 - b.move.x19;
+      return a.move.y19 - b.move.y19;
+    });
+  }
+
+  function treeLeafCount(node) {
+    return node.terminalCount + sortedTreeChildren(node).reduce((total, child) => total + treeLeafCount(child), 0);
+  }
+
+  function treeToData(node) {
+    return {
+      move: node.move,
+      comments: [...node.comments].sort(),
+      leafCount: Math.max(1, treeLeafCount(node)),
+      children: sortedTreeChildren(node).map(treeToData),
+    };
+  }
 
   const state = {
     mode: "tree",
@@ -62,6 +126,62 @@
     currentIndex: -1,
     memory: null,
   };
+
+  function applyJosekiData(nextData) {
+    if (!nextData || !Array.isArray(nextData.entries) || !nextData.entries.length) return;
+    data = nextData;
+    lines = buildLines(data.entries);
+    root = buildTreeFromEntries(data.entries);
+
+    if (!screens.category.classList.contains("hidden")) {
+      renderCategories();
+    } else if (!screens.list.classList.contains("hidden") && state.currentCategory) {
+      renderList(state.currentCategory);
+    } else if (!screens.study.classList.contains("hidden")) {
+      if (state.mode === "tree") {
+        state.nodes = [];
+        state.move = 0;
+      } else if (state.mode === "single" && state.currentCategory) {
+        const items = categoryLines(state.currentCategory.key);
+        const line = items[state.currentIndex];
+        if (line) state.singleLine = { ...line, number: state.currentIndex + 1 };
+      }
+      renderStudy();
+    }
+  }
+
+  function jsonpRequest(url) {
+    return new Promise((resolve, reject) => {
+      const callbackName = `__josekiStudySheetCallback_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      const script = document.createElement("script");
+      const cleanup = () => {
+        delete window[callbackName];
+        script.remove();
+      };
+      window[callbackName] = (payload) => {
+        cleanup();
+        resolve(payload);
+      };
+      script.onerror = () => {
+        cleanup();
+        reject(new Error("스프레드시트 데이터를 불러오지 못했습니다."));
+      };
+      const separator = url.includes("?") ? "&" : "?";
+      script.src = `${url}${separator}callback=${encodeURIComponent(callbackName)}&t=${Date.now()}`;
+      document.head.appendChild(script);
+    });
+  }
+
+  async function loadSheetData() {
+    try {
+      const payload = await jsonpRequest(`${SHEET_ENDPOINT}?action=data`);
+      if (payload && payload.ok && payload.data) {
+        applyJosekiData(payload.data);
+      }
+    } catch (error) {
+      console.warn(error);
+    }
+  }
 
   function showScreen(name) {
     for (const [key, screen] of Object.entries(screens)) {
@@ -439,4 +559,5 @@
   });
 
   showScreen("home");
+  loadSheetData();
 })();
