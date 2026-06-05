@@ -1,6 +1,5 @@
 const JOSEKI_SHEET = "Joseki";
 const MOVES_SHEET = "Moves";
-const ADMIN_KEY = "CHANGE_ME_TO_RANDOM_SECRET";
 
 const JOSEKI_HEADERS = [
   "id",
@@ -50,8 +49,6 @@ function doPost(e) {
         : "{}";
     const body = JSON.parse(bodyText);
     requestId = body.requestId || "";
-    verifyAdminKey_(body.adminKey);
-
     if (body.action === "saveEntry") {
       saveEntry_(body.entry);
       return frameOutput_({ ok: true, saved: 1 }, requestId);
@@ -232,15 +229,6 @@ function moveRow_(josekiId, move, moveNo) {
   ];
 }
 
-function verifyAdminKey_(key) {
-  if (!ADMIN_KEY || ADMIN_KEY === "CHANGE_ME_TO_RANDOM_SECRET") {
-    throw new Error("Apps Script ADMIN_KEY가 설정되지 않았습니다.");
-  }
-  if (String(key || "") !== ADMIN_KEY) {
-    throw new Error("관리자 키가 올바르지 않습니다.");
-  }
-}
-
 function output_(payload, callback) {
   const json = JSON.stringify(payload);
   if (callback && /^[A-Za-z_$][0-9A-Za-z_$.]*$/.test(callback)) {
@@ -252,7 +240,7 @@ function output_(payload, callback) {
 function frameOutput_(payload, requestId) {
   payload.requestId = requestId || "";
   const html = "<!doctype html><html><body><script>" +
-    "window.parent.postMessage(" + JSON.stringify(payload) + ", 'https://broryda.github.io');" +
+    "window.parent.postMessage(" + JSON.stringify(payload) + ", '*');" +
     "</script></body></html>";
-  return HtmlService.createHtmlOutput(html);
+  return HtmlService.createHtmlOutput(html).setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }

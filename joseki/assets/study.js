@@ -1,7 +1,7 @@
-(function () {
+﻿(function () {
   const VIEW_SIZE = 13;
   const SHEET_ENDPOINT =
-    "https://script.google.com/macros/s/AKfycbw9zoXaKiq8YqRXnE6lqWyXh5SU3i8JO75OSQmyJisJoo6krqRz0z0A75RWH066UdUP/exec";
+    "https://script.google.com/macros/s/AKfycbzndB43SFtON7niqqURyUHH8ZQeShB7mVSISA7EGBEYV2dhaMs4NJ6Xm1RWwupHMYvq/exec";
   const CATEGORIES = [
     { key: "star", label: "화점 정석" },
     { key: "komoku", label: "소목 정석" },

@@ -1,10 +1,9 @@
-(function () {
+﻿(function () {
   const BOARD_SIZE = 19;
   const VIEW_SIZE = 13;
   const CROP_START_X = BOARD_SIZE - VIEW_SIZE;
   const DEFAULT_SHEET_ENDPOINT =
-    "https://script.google.com/macros/s/AKfycbw9zoXaKiq8YqRXnE6lqWyXh5SU3i8JO75OSQmyJisJoo6krqRz0z0A75RWH066UdUP/exec";
-  const DEFAULT_SHEET_ADMIN_KEY = "joseki_41d61668bdb6330d87669caad00e5321fc26fd4a110d2bba";
+    "https://script.google.com/macros/s/AKfycbzndB43SFtON7niqqURyUHH8ZQeShB7mVSISA7EGBEYV2dhaMs4NJ6Xm1RWwupHMYvq/exec";
 
   const CATEGORIES = [
     { key: "all", label: "전체" },
@@ -21,7 +20,6 @@
     searchInput: document.getElementById("searchInput"),
     josekiList: document.getElementById("josekiList"),
     sheetEndpointInput: document.getElementById("sheetEndpointInput"),
-    sheetKeyInput: document.getElementById("sheetKeyInput"),
     loadSheetBtn: document.getElementById("loadSheetBtn"),
     saveEntryBtn: document.getElementById("saveEntryBtn"),
     uploadAllBtn: document.getElementById("uploadAllBtn"),
@@ -48,7 +46,6 @@
   let editMove = 0;
   const STORAGE_KEYS = {
     endpoint: "josekiSheetEndpoint",
-    adminKey: "josekiSheetAdminKey",
   };
 
   function setStatus(message) {
@@ -386,36 +383,12 @@
     return dom.sheetEndpointInput.value.trim();
   }
 
-  function adminKey() {
-    return dom.sheetKeyInput.value.trim();
-  }
-
   function saveSheetSettings() {
     localStorage.setItem(STORAGE_KEYS.endpoint, endpointUrl());
-    localStorage.setItem(STORAGE_KEYS.adminKey, adminKey());
   }
 
   function loadSheetSettings() {
     dom.sheetEndpointInput.value = localStorage.getItem(STORAGE_KEYS.endpoint) || DEFAULT_SHEET_ENDPOINT;
-    dom.sheetKeyInput.value = localStorage.getItem(STORAGE_KEYS.adminKey) || DEFAULT_SHEET_ADMIN_KEY;
-  }
-
-  function requireEndpoint() {
-    const url = endpointUrl();
-    if (!url) {
-      setStatus("Apps Script Web App URL을 입력하세요.");
-      return "";
-    }
-    return url;
-  }
-
-  function requireAdminKey() {
-    const key = adminKey();
-    if (!key) {
-      setStatus("저장하려면 관리자 키를 입력하세요. 시트에서 불러오기는 키 없이 가능합니다.");
-      return "";
-    }
-    return key;
   }
 
   function jsonpRequest(url) {
@@ -441,7 +414,11 @@
   }
 
   async function sheetGet(action, params = {}) {
-    const base = requireEndpoint();
+    const base = endpointUrl();
+    if (!base) {
+      setStatus("Apps Script Web App URL을 입력하세요.");
+      return null;
+    }
     if (!base) return null;
     saveSheetSettings();
     const query = new URLSearchParams({ action, ...params });
@@ -451,10 +428,11 @@
   }
 
   async function sheetPost(action, payload) {
-    const url = requireEndpoint();
-    if (!url) return null;
-    const key = requireAdminKey();
-    if (!key) return null;
+    const url = endpointUrl();
+    if (!url) {
+      setStatus("Apps Script Web App URL을 입력하세요.");
+      return null;
+    }
     saveSheetSettings();
 
     return new Promise((resolve, reject) => {
@@ -472,7 +450,7 @@
       const input = document.createElement("input");
       input.type = "hidden";
       input.name = "payload";
-      input.value = JSON.stringify({ requestId, action, adminKey: key, ...payload });
+      input.value = JSON.stringify({ requestId, action, ...payload });
       form.appendChild(input);
 
       const cleanup = () => {
@@ -485,7 +463,7 @@
       const timer = window.setTimeout(() => {
         cleanup();
         reject(new Error("시트 저장 응답 시간이 초과되었습니다."));
-      }, 45000);
+      }, 120000);
 
       function onMessage(event) {
         const result = event.data;
@@ -606,7 +584,6 @@
     dom.uploadAllBtn.addEventListener("click", uploadAllToSheet);
     dom.newJosekiBtn.addEventListener("click", addNewJoseki);
     dom.sheetEndpointInput.addEventListener("change", saveSheetSettings);
-    dom.sheetKeyInput.addEventListener("change", saveSheetSettings);
   }
 
   init();
