@@ -453,22 +453,53 @@
     const key = requireAdminKey();
     if (!key) return null;
     saveSheetSettings();
-    const response = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({ action, adminKey: key, ...payload }),
+
+    return new Promise((resolve, reject) => {
+      const requestId = `josekiSheetPost_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      const iframe = document.createElement("iframe");
+      iframe.name = requestId;
+      iframe.style.display = "none";
+
+      const form = document.createElement("form");
+      form.method = "POST";
+      form.action = url;
+      form.target = requestId;
+      form.style.display = "none";
+
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = "payload";
+      input.value = JSON.stringify({ requestId, action, adminKey: key, ...payload });
+      form.appendChild(input);
+
+      const cleanup = () => {
+        window.removeEventListener("message", onMessage);
+        iframe.remove();
+        form.remove();
+        window.clearTimeout(timer);
+      };
+
+      const timer = window.setTimeout(() => {
+        cleanup();
+        reject(new Error("시트 저장 응답 시간이 초과되었습니다."));
+      }, 45000);
+
+      function onMessage(event) {
+        const result = event.data;
+        if (!result || result.requestId !== requestId) return;
+        cleanup();
+        if (result.ok === false) {
+          reject(new Error(result.error || "시트 저장 실패"));
+        } else {
+          resolve(result);
+        }
+      }
+
+      window.addEventListener("message", onMessage);
+      document.body.appendChild(iframe);
+      document.body.appendChild(form);
+      form.submit();
     });
-    const text = await response.text();
-    let result = null;
-    try {
-      result = text ? JSON.parse(text) : null;
-    } catch {
-      result = { ok: false, error: text || "Apps Script 응답을 해석하지 못했습니다." };
-    }
-    if (!response.ok || !result || result.ok === false) {
-      throw new Error((result && result.error) || response.statusText || "시트 저장 실패");
-    }
-    return result;
   }
 
   async function loadFromSheet() {

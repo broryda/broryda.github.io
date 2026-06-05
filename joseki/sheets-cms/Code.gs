@@ -1,5 +1,6 @@
 const JOSEKI_SHEET = "Joseki";
 const MOVES_SHEET = "Moves";
+const ADMIN_KEY = "CHANGE_ME_TO_RANDOM_SECRET";
 
 const JOSEKI_HEADERS = [
   "id",
@@ -23,11 +24,6 @@ function setupJosekiSheets() {
   ensureSheet_(ss, MOVES_SHEET, MOVES_HEADERS);
 }
 
-function setAdminKey() {
-  // 원하는 관리자 키로 바꾼 뒤 Apps Script 편집기에서 이 함수를 한 번 실행하세요.
-  PropertiesService.getScriptProperties().setProperty("ADMIN_KEY", "CHANGE_ME_TO_RANDOM_SECRET");
-}
-
 function doGet(e) {
   try {
     setupJosekiSheets();
@@ -44,25 +40,31 @@ function doGet(e) {
 function doPost(e) {
   const lock = LockService.getScriptLock();
   lock.waitLock(30000);
+  let requestId = "";
   try {
     setupJosekiSheets();
-    const bodyText = e && e.postData && e.postData.contents ? e.postData.contents : "{}";
+    const bodyText = e && e.parameter && e.parameter.payload
+      ? e.parameter.payload
+      : e && e.postData && e.postData.contents
+        ? e.postData.contents
+        : "{}";
     const body = JSON.parse(bodyText);
+    requestId = body.requestId || "";
     verifyAdminKey_(body.adminKey);
 
     if (body.action === "saveEntry") {
       saveEntry_(body.entry);
-      return output_({ ok: true, saved: 1 });
+      return frameOutput_({ ok: true, saved: 1 }, requestId);
     }
 
     if (body.action === "replaceAll") {
       replaceAll_(body.data);
-      return output_({ ok: true, saved: body.data && body.data.entries ? body.data.entries.length : 0 });
+      return frameOutput_({ ok: true, saved: body.data && body.data.entries ? body.data.entries.length : 0 }, requestId);
     }
 
     throw new Error("Unknown action: " + body.action);
   } catch (error) {
-    return output_({ ok: false, error: String(error && error.message ? error.message : error) });
+    return frameOutput_({ ok: false, error: String(error && error.message ? error.message : error) }, requestId);
   } finally {
     lock.releaseLock();
   }
@@ -231,11 +233,10 @@ function moveRow_(josekiId, move, moveNo) {
 }
 
 function verifyAdminKey_(key) {
-  const expected = PropertiesService.getScriptProperties().getProperty("ADMIN_KEY");
-  if (!expected || expected === "CHANGE_ME_TO_RANDOM_SECRET") {
+  if (!ADMIN_KEY || ADMIN_KEY === "CHANGE_ME_TO_RANDOM_SECRET") {
     throw new Error("Apps Script ADMIN_KEY가 설정되지 않았습니다.");
   }
-  if (String(key || "") !== expected) {
+  if (String(key || "") !== ADMIN_KEY) {
     throw new Error("관리자 키가 올바르지 않습니다.");
   }
 }
@@ -246,4 +247,12 @@ function output_(payload, callback) {
     return ContentService.createTextOutput(callback + "(" + json + ");").setMimeType(ContentService.MimeType.JAVASCRIPT);
   }
   return ContentService.createTextOutput(json).setMimeType(ContentService.MimeType.JSON);
+}
+
+function frameOutput_(payload, requestId) {
+  payload.requestId = requestId || "";
+  const html = "<!doctype html><html><body><script>" +
+    "window.parent.postMessage(" + JSON.stringify(payload) + ", 'https://broryda.github.io');" +
+    "</script></body></html>";
+  return HtmlService.createHtmlOutput(html);
 }

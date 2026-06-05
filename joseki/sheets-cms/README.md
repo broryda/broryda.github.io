@@ -13,14 +13,13 @@
 1. Google Sheets에서 새 스프레드시트를 만듭니다.
 2. `확장 프로그램 > Apps Script`를 엽니다.
 3. `Code.gs` 내용을 붙여넣습니다.
-4. `setAdminKey()` 함수 안의 `CHANGE_ME_TO_RANDOM_SECRET`을 원하는 긴 랜덤 문자열로 바꿉니다.
+4. `ADMIN_KEY`의 `CHANGE_ME_TO_RANDOM_SECRET`을 원하는 긴 랜덤 문자열로 바꿉니다.
 5. Apps Script에서 `setupJosekiSheets()`를 한 번 실행해 `Joseki`, `Moves` 시트를 만듭니다.
-6. Apps Script에서 `setAdminKey()`를 한 번 실행합니다.
-7. `배포 > 새 배포 > 웹 앱`으로 배포합니다.
+6. `배포 > 새 배포 > 웹 앱`으로 배포합니다.
    - 실행 사용자: 나
    - 액세스 권한: 링크가 있는 모든 사용자 또는 모든 사용자
-8. 배포된 `/exec` URL과 관리자 키를 secret 페이지에 입력합니다.
-9. 최초 1회 `전체 업로드`를 눌러 현재 내장 데이터를 스프레드시트로 이관합니다.
+7. 배포된 `/exec` URL과 관리자 키를 secret 페이지에 입력합니다.
+8. 최초 1회 `전체 업로드`를 눌러 현재 내장 데이터를 스프레드시트로 이관합니다.
 
 ## 시트 구조
 
