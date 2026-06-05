@@ -508,18 +508,25 @@
     return waitForSheetWrite(action, payload);
   }
 
+  function applySheetData(sheetData, preferredId = "") {
+    data = sheetData || { version: 1, name: "Google Sheets 정석 데이터", skipped: [], entries: [] };
+    entries = data.entries || [];
+    const preferredIndex = preferredId
+      ? entries.findIndex((entry) => String(entry.id || "") === String(preferredId))
+      : -1;
+    activeIndex = preferredIndex >= 0 ? preferredIndex : entries.length ? 0 : -1;
+    editMove = 0;
+    renderAll();
+  }
+
   async function loadFromSheet() {
     dom.loadSheetBtn.disabled = true;
     try {
       setStatus("스프레드시트에서 정석 데이터를 불러오는 중...");
       const payload = await sheetGet("data");
       if (!payload) return;
-      data = payload.data || { version: 1, name: "Google Sheets 정석 데이터", skipped: [], entries: [] };
-      entries = data.entries || [];
-      activeIndex = entries.length ? 0 : -1;
-      editMove = 0;
+      applySheetData(payload.data);
       setStatus(`시트에서 ${entries.length}개 정석을 불러왔습니다.`);
-      renderAll();
     } catch (error) {
       setStatus(`시트 불러오기 실패: ${error.message}`);
     } finally {
@@ -535,8 +542,9 @@
     try {
       const clean = cleanEntry(entry);
       setStatus(`${clean.order || activeIndex + 1}번 정석을 스프레드시트에 저장하는 중...`);
-      await sheetPost("saveEntry", { entry: clean });
-      setStatus(`${clean.order || activeIndex + 1}번 정석을 스프레드시트에 저장했습니다.`);
+      const payload = await sheetPost("saveEntry", { entry: clean });
+      applySheetData(payload && payload.data, clean.id);
+      setStatus(`${clean.order || activeIndex + 1}번 정석을 저장하고 시트 최신 데이터 ${entries.length}개를 동기화했습니다.`);
     } catch (error) {
       setStatus(`시트 저장 실패: ${error.message}`);
     } finally {
@@ -550,8 +558,10 @@
     try {
       const cleanData = makeCleanData();
       setStatus(`전체 ${cleanData.entries.length}개 정석을 스프레드시트에 업로드하는 중...`);
-      await sheetPost("replaceAll", { data: cleanData });
-      setStatus(`전체 ${cleanData.entries.length}개 정석을 스프레드시트에 업로드했습니다.`);
+      const currentId = activeEntry() && activeEntry().id;
+      const payload = await sheetPost("replaceAll", { data: cleanData });
+      applySheetData(payload && payload.data, currentId);
+      setStatus(`전체 ${cleanData.entries.length}개 정석을 업로드하고 시트 최신 데이터 ${entries.length}개를 동기화했습니다.`);
     } catch (error) {
       setStatus(`전체 업로드 실패: ${error.message}`);
     } finally {
