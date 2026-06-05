@@ -40,6 +40,11 @@ function doGet(e) {
       replaceAll_(body.data || body);
       return output_({ ok: true, saved: body.data && body.data.entries ? body.data.entries.length : 0 }, e.parameter.callback);
     }
+    if (action === "deleteentry") {
+      const body = JSON.parse(e.parameter.payload || "{}");
+      deleteEntry_(body.id || (body.entry && body.entry.id));
+      return output_({ ok: true, deleted: 1 }, e.parameter.callback);
+    }
     return output_({ ok: true, data: readData_() }, e.parameter.callback);
   } catch (error) {
     return output_({ ok: false, error: String(error && error.message ? error.message : error) }, e && e.parameter && e.parameter.callback);
@@ -67,6 +72,11 @@ function doPost(e) {
     if (body.action === "replaceAll") {
       replaceAll_(body.data);
       return frameOutput_({ ok: true, saved: body.data && body.data.entries ? body.data.entries.length : 0 }, requestId);
+    }
+
+    if (body.action === "deleteEntry") {
+      deleteEntry_(body.id || (body.entry && body.entry.id));
+      return frameOutput_({ ok: true, deleted: 1 }, requestId);
     }
 
     throw new Error("Unknown action: " + body.action);
@@ -141,6 +151,16 @@ function saveEntry_(entry) {
   replaceMoveRows_(movesSheet, entry.id, entry.moves || []);
 }
 
+function deleteEntry_(id) {
+  if (!id) throw new Error("entry id is required");
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const josekiSheet = ss.getSheetByName(JOSEKI_SHEET);
+  const movesSheet = ss.getSheetByName(MOVES_SHEET);
+
+  deleteJosekiRow_(josekiSheet, id);
+  replaceMoveRows_(movesSheet, id, []);
+}
+
 function replaceAll_(data) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const josekiSheet = ss.getSheetByName(JOSEKI_SHEET);
@@ -195,6 +215,14 @@ function upsertJosekiRow_(sheet, entry) {
   const foundIndex = values.findIndex((row, index) => index > 0 && String(row[0]) === String(entry.id));
   const rowNumber = foundIndex >= 1 ? foundIndex + 1 : sheet.getLastRow() + 1;
   sheet.getRange(rowNumber, 1, 1, JOSEKI_HEADERS.length).setValues([josekiRow_(entry)]);
+}
+
+function deleteJosekiRow_(sheet, id) {
+  const values = sheet.getDataRange().getValues();
+  const foundIndex = values.findIndex((row, index) => index > 0 && String(row[0]) === String(id));
+  if (foundIndex >= 1) {
+    sheet.deleteRow(foundIndex + 1);
+  }
 }
 
 function replaceMoveRows_(sheet, josekiId, moves) {

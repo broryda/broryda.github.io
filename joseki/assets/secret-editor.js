@@ -24,6 +24,7 @@
     saveEntryBtn: document.getElementById("saveEntryBtn"),
     uploadAllBtn: document.getElementById("uploadAllBtn"),
     newJosekiBtn: document.getElementById("newJosekiBtn"),
+    deleteJosekiBtn: document.getElementById("deleteJosekiBtn"),
     statusBox: document.getElementById("statusBox"),
     editorTitle: document.getElementById("editorTitle"),
     editorMeta: document.getElementById("editorMeta"),
@@ -477,6 +478,10 @@
       return expectedEntries.every((expected) => entriesMatch(sheetById.get(String(expected.id || "")), expected));
     }
 
+    if (action === "deleteEntry") {
+      return !sheetEntries.some((entry) => String(entry.id || "") === String(payload.id || ""));
+    }
+
     return false;
   }
 
@@ -508,13 +513,13 @@
     return waitForSheetWrite(action, payload);
   }
 
-  function applySheetData(sheetData, preferredId = "") {
+  function applySheetData(sheetData, preferredId = "", fallbackIndex = 0) {
     data = sheetData || { version: 1, name: "Google Sheets 정석 데이터", skipped: [], entries: [] };
     entries = data.entries || [];
     const preferredIndex = preferredId
       ? entries.findIndex((entry) => String(entry.id || "") === String(preferredId))
       : -1;
-    activeIndex = preferredIndex >= 0 ? preferredIndex : entries.length ? 0 : -1;
+    activeIndex = preferredIndex >= 0 ? preferredIndex : entries.length ? Math.min(Math.max(fallbackIndex, 0), entries.length - 1) : -1;
     editMove = 0;
     renderAll();
   }
@@ -569,6 +574,26 @@
     }
   }
 
+  async function deleteCurrentFromSheet() {
+    const entry = activeEntry();
+    if (!entry) return;
+    const label = `${entry.order || activeIndex + 1}번 정석`;
+    if (!window.confirm(`${label}을 시트에서 삭제할까요? 삭제 후에는 되돌릴 수 없습니다.`)) return;
+
+    const deleteIndex = activeIndex;
+    dom.deleteJosekiBtn.disabled = true;
+    try {
+      setStatus(`${label}을 시트에서 삭제하는 중...`);
+      const payload = await sheetPost("deleteEntry", { id: entry.id });
+      applySheetData(payload && payload.data, "", deleteIndex);
+      setStatus(`${label}을 삭제하고 시트 최신 데이터 ${entries.length}개를 동기화했습니다.`);
+    } catch (error) {
+      setStatus(`정석 삭제 실패: ${error.message}`);
+    } finally {
+      dom.deleteJosekiBtn.disabled = false;
+    }
+  }
+
   function nextOrder() {
     return entries.reduce((max, entry) => Math.max(max, Number(entry.order) || 0), 0) + 1;
   }
@@ -618,6 +643,7 @@
     dom.saveEntryBtn.addEventListener("click", saveCurrentToSheet);
     dom.uploadAllBtn.addEventListener("click", uploadAllToSheet);
     dom.newJosekiBtn.addEventListener("click", addNewJoseki);
+    dom.deleteJosekiBtn.addEventListener("click", deleteCurrentFromSheet);
     dom.sheetEndpointInput.addEventListener("change", saveSheetSettings);
     loadFromSheet();
   }
