@@ -619,6 +619,7 @@
     dom.uploadAllBtn.addEventListener("click", uploadAllToSheet);
     dom.newJosekiBtn.addEventListener("click", addNewJoseki);
     dom.sheetEndpointInput.addEventListener("change", saveSheetSettings);
+    loadFromSheet();
   }
 
   init();
