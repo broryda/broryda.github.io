@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-06T09:14:32.264Z",
+  "updatedAt": "2026-06-06T09:15:17.286Z",
   "entries": [
     {
       "nickname": "npa",
@@ -393,9 +393,9 @@
       "solvedCount": 1343,
       "elo": 908,
       "streakCurrent": 4,
+      "createdAt": "2026-06-06T09:14:31.519Z",
       "deviceId": "dev_mp0pkz5o_kxh6mb5f",
-      "lastSubmittedAt": "2026-06-06T09:14:31.519Z",
-      "createdAt": "2026-06-06T09:14:31.519Z"
+      "lastSubmittedAt": "2026-06-06T09:14:31.519Z"
     },
     {
       "nickname": "전국초등학교 블랙리스트 김준영",
@@ -434,15 +434,6 @@
       "lastSubmittedAt": "2026-06-05T16:12:48.416Z"
     },
     {
-      "nickname": "바벨",
-      "solvedCount": 1402,
-      "elo": 836,
-      "streakCurrent": 11,
-      "createdAt": "2026-06-06T09:14:14.481Z",
-      "deviceId": "dev_mp3dfqza_azw6oloz",
-      "lastSubmittedAt": "2026-06-06T09:14:14.481Z"
-    },
-    {
       "nickname": "매미킴",
       "solvedCount": 370,
       "elo": 834,
@@ -450,6 +441,15 @@
       "createdAt": "2026-06-04T01:00:43.235Z",
       "deviceId": "dev_mpnznb9l_c6p5fd6h",
       "lastSubmittedAt": "2026-06-04T01:00:43.235Z"
+    },
+    {
+      "nickname": "바벨",
+      "solvedCount": 1403,
+      "elo": 822,
+      "streakCurrent": 11,
+      "deviceId": "dev_mp3dfqza_azw6oloz",
+      "lastSubmittedAt": "2026-06-06T09:15:16.679Z",
+      "createdAt": "2026-06-06T09:15:16.679Z"
     },
     {
       "nickname": "뚱보아키",
