@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-06T12:21:16.947Z",
+  "updatedAt": "2026-06-06T12:21:25.445Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -335,6 +335,15 @@
       "lastSubmittedAt": "2026-05-31T14:35:59.520Z"
     },
     {
+      "nickname": "Uubu",
+      "solvedCount": 1417,
+      "elo": 969,
+      "streakCurrent": 4,
+      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
+      "lastSubmittedAt": "2026-06-06T12:21:24.729Z",
+      "createdAt": "2026-06-06T12:21:24.729Z"
+    },
+    {
       "nickname": "Lig",
       "solvedCount": 406,
       "elo": 967,
@@ -342,15 +351,6 @@
       "createdAt": "2026-06-03T04:12:45.591Z",
       "deviceId": "dev_mogj2aoo_6pvi0fia",
       "lastSubmittedAt": "2026-06-03T04:12:45.591Z"
-    },
-    {
-      "nickname": "Uubu",
-      "solvedCount": 1416,
-      "elo": 961,
-      "streakCurrent": 4,
-      "createdAt": "2026-06-06T12:21:11.732Z",
-      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
-      "lastSubmittedAt": "2026-06-06T12:21:11.732Z"
     },
     {
       "nickname": "몽키",
@@ -816,9 +816,9 @@
       "solvedCount": 208,
       "elo": 300,
       "streakCurrent": 12,
+      "createdAt": "2026-06-06T12:21:12.250Z",
       "deviceId": "dev_mp26qedc_vf22lvcm",
-      "lastSubmittedAt": "2026-06-06T12:21:12.250Z",
-      "createdAt": "2026-06-06T12:21:12.250Z"
+      "lastSubmittedAt": "2026-06-06T12:21:12.250Z"
     },
     {
       "nickname": "동작현수",
