@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08T14:58:35.540Z",
+  "updatedAt": "2026-06-08T14:58:51.627Z",
   "entries": [
     {
       "nickname": "npa",
@@ -24,9 +24,9 @@
       "solvedCount": 4747,
       "elo": 2067,
       "streakCurrent": 34,
+      "createdAt": "2026-06-08T14:58:34.770Z",
       "deviceId": "dev_moif1xk6_8f9bf70c",
-      "lastSubmittedAt": "2026-06-08T14:58:34.770Z",
-      "createdAt": "2026-06-08T14:58:34.770Z"
+      "lastSubmittedAt": "2026-06-08T14:58:34.770Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -119,15 +119,6 @@
       "lastSubmittedAt": "2026-06-05T06:48:01.535Z"
     },
     {
-      "nickname": "Vertice",
-      "solvedCount": 2631,
-      "elo": 1711,
-      "streakCurrent": 15,
-      "createdAt": "2026-06-08T14:58:23.404Z",
-      "deviceId": "dev_mpl8a8ax_yvxkjk7g",
-      "lastSubmittedAt": "2026-06-08T14:58:23.404Z"
-    },
-    {
       "nickname": "모세00",
       "solvedCount": 539,
       "elo": 1708,
@@ -135,6 +126,15 @@
       "createdAt": "2026-06-08T04:44:16.084Z",
       "deviceId": "dev_mow1oo9g_v7kfp31r",
       "lastSubmittedAt": "2026-06-08T04:44:16.084Z"
+    },
+    {
+      "nickname": "Vertice",
+      "solvedCount": 2632,
+      "elo": 1704,
+      "streakCurrent": 15,
+      "deviceId": "dev_mpl8a8ax_yvxkjk7g",
+      "lastSubmittedAt": "2026-06-08T14:58:51.560Z",
+      "createdAt": "2026-06-08T14:58:51.560Z"
     },
     {
       "nickname": "인형놀이",
