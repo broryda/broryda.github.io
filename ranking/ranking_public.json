@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08T08:45:41.514Z",
+  "updatedAt": "2026-06-08T08:45:44.306Z",
   "entries": [
     {
       "nickname": "npa",
@@ -9,18 +9,18 @@
       "createdAt": "2026-06-08T06:36:34.507Z"
     },
     {
-      "nickname": "박재동",
-      "solvedCount": 4712,
-      "elo": 2135,
-      "streakCurrent": 34,
-      "createdAt": "2026-06-08T08:44:58.343Z"
-    },
-    {
       "nickname": "윤영우",
       "solvedCount": 1160,
       "elo": 2132,
       "streakCurrent": 4,
       "createdAt": "2026-06-08T08:36:52.555Z"
+    },
+    {
+      "nickname": "박재동",
+      "solvedCount": 4712,
+      "elo": 2127,
+      "streakCurrent": 34,
+      "createdAt": "2026-06-08T08:45:37.958Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -105,13 +105,6 @@
       "elo": 1708,
       "streakCurrent": 1,
       "createdAt": "2026-06-08T04:44:16.084Z"
-    },
-    {
-      "nickname": "인형놀이",
-      "solvedCount": 832,
-      "elo": 1705,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-07T08:09:32.156Z"
     },
     {
       "nickname": "쉬바이누",
@@ -819,6 +812,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-07T15:11:43.328Z"
+    },
+    {
+      "nickname": "인형놀이",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-08T08:45:42.936Z"
     },
     {
       "nickname": "사용자",
