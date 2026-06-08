@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08T05:07:45.413Z",
+  "updatedAt": "2026-06-08T05:20:50.274Z",
   "entries": [
     {
       "nickname": "npa",
@@ -27,15 +27,6 @@
       "createdAt": "2026-06-08T02:02:57.256Z",
       "deviceId": "dev_moif1xk6_8f9bf70c",
       "lastSubmittedAt": "2026-06-08T02:02:57.256Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 936,
-      "elo": 2062,
-      "streakCurrent": 3,
-      "createdAt": "2026-06-08T04:32:05.147Z",
-      "deviceId": "dev_mp9autn7_tr3eb4pq",
-      "lastSubmittedAt": "2026-06-08T04:32:05.147Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -483,9 +474,9 @@
       "solvedCount": 234,
       "elo": 735,
       "streakCurrent": 1,
+      "createdAt": "2026-06-08T05:07:44.973Z",
       "deviceId": "dev_mpqu3da9_7v41t1fe",
-      "lastSubmittedAt": "2026-06-08T05:07:44.973Z",
-      "createdAt": "2026-06-08T05:07:44.973Z"
+      "lastSubmittedAt": "2026-06-08T05:07:44.973Z"
     },
     {
       "nickname": "5살 연하 여자 꼬신 김준영",
@@ -1053,6 +1044,15 @@
       "createdAt": "2026-06-07T15:11:43.328Z",
       "deviceId": "dev_mpxfcet5_w59exc6k",
       "lastSubmittedAt": "2026-06-07T15:11:43.328Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp9autn7_tr3eb4pq",
+      "lastSubmittedAt": "2026-06-08T05:20:49.680Z",
+      "createdAt": "2026-06-08T05:20:49.680Z"
     },
     {
       "nickname": "사용자",
