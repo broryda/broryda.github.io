@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08T07:54:54.319Z",
+  "updatedAt": "2026-06-08T07:55:28.782Z",
   "entries": [
     {
       "nickname": "npa",
@@ -162,15 +162,6 @@
       "createdAt": "2026-06-08T04:07:33.448Z",
       "deviceId": "dev_mogc30dq_pqthw4ut",
       "lastSubmittedAt": "2026-06-08T04:07:33.448Z"
-    },
-    {
-      "nickname": "무궁화",
-      "solvedCount": 4279,
-      "elo": 1530,
-      "streakCurrent": 35,
-      "createdAt": "2026-06-07T03:35:06.792Z",
-      "deviceId": "dev_mojhmlgt_ug0gyb7s",
-      "lastSubmittedAt": "2026-06-07T03:35:06.792Z"
     },
     {
       "nickname": "슝",
@@ -483,9 +474,9 @@
       "solvedCount": 242,
       "elo": 747,
       "streakCurrent": 1,
+      "createdAt": "2026-06-08T07:54:53.849Z",
       "deviceId": "dev_mpqu3da9_7v41t1fe",
-      "lastSubmittedAt": "2026-06-08T07:54:53.849Z",
-      "createdAt": "2026-06-08T07:54:53.849Z"
+      "lastSubmittedAt": "2026-06-08T07:54:53.849Z"
     },
     {
       "nickname": "5살 연하 여자 꼬신 김준영",
@@ -1053,6 +1044,15 @@
       "createdAt": "2026-06-07T15:11:43.328Z",
       "deviceId": "dev_mpxfcet5_w59exc6k",
       "lastSubmittedAt": "2026-06-07T15:11:43.328Z"
+    },
+    {
+      "nickname": "무궁화",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mojhmlgt_ug0gyb7s",
+      "lastSubmittedAt": "2026-06-08T07:55:27.401Z",
+      "createdAt": "2026-06-08T07:55:27.401Z"
     },
     {
       "nickname": "사용자",
