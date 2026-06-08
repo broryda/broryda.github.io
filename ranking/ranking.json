@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08T07:28:57.667Z",
+  "updatedAt": "2026-06-08T07:29:02.844Z",
   "entries": [
     {
       "nickname": "npa",
@@ -45,15 +45,6 @@
       "createdAt": "2026-06-08T07:01:01.519Z",
       "deviceId": "dev_mp9autn7_tr3eb4pq",
       "lastSubmittedAt": "2026-06-08T07:01:01.519Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 2801,
-      "elo": 1937,
-      "streakCurrent": 25,
-      "createdAt": "2026-06-08T07:22:12.622Z",
-      "deviceId": "dev_mogkdgdp_jlbz3my7",
-      "lastSubmittedAt": "2026-06-08T07:22:12.622Z"
     },
     {
       "nickname": "신현석",
@@ -420,9 +411,9 @@
       "solvedCount": 1490,
       "elo": 903,
       "streakCurrent": 6,
+      "createdAt": "2026-06-08T07:28:57.293Z",
       "deviceId": "dev_mp0pkz5o_kxh6mb5f",
-      "lastSubmittedAt": "2026-06-08T07:28:57.293Z",
-      "createdAt": "2026-06-08T07:28:57.293Z"
+      "lastSubmittedAt": "2026-06-08T07:28:57.293Z"
     },
     {
       "nickname": "곽지섭그는감히전설이라할수있다",
@@ -1053,6 +1044,15 @@
       "createdAt": "2026-06-07T15:11:43.328Z",
       "deviceId": "dev_mpxfcet5_w59exc6k",
       "lastSubmittedAt": "2026-06-07T15:11:43.328Z"
+    },
+    {
+      "nickname": "김근영",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mogkdgdp_jlbz3my7",
+      "lastSubmittedAt": "2026-06-08T07:29:01.531Z",
+      "createdAt": "2026-06-08T07:29:01.531Z"
     },
     {
       "nickname": "사용자",
