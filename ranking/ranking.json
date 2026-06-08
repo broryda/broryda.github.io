@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08T08:03:41.440Z",
+  "updatedAt": "2026-06-08T08:03:41.430Z",
   "entries": [
     {
       "nickname": "npa",
@@ -375,9 +375,9 @@
       "solvedCount": 1558,
       "elo": 959,
       "streakCurrent": 6,
+      "createdAt": "2026-06-08T08:03:41.072Z",
       "deviceId": "dev_mp0pkz5o_kxh6mb5f",
-      "lastSubmittedAt": "2026-06-08T08:03:41.072Z",
-      "createdAt": "2026-06-08T08:03:41.072Z"
+      "lastSubmittedAt": "2026-06-08T08:03:41.072Z"
     },
     {
       "nickname": "몽키",
@@ -470,15 +470,6 @@
       "lastSubmittedAt": "2026-06-07T22:27:15.222Z"
     },
     {
-      "nickname": "라면땅",
-      "solvedCount": 274,
-      "elo": 780,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-08T08:03:20.252Z",
-      "deviceId": "dev_mpqu3da9_7v41t1fe",
-      "lastSubmittedAt": "2026-06-08T08:03:20.252Z"
-    },
-    {
       "nickname": "윤희진",
       "solvedCount": 465,
       "elo": 778,
@@ -486,6 +477,15 @@
       "createdAt": "2026-06-02T01:55:14.748Z",
       "deviceId": "dev_mow6woft_nhmxpib4",
       "lastSubmittedAt": "2026-06-02T01:55:14.748Z"
+    },
+    {
+      "nickname": "라면땅",
+      "solvedCount": 274,
+      "elo": 771,
+      "streakCurrent": 1,
+      "deviceId": "dev_mpqu3da9_7v41t1fe",
+      "lastSubmittedAt": "2026-06-08T08:03:41.014Z",
+      "createdAt": "2026-06-08T08:03:41.014Z"
     },
     {
       "nickname": "5살 연하 여자 꼬신 김준영",
