@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-09T07:21:07.224Z",
+  "updatedAt": "2026-06-09T07:21:08.924Z",
   "entries": [
     {
       "nickname": "npa",
@@ -182,6 +182,15 @@
       "lastSubmittedAt": "2026-06-09T00:37:17.590Z"
     },
     {
+      "nickname": "블루웨이브",
+      "solvedCount": 137,
+      "elo": 1415,
+      "streakCurrent": 1,
+      "deviceId": "dev_mq6a708m_2stc6flq",
+      "lastSubmittedAt": "2026-06-09T07:21:08.422Z",
+      "createdAt": "2026-06-09T07:21:08.422Z"
+    },
+    {
       "nickname": "경영여신 송채린",
       "solvedCount": 1356,
       "elo": 1404,
@@ -189,15 +198,6 @@
       "createdAt": "2026-06-07T07:54:24.733Z",
       "deviceId": "dev_mozr4rnn_x5hn00v8",
       "lastSubmittedAt": "2026-06-07T07:54:24.733Z"
-    },
-    {
-      "nickname": "블루웨이브",
-      "solvedCount": 136,
-      "elo": 1400,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-09T07:20:58.900Z",
-      "deviceId": "dev_mq6a708m_2stc6flq",
-      "lastSubmittedAt": "2026-06-09T07:20:58.900Z"
     },
     {
       "nickname": "개구리바둑",
@@ -222,9 +222,9 @@
       "solvedCount": 3472,
       "elo": 1327,
       "streakCurrent": 2,
+      "createdAt": "2026-06-09T07:21:06.749Z",
       "deviceId": "dev_moh2gqb6_zo5kbnl0",
-      "lastSubmittedAt": "2026-06-09T07:21:06.749Z",
-      "createdAt": "2026-06-09T07:21:06.749Z"
+      "lastSubmittedAt": "2026-06-09T07:21:06.749Z"
     },
     {
       "nickname": "강현서",
