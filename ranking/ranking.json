@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-09T10:18:13.165Z",
+  "updatedAt": "2026-06-09T10:21:03.625Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -144,15 +144,6 @@
       "createdAt": "2026-06-05T01:30:24.724Z",
       "deviceId": "dev_mojd8zh0_7nhvtzip",
       "lastSubmittedAt": "2026-06-05T01:30:24.724Z"
-    },
-    {
-      "nickname": "무궁화",
-      "solvedCount": 4480,
-      "elo": 1530,
-      "streakCurrent": 37,
-      "createdAt": "2026-06-09T10:16:01.516Z",
-      "deviceId": "dev_mojhmlgt_ug0gyb7s",
-      "lastSubmittedAt": "2026-06-09T10:16:01.516Z"
     },
     {
       "nickname": "그대란우주",
@@ -456,9 +447,9 @@
       "solvedCount": 2153,
       "elo": 814,
       "streakCurrent": 6,
+      "createdAt": "2026-06-09T10:18:12.050Z",
       "deviceId": "dev_mps219e0_nnyxqlmm",
-      "lastSubmittedAt": "2026-06-09T10:18:12.050Z",
-      "createdAt": "2026-06-09T10:18:12.050Z"
+      "lastSubmittedAt": "2026-06-09T10:18:12.050Z"
     },
     {
       "nickname": "타이어 갈기 장인",
@@ -1017,6 +1008,15 @@
       "createdAt": "2026-06-09T08:12:05.637Z",
       "deviceId": "dev_mq6cqm6d_xk20vgse",
       "lastSubmittedAt": "2026-06-09T08:12:05.637Z"
+    },
+    {
+      "nickname": "무궁화",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mojhmlgt_ug0gyb7s",
+      "lastSubmittedAt": "2026-06-09T10:21:01.981Z",
+      "createdAt": "2026-06-09T10:21:01.981Z"
     },
     {
       "nickname": "해솔♡",
