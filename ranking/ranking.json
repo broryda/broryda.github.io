@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T04:01:24.570Z",
+  "updatedAt": "2026-06-10T04:01:24.851Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -29,15 +29,6 @@
       "lastSubmittedAt": "2026-06-10T03:53:10.857Z"
     },
     {
-      "nickname": "양동일",
-      "solvedCount": 2793,
-      "elo": 2016,
-      "streakCurrent": 6,
-      "deviceId": "dev_mpch22ug_lujshal2",
-      "lastSubmittedAt": "2026-06-10T04:01:24.141Z",
-      "createdAt": "2026-06-10T04:01:24.141Z"
-    },
-    {
       "nickname": "바둑대고수",
       "solvedCount": 195,
       "elo": 2016,
@@ -45,6 +36,15 @@
       "createdAt": "2026-06-10T03:57:27.424Z",
       "deviceId": "dev_mq6kydnz_sb2ollts",
       "lastSubmittedAt": "2026-06-10T03:57:27.424Z"
+    },
+    {
+      "nickname": "양동일",
+      "solvedCount": 2793,
+      "elo": 2008,
+      "streakCurrent": 6,
+      "deviceId": "dev_mpch22ug_lujshal2",
+      "lastSubmittedAt": "2026-06-10T04:01:24.494Z",
+      "createdAt": "2026-06-10T04:01:24.494Z"
     },
     {
       "nickname": "신현석",
