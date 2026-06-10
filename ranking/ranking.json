@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T04:01:56.143Z",
+  "updatedAt": "2026-06-10T04:04:28.121Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -42,9 +42,9 @@
       "solvedCount": 2794,
       "elo": 2001,
       "streakCurrent": 6,
+      "createdAt": "2026-06-10T04:01:55.475Z",
       "deviceId": "dev_mpch22ug_lujshal2",
-      "lastSubmittedAt": "2026-06-10T04:01:55.475Z",
-      "createdAt": "2026-06-10T04:01:55.475Z"
+      "lastSubmittedAt": "2026-06-10T04:01:55.475Z"
     },
     {
       "nickname": "신현석",
@@ -153,15 +153,6 @@
       "createdAt": "2026-06-09T22:46:21.660Z",
       "deviceId": "dev_mpl8a8ax_yvxkjk7g",
       "lastSubmittedAt": "2026-06-09T22:46:21.660Z"
-    },
-    {
-      "nickname": "블루웨이브",
-      "solvedCount": 226,
-      "elo": 1648,
-      "streakCurrent": 2,
-      "createdAt": "2026-06-09T16:32:40.143Z",
-      "deviceId": "dev_mq6a708m_2stc6flq",
-      "lastSubmittedAt": "2026-06-09T16:32:40.143Z"
     },
     {
       "nickname": "무궁화",
@@ -1026,6 +1017,15 @@
       "createdAt": "2026-06-10T02:49:51.879Z",
       "deviceId": "dev_mq7h0i6t_5eybhaai",
       "lastSubmittedAt": "2026-06-10T02:49:51.879Z"
+    },
+    {
+      "nickname": "블루웨이브",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mq6a708m_2stc6flq",
+      "lastSubmittedAt": "2026-06-10T04:04:26.317Z",
+      "createdAt": "2026-06-10T04:04:26.317Z"
     },
     {
       "nickname": "해솔♡",
