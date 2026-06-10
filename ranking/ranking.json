@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T01:53:29.141Z",
+  "updatedAt": "2026-06-10T01:54:06.945Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -36,15 +36,6 @@
       "createdAt": "2026-06-10T00:47:32.176Z",
       "deviceId": "dev_mq6kydnz_sb2ollts",
       "lastSubmittedAt": "2026-06-10T00:47:32.176Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 989,
-      "elo": 1999,
-      "streakCurrent": 5,
-      "createdAt": "2026-06-10T01:29:03.944Z",
-      "deviceId": "dev_mp9autn7_tr3eb4pq",
-      "lastSubmittedAt": "2026-06-10T01:29:03.944Z"
     },
     {
       "nickname": "양동일",
@@ -357,9 +348,9 @@
       "solvedCount": 387,
       "elo": 1093,
       "streakCurrent": 1,
+      "createdAt": "2026-06-10T01:53:28.717Z",
       "deviceId": "dev_mow2bfgy_pehvd11e",
-      "lastSubmittedAt": "2026-06-10T01:53:28.717Z",
-      "createdAt": "2026-06-10T01:53:28.717Z"
+      "lastSubmittedAt": "2026-06-10T01:53:28.717Z"
     },
     {
       "nickname": "안녕",
@@ -1008,6 +999,15 @@
       "createdAt": "2026-06-09T08:12:05.637Z",
       "deviceId": "dev_mq6cqm6d_xk20vgse",
       "lastSubmittedAt": "2026-06-09T08:12:05.637Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp9autn7_tr3eb4pq",
+      "lastSubmittedAt": "2026-06-10T01:54:05.945Z",
+      "createdAt": "2026-06-10T01:54:05.945Z"
     },
     {
       "nickname": "해솔♡",
