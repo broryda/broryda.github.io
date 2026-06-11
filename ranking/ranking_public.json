@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11T14:57:06.747Z",
+  "updatedAt": "2026-06-11T14:57:14.559Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -17,10 +17,17 @@
     },
     {
       "nickname": "박재동",
-      "solvedCount": 4920,
-      "elo": 2092,
+      "solvedCount": 4921,
+      "elo": 2099,
       "streakCurrent": 37,
-      "createdAt": "2026-06-11T14:56:24.561Z"
+      "createdAt": "2026-06-11T14:57:12.204Z"
+    },
+    {
+      "nickname": "양동일",
+      "solvedCount": 3461,
+      "elo": 2041,
+      "streakCurrent": 7,
+      "createdAt": "2026-06-11T14:57:05.325Z"
     },
     {
       "nickname": "심효준",
@@ -770,13 +777,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-11T11:51:31.492Z"
-    },
-    {
-      "nickname": "양동일",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-11T14:57:05.215Z"
     },
     {
       "nickname": "사용자",
