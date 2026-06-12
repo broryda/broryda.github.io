@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-06-12T12:56:41.486Z",
+  "updatedAt": "2026-06-12T12:56:57.304Z",
   "entries": [
-    {
-      "nickname": "npa",
-      "solvedCount": 1308,
-      "elo": 2178,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-12T12:56:20.417Z",
-      "deviceId": "dev_mpqe3s98_p34qgbii",
-      "lastSubmittedAt": "2026-06-12T12:56:20.417Z"
-    },
     {
       "nickname": "윤영우",
       "solvedCount": 1351,
@@ -27,6 +18,15 @@
       "createdAt": "2026-06-12T10:23:44.215Z",
       "deviceId": "dev_moif1xk6_8f9bf70c",
       "lastSubmittedAt": "2026-06-12T10:23:44.215Z"
+    },
+    {
+      "nickname": "npa",
+      "solvedCount": 1309,
+      "elo": 2169,
+      "streakCurrent": 1,
+      "deviceId": "dev_mpqe3s98_p34qgbii",
+      "lastSubmittedAt": "2026-06-12T12:56:56.945Z",
+      "createdAt": "2026-06-12T12:56:56.945Z"
     },
     {
       "nickname": "AJK",
@@ -222,9 +222,9 @@
       "solvedCount": 485,
       "elo": 1393,
       "streakCurrent": 3,
+      "createdAt": "2026-06-12T12:56:41.204Z",
       "deviceId": "dev_mpxhggj4_65m242lh",
-      "lastSubmittedAt": "2026-06-12T12:56:41.204Z",
-      "createdAt": "2026-06-12T12:56:41.204Z"
+      "lastSubmittedAt": "2026-06-12T12:56:41.204Z"
     },
     {
       "nickname": "개구리바둑",
