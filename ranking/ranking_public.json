@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12T06:10:34.986Z",
+  "updatedAt": "2026-06-12T06:10:35.011Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -500,6 +500,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 828,
+      "elo": 300,
+      "streakCurrent": 5,
+      "createdAt": "2026-06-12T06:10:33.715Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 671,
       "elo": 300,
       "streakCurrent": 3,
@@ -735,13 +742,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-12T06:03:01.526Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-12T06:10:33.425Z"
     },
     {
       "nickname": "사용자",
