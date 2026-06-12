@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12T12:17:42.813Z",
+  "updatedAt": "2026-06-12T12:18:04.750Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -24,9 +24,9 @@
       "solvedCount": 1281,
       "elo": 2164,
       "streakCurrent": 1,
+      "createdAt": "2026-06-12T12:17:42.015Z",
       "deviceId": "dev_mpqe3s98_p34qgbii",
-      "lastSubmittedAt": "2026-06-12T12:17:42.015Z",
-      "createdAt": "2026-06-12T12:17:42.015Z"
+      "lastSubmittedAt": "2026-06-12T12:17:42.015Z"
     },
     {
       "nickname": "AJK",
@@ -461,15 +461,6 @@
       "lastSubmittedAt": "2026-06-05T16:12:48.416Z"
     },
     {
-      "nickname": "Uubu",
-      "solvedCount": 1809,
-      "elo": 867,
-      "streakCurrent": 2,
-      "createdAt": "2026-06-12T12:17:41.779Z",
-      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
-      "lastSubmittedAt": "2026-06-12T12:17:41.779Z"
-    },
-    {
       "nickname": "바둑123",
       "solvedCount": 100,
       "elo": 865,
@@ -477,6 +468,15 @@
       "createdAt": "2026-06-12T11:52:58.416Z",
       "deviceId": "dev_mqapv84f_ivtq3yo6",
       "lastSubmittedAt": "2026-06-12T11:52:58.416Z"
+    },
+    {
+      "nickname": "Uubu",
+      "solvedCount": 1809,
+      "elo": 863,
+      "streakCurrent": 2,
+      "deviceId": "dev_mp0pkz5o_kxh6mb5f",
+      "lastSubmittedAt": "2026-06-12T12:18:04.324Z",
+      "createdAt": "2026-06-12T12:18:04.324Z"
     },
     {
       "nickname": "정찬일",
