@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T15:04:23.583Z",
+  "updatedAt": "2026-06-15T15:04:52.682Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -205,6 +205,13 @@
       "createdAt": "2026-06-13T13:34:01.881Z"
     },
     {
+      "nickname": "기1",
+      "solvedCount": 138,
+      "elo": 1370,
+      "streakCurrent": 2,
+      "createdAt": "2026-06-15T15:04:51.612Z"
+    },
+    {
       "nickname": "개구리바둑",
       "solvedCount": 514,
       "elo": 1369,
@@ -224,13 +231,6 @@
       "elo": 1367,
       "streakCurrent": 1,
       "createdAt": "2026-06-15T07:58:46.400Z"
-    },
-    {
-      "nickname": "기1",
-      "solvedCount": 137,
-      "elo": 1359,
-      "streakCurrent": 2,
-      "createdAt": "2026-06-15T15:04:22.478Z"
     },
     {
       "nickname": "강현서",
