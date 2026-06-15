@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-06-15T09:17:17.400Z",
+  "updatedAt": "2026-06-15T09:17:17.584Z",
   "entries": [
-    {
-      "nickname": "박재동",
-      "solvedCount": 5275,
-      "elo": 2224,
-      "streakCurrent": 41,
-      "createdAt": "2026-06-15T08:27:34.333Z"
-    },
     {
       "nickname": "윤영우",
       "solvedCount": 1597,
@@ -784,6 +777,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-15T01:41:21.378Z"
+    },
+    {
+      "nickname": "박재동",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-15T09:17:19.068Z"
     },
     {
       "nickname": "사용자",
