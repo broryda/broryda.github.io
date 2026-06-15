@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T07:31:50.310Z",
+  "updatedAt": "2026-06-15T07:32:08.159Z",
   "entries": [
     {
       "nickname": "npa",
@@ -45,15 +45,6 @@
       "createdAt": "2026-06-14T02:13:28.033Z",
       "deviceId": "dev_mq6kydnz_sb2ollts",
       "lastSubmittedAt": "2026-06-14T02:13:28.033Z"
-    },
-    {
-      "nickname": "쿠로사와 다이아",
-      "solvedCount": 1617,
-      "elo": 2004,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-14T09:04:40.954Z",
-      "deviceId": "dev_mow00ua9_9vlqlhn2",
-      "lastSubmittedAt": "2026-06-14T09:04:40.954Z"
     },
     {
       "nickname": "양동일",
@@ -258,9 +249,9 @@
       "solvedCount": 365,
       "elo": 1395,
       "streakCurrent": 1,
+      "createdAt": "2026-06-15T07:31:49.730Z",
       "deviceId": "dev_mpjo8zsw_0igxyief",
-      "lastSubmittedAt": "2026-06-15T07:31:49.730Z",
-      "createdAt": "2026-06-15T07:31:49.730Z"
+      "lastSubmittedAt": "2026-06-15T07:31:49.730Z"
     },
     {
       "nickname": "개구리바둑",
@@ -999,6 +990,15 @@
       "createdAt": "2026-06-15T01:41:21.378Z",
       "deviceId": "dev_mqci8gms_s70zdibd",
       "lastSubmittedAt": "2026-06-15T01:41:21.378Z"
+    },
+    {
+      "nickname": "쿠로사와 다이아",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mow00ua9_9vlqlhn2",
+      "lastSubmittedAt": "2026-06-15T07:32:06.638Z",
+      "createdAt": "2026-06-15T07:32:06.638Z"
     },
     {
       "nickname": "사용자",
