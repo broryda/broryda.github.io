@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T23:06:08.741Z",
+  "updatedAt": "2026-06-16T23:06:40.572Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -60,9 +60,9 @@
       "solvedCount": 3848,
       "elo": 1958,
       "streakCurrent": 34,
+      "createdAt": "2026-06-16T23:06:08.237Z",
       "deviceId": "dev_mogkdgdp_jlbz3my7",
-      "lastSubmittedAt": "2026-06-16T23:06:08.237Z",
-      "createdAt": "2026-06-16T23:06:08.237Z"
+      "lastSubmittedAt": "2026-06-16T23:06:08.237Z"
     },
     {
       "nickname": "양동일",
@@ -432,15 +432,6 @@
       "createdAt": "2026-06-14T06:30:09.693Z",
       "deviceId": "dev_mp16d6io_ws0t8c9l",
       "lastSubmittedAt": "2026-06-14T06:30:09.693Z"
-    },
-    {
-      "nickname": "Chanil",
-      "solvedCount": 1149,
-      "elo": 950,
-      "streakCurrent": 3,
-      "createdAt": "2026-06-16T13:20:30.288Z",
-      "deviceId": "dev_mphxhjmb_wicdddzc",
-      "lastSubmittedAt": "2026-06-16T13:20:30.288Z"
     },
     {
       "nickname": "구문룡권신",
@@ -981,6 +972,15 @@
       "createdAt": "2026-06-16T10:34:40.487Z",
       "deviceId": "dev_mqghqtbd_g15apnlj",
       "lastSubmittedAt": "2026-06-16T10:34:40.487Z"
+    },
+    {
+      "nickname": "Chanil",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mphxhjmb_wicdddzc",
+      "lastSubmittedAt": "2026-06-16T23:06:39.306Z",
+      "createdAt": "2026-06-16T23:06:39.306Z"
     },
     {
       "nickname": "사용자",
