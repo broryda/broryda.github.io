@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T08:30:01.730Z",
+  "updatedAt": "2026-06-16T08:30:06.523Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -60,9 +60,9 @@
       "solvedCount": 3503,
       "elo": 1979,
       "streakCurrent": 2,
+      "createdAt": "2026-06-16T08:30:00.407Z",
       "deviceId": "dev_mpch22ug_lujshal2",
-      "lastSubmittedAt": "2026-06-16T08:30:00.407Z",
-      "createdAt": "2026-06-16T08:30:00.407Z"
+      "lastSubmittedAt": "2026-06-16T08:30:00.407Z"
     },
     {
       "nickname": "김근영",
@@ -497,15 +497,6 @@
       "lastSubmittedAt": "2026-06-14T04:30:38.136Z"
     },
     {
-      "nickname": "https://youtube.",
-      "solvedCount": 2294,
-      "elo": 852,
-      "streakCurrent": 3,
-      "createdAt": "2026-06-16T08:29:53.684Z",
-      "deviceId": "dev_mps219e0_nnyxqlmm",
-      "lastSubmittedAt": "2026-06-16T08:29:53.684Z"
-    },
-    {
       "nickname": "매미킴",
       "solvedCount": 388,
       "elo": 849,
@@ -513,6 +504,15 @@
       "createdAt": "2026-06-15T00:53:47.519Z",
       "deviceId": "dev_mpnznb9l_c6p5fd6h",
       "lastSubmittedAt": "2026-06-15T00:53:47.519Z"
+    },
+    {
+      "nickname": "https://youtube.",
+      "solvedCount": 2295,
+      "elo": 836,
+      "streakCurrent": 3,
+      "deviceId": "dev_mps219e0_nnyxqlmm",
+      "lastSubmittedAt": "2026-06-16T08:30:06.112Z",
+      "createdAt": "2026-06-16T08:30:06.112Z"
     },
     {
       "nickname": "개미",
