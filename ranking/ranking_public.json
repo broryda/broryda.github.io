@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T07:21:55.742Z",
+  "updatedAt": "2026-06-16T07:21:55.749Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -542,6 +542,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 836,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-06-16T07:21:54.347Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 688,
       "elo": 300,
       "streakCurrent": 1,
@@ -742,13 +749,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-16T01:31:33.231Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-16T07:21:54.052Z"
     },
     {
       "nickname": "사용자",
