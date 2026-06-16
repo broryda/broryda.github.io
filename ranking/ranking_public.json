@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T17:32:58.409Z",
+  "updatedAt": "2026-06-16T17:32:58.393Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -42,6 +42,13 @@
       "elo": 2005,
       "streakCurrent": 2,
       "createdAt": "2026-06-14T02:13:28.033Z"
+    },
+    {
+      "nickname": "양동일",
+      "solvedCount": 3518,
+      "elo": 1959,
+      "streakCurrent": 2,
+      "createdAt": "2026-06-16T17:32:56.876Z"
     },
     {
       "nickname": "김근영",
@@ -735,13 +742,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-16T10:34:40.487Z"
-    },
-    {
-      "nickname": "양동일",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-16T17:32:56.767Z"
     },
     {
       "nickname": "사용자",
