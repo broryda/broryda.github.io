@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T00:26:56.764Z",
+  "updatedAt": "2026-06-16T00:36:34.947Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -56,13 +56,6 @@
       "elo": 1955,
       "streakCurrent": 1,
       "createdAt": "2026-06-09T02:47:01.541Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 3583,
-      "elo": 1857,
-      "streakCurrent": 33,
-      "createdAt": "2026-06-15T22:40:23.859Z"
     },
     {
       "nickname": "Broryda",
@@ -357,13 +350,6 @@
       "elo": 931,
       "streakCurrent": 1,
       "createdAt": "2026-06-15T18:49:26.390Z"
-    },
-    {
-      "nickname": "권빠따",
-      "solvedCount": 767,
-      "elo": 924,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-09T00:32:26.021Z"
     },
     {
       "nickname": "구문룡권신",
@@ -763,6 +749,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-15T01:41:21.378Z"
+    },
+    {
+      "nickname": "김근영",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-16T00:36:32.902Z"
     },
     {
       "nickname": "사용자",
