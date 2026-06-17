@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-17T06:34:20.769Z",
+  "updatedAt": "2026-06-17T06:34:24.813Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -49,13 +49,6 @@
       "elo": 1946,
       "streakCurrent": 3,
       "createdAt": "2026-06-17T06:34:20.287Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 3940,
-      "elo": 1873,
-      "streakCurrent": 34,
-      "createdAt": "2026-06-17T06:30:57.751Z"
     },
     {
       "nickname": "Broryda",
@@ -471,18 +464,18 @@
       "createdAt": "2026-06-15T23:37:17.488Z"
     },
     {
-      "nickname": "Skku",
-      "solvedCount": 977,
-      "elo": 519,
-      "streakCurrent": 12,
-      "createdAt": "2026-06-17T06:34:18.871Z"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 156,
       "elo": 517,
       "streakCurrent": 1,
       "createdAt": "2026-06-14T20:11:35.306Z"
+    },
+    {
+      "nickname": "Skku",
+      "solvedCount": 978,
+      "elo": 514,
+      "streakCurrent": 12,
+      "createdAt": "2026-06-17T06:34:24.566Z"
     },
     {
       "nickname": "Kuna",
@@ -735,6 +728,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-16T10:34:40.487Z"
+    },
+    {
+      "nickname": "김근영",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-17T06:34:23.476Z"
     },
     {
       "nickname": "사용자",
