@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-06-20T12:23:25.623Z",
+  "updatedAt": "2026-06-20T12:23:46.303Z",
   "entries": [
-    {
-      "nickname": "npa",
-      "solvedCount": 1329,
-      "elo": 2264,
-      "streakCurrent": 2,
-      "createdAt": "2026-06-20T01:25:53.483Z"
-    },
     {
       "nickname": "박재동",
       "solvedCount": 5282,
@@ -763,6 +756,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-20T12:02:48.480Z"
+    },
+    {
+      "nickname": "npa",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-20T12:23:45.383Z"
     },
     {
       "nickname": "apexiq",
