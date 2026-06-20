@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T08:07:13.876Z",
+  "updatedAt": "2026-06-20T08:11:13.188Z",
   "entries": [
     {
       "nickname": "npa",
@@ -42,13 +42,6 @@
       "elo": 2005,
       "streakCurrent": 2,
       "createdAt": "2026-06-14T02:13:28.033Z"
-    },
-    {
-      "nickname": "양동일",
-      "solvedCount": 3736,
-      "elo": 1957,
-      "streakCurrent": 5,
-      "createdAt": "2026-06-19T09:39:29.396Z"
     },
     {
       "nickname": "김근영",
@@ -301,13 +294,6 @@
       "elo": 1046,
       "streakCurrent": 1,
       "createdAt": "2026-06-19T12:03:55.886Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 251,
-      "elo": 1036,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-13T08:08:40.723Z"
     },
     {
       "nickname": "군이짱",
@@ -763,6 +749,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-20T05:10:19.584Z"
+    },
+    {
+      "nickname": "양동일",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-20T08:11:11.758Z"
     },
     {
       "nickname": "apexiq",
