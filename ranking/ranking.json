@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T03:24:46.180Z",
+  "updatedAt": "2026-06-20T03:40:35.724Z",
   "entries": [
     {
       "nickname": "npa",
@@ -72,15 +72,6 @@
       "createdAt": "2026-06-19T09:27:30.091Z",
       "deviceId": "dev_mof9hb2m_sdn7dwu0",
       "lastSubmittedAt": "2026-06-19T09:27:30.091Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 4183,
-      "elo": 1813,
-      "streakCurrent": 37,
-      "createdAt": "2026-06-19T23:33:48.959Z",
-      "deviceId": "dev_mogkdgdp_jlbz3my7",
-      "lastSubmittedAt": "2026-06-19T23:33:48.959Z"
     },
     {
       "nickname": "사용자",
@@ -717,9 +708,9 @@
       "solvedCount": 737,
       "elo": 330,
       "streakCurrent": 1,
+      "createdAt": "2026-06-20T03:24:45.820Z",
       "deviceId": "dev_mp9owj3w_i14jkw6a",
-      "lastSubmittedAt": "2026-06-20T03:24:45.820Z",
-      "createdAt": "2026-06-20T03:24:45.820Z"
+      "lastSubmittedAt": "2026-06-20T03:24:45.820Z"
     },
     {
       "nickname": "잘해질거임 ㅅㄱ",
@@ -936,6 +927,15 @@
       "createdAt": "2026-06-19T23:30:23.159Z",
       "deviceId": "dev_mpxfcet5_w59exc6k",
       "lastSubmittedAt": "2026-06-19T23:30:23.159Z"
+    },
+    {
+      "nickname": "김근영",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mogkdgdp_jlbz3my7",
+      "lastSubmittedAt": "2026-06-20T03:40:15.298Z",
+      "createdAt": "2026-06-20T03:40:15.298Z"
     },
     {
       "nickname": "크크이",
