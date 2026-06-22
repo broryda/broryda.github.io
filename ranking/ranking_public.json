@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T07:00:25.200Z",
+  "updatedAt": "2026-06-22T07:11:30.789Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -42,13 +42,6 @@
       "elo": 1937,
       "streakCurrent": 1,
       "createdAt": "2026-06-22T05:30:42.705Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 4404,
-      "elo": 1912,
-      "streakCurrent": 39,
-      "createdAt": "2026-06-22T04:52:09.734Z"
     },
     {
       "nickname": "Broryda",
@@ -735,6 +728,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-21T13:37:03.372Z"
+    },
+    {
+      "nickname": "김근영",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-22T07:11:29.007Z"
     },
     {
       "nickname": "apexiq",
