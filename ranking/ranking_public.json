@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T07:00:42.391Z",
+  "updatedAt": "2026-06-23T07:02:02.985Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -119,13 +119,6 @@
       "elo": 1708,
       "streakCurrent": 1,
       "createdAt": "2026-06-22T17:25:28.807Z"
-    },
-    {
-      "nickname": "쉬바이누",
-      "solvedCount": 997,
-      "elo": 1657,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-20T00:32:59.325Z"
     },
     {
       "nickname": "인형놀이",
@@ -777,6 +770,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-22T18:25:18.113Z"
+    },
+    {
+      "nickname": "쉬바이누",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-23T07:02:01.608Z"
     },
     {
       "nickname": "apexiq",
