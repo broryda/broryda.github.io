@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T07:22:38.648Z",
+  "updatedAt": "2026-06-24T07:38:12.387Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -114,9 +114,9 @@
       "solvedCount": 4546,
       "elo": 1785,
       "streakCurrent": 41,
+      "createdAt": "2026-06-24T07:22:37.943Z",
       "deviceId": "dev_mogkdgdp_jlbz3my7",
-      "lastSubmittedAt": "2026-06-24T07:22:37.943Z",
-      "createdAt": "2026-06-24T07:22:37.943Z"
+      "lastSubmittedAt": "2026-06-24T07:22:37.943Z"
     },
     {
       "nickname": "정묘수관",
@@ -207,15 +207,6 @@
       "createdAt": "2026-06-18T07:22:53.749Z",
       "deviceId": "dev_mp1uv6ne_4gfa3zp9",
       "lastSubmittedAt": "2026-06-18T07:22:53.749Z"
-    },
-    {
-      "nickname": "기1",
-      "solvedCount": 718,
-      "elo": 1514,
-      "streakCurrent": 3,
-      "createdAt": "2026-06-24T01:06:44.138Z",
-      "deviceId": "dev_mqeyiyui_b45hci69",
-      "lastSubmittedAt": "2026-06-24T01:06:44.138Z"
     },
     {
       "nickname": "공구소년",
@@ -1008,6 +999,15 @@
       "createdAt": "2026-06-24T02:00:34.743Z",
       "deviceId": "dev_mp7mrv8p_ppjvutej",
       "lastSubmittedAt": "2026-06-24T02:00:34.743Z"
+    },
+    {
+      "nickname": "기1",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mqeyiyui_b45hci69",
+      "lastSubmittedAt": "2026-06-24T07:38:10.633Z",
+      "createdAt": "2026-06-24T07:38:10.633Z"
     },
     {
       "nickname": "apexiq",
