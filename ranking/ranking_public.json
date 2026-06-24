@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T11:28:41.806Z",
+  "updatedAt": "2026-06-24T11:28:50.973Z",
   "entries": [
     {
       "nickname": "박재동",
@@ -28,6 +28,13 @@
       "elo": 2100,
       "streakCurrent": 2,
       "createdAt": "2026-06-22T15:14:14Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 1150,
+      "elo": 2044,
+      "streakCurrent": 1,
+      "createdAt": "2026-06-24T11:28:50.516Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -777,13 +784,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-24T02:00:34.743Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-24T11:28:28.533Z"
     },
     {
       "nickname": "apexiq",
