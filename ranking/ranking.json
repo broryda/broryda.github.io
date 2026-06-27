@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T13:17:16.695Z",
+  "updatedAt": "2026-06-27T13:17:22.705Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -92,6 +92,15 @@
       "lastSubmittedAt": "2026-06-27T05:36:05.033Z"
     },
     {
+      "nickname": "김근영",
+      "solvedCount": 4730,
+      "elo": 1928,
+      "streakCurrent": 44,
+      "deviceId": "dev_mogkdgdp_jlbz3my7",
+      "lastSubmittedAt": "2026-06-27T13:17:22.331Z",
+      "createdAt": "2026-06-27T13:17:22.331Z"
+    },
+    {
       "nickname": "고구려",
       "solvedCount": 1168,
       "elo": 1918,
@@ -99,15 +108,6 @@
       "createdAt": "2026-06-27T03:10:26.222Z",
       "deviceId": "dev_mqqo9uar_ttxshyf3",
       "lastSubmittedAt": "2026-06-27T03:10:26.222Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 4730,
-      "elo": 1916,
-      "streakCurrent": 44,
-      "createdAt": "2026-06-27T13:16:43.282Z",
-      "deviceId": "dev_mogkdgdp_jlbz3my7",
-      "lastSubmittedAt": "2026-06-27T13:16:43.282Z"
     },
     {
       "nickname": "이재빈",
@@ -951,9 +951,9 @@
       "solvedCount": 10,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-06-27T13:17:16.497Z",
       "deviceId": "dev_mqwdub1u_dssn1e2y",
-      "lastSubmittedAt": "2026-06-27T13:17:16.497Z",
-      "createdAt": "2026-06-27T13:17:16.497Z"
+      "lastSubmittedAt": "2026-06-27T13:17:16.497Z"
     },
     {
       "nickname": "종배",
