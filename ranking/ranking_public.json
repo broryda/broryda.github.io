@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T11:02:31.712Z",
+  "updatedAt": "2026-06-29T11:44:59.356Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -70,13 +70,6 @@
       "elo": 1965,
       "streakCurrent": 2,
       "createdAt": "2026-06-26T16:34:56.822Z"
-    },
-    {
-      "nickname": "고구려",
-      "solvedCount": 1420,
-      "elo": 1931,
-      "streakCurrent": 7,
-      "createdAt": "2026-06-29T10:58:50.414Z"
     },
     {
       "nickname": "「       」",
@@ -713,13 +706,6 @@
       "solvedCount": 30,
       "elo": 300,
       "streakCurrent": 1,
-      "createdAt": "2026-06-22T11:25:22.371Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 30,
-      "elo": 300,
-      "streakCurrent": 1,
       "createdAt": "2026-06-25T07:50:01.519Z"
     },
     {
@@ -826,6 +812,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-06-28T14:20:10.254Z"
+    },
+    {
+      "nickname": "고구려",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-29T11:41:22.886Z"
     },
     {
       "nickname": "apexiq",
