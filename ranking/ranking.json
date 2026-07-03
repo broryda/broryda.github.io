@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T03:40:15.146Z",
+  "updatedAt": "2026-07-03T04:22:38.857Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -371,15 +371,6 @@
       "lastSubmittedAt": "2026-06-30T15:32:15.476Z"
     },
     {
-      "nickname": "사용",
-      "solvedCount": 237,
-      "elo": 1200,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-26T03:41:49.351Z",
-      "deviceId": "dev_mox2oqpv_dyr3d7xy",
-      "lastSubmittedAt": "2026-06-26T03:41:49.351Z"
-    },
-    {
       "nickname": "어렵다",
       "solvedCount": 423,
       "elo": 1187,
@@ -461,15 +452,6 @@
       "lastSubmittedAt": "2026-06-28T12:51:50.280Z"
     },
     {
-      "nickname": "바벨",
-      "solvedCount": 2810,
-      "elo": 1040,
-      "streakCurrent": 2,
-      "createdAt": "2026-06-29T22:48:03.699Z",
-      "deviceId": "dev_mp3dfqza_azw6oloz",
-      "lastSubmittedAt": "2026-06-29T22:48:03.699Z"
-    },
-    {
       "nickname": "박경환",
       "solvedCount": 6,
       "elo": 1036,
@@ -510,9 +492,9 @@
       "solvedCount": 536,
       "elo": 945,
       "streakCurrent": 2,
+      "createdAt": "2026-07-03T03:40:14.721Z",
       "deviceId": "dev_mr2nsq2c_mknrevgy",
-      "lastSubmittedAt": "2026-07-03T03:40:14.721Z",
-      "createdAt": "2026-07-03T03:40:14.721Z"
+      "lastSubmittedAt": "2026-07-03T03:40:14.721Z"
     },
     {
       "nickname": "라면땅",
@@ -603,15 +585,6 @@
       "createdAt": "2026-06-30T04:00:25.343Z",
       "deviceId": "dev_mpnznb9l_c6p5fd6h",
       "lastSubmittedAt": "2026-06-30T04:00:25.343Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 183,
-      "elo": 766,
-      "streakCurrent": 2,
-      "createdAt": "2026-06-26T04:08:42.708Z",
-      "deviceId": "dev_mqfyux9h_g6aaui37",
-      "lastSubmittedAt": "2026-06-26T04:08:42.708Z"
     },
     {
       "nickname": "오봉봉",
@@ -999,6 +972,15 @@
       "createdAt": "2026-07-02T12:28:57.169Z",
       "deviceId": "dev_mr3hdytq_rlnvz89l",
       "lastSubmittedAt": "2026-07-02T12:28:57.169Z"
+    },
+    {
+      "nickname": "바벨",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp3dfqza_azw6oloz",
+      "lastSubmittedAt": "2026-07-03T04:22:37.754Z",
+      "createdAt": "2026-07-03T04:22:37.754Z"
     },
     {
       "nickname": "apexiq",
