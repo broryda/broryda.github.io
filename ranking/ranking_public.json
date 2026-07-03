@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T08:25:22.870Z",
+  "updatedAt": "2026-07-03T08:25:39.906Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -366,13 +366,6 @@
       "createdAt": "2026-06-30T17:16:27.265Z"
     },
     {
-      "nickname": "바벨",
-      "solvedCount": 2852,
-      "elo": 1000,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-03T08:25:03.666Z"
-    },
-    {
       "nickname": "그대란우주",
       "solvedCount": 0,
       "elo": 1000,
@@ -385,6 +378,13 @@
       "elo": 1000,
       "streakCurrent": 0,
       "createdAt": "2026-06-26T09:26:32Z"
+    },
+    {
+      "nickname": "바벨",
+      "solvedCount": 2852,
+      "elo": 990,
+      "streakCurrent": 1,
+      "createdAt": "2026-07-03T08:25:39.271Z"
     },
     {
       "nickname": "사용자",
