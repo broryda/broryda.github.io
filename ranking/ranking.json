@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T00:11:45.143Z",
+  "updatedAt": "2026-07-06T00:12:13.317Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -72,15 +72,6 @@
       "createdAt": "2026-07-04T04:48:34.555Z",
       "deviceId": "dev_mql9bni8_ri650mey",
       "lastSubmittedAt": "2026-07-04T04:48:34.555Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 1226,
-      "elo": 2019,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-05T13:54:56.857Z",
-      "deviceId": "dev_mp9autn7_tr3eb4pq",
-      "lastSubmittedAt": "2026-07-05T13:54:56.857Z"
     },
     {
       "nickname": "쿠로사와 다이아",
@@ -465,9 +456,9 @@
       "solvedCount": 1135,
       "elo": 945,
       "streakCurrent": 1,
+      "createdAt": "2026-07-06T00:11:44.726Z",
       "deviceId": "dev_mr2nsq2c_mknrevgy",
-      "lastSubmittedAt": "2026-07-06T00:11:44.726Z",
-      "createdAt": "2026-07-06T00:11:44.726Z"
+      "lastSubmittedAt": "2026-07-06T00:11:44.726Z"
     },
     {
       "nickname": "와룡고 매콤주먹 강지성",
@@ -927,6 +918,15 @@
       "createdAt": "2026-07-03T20:43:31.082Z",
       "deviceId": "dev_mr5egvo2_nt650067",
       "lastSubmittedAt": "2026-07-03T20:43:31.082Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mp9autn7_tr3eb4pq",
+      "lastSubmittedAt": "2026-07-06T00:12:12.579Z",
+      "createdAt": "2026-07-06T00:12:12.579Z"
     },
     {
       "nickname": "apexiq",
