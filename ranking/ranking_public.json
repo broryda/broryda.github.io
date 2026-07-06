@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T00:00:38.282Z",
+  "updatedAt": "2026-07-06T00:04:02.533Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -49,13 +49,6 @@
       "elo": 2026,
       "streakCurrent": 1,
       "createdAt": "2026-07-04T04:48:34.555Z"
-    },
-    {
-      "nickname": "NEXTPLAN",
-      "solvedCount": 340,
-      "elo": 2024,
-      "streakCurrent": 4,
-      "createdAt": "2026-07-05T17:28:50.158Z"
     },
     {
       "nickname": "AJK",
@@ -721,6 +714,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-07-03T20:43:31.082Z"
+    },
+    {
+      "nickname": "NEXTPLAN",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-07-06T00:04:01.390Z"
     },
     {
       "nickname": "apexiq",
