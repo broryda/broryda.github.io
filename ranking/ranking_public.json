@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T16:16:46.572Z",
+  "updatedAt": "2026-07-09T16:16:46.585Z",
   "entries": [
     {
       "nickname": "npa",
@@ -632,6 +632,13 @@
       "createdAt": "2026-07-09T04:26:56.125Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 40,
+      "elo": 300,
+      "streakCurrent": 2,
+      "createdAt": "2026-07-09T16:16:46.224Z"
+    },
+    {
       "nickname": "영화도리",
       "solvedCount": 30,
       "elo": 300,
@@ -742,13 +749,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-07-09T09:39:50.368Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-07-09T16:16:45.920Z"
     },
     {
       "nickname": "apexiq",
