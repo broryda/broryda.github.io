@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T10:08:56.566Z",
+  "updatedAt": "2026-07-09T10:08:59.854Z",
   "entries": [
     {
       "nickname": "npa",
@@ -186,9 +186,9 @@
       "solvedCount": 7790,
       "elo": 1606,
       "streakCurrent": 67,
+      "createdAt": "2026-07-09T10:08:56.204Z",
       "deviceId": "dev_mojhmlgt_ug0gyb7s",
-      "lastSubmittedAt": "2026-07-09T10:08:56.204Z",
-      "createdAt": "2026-07-09T10:08:56.204Z"
+      "lastSubmittedAt": "2026-07-09T10:08:56.204Z"
     },
     {
       "nickname": "그대란우주",
@@ -855,6 +855,15 @@
       "createdAt": "2026-07-05T04:05:49.683Z",
       "deviceId": "dev_mr4fjosc_p9dplz7o",
       "lastSubmittedAt": "2026-07-05T04:05:49.683Z"
+    },
+    {
+      "nickname": "룸펜",
+      "solvedCount": 6,
+      "elo": 300,
+      "streakCurrent": 1,
+      "deviceId": "dev_mqpwm10f_a82fejgc",
+      "lastSubmittedAt": "2026-07-09T10:08:58.955Z",
+      "createdAt": "2026-07-09T10:08:58.955Z"
     },
     {
       "nickname": "이시돌",
