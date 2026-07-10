@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T07:33:36.205Z",
+  "updatedAt": "2026-07-10T07:33:36.279Z",
   "entries": [
     {
       "nickname": "npa",
@@ -537,9 +537,9 @@
       "solvedCount": 802,
       "elo": 907,
       "streakCurrent": 1,
+      "createdAt": "2026-07-10T07:33:29.829Z",
       "deviceId": "dev_mpdc5mez_lql4xf9n",
-      "lastSubmittedAt": "2026-07-10T07:33:29.829Z",
-      "createdAt": "2026-07-10T07:33:29.829Z"
+      "lastSubmittedAt": "2026-07-10T07:33:29.829Z"
     },
     {
       "nickname": "사용자",
@@ -839,6 +839,15 @@
       "lastSubmittedAt": "2026-07-10T03:06:10.186Z"
     },
     {
+      "nickname": "사용자멍니",
+      "solvedCount": 42,
+      "elo": 300,
+      "streakCurrent": 1,
+      "deviceId": "dev_mrelwmxq_rx2n5rg5",
+      "lastSubmittedAt": "2026-07-10T07:33:35.410Z",
+      "createdAt": "2026-07-10T07:33:35.410Z"
+    },
+    {
       "nickname": "사용자",
       "solvedCount": 41,
       "elo": 300,
@@ -846,15 +855,6 @@
       "createdAt": "2026-07-09T16:16:55.382Z",
       "deviceId": "dev_mrcso52z_jyyz0u98",
       "lastSubmittedAt": "2026-07-09T16:16:55.382Z"
-    },
-    {
-      "nickname": "사용자멍니",
-      "solvedCount": 41,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-10T07:33:28.260Z",
-      "deviceId": "dev_mrelwmxq_rx2n5rg5",
-      "lastSubmittedAt": "2026-07-10T07:33:28.260Z"
     },
     {
       "nickname": "영화도리",
