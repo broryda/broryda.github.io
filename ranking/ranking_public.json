@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T11:23:57.064Z",
+  "updatedAt": "2026-07-10T11:30:50.275Z",
   "entries": [
     {
       "nickname": "npa",
@@ -63,13 +63,6 @@
       "elo": 2014,
       "streakCurrent": 1,
       "createdAt": "2026-07-07T00:43:05.670Z"
-    },
-    {
-      "nickname": "고구려",
-      "solvedCount": 2188,
-      "elo": 1951,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-10T10:56:00.612Z"
     },
     {
       "nickname": "Choi",
@@ -763,6 +756,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-07-09T09:39:50.368Z"
+    },
+    {
+      "nickname": "고구려",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-07-10T11:30:49.124Z"
     },
     {
       "nickname": "apexiq",
