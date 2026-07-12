@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T11:32:48.262Z",
+  "updatedAt": "2026-07-12T11:47:49.730Z",
   "entries": [
     {
       "nickname": "npa",
@@ -51,13 +51,6 @@
       "createdAt": "2026-07-12T10:57:11.979Z"
     },
     {
-      "nickname": "쿠로사와 다이아",
-      "solvedCount": 1625,
-      "elo": 2014,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-07T00:43:05.670Z"
-    },
-    {
       "nickname": "양동일",
       "solvedCount": 3920,
       "elo": 2005,
@@ -93,18 +86,18 @@
       "createdAt": "2026-07-09T05:57:22.647Z"
     },
     {
+      "nickname": "김근영",
+      "solvedCount": 5178,
+      "elo": 1815,
+      "streakCurrent": 59,
+      "createdAt": "2026-07-12T11:33:04.941Z"
+    },
+    {
       "nickname": "전주양동일",
       "solvedCount": 31,
       "elo": 1807,
       "streakCurrent": 1,
       "createdAt": "2026-06-20T04:36:57Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 5178,
-      "elo": 1805,
-      "streakCurrent": 59,
-      "createdAt": "2026-07-12T11:32:41.988Z"
     },
     {
       "nickname": "박재동",
@@ -826,6 +819,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-07-12T06:13:33.765Z"
+    },
+    {
+      "nickname": "쿠로사와 다이아",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-07-12T11:47:48.345Z"
     },
     {
       "nickname": "fcxbna",
