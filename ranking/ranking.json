@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T22:20:06.474Z",
+  "updatedAt": "2026-07-12T22:20:16.226Z",
   "entries": [
     {
       "nickname": "npa",
@@ -830,6 +830,15 @@
       "lastSubmittedAt": "2026-07-12T04:03:11.584Z"
     },
     {
+      "nickname": "개구리바둑",
+      "solvedCount": 60,
+      "elo": 300,
+      "streakCurrent": 1,
+      "deviceId": "dev_mr4h7uiw_ww86d1s8",
+      "lastSubmittedAt": "2026-07-12T22:20:16.261Z",
+      "createdAt": "2026-07-12T22:20:16.261Z"
+    },
+    {
       "nickname": "사용자",
       "solvedCount": 59,
       "elo": 300,
@@ -837,15 +846,6 @@
       "createdAt": "2026-07-12T04:04:07.178Z",
       "deviceId": "dev_mpxfcet5_w59exc6k",
       "lastSubmittedAt": "2026-07-12T04:04:07.178Z"
-    },
-    {
-      "nickname": "개구리바둑",
-      "solvedCount": 58,
-      "elo": 300,
-      "streakCurrent": 1,
-      "deviceId": "dev_mr4h7uiw_ww86d1s8",
-      "lastSubmittedAt": "2026-07-12T22:20:06.416Z",
-      "createdAt": "2026-07-12T22:20:06.416Z"
     },
     {
       "nickname": "개미동산교주",
