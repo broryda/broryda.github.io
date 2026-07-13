@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T23:10:11.758Z",
+  "updatedAt": "2026-07-13T23:34:59.030Z",
   "entries": [
     {
       "nickname": "npa",
@@ -91,13 +91,6 @@
       "elo": 1848,
       "streakCurrent": 1,
       "createdAt": "2026-07-09T07:29:56.169Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 705,
-      "elo": 1820,
-      "streakCurrent": 2,
-      "createdAt": "2026-07-13T23:10:11.255Z"
     },
     {
       "nickname": "전주양동일",
@@ -833,6 +826,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-07-13T07:23:17.168Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-07-13T23:34:57.276Z"
     },
     {
       "nickname": "멛턉",
