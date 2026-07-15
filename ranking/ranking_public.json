@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T11:19:03.362Z",
+  "updatedAt": "2026-07-15T11:41:36.894Z",
   "entries": [
     {
       "nickname": "npa",
@@ -70,13 +70,6 @@
       "elo": 1908,
       "streakCurrent": 3,
       "createdAt": "2026-07-12T13:39:57.650Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 5256,
-      "elo": 1893,
-      "streakCurrent": 61,
-      "createdAt": "2026-07-14T14:14:11.222Z"
     },
     {
       "nickname": "Broryda",
@@ -695,13 +688,6 @@
       "createdAt": "2026-07-13T05:20:10.111Z"
     },
     {
-      "nickname": "영화도리",
-      "solvedCount": 30,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-08T11:21:52.624Z"
-    },
-    {
       "nickname": "수운",
       "solvedCount": 24,
       "elo": 300,
@@ -840,6 +826,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-07-14T20:58:55.063Z"
+    },
+    {
+      "nickname": "김근영",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-07-15T11:41:35.168Z"
     },
     {
       "nickname": "멛턉",
