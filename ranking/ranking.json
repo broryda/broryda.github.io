@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T03:29:04.415Z",
+  "updatedAt": "2026-07-16T03:49:01.011Z",
   "entries": [
     {
       "nickname": "npa",
@@ -519,9 +519,9 @@
       "solvedCount": 903,
       "elo": 817,
       "streakCurrent": 1,
+      "createdAt": "2026-07-16T03:29:04.089Z",
       "deviceId": "dev_mp6imkk8_nacrpznm",
-      "lastSubmittedAt": "2026-07-16T03:29:04.089Z",
-      "createdAt": "2026-07-16T03:29:04.089Z"
+      "lastSubmittedAt": "2026-07-16T03:29:04.089Z"
     },
     {
       "nickname": "사용자",
@@ -666,15 +666,6 @@
       "createdAt": "2026-07-16T00:51:30.690Z",
       "deviceId": "dev_mrep59ot_2ts7ncyz",
       "lastSubmittedAt": "2026-07-16T00:51:30.690Z"
-    },
-    {
-      "nickname": "catclaw",
-      "solvedCount": 3279,
-      "elo": 440,
-      "streakCurrent": 14,
-      "createdAt": "2026-07-16T02:09:23.249Z",
-      "deviceId": "dev_mr4oz3zf_0eisihux",
-      "lastSubmittedAt": "2026-07-16T02:09:23.249Z"
     },
     {
       "nickname": "Mini",
@@ -1071,6 +1062,15 @@
       "createdAt": "2026-07-14T20:58:55.063Z",
       "deviceId": "dev_mrl4w0ge_7wv8rh1s",
       "lastSubmittedAt": "2026-07-14T20:58:55.063Z"
+    },
+    {
+      "nickname": "catclaw",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mr4oz3zf_0eisihux",
+      "lastSubmittedAt": "2026-07-16T03:49:00.171Z",
+      "createdAt": "2026-07-16T03:49:00.171Z"
     },
     {
       "nickname": "멛턉",
