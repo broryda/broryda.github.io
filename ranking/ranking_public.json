@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T03:49:01.011Z",
+  "updatedAt": "2026-07-16T03:49:01.004Z",
   "entries": [
     {
       "nickname": "npa",
@@ -520,6 +520,13 @@
       "createdAt": "2026-07-16T00:51:30.690Z"
     },
     {
+      "nickname": "catclaw",
+      "solvedCount": 3279,
+      "elo": 440,
+      "streakCurrent": 14,
+      "createdAt": "2026-07-16T03:49:00.351Z"
+    },
+    {
       "nickname": "Mini",
       "solvedCount": 555,
       "elo": 416,
@@ -826,13 +833,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-07-14T20:58:55.063Z"
-    },
-    {
-      "nickname": "catclaw",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-07-16T03:49:00.171Z"
     },
     {
       "nickname": "멛턉",
