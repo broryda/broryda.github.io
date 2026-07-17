@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T06:52:36.711Z",
+  "updatedAt": "2026-07-17T07:32:50.255Z",
   "entries": [
     {
       "nickname": "npa",
@@ -119,13 +119,6 @@
       "elo": 1745,
       "streakCurrent": 1,
       "createdAt": "2026-07-13T22:07:10.344Z"
-    },
-    {
-      "nickname": "쉬바이누",
-      "solvedCount": 1126,
-      "elo": 1715,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-10T07:31:24.138Z"
     },
     {
       "nickname": "broryda",
@@ -555,13 +548,6 @@
       "createdAt": "2026-07-16T00:51:30.690Z"
     },
     {
-      "nickname": "catclaw",
-      "solvedCount": 3446,
-      "elo": 440,
-      "streakCurrent": 15,
-      "createdAt": "2026-07-17T04:05:06.519Z"
-    },
-    {
       "nickname": "Mini",
       "solvedCount": 559,
       "elo": 416,
@@ -826,6 +812,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-07-17T02:38:56.786Z"
+    },
+    {
+      "nickname": "catclaw",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-07-17T07:32:49.468Z"
     },
     {
       "nickname": "멛턉",
