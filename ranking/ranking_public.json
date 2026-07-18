@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T23:40:46.588Z",
+  "updatedAt": "2026-07-18T23:41:09.342Z",
   "entries": [
     {
       "nickname": "npa",
@@ -527,13 +527,6 @@
       "createdAt": "2026-07-17T23:59:27.170Z"
     },
     {
-      "nickname": "SKKU",
-      "solvedCount": 145,
-      "elo": 466,
-      "streakCurrent": 3,
-      "createdAt": "2026-07-18T00:02:04.123Z"
-    },
-    {
       "nickname": "catclaw",
       "solvedCount": 3580,
       "elo": 440,
@@ -770,6 +763,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-07-18T12:07:41.415Z"
+    },
+    {
+      "nickname": "SKKU",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-07-18T23:41:09.163Z"
     },
     {
       "nickname": "멛턉",
