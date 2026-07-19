@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T23:22:59.023Z",
+  "updatedAt": "2026-07-19T23:22:59.031Z",
   "entries": [
     {
       "nickname": "npa",
@@ -765,13 +765,6 @@
       "createdAt": "2026-07-19T03:14:43.224Z"
     },
     {
-      "nickname": "해솔♡",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-07-19T23:22:57.715Z"
-    },
-    {
       "nickname": "멛턉",
       "solvedCount": 0,
       "elo": 300,
@@ -812,6 +805,13 @@
       "elo": 297,
       "streakCurrent": 0,
       "createdAt": "2026-06-19T09:45:20Z"
+    },
+    {
+      "nickname": "해솔♡",
+      "solvedCount": 383,
+      "elo": 282,
+      "streakCurrent": 1,
+      "createdAt": "2026-07-19T23:22:58.090Z"
     }
   ]
 }
