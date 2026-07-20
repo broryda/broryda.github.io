@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T03:24:52.215Z",
+  "updatedAt": "2026-07-20T03:28:52.325Z",
   "entries": [
     {
       "nickname": "npa",
@@ -654,9 +654,9 @@
       "solvedCount": 254,
       "elo": 444,
       "streakCurrent": 5,
+      "createdAt": "2026-07-20T03:24:52.178Z",
       "deviceId": "dev_mrep59ot_2ts7ncyz",
-      "lastSubmittedAt": "2026-07-20T03:24:52.178Z",
-      "createdAt": "2026-07-20T03:24:52.178Z"
+      "lastSubmittedAt": "2026-07-20T03:24:52.178Z"
     },
     {
       "nickname": "catclaw",
@@ -981,6 +981,15 @@
       "createdAt": "2026-07-20T02:36:41.000Z",
       "deviceId": "dev_mrsm5n43_gabhgbft",
       "lastSubmittedAt": "2026-07-20T02:36:41.000Z"
+    },
+    {
+      "nickname": "199",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mprnlsa4_vweai6tc",
+      "lastSubmittedAt": "2026-07-20T03:28:50.886Z",
+      "createdAt": "2026-07-20T03:28:50.886Z"
     },
     {
       "nickname": "멛턉",
