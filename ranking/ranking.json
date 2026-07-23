@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T15:24:50.945Z",
+  "updatedAt": "2026-07-23T15:24:50.169Z",
   "entries": [
     {
       "nickname": "npa",
@@ -699,9 +699,9 @@
       "solvedCount": 2823,
       "elo": 300,
       "streakCurrent": 5,
+      "createdAt": "2026-07-23T15:24:49.943Z",
       "deviceId": "dev_mrsm1pbl_o04bxs9t",
-      "lastSubmittedAt": "2026-07-23T15:24:49.943Z",
-      "createdAt": "2026-07-23T15:24:49.943Z"
+      "lastSubmittedAt": "2026-07-23T15:24:49.943Z"
     },
     {
       "nickname": "전생에도둑",
@@ -875,6 +875,15 @@
       "lastSubmittedAt": "2026-07-21T05:28:00.651Z"
     },
     {
+      "nickname": "이유한",
+      "solvedCount": 7,
+      "elo": 300,
+      "streakCurrent": 1,
+      "deviceId": "dev_mrxnvdnu_guhu9c4c",
+      "lastSubmittedAt": "2026-07-23T15:24:49.706Z",
+      "createdAt": "2026-07-23T15:24:49.706Z"
+    },
+    {
       "nickname": "이시돌",
       "solvedCount": 6,
       "elo": 300,
@@ -882,15 +891,6 @@
       "createdAt": "2026-07-19T07:05:15.700Z",
       "deviceId": "dev_mr4fvv0g_otgb4472",
       "lastSubmittedAt": "2026-07-19T07:05:15.700Z"
-    },
-    {
-      "nickname": "이유한",
-      "solvedCount": 6,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-23T15:24:45.690Z",
-      "deviceId": "dev_mrxnvdnu_guhu9c4c",
-      "lastSubmittedAt": "2026-07-23T15:24:45.690Z"
     },
     {
       "nickname": "날아가기",
