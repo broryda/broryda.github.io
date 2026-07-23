@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T04:28:41.597Z",
+  "updatedAt": "2026-07-23T04:28:53.939Z",
   "entries": [
     {
       "nickname": "npa",
@@ -708,9 +708,9 @@
       "solvedCount": 2697,
       "elo": 300,
       "streakCurrent": 4,
+      "createdAt": "2026-07-23T04:28:40.506Z",
       "deviceId": "dev_mrsm1pbl_o04bxs9t",
-      "lastSubmittedAt": "2026-07-23T04:28:40.506Z",
-      "createdAt": "2026-07-23T04:28:40.506Z"
+      "lastSubmittedAt": "2026-07-23T04:28:40.506Z"
     },
     {
       "nickname": "전생에도둑",
@@ -846,15 +846,6 @@
       "createdAt": "2026-07-22T13:27:16.465Z",
       "deviceId": "dev_mrcso52z_jyyz0u98",
       "lastSubmittedAt": "2026-07-22T13:27:16.465Z"
-    },
-    {
-      "nickname": "예정파파",
-      "solvedCount": 36,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-21T19:46:49.250Z",
-      "deviceId": "dev_mrntdiwt_p34wrfr6",
-      "lastSubmittedAt": "2026-07-21T19:46:49.250Z"
     },
     {
       "nickname": "타개의미학",
@@ -1017,6 +1008,15 @@
       "createdAt": "2026-07-22T13:25:56.402Z",
       "deviceId": "dev_mrw48ahn_vt1rxnwc",
       "lastSubmittedAt": "2026-07-22T13:25:56.402Z"
+    },
+    {
+      "nickname": "예정파파",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mrntdiwt_p34wrfr6",
+      "lastSubmittedAt": "2026-07-23T04:28:51.659Z",
+      "createdAt": "2026-07-23T04:28:51.659Z"
     },
     {
       "nickname": "멛턉",
