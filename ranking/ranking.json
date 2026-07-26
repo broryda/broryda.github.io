@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T10:53:46.078Z",
+  "updatedAt": "2026-07-26T10:54:04.204Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -578,15 +578,6 @@
       "lastSubmittedAt": "2026-07-26T08:33:22.416Z"
     },
     {
-      "nickname": "catclaw",
-      "solvedCount": 4005,
-      "elo": 440,
-      "streakCurrent": 2,
-      "createdAt": "2026-07-26T04:49:43.884Z",
-      "deviceId": "dev_mr4oz3zf_0eisihux",
-      "lastSubmittedAt": "2026-07-26T04:49:43.884Z"
-    },
-    {
       "nickname": "Mini",
       "solvedCount": 628,
       "elo": 416,
@@ -672,9 +663,9 @@
       "solvedCount": 3291,
       "elo": 300,
       "streakCurrent": 7,
+      "createdAt": "2026-07-26T10:53:44.555Z",
       "deviceId": "dev_mrsm1pbl_o04bxs9t",
-      "lastSubmittedAt": "2026-07-26T10:53:44.555Z",
-      "createdAt": "2026-07-26T10:53:44.555Z"
+      "lastSubmittedAt": "2026-07-26T10:53:44.555Z"
     },
     {
       "nickname": "전생에도둑",
@@ -1044,6 +1035,15 @@
       "createdAt": "2026-07-26T06:38:53.663Z",
       "deviceId": "dev_ms1ff8qt_jxmmtsbr",
       "lastSubmittedAt": "2026-07-26T06:38:53.663Z"
+    },
+    {
+      "nickname": "catclaw",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mr4oz3zf_0eisihux",
+      "lastSubmittedAt": "2026-07-26T10:54:03.443Z",
+      "createdAt": "2026-07-26T10:54:03.443Z"
     },
     {
       "nickname": "check",
