@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T23:06:37.232Z",
+  "updatedAt": "2026-07-28T23:07:56.500Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -753,9 +753,9 @@
       "solvedCount": 2200,
       "elo": 300,
       "streakCurrent": 6,
+      "createdAt": "2026-07-28T23:06:35.286Z",
       "deviceId": "dev_mrxrv834_gxi4jht8",
-      "lastSubmittedAt": "2026-07-28T23:06:35.286Z",
-      "createdAt": "2026-07-28T23:06:35.286Z"
+      "lastSubmittedAt": "2026-07-28T23:06:35.286Z"
     },
     {
       "nickname": "전생에도둑",
@@ -837,15 +837,6 @@
       "createdAt": "2026-07-26T02:09:19.244Z",
       "deviceId": "dev_ms12wg85_ps02xswn",
       "lastSubmittedAt": "2026-07-26T02:09:19.244Z"
-    },
-    {
-      "nickname": "타개의미학",
-      "solvedCount": 326,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-28T08:25:21.606Z",
-      "deviceId": "dev_mr8vq13i_2lar7w8t",
-      "lastSubmittedAt": "2026-07-28T08:25:21.606Z"
     },
     {
       "nickname": "놀부심보",
@@ -1089,6 +1080,15 @@
       "createdAt": "2026-07-26T06:38:53.663Z",
       "deviceId": "dev_ms1ff8qt_jxmmtsbr",
       "lastSubmittedAt": "2026-07-26T06:38:53.663Z"
+    },
+    {
+      "nickname": "타개의미학",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mr8vq13i_2lar7w8t",
+      "lastSubmittedAt": "2026-07-28T23:07:55.432Z",
+      "createdAt": "2026-07-28T23:07:55.432Z"
     },
     {
       "nickname": "check",
