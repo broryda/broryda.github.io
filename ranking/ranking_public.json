@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:20:22.995Z",
+  "updatedAt": "2026-08-03T13:20:50.154Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -252,13 +252,6 @@
       "elo": 1137,
       "streakCurrent": 1,
       "createdAt": "2026-07-29T22:15:38.726Z"
-    },
-    {
-      "nickname": "바벨",
-      "solvedCount": 3287,
-      "elo": 1080,
-      "streakCurrent": 5,
-      "createdAt": "2026-08-03T09:02:00.489Z"
     },
     {
       "nickname": "mookdo",
@@ -882,6 +875,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-08-01T15:27:38.587Z"
+    },
+    {
+      "nickname": "바벨",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-08-03T13:20:48.110Z"
     },
     {
       "nickname": "check",
