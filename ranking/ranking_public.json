@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T06:21:29.143Z",
+  "updatedAt": "2026-08-04T06:21:29.199Z",
   "entries": [
     {
       "nickname": "윤영우",
@@ -77,6 +77,13 @@
       "elo": 1917,
       "streakCurrent": 1,
       "createdAt": "2026-08-02T04:22:49.635Z"
+    },
+    {
+      "nickname": "김근영",
+      "solvedCount": 5506,
+      "elo": 1831,
+      "streakCurrent": 10,
+      "createdAt": "2026-08-04T06:21:26.651Z"
     },
     {
       "nickname": "전주양동일",
@@ -854,13 +861,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-08-01T15:27:38.587Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-08-04T06:21:26.476Z"
     },
     {
       "nickname": "check",
