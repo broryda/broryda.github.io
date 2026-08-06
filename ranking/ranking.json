@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T00:04:43.698Z",
+  "updatedAt": "2026-08-06T00:04:54.355Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -822,21 +822,21 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 25,
+      "elo": 300,
+      "streakCurrent": 1,
+      "deviceId": "dev_msgp857p_h1ngl7zh",
+      "lastSubmittedAt": "2026-08-06T00:04:54.020Z",
+      "createdAt": "2026-08-06T00:04:54.020Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 24,
       "elo": 300,
       "streakCurrent": 2,
       "createdAt": "2026-08-05T06:41:29.074Z",
       "deviceId": "dev_mseba2s5_dtem4hkz",
       "lastSubmittedAt": "2026-08-05T06:41:29.074Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 24,
-      "elo": 300,
-      "streakCurrent": 1,
-      "deviceId": "dev_msgp857p_h1ngl7zh",
-      "lastSubmittedAt": "2026-08-06T00:04:43.357Z",
-      "createdAt": "2026-08-06T00:04:43.357Z"
     },
     {
       "nickname": "길해정",
