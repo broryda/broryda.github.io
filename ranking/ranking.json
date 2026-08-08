@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T14:36:54.734Z",
+  "updatedAt": "2026-08-08T14:41:38.755Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -524,15 +524,6 @@
       "lastSubmittedAt": "2026-08-04T11:55:09.118Z"
     },
     {
-      "nickname": "catclaw",
-      "solvedCount": 4467,
-      "elo": 440,
-      "streakCurrent": 3,
-      "createdAt": "2026-08-08T03:19:44.606Z",
-      "deviceId": "dev_mr4oz3zf_0eisihux",
-      "lastSubmittedAt": "2026-08-08T03:19:44.606Z"
-    },
-    {
       "nickname": "Mini",
       "solvedCount": 682,
       "elo": 416,
@@ -843,9 +834,9 @@
       "solvedCount": 24,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-08-08T14:36:54.244Z",
       "deviceId": "dev_msjrkd96_8ccx2e4s",
-      "lastSubmittedAt": "2026-08-08T14:36:54.244Z",
-      "createdAt": "2026-08-08T14:36:54.244Z"
+      "lastSubmittedAt": "2026-08-08T14:36:54.244Z"
     },
     {
       "nickname": "바둑돌",
@@ -972,6 +963,15 @@
       "createdAt": "2026-08-08T11:10:26.369Z",
       "deviceId": "dev_mq0f8yes_1jm79irv",
       "lastSubmittedAt": "2026-08-08T11:10:26.369Z"
+    },
+    {
+      "nickname": "catclaw",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mr4oz3zf_0eisihux",
+      "lastSubmittedAt": "2026-08-08T14:41:38.185Z",
+      "createdAt": "2026-08-08T14:41:38.185Z"
     },
     {
       "nickname": "check",
