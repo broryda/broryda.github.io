@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T23:45:20.571Z",
+  "updatedAt": "2026-08-09T23:45:20.988Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -688,13 +688,6 @@
       "createdAt": "2026-08-08T11:10:26.369Z"
     },
     {
-      "nickname": "해솔♡",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-08-09T23:45:19.270Z"
-    },
-    {
       "nickname": "check",
       "solvedCount": 2,
       "elo": 297,
@@ -721,6 +714,13 @@
       "elo": 290,
       "streakCurrent": 3,
       "createdAt": "2026-08-08T12:10:38.256Z"
+    },
+    {
+      "nickname": "해솔♡",
+      "solvedCount": 397,
+      "elo": 282,
+      "streakCurrent": 1,
+      "createdAt": "2026-08-09T23:45:19.687Z"
     }
   ]
 }
