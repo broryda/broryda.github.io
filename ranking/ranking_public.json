@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T11:52:18.517Z",
+  "updatedAt": "2026-08-11T11:52:22.555Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -626,6 +626,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 25,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-08-11T11:52:22.247Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 24,
       "elo": 300,
       "streakCurrent": 2,
@@ -637,13 +644,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-08-08T06:55:03.326Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 24,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-11T11:52:18.234Z"
     },
     {
       "nickname": "사용자",
