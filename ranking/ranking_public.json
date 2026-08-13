@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T22:00:44.181Z",
+  "updatedAt": "2026-08-13T22:24:20.425Z",
   "entries": [
     {
       "nickname": "npa",
@@ -415,13 +415,6 @@
       "createdAt": "2026-08-11T00:30:13.156Z"
     },
     {
-      "nickname": "전생에도둑",
-      "solvedCount": 4906,
-      "elo": 300,
-      "streakCurrent": 2,
-      "createdAt": "2026-08-13T00:56:19.175Z"
-    },
-    {
       "nickname": "빨강",
       "solvedCount": 4499,
       "elo": 300,
@@ -707,6 +700,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-08-13T08:55:28.932Z"
+    },
+    {
+      "nickname": "전생에도둑",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-08-13T22:24:18.697Z"
     },
     {
       "nickname": "check",
