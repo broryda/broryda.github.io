@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T06:00:43.690Z",
+  "updatedAt": "2026-08-20T06:01:35.504Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -252,13 +252,6 @@
       "elo": 793,
       "streakCurrent": 1,
       "createdAt": "2026-08-15T08:59:10.414Z"
-    },
-    {
-      "nickname": "잔머리알파고",
-      "solvedCount": 828,
-      "elo": 792,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-19T13:12:06.303Z"
     },
     {
       "nickname": "용쓰는바둑",
@@ -672,6 +665,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-08-18T18:11:08.147Z"
+    },
+    {
+      "nickname": "잔머리알파고",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-08-20T06:01:34.258Z"
     },
     {
       "nickname": "check",
