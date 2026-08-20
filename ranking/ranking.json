@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T23:42:19.253Z",
+  "updatedAt": "2026-08-20T23:43:55.367Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -51,9 +51,9 @@
       "solvedCount": 218,
       "elo": 2023,
       "streakCurrent": 2,
+      "createdAt": "2026-08-20T23:42:18.793Z",
       "deviceId": "dev_mrjwb8p6_m2y9duys",
-      "lastSubmittedAt": "2026-08-20T23:42:18.793Z",
-      "createdAt": "2026-08-20T23:42:18.793Z"
+      "lastSubmittedAt": "2026-08-20T23:42:18.793Z"
     },
     {
       "nickname": "김근영",
@@ -216,15 +216,6 @@
       "createdAt": "2026-08-17T07:36:49.773Z",
       "deviceId": "dev_mphxhjmb_wicdddzc",
       "lastSubmittedAt": "2026-08-17T07:36:49.773Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 5167,
-      "elo": 1052,
-      "streakCurrent": 3,
-      "createdAt": "2026-08-20T01:07:47.444Z",
-      "deviceId": "dev_mpvuzruv_j8vrn5n3",
-      "lastSubmittedAt": "2026-08-20T01:07:47.444Z"
     },
     {
       "nickname": "야르한 저녁이다!야르렁공부해라",
@@ -855,6 +846,15 @@
       "createdAt": "2026-08-20T15:15:15.211Z",
       "deviceId": "dev_mt1nwkqi_nx8vbjro",
       "lastSubmittedAt": "2026-08-20T15:15:15.211Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mpvuzruv_j8vrn5n3",
+      "lastSubmittedAt": "2026-08-20T23:43:54.010Z",
+      "createdAt": "2026-08-20T23:43:54.010Z"
     },
     {
       "nickname": "check",
