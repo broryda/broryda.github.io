@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T00:10:44.392Z",
+  "updatedAt": "2026-08-21T00:22:31.686Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -28,13 +28,6 @@
       "elo": 2136,
       "streakCurrent": 1,
       "createdAt": "2026-06-26T03:46:25Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 1409,
-      "elo": 2076,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-20T03:09:34.470Z"
     },
     {
       "nickname": "심효준",
@@ -665,6 +658,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-08-20T15:15:15.211Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-08-21T00:22:31.083Z"
     },
     {
       "nickname": "check",
