@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T08:16:15.937Z",
+  "updatedAt": "2026-08-21T08:16:51.363Z",
   "entries": [
     {
       "nickname": "npa",
@@ -170,18 +170,18 @@
       "createdAt": "2026-08-21T03:00:13.960Z"
     },
     {
-      "nickname": "바벨",
-      "solvedCount": 3339,
-      "elo": 1061,
-      "streakCurrent": 2,
-      "createdAt": "2026-08-21T08:15:55.119Z"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 5167,
       "elo": 1052,
       "streakCurrent": 4,
       "createdAt": "2026-08-20T23:44:49.984Z"
+    },
+    {
+      "nickname": "바벨",
+      "solvedCount": 3340,
+      "elo": 1052,
+      "streakCurrent": 2,
+      "createdAt": "2026-08-21T08:16:50.876Z"
     },
     {
       "nickname": "야르한 저녁이다!야르렁공부해라",
@@ -597,6 +597,13 @@
       "createdAt": "2026-08-15T12:10:42.924Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 9,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-08-21T08:16:48.238Z"
+    },
+    {
       "nickname": "사용자동지산",
       "solvedCount": 8,
       "elo": 300,
@@ -609,13 +616,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-08-16T01:26:24.783Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 8,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-21T08:16:08.991Z"
     },
     {
       "nickname": "슈사케",
