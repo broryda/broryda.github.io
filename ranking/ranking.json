@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T11:55:41.435Z",
+  "updatedAt": "2026-08-22T11:55:42.225Z",
   "entries": [
     {
       "nickname": "npa",
@@ -515,6 +515,15 @@
       "lastSubmittedAt": "2026-08-21T07:00:36.771Z"
     },
     {
+      "nickname": "익명고래",
+      "solvedCount": 30,
+      "elo": 378,
+      "streakCurrent": 1,
+      "deviceId": "dev_mt4bdk2f_gdqs0u96",
+      "lastSubmittedAt": "2026-08-22T11:55:41.780Z",
+      "createdAt": "2026-08-22T11:55:41.780Z"
+    },
+    {
       "nickname": "해쿠♡",
       "solvedCount": 124,
       "elo": 368,
@@ -522,15 +531,6 @@
       "createdAt": "2026-08-16T07:34:31.411Z",
       "deviceId": "dev_mpji0x8h_9j6bsh79",
       "lastSubmittedAt": "2026-08-16T07:34:31.411Z"
-    },
-    {
-      "nickname": "익명고래",
-      "solvedCount": 29,
-      "elo": 364,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-22T11:55:28.346Z",
-      "deviceId": "dev_mt4bdk2f_gdqs0u96",
-      "lastSubmittedAt": "2026-08-22T11:55:28.346Z"
     },
     {
       "nickname": "사용자",
@@ -762,9 +762,9 @@
       "solvedCount": 22,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-08-22T11:55:40.221Z",
       "deviceId": "dev_mt4bgx4x_du7jpg99",
-      "lastSubmittedAt": "2026-08-22T11:55:40.221Z",
-      "createdAt": "2026-08-22T11:55:40.221Z"
+      "lastSubmittedAt": "2026-08-22T11:55:40.221Z"
     },
     {
       "nickname": "구름이 흐른다",
