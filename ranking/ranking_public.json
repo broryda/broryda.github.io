@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T03:02:43.207Z",
+  "updatedAt": "2026-08-22T03:02:52.994Z",
   "entries": [
     {
       "nickname": "npa",
@@ -226,6 +226,13 @@
       "createdAt": "2026-08-17T23:59:16.507Z"
     },
     {
+      "nickname": "개구리바둑",
+      "solvedCount": 436,
+      "elo": 1012,
+      "streakCurrent": 1,
+      "createdAt": "2026-08-22T03:02:52.120Z"
+    },
+    {
       "nickname": "미캉",
       "solvedCount": 179,
       "elo": 1004,
@@ -238,13 +245,6 @@
       "elo": 1000,
       "streakCurrent": 0,
       "createdAt": "2026-06-19T23:08:46Z"
-    },
-    {
-      "nickname": "개구리바둑",
-      "solvedCount": 435,
-      "elo": 997,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-22T03:02:42.722Z"
     },
     {
       "nickname": "horangian",
