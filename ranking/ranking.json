@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T03:10:32.030Z",
+  "updatedAt": "2026-08-22T03:12:41.376Z",
   "entries": [
     {
       "nickname": "npa",
@@ -141,9 +141,9 @@
       "solvedCount": 1242,
       "elo": 1633,
       "streakCurrent": 1,
+      "createdAt": "2026-08-22T03:10:31.320Z",
       "deviceId": "dev_mofd1oai_igfyi63x",
-      "lastSubmittedAt": "2026-08-22T03:10:31.320Z",
-      "createdAt": "2026-08-22T03:10:31.320Z"
+      "lastSubmittedAt": "2026-08-22T03:10:31.320Z"
     },
     {
       "nickname": "ljh1211",
@@ -578,15 +578,6 @@
       "lastSubmittedAt": "2026-08-15T04:45:20.344Z"
     },
     {
-      "nickname": "타개의미학",
-      "solvedCount": 1707,
-      "elo": 300,
-      "streakCurrent": 9,
-      "createdAt": "2026-08-21T20:46:40.009Z",
-      "deviceId": "dev_mr8vq13i_2lar7w8t",
-      "lastSubmittedAt": "2026-08-21T20:46:40.009Z"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 1327,
       "elo": 300,
@@ -891,6 +882,15 @@
       "createdAt": "2026-08-20T15:15:15.211Z",
       "deviceId": "dev_mt1nwkqi_nx8vbjro",
       "lastSubmittedAt": "2026-08-20T15:15:15.211Z"
+    },
+    {
+      "nickname": "타개의미학",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mr8vq13i_2lar7w8t",
+      "lastSubmittedAt": "2026-08-22T03:12:40.303Z",
+      "createdAt": "2026-08-22T03:12:40.303Z"
     },
     {
       "nickname": "사용자",
