@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T07:49:12.011Z",
+  "updatedAt": "2026-08-23T07:50:16.646Z",
   "entries": [
     {
       "nickname": "npa",
@@ -600,9 +600,9 @@
       "solvedCount": 4791,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-08-23T07:49:10.765Z",
       "deviceId": "dev_mrsm1pbl_o04bxs9t",
-      "lastSubmittedAt": "2026-08-23T07:49:10.765Z",
-      "createdAt": "2026-08-23T07:49:10.765Z"
+      "lastSubmittedAt": "2026-08-23T07:49:10.765Z"
     },
     {
       "nickname": "타개의미학",
@@ -785,15 +785,6 @@
       "lastSubmittedAt": "2026-08-19T19:51:34.560Z"
     },
     {
-      "nickname": "베토벤",
-      "solvedCount": 31,
-      "elo": 300,
-      "streakCurrent": 2,
-      "createdAt": "2026-08-23T03:02:30.235Z",
-      "deviceId": "dev_msyiq51m_018mwvqi",
-      "lastSubmittedAt": "2026-08-23T03:02:30.235Z"
-    },
-    {
       "nickname": "구름이 흐른다",
       "solvedCount": 20,
       "elo": 300,
@@ -909,6 +900,15 @@
       "createdAt": "2026-08-23T03:29:25.272Z",
       "deviceId": "dev_mt590f8n_zivrhsp9",
       "lastSubmittedAt": "2026-08-23T03:29:25.272Z"
+    },
+    {
+      "nickname": "베토벤",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_msyiq51m_018mwvqi",
+      "lastSubmittedAt": "2026-08-23T07:50:13.304Z",
+      "createdAt": "2026-08-23T07:50:13.304Z"
     },
     {
       "nickname": "사용자",
