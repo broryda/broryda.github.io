@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T05:00:36.823Z",
+  "updatedAt": "2026-08-23T05:00:36.717Z",
   "entries": [
     {
       "nickname": "npa",
@@ -450,13 +450,6 @@
       "createdAt": "2026-08-23T03:44:48.283Z"
     },
     {
-      "nickname": "빨강",
-      "solvedCount": 4775,
-      "elo": 300,
-      "streakCurrent": 3,
-      "createdAt": "2026-08-21T14:57:28.201Z"
-    },
-    {
       "nickname": "타개의미학",
       "solvedCount": 1726,
       "elo": 300,
@@ -693,6 +686,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-08-23T03:29:25.272Z"
+    },
+    {
+      "nickname": "빨강",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-08-23T05:00:34.479Z"
     },
     {
       "nickname": "사용자",
