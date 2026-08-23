@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T23:46:33.857Z",
+  "updatedAt": "2026-08-23T23:46:33.864Z",
   "entries": [
     {
       "nickname": "npa",
@@ -486,6 +486,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 1334,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-08-23T23:46:32.303Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 973,
       "elo": 300,
       "streakCurrent": 3,
@@ -735,13 +742,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-08-23T07:55:23.825Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-08-23T23:46:31.947Z"
     },
     {
       "nickname": "사용자",
