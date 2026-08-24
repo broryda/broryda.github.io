@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T23:00:48.699Z",
+  "updatedAt": "2026-08-24T23:12:37.752Z",
   "entries": [
     {
       "nickname": "npa",
@@ -28,13 +28,6 @@
       "elo": 2136,
       "streakCurrent": 1,
       "createdAt": "2026-06-26T03:46:25Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 1588,
-      "elo": 2116,
-      "streakCurrent": 2,
-      "createdAt": "2026-08-24T08:31:03.708Z"
     },
     {
       "nickname": "바둑신",
@@ -714,6 +707,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-08-23T07:55:23.825Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-08-24T23:12:36.830Z"
     },
     {
       "nickname": "사용자",
