@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T08:44:38.309Z",
+  "updatedAt": "2026-08-24T08:49:34.999Z",
   "entries": [
     {
       "nickname": "npa",
@@ -562,13 +562,6 @@
       "createdAt": "2026-08-18T23:13:59.164Z"
     },
     {
-      "nickname": "바보 멍청이",
-      "solvedCount": 100,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-17T08:45:14.549Z"
-    },
-    {
       "nickname": "푸우바오",
       "solvedCount": 76,
       "elo": 300,
@@ -724,6 +717,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-08-24T08:49:33.315Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 35,
       "elo": 297,
       "streakCurrent": 1,
@@ -749,13 +749,6 @@
       "elo": 293,
       "streakCurrent": 1,
       "createdAt": "2026-08-22T18:29:02.229Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 2628,
-      "elo": 290,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-24T08:41:56.364Z"
     },
     {
       "nickname": "무심이",
