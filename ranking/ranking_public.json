@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T17:05:22.606Z",
+  "updatedAt": "2026-08-24T17:05:38.055Z",
   "entries": [
     {
       "nickname": "npa",
@@ -91,13 +91,6 @@
       "elo": 1800,
       "streakCurrent": 1,
       "createdAt": "2026-06-20T08:36:59Z"
-    },
-    {
-      "nickname": "김근영",
-      "solvedCount": 5602,
-      "elo": 1787,
-      "streakCurrent": 7,
-      "createdAt": "2026-08-24T17:04:51.915Z"
     },
     {
       "nickname": "인형놀이",
@@ -721,6 +714,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-08-23T07:55:23.825Z"
+    },
+    {
+      "nickname": "김근영",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-08-24T17:05:36.562Z"
     },
     {
       "nickname": "사용자",
