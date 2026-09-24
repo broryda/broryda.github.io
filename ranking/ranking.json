@@ -1,78 +1,6 @@
 {
-  "updatedAt": "2026-09-23T22:43:24.755295+00:00",
+  "updatedAt": "2026-09-24T01:08:10.095694+00:00",
   "entries": [
-    {
-      "nickname": "비비빅",
-      "solvedCount": 840,
-      "elo": 2173,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-22T15:14:14Z",
-      "deviceId": "sahwal_user_25"
-    },
-    {
-      "nickname": "사알못",
-      "solvedCount": 4,
-      "elo": 2155,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-07-20T05:15:03Z",
-      "deviceId": "sahwal_user_33"
-    },
-    {
-      "nickname": "pjd",
-      "solvedCount": 982,
-      "elo": 2136,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-26T03:46:25Z",
-      "deviceId": "sahwal_user_28"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 1589,
-      "elo": 2130,
-      "streakCurrent": 3,
-      "lastSubmittedAt": "2026-08-24T23:13:39.878Z",
-      "createdAt": "2026-08-24T23:13:39.878Z",
-      "deviceId": "dev_mp9autn7_tr3eb4pq"
-    },
-    {
-      "nickname": "바둑신",
-      "solvedCount": 287,
-      "elo": 2062,
-      "streakCurrent": 6,
-      "lastSubmittedAt": "2026-08-25T01:03:33.953Z",
-      "createdAt": "2026-08-25T01:03:33.953Z",
-      "deviceId": "dev_mrjwb8p6_m2y9duys"
-    },
-    {
-      "nickname": "전주양동일",
-      "solvedCount": 31,
-      "elo": 1807,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-20T04:36:57Z",
-      "deviceId": "sahwal_user_21"
-    },
-    {
-      "nickname": "박재동",
-      "solvedCount": 11,
-      "elo": 1800,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-20T08:36:59Z",
-      "deviceId": "sahwal_user_23"
-    },
-    {
-      "nickname": "broryda",
-      "solvedCount": 450,
-      "elo": 1683,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-19T09:22:11Z",
-      "deviceId": "sahwal_user_2"
-    },
     {
       "nickname": "공구소년",
       "solvedCount": 1244,
@@ -81,15 +9,6 @@
       "lastSubmittedAt": "2026-08-25T01:30:57.880Z",
       "createdAt": "2026-08-25T01:30:57.880Z",
       "deviceId": "dev_mofd1oai_igfyi63x"
-    },
-    {
-      "nickname": "경환",
-      "solvedCount": 38,
-      "elo": 1567,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-26T09:26:32Z",
-      "deviceId": "sahwal_user_29"
     },
     {
       "nickname": "임제자팬",
@@ -101,51 +20,6 @@
       "deviceId": "dev_mofulsf9_49qn1jj0"
     },
     {
-      "nickname": "개구리바둑",
-      "solvedCount": 514,
-      "elo": 1295,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T00:50:41.937Z",
-      "createdAt": "2026-08-25T00:50:41.937Z",
-      "deviceId": "dev_mr4h7uiw_ww86d1s8"
-    },
-    {
-      "nickname": "박경환",
-      "solvedCount": 6,
-      "elo": 1036,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-20T14:12:07Z",
-      "deviceId": "sahwal_user_24"
-    },
-    {
-      "nickname": "그대란우주",
-      "solvedCount": 0,
-      "elo": 1000,
-      "streakCurrent": 0,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-19T23:08:46Z",
-      "deviceId": "sahwal_user_12"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 287,
-      "elo": 712,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:04:18.954Z",
-      "createdAt": "2026-08-25T01:04:18.954Z",
-      "deviceId": "dev_ms4di3sb_j3zhi0my"
-    },
-    {
-      "nickname": "용과거북",
-      "solvedCount": 816,
-      "elo": 477,
-      "streakCurrent": 16,
-      "lastSubmittedAt": "2026-08-25T00:08:55.821Z",
-      "createdAt": "2026-08-25T00:08:55.821Z",
-      "deviceId": "dev_mp16rwu7_to77fpvk"
-    },
-    {
       "nickname": "catclaw",
       "solvedCount": 5304,
       "elo": 440,
@@ -155,51 +29,6 @@
       "deviceId": "dev_mr4oz3zf_0eisihux"
     },
     {
-      "nickname": "이성수",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-26T12:21:04Z",
-      "deviceId": "sahwal_user_30"
-    },
-    {
-      "nickname": "나는바보",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-07-20T05:11:53Z",
-      "deviceId": "sahwal_user_31"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 1377,
-      "elo": 300,
-      "streakCurrent": 2,
-      "lastSubmittedAt": "2026-08-24T23:59:56.301Z",
-      "createdAt": "2026-08-24T23:59:56.301Z",
-      "deviceId": "dev_mow79rbx_0h9nq8fp"
-    },
-    {
-      "nickname": "단금",
-      "solvedCount": 1093,
-      "elo": 300,
-      "streakCurrent": 3,
-      "lastSubmittedAt": "2026-08-25T00:43:57.013Z",
-      "createdAt": "2026-08-25T00:43:57.013Z",
-      "deviceId": "dev_mt5oxc04_8mkiatl6"
-    },
-    {
-      "nickname": "W.stone",
-      "solvedCount": 323,
-      "elo": 300,
-      "streakCurrent": 11,
-      "lastSubmittedAt": "2026-08-25T00:52:06.570Z",
-      "createdAt": "2026-08-25T00:52:06.570Z",
-      "deviceId": "dev_msra97wv_xvkquada"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 512,
       "elo": 300,
@@ -207,24 +36,6 @@
       "lastSubmittedAt": "2026-08-25T01:20:32.224Z",
       "createdAt": "2026-08-25T01:20:32.224Z",
       "deviceId": "dev_ms7sm52s_uqgtk2ck"
-    },
-    {
-      "nickname": "moonadong",
-      "solvedCount": 1,
-      "elo": 297,
-      "streakCurrent": 0,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-19T09:45:20Z",
-      "deviceId": "sahwal_user_4"
-    },
-    {
-      "nickname": "check",
-      "solvedCount": 2,
-      "elo": 297,
-      "streakCurrent": 1,
-      "lastSubmittedAt": "2026-08-25T01:00:02.302253Z",
-      "createdAt": "2026-06-20T02:30:11Z",
-      "deviceId": "sahwal_user_13"
     }
   ]
 }

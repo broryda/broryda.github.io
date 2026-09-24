@@ -1,75 +1,12 @@
 {
-  "updatedAt": "2026-09-23T22:43:24.755295+00:00",
+  "updatedAt": "2026-09-24T01:08:10.095694+00:00",
   "entries": [
-    {
-      "nickname": "비비빅",
-      "solvedCount": 840,
-      "elo": 2173,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-22T15:14:14Z"
-    },
-    {
-      "nickname": "사알못",
-      "solvedCount": 4,
-      "elo": 2155,
-      "streakCurrent": 1,
-      "createdAt": "2026-07-20T05:15:03Z"
-    },
-    {
-      "nickname": "pjd",
-      "solvedCount": 982,
-      "elo": 2136,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-26T03:46:25Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 1589,
-      "elo": 2130,
-      "streakCurrent": 3,
-      "createdAt": "2026-08-24T23:13:39.878Z"
-    },
-    {
-      "nickname": "바둑신",
-      "solvedCount": 287,
-      "elo": 2062,
-      "streakCurrent": 6,
-      "createdAt": "2026-08-25T01:03:33.953Z"
-    },
-    {
-      "nickname": "전주양동일",
-      "solvedCount": 31,
-      "elo": 1807,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-20T04:36:57Z"
-    },
-    {
-      "nickname": "박재동",
-      "solvedCount": 11,
-      "elo": 1800,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-20T08:36:59Z"
-    },
-    {
-      "nickname": "broryda",
-      "solvedCount": 450,
-      "elo": 1683,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-19T09:22:11Z"
-    },
     {
       "nickname": "공구소년",
       "solvedCount": 1244,
       "elo": 1633,
       "streakCurrent": 2,
       "createdAt": "2026-08-25T01:30:57.880Z"
-    },
-    {
-      "nickname": "경환",
-      "solvedCount": 38,
-      "elo": 1567,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-26T09:26:32Z"
     },
     {
       "nickname": "임제자팬",
@@ -79,41 +16,6 @@
       "createdAt": "2026-08-25T01:21:19.387Z"
     },
     {
-      "nickname": "개구리바둑",
-      "solvedCount": 514,
-      "elo": 1295,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-25T00:50:41.937Z"
-    },
-    {
-      "nickname": "박경환",
-      "solvedCount": 6,
-      "elo": 1036,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-20T14:12:07Z"
-    },
-    {
-      "nickname": "그대란우주",
-      "solvedCount": 0,
-      "elo": 1000,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-19T23:08:46Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 287,
-      "elo": 712,
-      "streakCurrent": 1,
-      "createdAt": "2026-08-25T01:04:18.954Z"
-    },
-    {
-      "nickname": "용과거북",
-      "solvedCount": 816,
-      "elo": 477,
-      "streakCurrent": 16,
-      "createdAt": "2026-08-25T00:08:55.821Z"
-    },
-    {
       "nickname": "catclaw",
       "solvedCount": 5304,
       "elo": 440,
@@ -121,60 +23,11 @@
       "createdAt": "2026-08-25T01:18:51.752Z"
     },
     {
-      "nickname": "이성수",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-26T12:21:04Z"
-    },
-    {
-      "nickname": "나는바보",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-07-20T05:11:53Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 1377,
-      "elo": 300,
-      "streakCurrent": 2,
-      "createdAt": "2026-08-24T23:59:56.301Z"
-    },
-    {
-      "nickname": "단금",
-      "solvedCount": 1093,
-      "elo": 300,
-      "streakCurrent": 3,
-      "createdAt": "2026-08-25T00:43:57.013Z"
-    },
-    {
-      "nickname": "W.stone",
-      "solvedCount": 323,
-      "elo": 300,
-      "streakCurrent": 11,
-      "createdAt": "2026-08-25T00:52:06.570Z"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 512,
       "elo": 300,
       "streakCurrent": 10,
       "createdAt": "2026-08-25T01:20:32.224Z"
-    },
-    {
-      "nickname": "moonadong",
-      "solvedCount": 1,
-      "elo": 297,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-19T09:45:20Z"
-    },
-    {
-      "nickname": "check",
-      "solvedCount": 2,
-      "elo": 297,
-      "streakCurrent": 1,
-      "createdAt": "2026-06-20T02:30:11Z"
     }
   ]
 }
