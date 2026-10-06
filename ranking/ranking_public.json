@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T08:23:04.520Z",
+  "updatedAt": "2026-10-06T08:23:12.168Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -297,10 +297,17 @@
     },
     {
       "nickname": "임서균",
-      "solvedCount": 5,
+      "solvedCount": 6,
       "elo": 300,
       "streakCurrent": 1,
-      "createdAt": "2026-10-06T08:23:04.084Z"
+      "createdAt": "2026-10-06T08:23:07.754Z"
+    },
+    {
+      "nickname": "윤민우",
+      "solvedCount": 3,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-10-06T08:23:11.944Z"
     },
     {
       "nickname": "키즈바둑5",
@@ -308,13 +315,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-10-06T08:20:23.944Z"
-    },
-    {
-      "nickname": "윤민우",
-      "solvedCount": 1,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-06T08:23:03.185Z"
     },
     {
       "nickname": "이성수",
