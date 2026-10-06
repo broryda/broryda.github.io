@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T00:44:42.774Z",
+  "updatedAt": "2026-10-06T00:44:42.778Z",
   "entries": [
     {
       "nickname": "Broryda",
@@ -16,18 +16,18 @@
       "createdAt": "2026-10-06T00:14:02.864Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 1730,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-10-06T00:44:41.463Z"
+    },
+    {
       "nickname": "지쎈",
       "solvedCount": 1022,
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-10-06T00:26:38.301Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-10-06T00:44:41.188Z"
     }
   ]
 }
