@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T06:00:47.382Z",
+  "updatedAt": "2026-10-06T06:05:47.280146+00:00",
   "entries": [
     {
       "nickname": "비비빅",
@@ -184,18 +184,18 @@
       "createdAt": "2026-10-06T02:09:08.285Z"
     },
     {
-      "nickname": "사용자",
-      "solvedCount": 1737,
+      "nickname": "이성수",
+      "solvedCount": 0,
       "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-06T05:26:42.455Z"
+      "streakCurrent": 0,
+      "createdAt": "2026-06-26T12:21:04Z"
     },
     {
-      "nickname": "예정파파",
-      "solvedCount": 1509,
+      "nickname": "나는바보",
+      "solvedCount": 0,
       "elo": 300,
-      "streakCurrent": 15,
-      "createdAt": "2026-10-06T04:23:11.548Z"
+      "streakCurrent": 0,
+      "createdAt": "2026-07-20T05:11:53Z"
     },
     {
       "nickname": "지쎈",
@@ -212,6 +212,13 @@
       "createdAt": "2026-10-06T01:05:46.164Z"
     },
     {
+      "nickname": "예정파파",
+      "solvedCount": 1509,
+      "elo": 300,
+      "streakCurrent": 15,
+      "createdAt": "2026-10-06T04:23:11.548Z"
+    },
+    {
       "nickname": "솜",
       "solvedCount": 30,
       "elo": 300,
@@ -219,25 +226,11 @@
       "createdAt": "2026-10-06T04:44:08.687Z"
     },
     {
-      "nickname": "이성수",
-      "solvedCount": 0,
+      "nickname": "사용자",
+      "solvedCount": 1737,
       "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-26T12:21:04Z"
-    },
-    {
-      "nickname": "나는바보",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-07-20T05:11:53Z"
-    },
-    {
-      "nickname": "check",
-      "solvedCount": 2,
-      "elo": 297,
       "streakCurrent": 1,
-      "createdAt": "2026-06-20T02:30:11Z"
+      "createdAt": "2026-10-06T05:26:42.455Z"
     },
     {
       "nickname": "moonadong",
@@ -245,6 +238,13 @@
       "elo": 297,
       "streakCurrent": 0,
       "createdAt": "2026-06-19T09:45:20Z"
+    },
+    {
+      "nickname": "check",
+      "solvedCount": 2,
+      "elo": 297,
+      "streakCurrent": 1,
+      "createdAt": "2026-06-20T02:30:11Z"
     },
     {
       "nickname": "사용자",
