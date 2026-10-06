@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T00:26:38.936Z",
+  "updatedAt": "2026-10-06T00:44:42.774Z",
   "entries": [
     {
       "nickname": "Broryda",
@@ -21,6 +21,13 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-10-06T00:26:38.301Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-10-06T00:44:41.188Z"
     }
   ]
 }
