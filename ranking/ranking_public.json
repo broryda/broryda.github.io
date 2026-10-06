@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T06:05:47.280146+00:00",
+  "updatedAt": "2026-10-06T06:11:51.766Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -76,7 +76,7 @@
       "solvedCount": 1867,
       "elo": 1214,
       "streakCurrent": 2,
-      "createdAt": "2026-10-06T05:15:35.913Z"
+      "createdAt": "2026-10-06T06:11:50.980Z"
     },
     {
       "nickname": "도겸",
@@ -184,18 +184,18 @@
       "createdAt": "2026-10-06T02:09:08.285Z"
     },
     {
-      "nickname": "이성수",
-      "solvedCount": 0,
+      "nickname": "사용자",
+      "solvedCount": 1737,
       "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-06-26T12:21:04Z"
+      "streakCurrent": 1,
+      "createdAt": "2026-10-06T05:26:42.455Z"
     },
     {
-      "nickname": "나는바보",
-      "solvedCount": 0,
+      "nickname": "예정파파",
+      "solvedCount": 1509,
       "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-07-20T05:11:53Z"
+      "streakCurrent": 15,
+      "createdAt": "2026-10-06T04:23:11.548Z"
     },
     {
       "nickname": "지쎈",
@@ -212,13 +212,6 @@
       "createdAt": "2026-10-06T01:05:46.164Z"
     },
     {
-      "nickname": "예정파파",
-      "solvedCount": 1509,
-      "elo": 300,
-      "streakCurrent": 15,
-      "createdAt": "2026-10-06T04:23:11.548Z"
-    },
-    {
       "nickname": "솜",
       "solvedCount": 30,
       "elo": 300,
@@ -226,18 +219,18 @@
       "createdAt": "2026-10-06T04:44:08.687Z"
     },
     {
-      "nickname": "사용자",
-      "solvedCount": 1737,
+      "nickname": "이성수",
+      "solvedCount": 0,
       "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-06T05:26:42.455Z"
+      "streakCurrent": 0,
+      "createdAt": "2026-06-26T12:21:04Z"
     },
     {
-      "nickname": "moonadong",
-      "solvedCount": 1,
-      "elo": 297,
+      "nickname": "나는바보",
+      "solvedCount": 0,
+      "elo": 300,
       "streakCurrent": 0,
-      "createdAt": "2026-06-19T09:45:20Z"
+      "createdAt": "2026-07-20T05:11:53Z"
     },
     {
       "nickname": "check",
@@ -245,6 +238,13 @@
       "elo": 297,
       "streakCurrent": 1,
       "createdAt": "2026-06-20T02:30:11Z"
+    },
+    {
+      "nickname": "moonadong",
+      "solvedCount": 1,
+      "elo": 297,
+      "streakCurrent": 0,
+      "createdAt": "2026-06-19T09:45:20Z"
     },
     {
       "nickname": "사용자",
