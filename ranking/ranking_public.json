@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T07:15:33.007Z",
+  "updatedAt": "2026-10-06T07:15:44.599Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -247,6 +247,13 @@
       "createdAt": "2026-10-06T04:44:08.687Z"
     },
     {
+      "nickname": "키즈바둑3",
+      "solvedCount": 1,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-10-06T07:15:44.235Z"
+    },
+    {
       "nickname": "이성수",
       "solvedCount": 0,
       "elo": 300,
@@ -266,13 +273,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-10-06T07:08:17.511Z"
-    },
-    {
-      "nickname": "키즈바둑3",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-10-06T07:15:32.098Z"
     },
     {
       "nickname": "check",
