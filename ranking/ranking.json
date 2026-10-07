@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T02:01:12.269Z",
+  "updatedAt": "2026-10-07T02:01:17.438Z",
   "entries": [
     {
       "nickname": "비비빅",
@@ -132,9 +132,9 @@
       "solvedCount": 481,
       "elo": 1178,
       "streakCurrent": 1,
+      "createdAt": "2026-10-07T02:01:11.833Z",
       "deviceId": "dev_mp184lsm_f79jo9rg",
-      "lastSubmittedAt": "2026-10-07T02:01:11.833Z",
-      "createdAt": "2026-10-07T02:01:11.833Z"
+      "lastSubmittedAt": "2026-10-07T02:01:11.833Z"
     },
     {
       "nickname": "밐빵이수집가",
@@ -594,6 +594,15 @@
       "createdAt": "2026-10-06T10:59:59.791Z",
       "deviceId": "dev_muwkgaib_46gtehce",
       "lastSubmittedAt": "2026-10-06T10:59:59.791Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_muxgoeoq_3h8qcrj9",
+      "lastSubmittedAt": "2026-10-07T02:01:16.768Z",
+      "createdAt": "2026-10-07T02:01:16.768Z"
     },
     {
       "nickname": "솜",
