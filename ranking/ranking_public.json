@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T08:22:46.517Z",
+  "updatedAt": "2026-10-08T08:22:52.324Z",
   "entries": [
     {
       "nickname": "npa",
@@ -472,10 +472,10 @@
     },
     {
       "nickname": "키즈바둑1",
-      "solvedCount": 369,
+      "solvedCount": 370,
       "elo": 300,
-      "streakCurrent": 2,
-      "createdAt": "2026-10-08T08:21:45.813Z"
+      "streakCurrent": 3,
+      "createdAt": "2026-10-08T08:22:51.732Z"
     },
     {
       "nickname": "KataGo",
@@ -490,6 +490,13 @@
       "elo": 300,
       "streakCurrent": 3,
       "createdAt": "2026-10-08T01:42:31.316Z"
+    },
+    {
+      "nickname": "키즈바둑4",
+      "solvedCount": 296,
+      "elo": 300,
+      "streakCurrent": 3,
+      "createdAt": "2026-10-08T08:22:51.397Z"
     },
     {
       "nickname": "베토벤",
@@ -637,13 +644,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-10-07T22:14:26.142Z"
-    },
-    {
-      "nickname": "키즈바둑4",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-10-08T08:22:23.639Z"
     },
     {
       "nickname": "솜",
