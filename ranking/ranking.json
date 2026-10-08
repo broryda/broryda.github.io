@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T11:35:47.059Z",
+  "updatedAt": "2026-10-08T11:44:52.245Z",
   "entries": [
     {
       "nickname": "npa",
@@ -348,9 +348,9 @@
       "solvedCount": 8203,
       "elo": 626,
       "streakCurrent": 3,
+      "createdAt": "2026-10-08T11:35:46.387Z",
       "deviceId": "dev_mt5oxc04_8mkiatl6",
-      "lastSubmittedAt": "2026-10-08T11:35:46.387Z",
-      "createdAt": "2026-10-08T11:35:46.387Z"
+      "lastSubmittedAt": "2026-10-08T11:35:46.387Z"
     },
     {
       "nickname": "팬더바둑",
@@ -794,15 +794,6 @@
       "lastSubmittedAt": "2026-10-07T07:07:00.458Z"
     },
     {
-      "nickname": "지니",
-      "solvedCount": 10,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-07T22:31:06.495Z",
-      "deviceId": "dev_muy644iz_itprtvxk",
-      "lastSubmittedAt": "2026-10-07T22:31:06.495Z"
-    },
-    {
       "nickname": "이지호",
       "solvedCount": 10,
       "elo": 300,
@@ -864,6 +855,15 @@
       "createdAt": "2026-10-08T08:44:52.205Z",
       "deviceId": "dev_muzaja6s_3o6zm3a0",
       "lastSubmittedAt": "2026-10-08T08:44:52.205Z"
+    },
+    {
+      "nickname": "지니",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_muy644iz_itprtvxk",
+      "lastSubmittedAt": "2026-10-08T11:44:50.861Z",
+      "createdAt": "2026-10-08T11:44:50.861Z"
     },
     {
       "nickname": "솜",
