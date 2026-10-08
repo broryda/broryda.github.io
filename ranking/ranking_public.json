@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-10-08T07:22:18.178Z",
+  "updatedAt": "2026-10-08T07:22:18.193Z",
   "entries": [
+    {
+      "nickname": "npa",
+      "solvedCount": 1653,
+      "elo": 2211,
+      "streakCurrent": 1,
+      "createdAt": "2026-10-08T07:22:16.410Z"
+    },
     {
       "nickname": "비비빅",
       "solvedCount": 840,
@@ -623,13 +630,6 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-10-07T22:14:26.142Z"
-    },
-    {
-      "nickname": "npa",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-10-08T07:22:16.319Z"
     },
     {
       "nickname": "솜",
