@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T00:16:09.827Z",
+  "updatedAt": "2026-10-15T00:16:54.688Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -191,15 +191,6 @@
       "lastSubmittedAt": "2026-10-14T09:34:18.556Z"
     },
     {
-      "nickname": "골드러쉬",
-      "solvedCount": 853,
-      "elo": 1403,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-15T00:16:08.753Z",
-      "deviceId": "dev_moz6jfs7_o8t6q2z6",
-      "lastSubmittedAt": "2026-10-15T00:16:08.753Z"
-    },
-    {
       "nickname": "개구리바둑",
       "solvedCount": 689,
       "elo": 1396,
@@ -207,6 +198,15 @@
       "createdAt": "2026-10-14T04:21:52.196Z",
       "deviceId": "dev_mr4h7uiw_ww86d1s8",
       "lastSubmittedAt": "2026-10-14T04:21:52.196Z"
+    },
+    {
+      "nickname": "골드러쉬",
+      "solvedCount": 854,
+      "elo": 1393,
+      "streakCurrent": 2,
+      "deviceId": "dev_moz6jfs7_o8t6q2z6",
+      "lastSubmittedAt": "2026-10-15T00:16:54.347Z",
+      "createdAt": "2026-10-15T00:16:54.347Z"
     },
     {
       "nickname": "임정우",
