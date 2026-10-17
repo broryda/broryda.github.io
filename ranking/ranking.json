@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T06:38:14.947Z",
+  "updatedAt": "2026-10-17T06:38:22.191Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -171,6 +171,15 @@
       "createdAt": "2026-10-17T00:34:51.716Z",
       "deviceId": "dev_mushklwz_vupv8ltd",
       "lastSubmittedAt": "2026-10-17T00:34:51.716Z"
+    },
+    {
+      "nickname": "개구리바둑",
+      "solvedCount": 689,
+      "elo": 1396,
+      "streakCurrent": 2,
+      "deviceId": "dev_mr4h7uiw_ww86d1s8",
+      "lastSubmittedAt": "2026-10-17T06:38:22.504Z",
+      "createdAt": "2026-10-17T06:38:22.504Z"
     },
     {
       "nickname": "골드러쉬",
@@ -1206,15 +1215,6 @@
       "createdAt": "2026-10-17T05:57:03.426Z",
       "deviceId": "dev_mvbzi4wb_1beoti0c",
       "lastSubmittedAt": "2026-10-17T05:57:03.426Z"
-    },
-    {
-      "nickname": "개구리바둑",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-10-17T06:38:14.424Z",
-      "deviceId": "dev_mr4h7uiw_ww86d1s8",
-      "lastSubmittedAt": "2026-10-17T06:38:14.424Z"
     },
     {
       "nickname": "키즈바둑5",
