@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T01:33:34.022Z",
+  "updatedAt": "2026-10-19T01:33:41.227Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -646,13 +646,6 @@
       "createdAt": "2026-10-18T08:11:44.103Z"
     },
     {
-      "nickname": "KataGo",
-      "solvedCount": 419,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-18T08:51:47.099Z"
-    },
-    {
       "nickname": "양기태",
       "solvedCount": 418,
       "elo": 300,
@@ -966,6 +959,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-10-17T05:57:03.426Z"
+    },
+    {
+      "nickname": "KataGo",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-10-19T01:33:40.065Z"
     },
     {
       "nickname": "키즈바둑5",
