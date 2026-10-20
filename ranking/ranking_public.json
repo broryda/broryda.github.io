@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T10:58:32.440Z",
+  "updatedAt": "2026-10-20T10:58:42.464Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -231,13 +231,6 @@
       "elo": 1128,
       "streakCurrent": 1,
       "createdAt": "2026-10-15T07:21:02.761Z"
-    },
-    {
-      "nickname": "임공지능",
-      "solvedCount": 1330,
-      "elo": 1086,
-      "streakCurrent": 8,
-      "createdAt": "2026-10-19T11:06:12.935Z"
     },
     {
       "nickname": "사용자",
@@ -682,10 +675,10 @@
     },
     {
       "nickname": "김예준",
-      "solvedCount": 310,
+      "solvedCount": 311,
       "elo": 300,
       "streakCurrent": 2,
-      "createdAt": "2026-10-20T10:58:32.047Z"
+      "createdAt": "2026-10-20T10:58:41.487Z"
     },
     {
       "nickname": "사용자",
@@ -959,6 +952,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-10-20T07:10:38.510Z"
+    },
+    {
+      "nickname": "임공지능",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-10-20T10:58:41.219Z"
     },
     {
       "nickname": "키즈바둑5",
