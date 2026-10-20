@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T08:44:57.540Z",
+  "updatedAt": "2026-10-20T08:48:30.713Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -276,9 +276,9 @@
       "solvedCount": 1884,
       "elo": 1278,
       "streakCurrent": 1,
+      "createdAt": "2026-10-20T08:44:57.982Z",
       "deviceId": "dev_mofulsf9_49qn1jj0",
-      "lastSubmittedAt": "2026-10-20T08:44:57.982Z",
-      "createdAt": "2026-10-20T08:44:57.982Z"
+      "lastSubmittedAt": "2026-10-20T08:44:57.982Z"
     },
     {
       "nickname": "mookdo",
@@ -693,15 +693,6 @@
       "createdAt": "2026-10-19T18:12:35.899Z",
       "deviceId": "dev_mrntdiwt_p34wrfr6",
       "lastSubmittedAt": "2026-10-19T18:12:35.899Z"
-    },
-    {
-      "nickname": "키즈바둑4",
-      "solvedCount": 1509,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-19T08:57:45.025Z",
-      "deviceId": "dev_muweoz6r_vuo2djed",
-      "lastSubmittedAt": "2026-10-19T08:57:45.025Z"
     },
     {
       "nickname": "키즈바둑2",
@@ -1233,6 +1224,15 @@
       "createdAt": "2026-10-20T07:10:38.510Z",
       "deviceId": "dev_mvgbj0ft_rb3jwqr1",
       "lastSubmittedAt": "2026-10-20T07:10:38.510Z"
+    },
+    {
+      "nickname": "키즈바둑4",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_muweoz6r_vuo2djed",
+      "lastSubmittedAt": "2026-10-20T08:48:30.225Z",
+      "createdAt": "2026-10-20T08:48:30.225Z"
     },
     {
       "nickname": "키즈바둑5",
