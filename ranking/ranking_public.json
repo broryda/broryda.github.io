@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T00:59:08.707Z",
+  "updatedAt": "2026-10-20T01:00:24.203Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -954,6 +954,13 @@
       "createdAt": "2026-10-19T06:20:34.287Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-10-20T01:00:22.176Z"
+    },
+    {
       "nickname": "키즈바둑5",
       "solvedCount": 1925,
       "elo": 297,
@@ -1022,13 +1029,6 @@
       "elo": 271,
       "streakCurrent": 6,
       "createdAt": "2026-10-20T00:54:08.316Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 58,
-      "elo": 164,
-      "streakCurrent": 2,
-      "createdAt": "2026-10-20T00:59:07.535Z"
     }
   ]
 }
