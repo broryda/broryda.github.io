@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T07:35:04.229Z",
+  "updatedAt": "2026-10-21T07:35:06.520Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -299,15 +299,6 @@
       "lastSubmittedAt": "2026-10-20T08:44:57.982Z"
     },
     {
-      "nickname": "임공지능",
-      "solvedCount": 1483,
-      "elo": 1132,
-      "streakCurrent": 10,
-      "createdAt": "2026-10-21T07:34:53.980Z",
-      "deviceId": "dev_mv4uvops_w5fe8vc3",
-      "lastSubmittedAt": "2026-10-21T07:34:53.980Z"
-    },
-    {
       "nickname": "mookdo",
       "solvedCount": 5137,
       "elo": 1128,
@@ -315,6 +306,15 @@
       "createdAt": "2026-10-15T07:21:02.761Z",
       "deviceId": "dev_mq7rdoep_kw8dtave",
       "lastSubmittedAt": "2026-10-15T07:21:02.761Z"
+    },
+    {
+      "nickname": "임공지능",
+      "solvedCount": 1484,
+      "elo": 1121,
+      "streakCurrent": 10,
+      "deviceId": "dev_mv4uvops_w5fe8vc3",
+      "lastSubmittedAt": "2026-10-21T07:35:05.846Z",
+      "createdAt": "2026-10-21T07:35:05.846Z"
     },
     {
       "nickname": "사용자",
@@ -402,9 +402,9 @@
       "solvedCount": 516,
       "elo": 908,
       "streakCurrent": 2,
+      "createdAt": "2026-10-21T07:35:03.827Z",
       "deviceId": "dev_mv7rinp1_2r5xz850",
-      "lastSubmittedAt": "2026-10-21T07:35:03.827Z",
-      "createdAt": "2026-10-21T07:35:03.827Z"
+      "lastSubmittedAt": "2026-10-21T07:35:03.827Z"
     },
     {
       "nickname": "전국초등학교 블랙리스트 김준영",
