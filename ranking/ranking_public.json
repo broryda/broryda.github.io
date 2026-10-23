@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T15:26:35.871Z",
+  "updatedAt": "2026-10-23T15:26:50.027Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -252,13 +252,6 @@
       "elo": 1052,
       "streakCurrent": 1,
       "createdAt": "2026-10-22T07:04:16.946Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 957,
-      "elo": 1043,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-22T03:38:15.417Z"
     },
     {
       "nickname": "박경환",
@@ -1064,6 +1057,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-10-23T10:18:10.143Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-10-23T15:26:48.911Z"
     },
     {
       "nickname": "check",
