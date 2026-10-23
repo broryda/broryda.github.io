@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T11:28:20.476Z",
+  "updatedAt": "2026-10-23T11:36:08.523Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -279,15 +279,6 @@
       "createdAt": "2026-10-23T08:24:55.696Z",
       "deviceId": "dev_msra97wv_xvkquada",
       "lastSubmittedAt": "2026-10-23T08:24:55.696Z"
-    },
-    {
-      "nickname": "도겸",
-      "solvedCount": 1125,
-      "elo": 1304,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-20T10:11:02.093Z",
-      "deviceId": "dev_mquw0wc4_b89l0mv8",
-      "lastSubmittedAt": "2026-10-20T10:11:02.093Z"
     },
     {
       "nickname": "임제자팬",
@@ -681,9 +672,9 @@
       "solvedCount": 6,
       "elo": 336,
       "streakCurrent": 1,
+      "createdAt": "2026-10-23T11:28:20.404Z",
       "deviceId": "dev_mvktwebl_7jbjokif",
-      "lastSubmittedAt": "2026-10-23T11:28:20.404Z",
-      "createdAt": "2026-10-23T11:28:20.404Z"
+      "lastSubmittedAt": "2026-10-23T11:28:20.404Z"
     },
     {
       "nickname": "섭서비",
@@ -1359,6 +1350,15 @@
       "createdAt": "2026-10-23T10:18:10.143Z",
       "deviceId": "dev_mvkth118_5crq1zeg",
       "lastSubmittedAt": "2026-10-23T10:18:10.143Z"
+    },
+    {
+      "nickname": "도겸",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mquw0wc4_b89l0mv8",
+      "lastSubmittedAt": "2026-10-23T11:36:07.601Z",
+      "createdAt": "2026-10-23T11:36:07.601Z"
     },
     {
       "nickname": "check",
