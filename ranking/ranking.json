@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T11:10:08.249Z",
+  "updatedAt": "2026-10-23T11:10:12.306Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -218,6 +218,15 @@
       "lastSubmittedAt": "2026-10-16T15:17:38.029Z"
     },
     {
+      "nickname": "골드러쉬",
+      "solvedCount": 894,
+      "elo": 1471,
+      "streakCurrent": 1,
+      "deviceId": "dev_moz6jfs7_o8t6q2z6",
+      "lastSubmittedAt": "2026-10-23T11:10:11.915Z",
+      "createdAt": "2026-10-23T11:10:11.915Z"
+    },
+    {
       "nickname": "임제자",
       "solvedCount": 3907,
       "elo": 1467,
@@ -225,15 +234,6 @@
       "createdAt": "2026-10-20T00:13:18.617Z",
       "deviceId": "dev_moh2gqb6_zo5kbnl0",
       "lastSubmittedAt": "2026-10-20T00:13:18.617Z"
-    },
-    {
-      "nickname": "골드러쉬",
-      "solvedCount": 894,
-      "elo": 1457,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-23T11:09:28.777Z",
-      "deviceId": "dev_moz6jfs7_o8t6q2z6",
-      "lastSubmittedAt": "2026-10-23T11:09:28.777Z"
     },
     {
       "nickname": "개구리바둑",
@@ -384,9 +384,9 @@
       "solvedCount": 1012,
       "elo": 953,
       "streakCurrent": 1,
+      "createdAt": "2026-10-23T11:10:07.936Z",
       "deviceId": "dev_msd4mwsb_jq6z9iay",
-      "lastSubmittedAt": "2026-10-23T11:10:07.936Z",
-      "createdAt": "2026-10-23T11:10:07.936Z"
+      "lastSubmittedAt": "2026-10-23T11:10:07.936Z"
     },
     {
       "nickname": "장준우⚔️",
