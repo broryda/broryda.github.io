@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T02:57:08.491Z",
+  "updatedAt": "2026-10-27T02:59:41.140Z",
   "entries": [
     {
       "nickname": "npa",
@@ -21,13 +21,6 @@
       "elo": 2155,
       "streakCurrent": 1,
       "createdAt": "2026-07-20T05:15:03Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 2597,
-      "elo": 2145,
-      "streakCurrent": 3,
-      "createdAt": "2026-10-26T03:42:55.526Z"
     },
     {
       "nickname": "pjd",
@@ -1022,6 +1015,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-10-26T06:57:08.434Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-10-27T02:59:40.121Z"
     },
     {
       "nickname": "고희승",
