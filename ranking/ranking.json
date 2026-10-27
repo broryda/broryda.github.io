@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T23:13:49.593Z",
+  "updatedAt": "2026-10-27T23:13:51.786Z",
   "entries": [
     {
       "nickname": "npa",
@@ -699,9 +699,9 @@
       "solvedCount": 310,
       "elo": 328,
       "streakCurrent": 2,
+      "createdAt": "2026-10-27T23:13:49.094Z",
       "deviceId": "dev_mvpuq3dr_k2d872ps",
-      "lastSubmittedAt": "2026-10-27T23:13:49.094Z",
-      "createdAt": "2026-10-27T23:13:49.094Z"
+      "lastSubmittedAt": "2026-10-27T23:13:49.094Z"
     },
     {
       "nickname": "김예준",
@@ -1110,21 +1110,21 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 31,
+      "elo": 300,
+      "streakCurrent": 1,
+      "deviceId": "dev_mvra9pv3_kexd7rrm",
+      "lastSubmittedAt": "2026-10-27T23:13:51.471Z",
+      "createdAt": "2026-10-27T23:13:51.471Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 30,
       "elo": 300,
       "streakCurrent": 2,
       "createdAt": "2026-10-22T00:43:17.995Z",
       "deviceId": "dev_mvh523xz_k79ewjqb",
       "lastSubmittedAt": "2026-10-22T00:43:17.995Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 30,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-10-27T23:13:41.538Z",
-      "deviceId": "dev_mvra9pv3_kexd7rrm",
-      "lastSubmittedAt": "2026-10-27T23:13:41.538Z"
     },
     {
       "nickname": "야생마",
