@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T13:28:42.418Z",
+  "updatedAt": "2026-10-30T13:28:50.767Z",
   "entries": [
     {
       "nickname": "AJK",
@@ -423,6 +423,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 478,
+      "elo": 389,
+      "streakCurrent": 2,
+      "createdAt": "2026-10-30T13:28:49.910Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 243,
       "elo": 387,
       "streakCurrent": 1,
@@ -434,13 +441,6 @@
       "elo": 385,
       "streakCurrent": 1,
       "createdAt": "2026-10-29T23:39:32.439Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 477,
-      "elo": 384,
-      "streakCurrent": 2,
-      "createdAt": "2026-10-30T13:28:32.430Z"
     },
     {
       "nickname": "사용자",
