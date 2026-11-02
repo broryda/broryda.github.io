@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T15:18:54.675Z",
+  "updatedAt": "2026-11-02T15:19:10.968Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -198,15 +198,6 @@
       "createdAt": "2026-10-30T02:20:30.050Z",
       "deviceId": "dev_mquw0wc4_b89l0mv8",
       "lastSubmittedAt": "2026-10-30T02:20:30.050Z"
-    },
-    {
-      "nickname": "W.stone",
-      "solvedCount": 6543,
-      "elo": 1320,
-      "streakCurrent": 81,
-      "createdAt": "2026-11-02T15:15:12.590Z",
-      "deviceId": "dev_msra97wv_xvkquada",
-      "lastSubmittedAt": "2026-11-02T15:15:12.590Z"
     },
     {
       "nickname": "임제자팬",
@@ -843,9 +834,9 @@
       "solvedCount": 816,
       "elo": 300,
       "streakCurrent": 3,
+      "createdAt": "2026-11-02T15:18:54.223Z",
       "deviceId": "dev_mvxfpsnh_g0srh1wc",
-      "lastSubmittedAt": "2026-11-02T15:18:54.223Z",
-      "createdAt": "2026-11-02T15:18:54.223Z"
+      "lastSubmittedAt": "2026-11-02T15:18:54.223Z"
     },
     {
       "nickname": "사용자",
@@ -1233,6 +1224,15 @@
       "createdAt": "2026-11-02T09:07:06.274Z",
       "deviceId": "dev_mvx44sch_1ljdgzn7",
       "lastSubmittedAt": "2026-11-02T09:07:06.274Z"
+    },
+    {
+      "nickname": "W.stone",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_msra97wv_xvkquada",
+      "lastSubmittedAt": "2026-11-02T15:19:09.359Z",
+      "createdAt": "2026-11-02T15:19:09.359Z"
     },
     {
       "nickname": "고희승",
