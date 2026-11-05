@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T08:18:54.430Z",
+  "updatedAt": "2026-11-05T08:19:19.703Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -315,15 +315,6 @@
       "createdAt": "2026-11-01T11:30:00.013Z",
       "deviceId": "dev_msd4mwsb_jq6z9iay",
       "lastSubmittedAt": "2026-11-01T11:30:00.013Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 433,
-      "elo": 1020,
-      "streakCurrent": 3,
-      "createdAt": "2026-11-04T08:25:39.466Z",
-      "deviceId": "dev_mvrtqfbj_vbtjtbqk",
-      "lastSubmittedAt": "2026-11-04T08:25:39.466Z"
     },
     {
       "nickname": "사용자",
@@ -1334,6 +1325,15 @@
       "lastSubmittedAt": "2026-11-05T02:30:21.305Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mvrtqfbj_vbtjtbqk",
+      "lastSubmittedAt": "2026-11-05T08:19:18.161Z",
+      "createdAt": "2026-11-05T08:19:18.161Z"
+    },
+    {
       "nickname": "고희승",
       "solvedCount": 484,
       "elo": 298,
@@ -1419,9 +1419,9 @@
       "solvedCount": 479,
       "elo": 282,
       "streakCurrent": 1,
+      "createdAt": "2026-11-05T08:18:53.974Z",
       "deviceId": "dev_mp59azm9_3zsajb69",
-      "lastSubmittedAt": "2026-11-05T08:18:53.974Z",
-      "createdAt": "2026-11-05T08:18:53.974Z"
+      "lastSubmittedAt": "2026-11-05T08:18:53.974Z"
     },
     {
       "nickname": "사용자지만 고양이인 고양이",
