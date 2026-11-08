@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T20:00:51.266Z",
+  "updatedAt": "2026-11-08T20:08:04.727Z",
   "entries": [
     {
       "nickname": "npa",
@@ -387,15 +387,6 @@
       "createdAt": "2026-11-07T03:43:57.187Z",
       "deviceId": "dev_mv1spysb_6w8pfx2n",
       "lastSubmittedAt": "2026-11-07T03:43:57.187Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 251,
-      "elo": 910,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-08T13:11:01.168Z",
-      "deviceId": "dev_mw2jsmv8_l9nwzuxo",
-      "lastSubmittedAt": "2026-11-08T13:11:01.168Z"
     },
     {
       "nickname": "전국초등학교 블랙리스트 김준영",
@@ -1494,6 +1485,15 @@
       "createdAt": "2026-11-05T02:30:21.305Z",
       "deviceId": "dev_mp3ekpq7_dapr6ama",
       "lastSubmittedAt": "2026-11-05T02:30:21.305Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mw2jsmv8_l9nwzuxo",
+      "lastSubmittedAt": "2026-11-08T20:08:03.572Z",
+      "createdAt": "2026-11-08T20:08:03.572Z"
     },
     {
       "nickname": "키즈바둑2",
