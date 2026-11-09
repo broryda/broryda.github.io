@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T06:29:46.671Z",
+  "updatedAt": "2026-11-09T06:29:46.602Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -311,6 +311,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 292,
+      "elo": 917,
+      "streakCurrent": 2,
+      "createdAt": "2026-11-09T06:29:46.390Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 271,
       "elo": 915,
       "streakCurrent": 1,
@@ -336,13 +343,6 @@
       "elo": 905,
       "streakCurrent": 2,
       "createdAt": "2026-11-06T03:47:56.567Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 291,
-      "elo": 902,
-      "streakCurrent": 2,
-      "createdAt": "2026-11-09T06:29:03.824Z"
     },
     {
       "nickname": "석현이 못생김",
