@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T09:49:04.051Z",
+  "updatedAt": "2026-11-10T09:49:04.869Z",
   "entries": [
     {
       "nickname": "npa",
@@ -263,6 +263,15 @@
       "lastSubmittedAt": "2026-11-10T08:22:20.688Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 292,
+      "elo": 1198,
+      "streakCurrent": 2,
+      "deviceId": "dev_mutiahtg_ex3bvo5f",
+      "lastSubmittedAt": "2026-11-10T09:49:04.350Z",
+      "createdAt": "2026-11-10T09:49:04.350Z"
+    },
+    {
       "nickname": "황기익",
       "solvedCount": 3949,
       "elo": 1186,
@@ -270,15 +279,6 @@
       "createdAt": "2026-11-10T06:00:39.712Z",
       "deviceId": "dev_mp3dfqza_azw6oloz",
       "lastSubmittedAt": "2026-11-10T06:00:39.712Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 291,
-      "elo": 1185,
-      "streakCurrent": 2,
-      "createdAt": "2026-11-10T09:48:43.184Z",
-      "deviceId": "dev_mutiahtg_ex3bvo5f",
-      "lastSubmittedAt": "2026-11-10T09:48:43.184Z"
     },
     {
       "nickname": "임공지능",
@@ -1014,9 +1014,9 @@
       "solvedCount": 425,
       "elo": 300,
       "streakCurrent": 4,
+      "createdAt": "2026-11-10T09:49:03.418Z",
       "deviceId": "dev_mw68lsta_tuqd3vji",
-      "lastSubmittedAt": "2026-11-10T09:49:03.418Z",
-      "createdAt": "2026-11-10T09:49:03.418Z"
+      "lastSubmittedAt": "2026-11-10T09:49:03.418Z"
     },
     {
       "nickname": "사삼이일",
