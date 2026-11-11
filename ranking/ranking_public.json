@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T01:14:23.205Z",
+  "updatedAt": "2026-11-11T01:15:42.075Z",
   "entries": [
     {
       "nickname": "npa",
@@ -891,13 +891,6 @@
       "createdAt": "2026-11-06T06:29:08.214Z"
     },
     {
-      "nickname": "베토벤",
-      "solvedCount": 244,
-      "elo": 300,
-      "streakCurrent": 3,
-      "createdAt": "2026-11-10T01:33:15.633Z"
-    },
-    {
       "nickname": "사용자곰",
       "solvedCount": 203,
       "elo": 300,
@@ -1225,6 +1218,13 @@
       "elo": 300,
       "streakCurrent": 0,
       "createdAt": "2026-11-10T11:53:09.254Z"
+    },
+    {
+      "nickname": "베토벤",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "createdAt": "2026-11-11T01:15:39.994Z"
     },
     {
       "nickname": "키즈바둑2",
