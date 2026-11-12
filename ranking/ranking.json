@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T15:01:07.614Z",
+  "updatedAt": "2026-11-12T15:03:26.428Z",
   "entries": [
     {
       "nickname": "npa",
@@ -947,15 +947,6 @@
       "lastSubmittedAt": "2026-11-08T01:46:07.938Z"
     },
     {
-      "nickname": "사용자",
-      "solvedCount": 576,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-09T10:44:27.781Z",
-      "deviceId": "dev_mv5ck6xz_uifwnd8w",
-      "lastSubmittedAt": "2026-11-09T10:44:27.781Z"
-    },
-    {
       "nickname": "네오스",
       "solvedCount": 555,
       "elo": 300,
@@ -1530,6 +1521,15 @@
       "createdAt": "2026-11-12T05:43:17.450Z",
       "deviceId": "dev_muweoz6r_vuo2djed",
       "lastSubmittedAt": "2026-11-12T05:43:17.450Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mv5ck6xz_uifwnd8w",
+      "lastSubmittedAt": "2026-11-12T15:03:24.694Z",
+      "createdAt": "2026-11-12T15:03:24.694Z"
     },
     {
       "nickname": "키즈바둑2",
