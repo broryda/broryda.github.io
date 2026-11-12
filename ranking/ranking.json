@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T06:43:28.121Z",
+  "updatedAt": "2026-11-12T06:43:29.642Z",
   "entries": [
     {
       "nickname": "npa",
@@ -390,6 +390,15 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 774,
+      "elo": 906,
+      "streakCurrent": 2,
+      "deviceId": "dev_mvrtqfbj_vbtjtbqk",
+      "lastSubmittedAt": "2026-11-12T06:43:29.304Z",
+      "createdAt": "2026-11-12T06:43:29.304Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 205,
       "elo": 905,
       "streakCurrent": 2,
@@ -405,15 +414,6 @@
       "createdAt": "2026-11-12T05:14:06.965Z",
       "deviceId": "dev_mw2jsmv8_l9nwzuxo",
       "lastSubmittedAt": "2026-11-12T05:14:06.965Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 773,
-      "elo": 899,
-      "streakCurrent": 2,
-      "createdAt": "2026-11-12T06:42:58.975Z",
-      "deviceId": "dev_mvrtqfbj_vbtjtbqk",
-      "lastSubmittedAt": "2026-11-12T06:42:58.975Z"
     },
     {
       "nickname": "잔머리알파고",
@@ -1050,9 +1050,9 @@
       "solvedCount": 340,
       "elo": 300,
       "streakCurrent": 1,
+      "createdAt": "2026-11-12T06:43:27.330Z",
       "deviceId": "dev_mwd2b9nt_tqoaqpp2",
-      "lastSubmittedAt": "2026-11-12T06:43:27.330Z",
-      "createdAt": "2026-11-12T06:43:27.330Z"
+      "lastSubmittedAt": "2026-11-12T06:43:27.330Z"
     },
     {
       "nickname": "민찬",
