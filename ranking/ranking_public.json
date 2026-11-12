@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T06:51:50.615Z",
+  "updatedAt": "2026-11-12T06:51:54.039Z",
   "entries": [
     {
       "nickname": "npa",
@@ -304,13 +304,6 @@
     },
     {
       "nickname": "사용자",
-      "solvedCount": 794,
-      "elo": 905,
-      "streakCurrent": 2,
-      "createdAt": "2026-11-12T06:51:19.336Z"
-    },
-    {
-      "nickname": "사용자",
       "solvedCount": 205,
       "elo": 905,
       "streakCurrent": 2,
@@ -322,6 +315,13 @@
       "elo": 901,
       "streakCurrent": 5,
       "createdAt": "2026-11-12T05:14:06.965Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 795,
+      "elo": 898,
+      "streakCurrent": 2,
+      "createdAt": "2026-11-12T06:51:48.636Z"
     },
     {
       "nickname": "잔머리알파고",
@@ -800,18 +800,18 @@
       "createdAt": "2026-11-08T13:35:18.339Z"
     },
     {
+      "nickname": "대추",
+      "solvedCount": 368,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-11-12T06:51:53.216Z"
+    },
+    {
       "nickname": "느릿느릿",
       "solvedCount": 367,
       "elo": 300,
       "streakCurrent": 3,
       "createdAt": "2026-11-12T03:19:46.076Z"
-    },
-    {
-      "nickname": "대추",
-      "solvedCount": 367,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-12T06:50:59.838Z"
     },
     {
       "nickname": "사용자",
