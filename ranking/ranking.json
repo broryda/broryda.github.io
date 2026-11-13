@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T23:15:33.808Z",
+  "updatedAt": "2026-11-13T23:15:43.137Z",
   "entries": [
     {
       "nickname": "npa",
@@ -308,15 +308,6 @@
       "lastSubmittedAt": "2026-11-13T22:00:02.871722Z"
     },
     {
-      "nickname": "사용자",
-      "solvedCount": 950,
-      "elo": 976,
-      "streakCurrent": 4,
-      "createdAt": "2026-11-13T23:15:25.073Z",
-      "deviceId": "dev_mvrtqfbj_vbtjtbqk",
-      "lastSubmittedAt": "2026-11-13T23:15:25.073Z"
-    },
-    {
       "nickname": "둘봄",
       "solvedCount": 303,
       "elo": 976,
@@ -333,6 +324,15 @@
       "createdAt": "2026-11-13T13:45:05.697Z",
       "deviceId": "dev_mtfhvjof_n8028m7c",
       "lastSubmittedAt": "2026-11-13T13:45:05.697Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 951,
+      "elo": 961,
+      "streakCurrent": 4,
+      "deviceId": "dev_mvrtqfbj_vbtjtbqk",
+      "lastSubmittedAt": "2026-11-13T23:15:42.766Z",
+      "createdAt": "2026-11-13T23:15:42.766Z"
     },
     {
       "nickname": "🇰🇷 Junwoo 🇰🇷",
@@ -1590,9 +1590,9 @@
       "solvedCount": 3909,
       "elo": 292,
       "streakCurrent": 25,
+      "createdAt": "2026-11-13T23:15:31.632Z",
       "deviceId": "dev_muult37u_11m4p8e6",
-      "lastSubmittedAt": "2026-11-13T23:15:31.632Z",
-      "createdAt": "2026-11-13T23:15:31.632Z"
+      "lastSubmittedAt": "2026-11-13T23:15:31.632Z"
     },
     {
       "nickname": "사용자지만 고양이인 고양이",
