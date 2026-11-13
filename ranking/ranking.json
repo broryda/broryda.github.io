@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T06:40:23.552Z",
+  "updatedAt": "2026-11-13T06:40:29.306Z",
   "entries": [
     {
       "nickname": "npa",
@@ -519,9 +519,9 @@
       "solvedCount": 1844,
       "elo": 617,
       "streakCurrent": 3,
+      "createdAt": "2026-11-13T06:40:23.938Z",
       "deviceId": "dev_muxshh87_kaef2uuy",
-      "lastSubmittedAt": "2026-11-13T06:40:23.938Z",
-      "createdAt": "2026-11-13T06:40:23.938Z"
+      "lastSubmittedAt": "2026-11-13T06:40:23.938Z"
     },
     {
       "nickname": "우미",
@@ -1505,15 +1505,6 @@
       "lastSubmittedAt": "2026-11-12T05:43:17.450Z"
     },
     {
-      "nickname": "라호야코브",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-11-13T06:39:48.303Z",
-      "deviceId": "dev_muult37u_11m4p8e6",
-      "lastSubmittedAt": "2026-11-13T06:39:48.303Z"
-    },
-    {
       "nickname": "키즈바둑2",
       "solvedCount": 2474,
       "elo": 297,
@@ -1566,6 +1557,15 @@
       "createdAt": "2026-11-13T05:51:08.099Z",
       "deviceId": "dev_mufiedq3_zs9q4soy",
       "lastSubmittedAt": "2026-11-13T05:51:08.099Z"
+    },
+    {
+      "nickname": "라호야코브",
+      "solvedCount": 3895,
+      "elo": 292,
+      "streakCurrent": 24,
+      "deviceId": "dev_muult37u_11m4p8e6",
+      "lastSubmittedAt": "2026-11-13T06:40:29.071Z",
+      "createdAt": "2026-11-13T06:40:29.071Z"
     },
     {
       "nickname": "사용자지만 고양이인 고양이",
