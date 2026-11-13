@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T08:03:22.535Z",
+  "updatedAt": "2026-11-13T08:03:32.319Z",
   "entries": [
     {
       "nickname": "npa",
@@ -241,17 +241,17 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 908,
+      "elo": 1026,
+      "streakCurrent": 3,
+      "createdAt": "2026-11-13T08:03:24.378Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 1054,
       "elo": 1022,
       "streakCurrent": 8,
       "createdAt": "2026-11-13T07:43:27.911Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 907,
-      "elo": 1022,
-      "streakCurrent": 3,
-      "createdAt": "2026-11-13T08:02:29.954Z"
     },
     {
       "nickname": "그대란우주",
@@ -443,13 +443,6 @@
       "createdAt": "2026-11-13T06:29:56.034Z"
     },
     {
-      "nickname": "김도은",
-      "solvedCount": 1978,
-      "elo": 509,
-      "streakCurrent": 11,
-      "createdAt": "2026-11-13T08:03:18.685Z"
-    },
-    {
       "nickname": "사용자",
       "solvedCount": 3212,
       "elo": 506,
@@ -462,6 +455,13 @@
       "elo": 500,
       "streakCurrent": 9,
       "createdAt": "2026-11-12T16:36:20.283Z"
+    },
+    {
+      "nickname": "김도은",
+      "solvedCount": 1980,
+      "elo": 495,
+      "streakCurrent": 11,
+      "createdAt": "2026-11-13T08:03:29.655Z"
     },
     {
       "nickname": "냥냥",
