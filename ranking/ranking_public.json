@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T04:16:09.802Z",
+  "updatedAt": "2026-11-13T04:16:14.421Z",
   "entries": [
     {
       "nickname": "npa",
@@ -1010,6 +1010,13 @@
       "createdAt": "2026-11-06T06:23:29.785Z"
     },
     {
+      "nickname": "펭귄",
+      "solvedCount": 25,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-11-13T04:16:13.079Z"
+    },
+    {
       "nickname": "돌도사",
       "solvedCount": 24,
       "elo": 300,
@@ -1022,13 +1029,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-11-10T03:04:37.880Z"
-    },
-    {
-      "nickname": "펭귄",
-      "solvedCount": 24,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-13T04:16:09.031Z"
     },
     {
       "nickname": "KATAGO",
