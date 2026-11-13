@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T05:44:04.343Z",
+  "updatedAt": "2026-11-13T05:44:05.643Z",
   "entries": [
     {
       "nickname": "npa",
@@ -231,9 +231,9 @@
       "solvedCount": 1785,
       "elo": 1244,
       "streakCurrent": 5,
+      "createdAt": "2026-11-13T05:44:03.738Z",
       "deviceId": "dev_mw4phcnw_g6clniwa",
-      "lastSubmittedAt": "2026-11-13T05:44:03.738Z",
-      "createdAt": "2026-11-13T05:44:03.738Z"
+      "lastSubmittedAt": "2026-11-13T05:44:03.738Z"
     },
     {
       "nickname": "사용자",
@@ -1532,6 +1532,15 @@
       "lastSubmittedAt": "2026-11-13T05:43:52.665Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mufiedq3_zs9q4soy",
+      "lastSubmittedAt": "2026-11-13T05:44:04.619Z",
+      "createdAt": "2026-11-13T05:44:04.619Z"
+    },
+    {
       "nickname": "키즈바둑2",
       "solvedCount": 2474,
       "elo": 297,
@@ -1575,15 +1584,6 @@
       "createdAt": "2026-11-11T08:54:50.671Z",
       "deviceId": "dev_muwc6pme_gz17yk6a",
       "lastSubmittedAt": "2026-11-11T08:54:50.671Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 1194,
-      "elo": 293,
-      "streakCurrent": 4,
-      "createdAt": "2026-11-12T06:51:11.152Z",
-      "deviceId": "dev_mufiedq3_zs9q4soy",
-      "lastSubmittedAt": "2026-11-12T06:51:11.152Z"
     },
     {
       "nickname": "라호야코브",
