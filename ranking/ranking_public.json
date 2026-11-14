@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T02:52:57.412Z",
+  "updatedAt": "2026-11-14T02:53:01.898Z",
   "entries": [
     {
       "nickname": "npa",
@@ -478,13 +478,6 @@
       "createdAt": "2026-11-13T15:37:39.692Z"
     },
     {
-      "nickname": "김도은",
-      "solvedCount": 2112,
-      "elo": 449,
-      "streakCurrent": 12,
-      "createdAt": "2026-11-14T02:52:53.908Z"
-    },
-    {
       "nickname": "냥냥",
       "solvedCount": 91,
       "elo": 442,
@@ -504,6 +497,13 @@
       "elo": 440,
       "streakCurrent": 4,
       "createdAt": "2026-11-12T02:37:24.776Z"
+    },
+    {
+      "nickname": "김도은",
+      "solvedCount": 2112,
+      "elo": 440,
+      "streakCurrent": 12,
+      "createdAt": "2026-11-14T02:52:58.416Z"
     },
     {
       "nickname": "사용자",
