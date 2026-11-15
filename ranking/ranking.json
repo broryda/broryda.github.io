@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T10:20:42.125Z",
+  "updatedAt": "2026-11-15T10:20:46.719Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -327,6 +327,15 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 1053,
+      "elo": 1057,
+      "streakCurrent": 5,
+      "deviceId": "dev_mvrtqfbj_vbtjtbqk",
+      "lastSubmittedAt": "2026-11-15T10:20:46.415Z",
+      "createdAt": "2026-11-15T10:20:46.415Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 6776,
       "elo": 1052,
       "streakCurrent": 7,
@@ -342,15 +351,6 @@
       "createdAt": "2026-11-15T06:43:34.208Z",
       "deviceId": "dev_mv4uvops_w5fe8vc3",
       "lastSubmittedAt": "2026-11-15T06:43:34.208Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 1052,
-      "elo": 1045,
-      "streakCurrent": 5,
-      "createdAt": "2026-11-15T10:20:27.037Z",
-      "deviceId": "dev_mvrtqfbj_vbtjtbqk",
-      "lastSubmittedAt": "2026-11-15T10:20:27.037Z"
     },
     {
       "nickname": "늘봄 이춘택",
@@ -744,9 +744,9 @@
       "solvedCount": 651,
       "elo": 405,
       "streakCurrent": 1,
+      "createdAt": "2026-11-15T10:20:41.816Z",
       "deviceId": "dev_mwae2kji_o5j448q3",
-      "lastSubmittedAt": "2026-11-15T10:20:41.816Z",
-      "createdAt": "2026-11-15T10:20:41.816Z"
+      "lastSubmittedAt": "2026-11-15T10:20:41.816Z"
     },
     {
       "nickname": "정해윤",
