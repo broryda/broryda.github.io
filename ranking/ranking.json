@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T09:38:17.187Z",
+  "updatedAt": "2026-11-15T09:38:21.195Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -321,9 +321,9 @@
       "solvedCount": 1009,
       "elo": 1098,
       "streakCurrent": 5,
+      "createdAt": "2026-11-15T09:38:16.778Z",
       "deviceId": "dev_mvrtqfbj_vbtjtbqk",
-      "lastSubmittedAt": "2026-11-15T09:38:16.778Z",
-      "createdAt": "2026-11-15T09:38:16.778Z"
+      "lastSubmittedAt": "2026-11-15T09:38:16.778Z"
     },
     {
       "nickname": "황기익",
@@ -882,15 +882,6 @@
       "createdAt": "2026-11-15T07:11:47.678Z",
       "deviceId": "dev_mwelkggo_mp7ph87t",
       "lastSubmittedAt": "2026-11-15T07:11:47.678Z"
-    },
-    {
-      "nickname": "쎈돌이",
-      "solvedCount": 1505,
-      "elo": 318,
-      "streakCurrent": 3,
-      "createdAt": "2026-11-14T15:22:02.429Z",
-      "deviceId": "dev_mw8ftqrq_jyr3wgfu",
-      "lastSubmittedAt": "2026-11-14T15:22:02.429Z"
     },
     {
       "nickname": "정우 🌊",
@@ -1548,6 +1539,15 @@
       "createdAt": "2026-11-14T08:58:50.054Z",
       "deviceId": "dev_muxshh87_kaef2uuy",
       "lastSubmittedAt": "2026-11-14T08:58:50.054Z"
+    },
+    {
+      "nickname": "쎈돌이",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mw8ftqrq_jyr3wgfu",
+      "lastSubmittedAt": "2026-11-15T09:38:19.391Z",
+      "createdAt": "2026-11-15T09:38:19.391Z"
     },
     {
       "nickname": "키즈바둑2",
