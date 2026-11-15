@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T11:49:19.028Z",
+  "updatedAt": "2026-11-15T11:49:27.406Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -360,6 +360,15 @@
       "createdAt": "2026-11-15T06:43:34.208Z",
       "deviceId": "dev_mv4uvops_w5fe8vc3",
       "lastSubmittedAt": "2026-11-15T06:43:34.208Z"
+    },
+    {
+      "nickname": "늘봄 이춘택",
+      "solvedCount": 1119,
+      "elo": 1046,
+      "streakCurrent": 1,
+      "deviceId": "dev_mvx2hc2p_hc04jhd9",
+      "lastSubmittedAt": "2026-11-15T11:49:27.089Z",
+      "createdAt": "2026-11-15T11:49:27.089Z"
     },
     {
       "nickname": "박경환",
@@ -1104,9 +1113,9 @@
       "solvedCount": 394,
       "elo": 300,
       "streakCurrent": 5,
+      "createdAt": "2026-11-15T11:49:18.878Z",
       "deviceId": "dev_mwb0rlo5_xtdd5upv",
-      "lastSubmittedAt": "2026-11-15T11:49:18.878Z",
-      "createdAt": "2026-11-15T11:49:18.878Z"
+      "lastSubmittedAt": "2026-11-15T11:49:18.878Z"
     },
     {
       "nickname": "바둑왕",
@@ -1530,15 +1539,6 @@
       "createdAt": "2026-11-14T08:58:50.054Z",
       "deviceId": "dev_muxshh87_kaef2uuy",
       "lastSubmittedAt": "2026-11-14T08:58:50.054Z"
-    },
-    {
-      "nickname": "늘봄 이춘택",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-11-15T11:48:55.844Z",
-      "deviceId": "dev_mvx2hc2p_hc04jhd9",
-      "lastSubmittedAt": "2026-11-15T11:48:55.844Z"
     },
     {
       "nickname": "키즈바둑2",
