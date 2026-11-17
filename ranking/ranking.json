@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T05:06:21.435Z",
+  "updatedAt": "2026-11-17T05:06:24.297Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -1469,6 +1469,15 @@
       "lastSubmittedAt": "2026-11-17T03:42:45.552Z"
     },
     {
+      "nickname": "사용자",
+      "solvedCount": 1,
+      "elo": 300,
+      "streakCurrent": 1,
+      "deviceId": "dev_mwk8bq1b_m3943x9b",
+      "lastSubmittedAt": "2026-11-17T05:06:23.805Z",
+      "createdAt": "2026-11-17T05:06:23.805Z"
+    },
+    {
       "nickname": "이성수",
       "solvedCount": 0,
       "elo": 300,
@@ -1542,21 +1551,12 @@
     },
     {
       "nickname": "사용자",
-      "solvedCount": 0,
-      "elo": 300,
-      "streakCurrent": 0,
-      "createdAt": "2026-11-17T05:05:52.581Z",
-      "deviceId": "dev_mwk8bq1b_m3943x9b",
-      "lastSubmittedAt": "2026-11-17T05:05:52.581Z"
-    },
-    {
-      "nickname": "사용자",
       "solvedCount": 331,
       "elo": 298,
       "streakCurrent": 1,
+      "createdAt": "2026-11-17T05:06:21.206Z",
       "deviceId": "dev_mwe7yr6y_otvhbxvn",
-      "lastSubmittedAt": "2026-11-17T05:06:21.206Z",
-      "createdAt": "2026-11-17T05:06:21.206Z"
+      "lastSubmittedAt": "2026-11-17T05:06:21.206Z"
     },
     {
       "nickname": "키즈바둑2",
