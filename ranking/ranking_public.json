@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T00:16:42.259Z",
+  "updatedAt": "2026-11-20T00:17:49.657Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -30,13 +30,6 @@
       "createdAt": "2026-07-20T05:15:03Z"
     },
     {
-      "nickname": "AJK",
-      "solvedCount": 2728,
-      "elo": 2097,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-20T00:16:42.492Z"
-    },
-    {
       "nickname": "박재동",
       "solvedCount": 5390,
       "elo": 2096,
@@ -49,6 +42,13 @@
       "elo": 2095,
       "streakCurrent": 1,
       "createdAt": "2026-06-26T03:46:25Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 2729,
+      "elo": 2087,
+      "streakCurrent": 1,
+      "createdAt": "2026-11-20T00:17:49.986Z"
     },
     {
       "nickname": "결국나였다",
@@ -713,7 +713,7 @@
       "solvedCount": 1651,
       "elo": 300,
       "streakCurrent": 4,
-      "createdAt": "2026-11-19T07:57:56.966Z"
+      "createdAt": "2026-11-20T00:17:46.095Z"
     },
     {
       "nickname": "정의한",
