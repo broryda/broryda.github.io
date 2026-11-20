@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T00:20:36.206Z",
+  "updatedAt": "2026-11-20T00:20:55.621Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -56,15 +56,6 @@
       "lastSubmittedAt": "2026-11-19T23:00:02.301439Z"
     },
     {
-      "nickname": "AJK",
-      "solvedCount": 2732,
-      "elo": 2062,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-20T00:20:39.367Z",
-      "deviceId": "dev_mp9autn7_tr3eb4pq",
-      "lastSubmittedAt": "2026-11-20T00:20:39.367Z"
-    },
-    {
       "nickname": "결국나였다",
       "solvedCount": 265,
       "elo": 2055,
@@ -72,6 +63,15 @@
       "createdAt": "2026-11-19T15:09:57.793Z",
       "deviceId": "dev_mw5uaj18_ht0r1fko",
       "lastSubmittedAt": "2026-11-19T15:09:57.793Z"
+    },
+    {
+      "nickname": "AJK",
+      "solvedCount": 2732,
+      "elo": 2050,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp9autn7_tr3eb4pq",
+      "lastSubmittedAt": "2026-11-20T00:20:55.512Z",
+      "createdAt": "2026-11-20T00:20:55.512Z"
     },
     {
       "nickname": "호두",
