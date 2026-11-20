@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T05:08:08.863Z",
+  "updatedAt": "2026-11-20T05:08:15.329Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -72,15 +72,6 @@
       "createdAt": "2026-11-19T15:09:57.793Z",
       "deviceId": "dev_mw5uaj18_ht0r1fko",
       "lastSubmittedAt": "2026-11-19T15:09:57.793Z"
-    },
-    {
-      "nickname": "호두",
-      "solvedCount": 1567,
-      "elo": 2024,
-      "streakCurrent": 4,
-      "createdAt": "2026-11-20T03:50:19.637Z",
-      "deviceId": "dev_mvkfngfn_u3ilhd82",
-      "lastSubmittedAt": "2026-11-20T03:50:19.637Z"
     },
     {
       "nickname": "고구려",
@@ -249,9 +240,9 @@
       "solvedCount": 4346,
       "elo": 1368,
       "streakCurrent": 5,
+      "createdAt": "2026-11-20T05:08:08.033Z",
       "deviceId": "dev_mw4phcnw_g6clniwa",
-      "lastSubmittedAt": "2026-11-20T05:08:08.033Z",
-      "createdAt": "2026-11-20T05:08:08.033Z"
+      "lastSubmittedAt": "2026-11-20T05:08:08.033Z"
     },
     {
       "nickname": "임정우",
@@ -1494,6 +1485,15 @@
       "createdAt": "2026-11-20T02:03:06.724Z",
       "deviceId": "dev_mwipuuf4_irbgf8p7",
       "lastSubmittedAt": "2026-11-20T02:03:06.724Z"
+    },
+    {
+      "nickname": "호두",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mvkfngfn_u3ilhd82",
+      "lastSubmittedAt": "2026-11-20T05:08:14.559Z",
+      "createdAt": "2026-11-20T05:08:14.559Z"
     },
     {
       "nickname": "사용자",
