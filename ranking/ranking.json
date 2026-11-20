@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T00:22:14.562Z",
+  "updatedAt": "2026-11-20T00:22:18.636Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -56,6 +56,15 @@
       "lastSubmittedAt": "2026-11-19T23:00:02.301439Z"
     },
     {
+      "nickname": "AJK",
+      "solvedCount": 2733,
+      "elo": 2055,
+      "streakCurrent": 1,
+      "deviceId": "dev_mp9autn7_tr3eb4pq",
+      "lastSubmittedAt": "2026-11-20T00:22:18.941Z",
+      "createdAt": "2026-11-20T00:22:18.941Z"
+    },
+    {
       "nickname": "결국나였다",
       "solvedCount": 265,
       "elo": 2055,
@@ -72,15 +81,6 @@
       "createdAt": "2026-11-19T07:43:00.925Z",
       "deviceId": "dev_mvkfngfn_u3ilhd82",
       "lastSubmittedAt": "2026-11-19T07:43:00.925Z"
-    },
-    {
-      "nickname": "AJK",
-      "solvedCount": 2733,
-      "elo": 2043,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-20T00:21:46.654Z",
-      "deviceId": "dev_mp9autn7_tr3eb4pq",
-      "lastSubmittedAt": "2026-11-20T00:21:46.654Z"
     },
     {
       "nickname": "고구려",
@@ -915,9 +915,9 @@
       "solvedCount": 1659,
       "elo": 300,
       "streakCurrent": 5,
+      "createdAt": "2026-11-20T00:22:13.508Z",
       "deviceId": "dev_mwd2b9nt_tqoaqpp2",
-      "lastSubmittedAt": "2026-11-20T00:22:13.508Z",
-      "createdAt": "2026-11-20T00:22:13.508Z"
+      "lastSubmittedAt": "2026-11-20T00:22:13.508Z"
     },
     {
       "nickname": "정의한",
