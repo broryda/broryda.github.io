@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T11:37:20.840Z",
+  "updatedAt": "2026-11-20T11:37:44.393Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -548,6 +548,13 @@
       "createdAt": "2026-11-19T15:58:00.129Z"
     },
     {
+      "nickname": "호랑이",
+      "solvedCount": 24,
+      "elo": 500,
+      "streakCurrent": 1,
+      "createdAt": "2026-11-20T11:37:44.283Z"
+    },
+    {
       "nickname": "호일",
       "solvedCount": 87,
       "elo": 499,
@@ -560,13 +567,6 @@
       "elo": 494,
       "streakCurrent": 7,
       "createdAt": "2026-11-19T06:29:55.169Z"
-    },
-    {
-      "nickname": "호랑이",
-      "solvedCount": 23,
-      "elo": 493,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-20T11:37:20.847Z"
     },
     {
       "nickname": "비즐",
