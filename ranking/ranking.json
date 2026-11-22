@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T04:35:54.632Z",
+  "updatedAt": "2026-11-22T04:37:58.504Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -63,15 +63,6 @@
       "createdAt": "2026-11-20T00:26:10.784Z",
       "deviceId": "dev_mp9autn7_tr3eb4pq",
       "lastSubmittedAt": "2026-11-20T00:26:10.784Z"
-    },
-    {
-      "nickname": "결국나였다",
-      "solvedCount": 288,
-      "elo": 2021,
-      "streakCurrent": 3,
-      "createdAt": "2026-11-22T04:04:37.252Z",
-      "deviceId": "dev_mw5uaj18_ht0r1fko",
-      "lastSubmittedAt": "2026-11-22T04:04:37.252Z"
     },
     {
       "nickname": "호두",
@@ -987,9 +978,9 @@
       "solvedCount": 572,
       "elo": 300,
       "streakCurrent": 6,
+      "createdAt": "2026-11-22T04:35:53.223Z",
       "deviceId": "dev_mw2nl7r5_7oah5nix",
-      "lastSubmittedAt": "2026-11-22T04:35:53.223Z",
-      "createdAt": "2026-11-22T04:35:53.223Z"
+      "lastSubmittedAt": "2026-11-22T04:35:53.223Z"
     },
     {
       "nickname": "만상",
@@ -1440,6 +1431,15 @@
       "createdAt": "2026-11-22T00:29:10.146Z",
       "deviceId": "dev_mvxfpsnh_g0srh1wc",
       "lastSubmittedAt": "2026-11-22T00:29:10.146Z"
+    },
+    {
+      "nickname": "결국나였다",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mw5uaj18_ht0r1fko",
+      "lastSubmittedAt": "2026-11-22T04:37:56.742Z",
+      "createdAt": "2026-11-22T04:37:56.742Z"
     },
     {
       "nickname": "사용자",
