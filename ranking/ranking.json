@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T08:52:20.809Z",
+  "updatedAt": "2026-11-24T08:52:43.333Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -348,9 +348,9 @@
       "solvedCount": 1323,
       "elo": 980,
       "streakCurrent": 1,
+      "createdAt": "2026-11-24T08:52:20.413Z",
       "deviceId": "dev_mvrtqfbj_vbtjtbqk",
-      "lastSubmittedAt": "2026-11-24T08:52:20.413Z",
-      "createdAt": "2026-11-24T08:52:20.413Z"
+      "lastSubmittedAt": "2026-11-24T08:52:20.413Z"
     },
     {
       "nickname": "🇰🇷 Junwoo 🇰🇷",
@@ -558,15 +558,6 @@
       "createdAt": "2026-11-23T13:25:44.288Z",
       "deviceId": "dev_mw95yz5e_7qw7alg4",
       "lastSubmittedAt": "2026-11-23T13:25:44.288Z"
-    },
-    {
-      "nickname": "김도은",
-      "solvedCount": 3298,
-      "elo": 564,
-      "streakCurrent": 22,
-      "createdAt": "2026-11-24T08:48:04.854Z",
-      "deviceId": "dev_mvrmu9fr_3jmc4wj4",
-      "lastSubmittedAt": "2026-11-24T08:48:04.854Z"
     },
     {
       "nickname": "사용자",
@@ -1323,6 +1314,15 @@
       "createdAt": "2026-11-23T23:45:57.903Z",
       "deviceId": "dev_mwsruuaw_3kt1ftg1",
       "lastSubmittedAt": "2026-11-23T23:45:57.903Z"
+    },
+    {
+      "nickname": "김도은",
+      "solvedCount": 0,
+      "elo": 300,
+      "streakCurrent": 0,
+      "deviceId": "dev_mvrmu9fr_3jmc4wj4",
+      "lastSubmittedAt": "2026-11-24T08:52:40.020Z",
+      "createdAt": "2026-11-24T08:52:40.020Z"
     },
     {
       "nickname": "사용자",
