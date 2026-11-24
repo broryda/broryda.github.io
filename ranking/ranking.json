@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T06:42:23.083Z",
+  "updatedAt": "2026-11-24T06:42:29.236Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -708,9 +708,9 @@
       "solvedCount": 2635,
       "elo": 318,
       "streakCurrent": 1,
+      "createdAt": "2026-11-24T06:42:22.744Z",
       "deviceId": "dev_mw8ftqrq_jyr3wgfu",
-      "lastSubmittedAt": "2026-11-24T06:42:22.744Z",
-      "createdAt": "2026-11-24T06:42:22.744Z"
+      "lastSubmittedAt": "2026-11-24T06:42:22.744Z"
     },
     {
       "nickname": "지니",
@@ -756,6 +756,15 @@
       "createdAt": "2026-11-23T05:00:21.378Z",
       "deviceId": "dev_muweoz6r_vuo2djed",
       "lastSubmittedAt": "2026-11-23T05:00:21.378Z"
+    },
+    {
+      "nickname": "사용자",
+      "solvedCount": 1796,
+      "elo": 300,
+      "streakCurrent": 1,
+      "deviceId": "dev_mow79rbx_0h9nq8fp",
+      "lastSubmittedAt": "2026-11-24T06:42:28.687Z",
+      "createdAt": "2026-11-24T06:42:28.687Z"
     },
     {
       "nickname": "정의한",
