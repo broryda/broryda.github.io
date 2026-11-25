@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T05:01:04.453Z",
+  "updatedAt": "2026-11-25T05:01:08.884Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -101,6 +101,15 @@
       "lastSubmittedAt": "2026-11-23T07:46:45.756Z"
     },
     {
+      "nickname": "호두",
+      "solvedCount": 1611,
+      "elo": 1977,
+      "streakCurrent": 1,
+      "deviceId": "dev_mvkfngfn_u3ilhd82",
+      "lastSubmittedAt": "2026-11-25T05:01:08.668Z",
+      "createdAt": "2026-11-25T05:01:08.668Z"
+    },
+    {
       "nickname": "고구려",
       "solvedCount": 2482,
       "elo": 1975,
@@ -108,15 +117,6 @@
       "createdAt": "2026-11-18T10:15:15.797Z",
       "deviceId": "dev_mqqo9uar_ttxshyf3",
       "lastSubmittedAt": "2026-11-18T10:15:15.797Z"
-    },
-    {
-      "nickname": "호두",
-      "solvedCount": 1610,
-      "elo": 1966,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-25T05:00:55.853Z",
-      "deviceId": "dev_mvkfngfn_u3ilhd82",
-      "lastSubmittedAt": "2026-11-25T05:00:55.853Z"
     },
     {
       "nickname": "전주양동일",
@@ -1194,9 +1194,9 @@
       "solvedCount": 60,
       "elo": 300,
       "streakCurrent": 3,
+      "createdAt": "2026-11-25T05:01:04.020Z",
       "deviceId": "dev_mwt4oy37_b4mnijjm",
-      "lastSubmittedAt": "2026-11-25T05:01:04.020Z",
-      "createdAt": "2026-11-25T05:01:04.020Z"
+      "lastSubmittedAt": "2026-11-25T05:01:04.020Z"
     },
     {
       "nickname": "토딩이깡총",
