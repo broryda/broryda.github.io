@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T00:00:29.085Z",
+  "updatedAt": "2026-11-28T00:00:33.417Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -272,15 +272,6 @@
       "lastSubmittedAt": "2026-11-26T06:59:30.698Z"
     },
     {
-      "nickname": "봉기",
-      "solvedCount": 351,
-      "elo": 1217,
-      "streakCurrent": 3,
-      "createdAt": "2026-11-28T00:00:23.861Z",
-      "deviceId": "dev_mwxj0115_ln7v9odq",
-      "lastSubmittedAt": "2026-11-28T00:00:23.861Z"
-    },
-    {
       "nickname": "밐빵이수집가",
       "solvedCount": 1445,
       "elo": 1209,
@@ -288,6 +279,15 @@
       "createdAt": "2026-11-24T23:42:45.421Z",
       "deviceId": "dev_ms1trwqz_b1mue20y",
       "lastSubmittedAt": "2026-11-24T23:42:45.421Z"
+    },
+    {
+      "nickname": "봉기",
+      "solvedCount": 352,
+      "elo": 1204,
+      "streakCurrent": 3,
+      "deviceId": "dev_mwxj0115_ln7v9odq",
+      "lastSubmittedAt": "2026-11-28T00:00:33.472Z",
+      "createdAt": "2026-11-28T00:00:33.472Z"
     },
     {
       "nickname": "황기익",
@@ -510,9 +510,9 @@
       "solvedCount": 4129,
       "elo": 736,
       "streakCurrent": 22,
+      "createdAt": "2026-11-28T00:00:28.518Z",
       "deviceId": "dev_mvrqm7lk_ydpf0jcv",
-      "lastSubmittedAt": "2026-11-28T00:00:28.518Z",
-      "createdAt": "2026-11-28T00:00:28.518Z"
+      "lastSubmittedAt": "2026-11-28T00:00:28.518Z"
     },
     {
       "nickname": "윤희진",
