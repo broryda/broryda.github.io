@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T00:49:30.621Z",
+  "updatedAt": "2026-11-28T00:49:33.674Z",
   "entries": [
     {
       "nickname": "사활의신",
@@ -1116,6 +1116,13 @@
     },
     {
       "nickname": "사용자",
+      "solvedCount": 2,
+      "elo": 300,
+      "streakCurrent": 1,
+      "createdAt": "2026-11-28T00:49:32.237Z"
+    },
+    {
+      "nickname": "사용자",
       "solvedCount": 1,
       "elo": 300,
       "streakCurrent": 1,
@@ -1134,13 +1141,6 @@
       "elo": 300,
       "streakCurrent": 1,
       "createdAt": "2026-11-25T14:51:50.179Z"
-    },
-    {
-      "nickname": "사용자",
-      "solvedCount": 1,
-      "elo": 300,
-      "streakCurrent": 1,
-      "createdAt": "2026-11-28T00:48:09.040Z"
     },
     {
       "nickname": "이성수",
